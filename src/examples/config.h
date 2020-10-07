@@ -13,5 +13,6 @@
 // Used by optimization algorithms.
 #define MAX_NO_IMPROVE 5
 
+//#define RANDBEHAVIOR RANDRANDBEHAVIOR_DETERMINISTIC
 
 #endif /* CONFIG_H_ */
