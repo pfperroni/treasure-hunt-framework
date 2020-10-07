@@ -1,0 +1,48 @@
+/**
+ * Treasure Hunt Framework (c)
+ *
+ * Copyright 2016-2020 Peter Frank Perroni
+ *
+ * @file RandomBestListSelectionPolicy.h
+ * @class RandomBestListSelectionPolicy
+ * @brief This policy selects a random Solution from the BestList instance.
+ */
+
+#ifndef RANDOMBESTLISTSELECTIONPOLICY_H_
+#define RANDOMBESTLISTSELECTIONPOLICY_H_
+
+#include "BestListSelectionPolicy.h"
+
+template <class P = double, int pSize = 1, class F = double, int fSize = 1, class V = double, int vSize = 1>
+class RandomBestListSelectionPolicy : public BestListSelectionPolicy<P, pSize, F, fSize, V, vSize> {
+	unsigned int seed;
+
+public:
+	RandomBestListSelectionPolicy() {
+		seed = THUtil::getRandomSeed();
+	}
+	~RandomBestListSelectionPolicy(){}
+
+	/**
+	 * @brief Implements the policy that selects a random solution from the best-list.
+	 *
+	 * @param bestList The BestList instance.
+	 * @param fitnessPolicy The FitnessPolicy instance capable of evaluating the solutions.
+	 * @return A random solution selected by this policy.
+	 */
+	Solution<P, pSize, F, fSize, V, vSize>* apply(BestList<P, pSize, F, fSize, V, vSize> *bestList,
+			FitnessPolicy<P, pSize, F, fSize, V, vSize> *fitnessPolicy){
+		if(bestList == NULL || bestList->getListSize() == 0) {
+			throw std::invalid_argument("The best list cannot be empty.");
+		}
+		int bestListSz = bestList->getListSize();
+		int pos = THUtil::randUniformInt(seed, 0, bestListSz-1); // Try a random solution from best-list.
+		Solution<P, pSize, F, fSize, V, vSize> *selectedSolution = (*bestList)[pos];
+		if(selectedSolution == NULL){ // If not filled, get the first solution available.
+			for(pos=0; pos < bestListSz && (selectedSolution=(*bestList)[pos]) == NULL; pos++);
+		}
+		return selectedSolution;
+	}
+};
+
+#endif /* RANDOMBESTLISTSELECTIONPOLICY_H_ */

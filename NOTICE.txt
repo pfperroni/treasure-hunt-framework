@@ -1,0 +1,27 @@
+                    Treasure Hunt Framework (c)
+              Copyright 2016-2018 Peter Frank Perroni
+
+
+The software is licensed under the Apache 2.0 license (see the file
+APACHE-LICENSE-2.0.txt), and all arts (not limited to logos, icons
+and videos) are licensed under the Creative Commons CC BY-NC-SA 4.0
+license (see the file ).
+
+
+When using this software, or any work derived from this software,
+to generate scientific outcomes, either in executable, source code
+or output data formats, you shall also reference the original paper
+that presented Treasure Hunt Framework to scientific community:
+
+      PERRONI, Peter Frank (2019). Treasure hunt: a framework
+      for cooperative, distributed parallel optimization
+      (Doctoral thesis, UFPR). Institutional repository at UFPR:
+      https://acervodigital.ufpr.br/handle/1884/62517
+
+
+Major Deploy History:
+
+DATE	DESCRIPTION
+2018	Relocated some pieces of code to allow finer control through Policies.
+2017	Large scaling using MPI.
+2016	First full version of Treasure Hunt (TH) using shared memory.
