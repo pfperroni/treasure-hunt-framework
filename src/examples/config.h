@@ -1,8 +1,12 @@
-/*
- * config.h
+/**
+ * Treasure Hunt Framework (c)
  *
- * Created on: Sep 30, 2019
- * Author: Peter Frank Perroni (pfperroni@gmail.com)
+ * Copyright 2016-2020 Peter Frank Perroni
+ *
+ * @file config.h
+ * @class config
+ * @author Peter Frank Perroni
+ * @brief Local configurations must be set in this file.
  */
 
 #ifndef CONFIG_H_
