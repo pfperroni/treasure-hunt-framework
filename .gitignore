@@ -1,0 +1,20 @@
+# Directories #
+Debug/
+build/
+bin/
+output/
+lib/
+
+# Files #
+*.o
+*.out
+*.zip
+*.tar.gz
+
+######################
+# Eclipse
+######################
+ 
+.project
+.cproject
+.settings/
