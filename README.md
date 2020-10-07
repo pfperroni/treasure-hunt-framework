@@ -1,4 +1,4 @@
-# ![TH logo](media/TH-logo-favicon-1.png) Treasure Hunt Framework
+# <img align="left" height="30" src="media/TH-logo-2.png">&nbsp;&nbsp;Treasure Hunt Framework
 
 Treasure Hunt (TH) is a multilevel framework capable of distributing independent search algorithms to a large number of processing nodes.
 TH ensures quick propagation of information and explores a driving mechanism that results in a joint convergences between the working nodes.
