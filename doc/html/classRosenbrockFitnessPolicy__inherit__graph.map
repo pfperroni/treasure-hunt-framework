@@ -1,0 +1,4 @@
+<map id="RosenbrockFitnessPolicy" name="RosenbrockFitnessPolicy">
+<area shape="rect" id="node2" href="$classFitnessPolicy.xhtml" title="{FitnessPolicy\&lt;\&gt;\n||+ FitnessPolicy()\l+ ~FitnessPolicy()\l+ apply()\l+ firstIsBetter()\l+ firstIsBetter()\l+ setWorstFitness()\l+ setWorstFitness()\l+ setBestFitness()\l+ setBestFitness()\l+ getMinEstimatedFitnessValue()\l}" alt="" coords="5,311,240,536"/>
+<area shape="rect" id="node3" href="$classFitnessPolicy.xhtml" title="Template for the policy that calculates the fitness (or cost) for the problem under optimization..." alt="" coords="5,5,240,247"/>
+</map>

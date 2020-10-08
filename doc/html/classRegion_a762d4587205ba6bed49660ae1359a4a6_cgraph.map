@@ -1,0 +1,5 @@
+<map id="Region::print" name="Region::print">
+<area shape="rect" id="node2" href="$classPartition.xhtml#a3d9ce01ee6fbc781a9fa7c02adeda3e6" title="Get the partition ID. " alt="" coords="181,5,300,33"/>
+<area shape="rect" id="node3" href="$classPartition.xhtml#a418e5b08580b3c1d33390a13eeb8eb0f" title="Get the lower bound for this partition. " alt="" coords="157,57,324,85"/>
+<area shape="rect" id="node4" href="$classPartition.xhtml#a0f3cdf44760e24735951b73dfc9dd3ab" title="Get the upper bound for this partition. " alt="" coords="159,109,322,137"/>
+</map>

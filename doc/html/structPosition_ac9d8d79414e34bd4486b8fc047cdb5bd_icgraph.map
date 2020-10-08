@@ -1,0 +1,7 @@
+<map id="Position::checkCompatibility" name="Position::checkCompatibility">
+<area shape="rect" id="node2" href="$structPosition.xhtml#a591cf87fe7b6708caec26383103d8cfd" title="Operator that overrides the contents of this position with the contents of the Position instance rece..." alt="" coords="253,5,397,33"/>
+<area shape="rect" id="node3" href="$structPosition.xhtml#ae49c33a4d51e79c37e9b8b33125f4857" title="Compares the current position with the position received. " alt="" coords="264,57,387,85"/>
+<area shape="rect" id="node4" href="$structPosition.xhtml#a530f7539f8e0673e484f029c53b412b8" title="Math method that sums the list that represents the Position with Position instance received..." alt="" coords="271,109,379,137"/>
+<area shape="rect" id="node5" href="$structPosition.xhtml#a09bbd5c9bbd247ccd0307a5968a40564" title="Math method that subtracts the list that represents the Position from Position instance received..." alt="" coords="273,161,377,189"/>
+<area shape="rect" id="node6" href="$structPosition.xhtml#a8cff5fed8bf343eec2689374cb076de1" title="Math method that multiplies the list that represents the Position with Position instance received..." alt="" coords="271,213,379,241"/>
+</map>

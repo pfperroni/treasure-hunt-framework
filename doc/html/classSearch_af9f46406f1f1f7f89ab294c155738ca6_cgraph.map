@@ -1,0 +1,10 @@
+<map id="Search::setSearchSpace" name="Search::setSearchSpace">
+<area shape="rect" id="node2" href="$classSearch.xhtml#afe8c2a6dd96ad12f77de7c8226a76028" title="Method responsible for setting up all the optimization algorithm for the next optimization. " alt="" coords="271,5,391,33"/>
+<area shape="rect" id="node3" href="$classSearch.xhtml#afa7022c6b9be775211d8a9be85b880f3" title="Method responsible for all post&#45;processing after the optimization has completed. " alt="" coords="271,57,391,85"/>
+<area shape="rect" id="node4" href="$classSearch.xhtml#ae2ea32c6a6ab958e714f19dc71fae9db" title="Method responsible for executing the actual optimization to obtain the next best result. " alt="" coords="280,109,383,137"/>
+<area shape="rect" id="node5" href="$classSearch.xhtml#aa64dbfe1bd713c36cc8785178a81325e" title="Inform the ConvergenceControlPolicy that no next improvement could be found in reasonable time..." alt="" coords="270,161,393,189"/>
+<area shape="rect" id="node6" href="$classSearch.xhtml#a6b275ce5596bb50216cc9fc827f44912" title="Get the best Solution found since the last time the method startup() was called. " alt="" coords="239,213,424,241"/>
+<area shape="rect" id="node7" href="$classSearch.xhtml#a134eb5da3918998d5a3d1e049f7b585e" title="Get the number of FitnessPolicy evaluations performed since the last time the method startup() was ca..." alt="" coords="236,265,427,293"/>
+<area shape="rect" id="node8" href="$classSearch.xhtml#a6f167beec8fc582b2d993a4bd76e241c" title="Get the Fitness for the current best Solution. " alt="" coords="246,317,417,345"/>
+<area shape="rect" id="node9" href="$classSearch.xhtml#afbc425366989c9fc8aa7c88b70812b97" title="Get the name of the optimization method implemented. " alt="" coords="264,369,399,397"/>
+</map>

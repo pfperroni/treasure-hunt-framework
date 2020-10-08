@@ -1,0 +1,6 @@
+<map id="Search::finalize" name="Search::finalize">
+<area shape="rect" id="node2" href="$classCSMOn.xhtml#a430398bc3e096631f8cd180ee1877616" title="This method runs, monitors and limits the convergence of the optimization method during the current T..." alt="" coords="213,5,316,33"/>
+<area shape="rect" id="node3" href="$classSearch.xhtml#af9f46406f1f1f7f89ab294c155738ca6" title="Set the full search space. " alt="" coords="173,57,356,85"/>
+<area shape="rect" id="node4" href="$classTHBuilder_1_1SearchGroup.xhtml#a794cf5448380674b51022b5d65a240e2" title="Constructor to create the internal Search Group. " alt="" coords="404,19,585,63"/>
+<area shape="rect" id="node5" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="633,49,784,93"/>
+</map>

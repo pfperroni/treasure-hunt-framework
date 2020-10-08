@@ -1,0 +1,4 @@
+<map id="Fitness::checkCompatibility" name="Fitness::checkCompatibility">
+<area shape="rect" id="node2" href="$structFitness.xhtml#a19e4c2cc608e17611deacc194d83dc89" title="Operator that overrides the contents of this fitness with the contents of the Fitness instance receiv..." alt="" coords="248,5,387,33"/>
+<area shape="rect" id="node3" href="$structFitness.xhtml#acfc0528bc5ec716f1c06a58086c59b50" title="Compares the current fitness with the fitness received. " alt="" coords="258,57,377,85"/>
+</map>

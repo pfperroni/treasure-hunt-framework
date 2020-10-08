@@ -1,0 +1,28 @@
+<map id="THBuilder::SearchGroup::SearchGroup" name="THBuilder::SearchGroup::SearchGroup">
+<area shape="rect" id="node2" href="$classTHBuilder.xhtml#a25aa4f49bfb82628b5add5aaa83d3802" title="THBuilder::getId" alt="" coords="291,5,417,33"/>
+<area shape="rect" id="node3" href="$classTHBuilder.xhtml#a6ad815c9e35b81b9b8f6507b6bdac5bf" title="THBuilder::getTHTree" alt="" coords="271,57,437,85"/>
+<area shape="rect" id="node4" href="$classTHTree.xhtml#a4f17fef67dc2141d2fec2493e3856bf8" title="THTree::getNode" alt="" coords="287,109,421,137"/>
+<area shape="rect" id="node5" href="$structt__node.xhtml#a37f4377e664f4b4a8b541df91e35d27b" title="t_node::getLevel" alt="" coords="290,161,418,189"/>
+<area shape="rect" id="node6" href="$classTHBuilder.xhtml#a611f5596ed334d38c1d77d57845676ed" title="Get the SearchSpace configured. " alt="" coords="253,213,455,241"/>
+<area shape="rect" id="node7" href="$classTHBuilder.xhtml#a965c2231b9dd21a606a5de11d4682a33" title="Get the search algorithms configured. " alt="" coords="239,265,469,293"/>
+<area shape="rect" id="node8" href="$classTHBuilder.xhtml#a876380ef9e0647b90bd80bcc04cbcd58" title="The largest &#39;preferred population size&#39; from all search algorithms configured. " alt="" coords="235,317,473,345"/>
+<area shape="rect" id="node10" href="$classTHBuilder.xhtml#af3eb76a92cb3c0caf8452cdd9e26bac7" title="Get the ConvergenceControlPolicy configured. " alt="" coords="253,369,455,413"/>
+<area shape="rect" id="node11" href="$classTHBuilder.xhtml#a17045426d43ae6798b10b552e6743f6d" title="Get the FitnessPolicy configured. " alt="" coords="549,352,747,380"/>
+<area shape="rect" id="node12" href="$classSearch.xhtml#a8caad8e1c1da6ce9c85285fbf1c3b6d1" title="Set the fitness policy to evaluate the current problem under optimization. " alt="" coords="265,489,443,517"/>
+<area shape="rect" id="node13" href="$classSearch.xhtml#af9f46406f1f1f7f89ab294c155738ca6" title="Set the full search space. " alt="" coords="263,541,445,569"/>
+<area shape="rect" id="node22" href="$structt__node.xhtml#a8f72af855ca7d42a9680aca399524499" title="t_node::isRoot" alt="" coords="297,593,411,621"/>
+<area shape="rect" id="node24" href="$classTHBuilder.xhtml#a2039c208430cd418c4d452ef300fe086" title="THBuilder::getBias" alt="" coords="283,645,425,673"/>
+<area shape="rect" id="node25" href="$classFitnessPolicy.xhtml#a069122b137e7a1b9d66e1d026c4e7f1b" title="This method calculates the fitness for the Solution instance provided. " alt="" coords="280,697,428,725"/>
+<area shape="rect" id="node26" href="$classTHBuilder.xhtml#aca895af8d67060f0f66176aa18f00f98" title="Get the BestListUpdatePolicy configured. " alt="" coords="247,749,461,793"/>
+<area shape="rect" id="node27" href="$classSolution.xhtml#ae7720fedccf4ae8ff24170e159fd266f" title="Get a pointer to the actual Fitness instance. " alt="" coords="280,817,428,845"/>
+<area shape="rect" id="node9" href="$classSearch.xhtml#abba88e2201e9558aee21e574af9991f5" title="Search::getPreferredPopulationSize" alt="" coords="521,300,775,328"/>
+<area shape="rect" id="node14" href="$classSearch.xhtml#afe8c2a6dd96ad12f77de7c8226a76028" title="Method responsible for setting up all the optimization algorithm for the next optimization. " alt="" coords="588,404,708,432"/>
+<area shape="rect" id="node15" href="$classSearch.xhtml#afa7022c6b9be775211d8a9be85b880f3" title="Method responsible for all post&#45;processing after the optimization has completed. " alt="" coords="588,456,708,484"/>
+<area shape="rect" id="node16" href="$classSearch.xhtml#ae2ea32c6a6ab958e714f19dc71fae9db" title="Method responsible for executing the actual optimization to obtain the next best result. " alt="" coords="597,508,699,536"/>
+<area shape="rect" id="node17" href="$classSearch.xhtml#aa64dbfe1bd713c36cc8785178a81325e" title="Inform the ConvergenceControlPolicy that no next improvement could be found in reasonable time..." alt="" coords="587,560,709,588"/>
+<area shape="rect" id="node18" href="$classSearch.xhtml#a6b275ce5596bb50216cc9fc827f44912" title="Get the best Solution found since the last time the method startup() was called. " alt="" coords="555,612,741,640"/>
+<area shape="rect" id="node19" href="$classSearch.xhtml#a134eb5da3918998d5a3d1e049f7b585e" title="Get the number of FitnessPolicy evaluations performed since the last time the method startup() was ca..." alt="" coords="553,664,743,692"/>
+<area shape="rect" id="node20" href="$classSearch.xhtml#a6f167beec8fc582b2d993a4bd76e241c" title="Get the Fitness for the current best Solution. " alt="" coords="563,716,733,744"/>
+<area shape="rect" id="node21" href="$classSearch.xhtml#afbc425366989c9fc8aa7c88b70812b97" title="Get the name of the optimization method implemented. " alt="" coords="581,768,715,796"/>
+<area shape="rect" id="node23" href="$structt__node.xhtml#a92a900c7452cca30f4974b4b15326c2c" title="t_node::hasParent" alt="" coords="578,820,718,848"/>
+</map>

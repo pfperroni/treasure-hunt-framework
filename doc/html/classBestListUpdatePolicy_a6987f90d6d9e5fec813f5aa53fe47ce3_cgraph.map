@@ -1,0 +1,6 @@
+<map id="BestListUpdatePolicy::euclideanDistance" name="BestListUpdatePolicy::euclideanDistance">
+<area shape="rect" id="node2" href="$classSolution.xhtml#ad5b8c8ce272efaada80e93b0e097d1cd" title="Get the number of dimensions of this Solution instance. " alt="" coords="218,5,406,33"/>
+<area shape="rect" id="node3" href="$structPosition.xhtml#a4099812c9395b6dbe03ca8d25f7ae7fc" title="Math method that subtracts the value received from each value in the list that represents the Positio..." alt="" coords="260,57,364,85"/>
+<area shape="rect" id="node4" href="$structPosition.xhtml#a8f9b5812209642cb31de38d3745cfc16" title="Get the sum of values from the list that represents the Position. " alt="" coords="212,109,412,137"/>
+<area shape="rect" id="node5" href="$structPosition.xhtml#a11256d014f2958d21a1198676208df33" title="Math method that sums (individually) each value in the list that represents the Position with the val..." alt="" coords="460,109,568,137"/>
+</map>

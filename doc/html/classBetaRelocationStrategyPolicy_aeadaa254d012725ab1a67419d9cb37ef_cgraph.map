@@ -1,0 +1,23 @@
+<map id="BetaRelocationStrategyPolicy::apply" name="BetaRelocationStrategyPolicy::apply">
+<area shape="rect" id="node2" href="$structRelocationStrategyData.xhtml#af0c8811e45456b184467bb9c499fa8d9" title="RelocationStrategyData\l::getIterationData" alt="" coords="285,5,459,49"/>
+<area shape="rect" id="node3" href="$structIterationData.xhtml#a43d0a7bbb330e66eec64e1a34e0b4487" title="Obtains the percentage of running time that has already been spent, according to the stopping criteri..." alt="" coords="279,73,465,117"/>
+<area shape="rect" id="node4" href="$structIterationData.xhtml#a52a85ebea1211c365fce026d083feccb" title="IterationData::getGeneralBest" alt="" coords="265,141,479,169"/>
+<area shape="rect" id="node5" href="$structBetaRelocationStrategyData.xhtml#a542d95263cbcd95c32b43f31881331a5" title="BetaRelocationStrategyData\l::setDisplacementRate" alt="" coords="269,193,475,237"/>
+<area shape="rect" id="node6" href="$structBetaRelocationStrategyData.xhtml#a28b664079989690fdc9f56927807b3a8" title="BetaRelocationStrategyData\l::getBetaStartingPerc" alt="" coords="269,261,475,305"/>
+<area shape="rect" id="node7" href="$structBetaRelocationStrategyData.xhtml#a29fa5c11b663b88ed1771a603a0fc230" title="BetaRelocationStrategyData\l::getBetaMax" alt="" coords="269,329,475,373"/>
+<area shape="rect" id="node8" href="$structBetaRelocationStrategyData.xhtml#a96c3430655d3b0c2d0a41fe6515fbf18" title="BetaRelocationStrategyData\l::getDisplacementRate" alt="" coords="269,397,475,441"/>
+<area shape="rect" id="node9" href="$structBetaRelocationStrategyData.xhtml#aabba2baebc6e6b1eebc7ab84f3ceeb5b" title="BetaRelocationStrategyData\l::getBetaAccelerationCoef" alt="" coords="269,465,475,509"/>
+<area shape="rect" id="node10" href="$classRegion.xhtml#aed7a4120591db745b5b424fb94588294" title="Obtains a pointer to the map containing the dimensions that compose the entire search space..." alt="" coords="527,403,747,431"/>
+<area shape="rect" id="node11" href="$structIterationData.xhtml#a5a7af2b925eb3a2e507988e83383d969" title="IterationData::getParentBest" alt="" coords="269,791,475,819"/>
+<area shape="rect" id="node12" href="$classSolution.xhtml#ad5b8c8ce272efaada80e93b0e097d1cd" title="Get the number of dimensions of this Solution instance. " alt="" coords="278,843,466,871"/>
+<area shape="rect" id="node13" href="$classSolution.xhtml#a84c713b707a570add53e85a28196bb3e" title="Reset the position of the current Solution in the search space. " alt="" coords="315,636,429,664"/>
+<area shape="rect" id="node15" href="$classTHUtil.xhtml#ad95b7150adaf4d576de406c8e7b8142c" title="THUtil::randUniformDouble" alt="" coords="538,455,735,483"/>
+<area shape="rect" id="node19" href="$classPartition.xhtml#a418e5b08580b3c1d33390a13eeb8eb0f" title="Get the lower bound for this partition. " alt="" coords="553,819,720,847"/>
+<area shape="rect" id="node20" href="$classPartition.xhtml#a0f3cdf44760e24735951b73dfc9dd3ab" title="Get the upper bound for this partition. " alt="" coords="555,871,718,899"/>
+<area shape="rect" id="node14" href="$classRegion.xhtml#a07c792e7ab2768254d71a0b688ccd935" title="Get the map of Partitions that compose the current &quot;anchor&quot; sub&#45;region. " alt="" coords="559,507,715,535"/>
+<area shape="rect" id="node16" href="$classTHUtil.xhtml#a1961a690dfec7f0dab0be849d31828ea" title="THUtil::randNormalDouble" alt="" coords="540,559,733,587"/>
+<area shape="rect" id="node17" href="$structPosition.xhtml#a56d15266cecdd63cc07d6ec89f90fb4f" title="Get the lower value from the list of values that represents the Position. " alt="" coords="547,611,726,639"/>
+<area shape="rect" id="node18" href="$structPosition.xhtml#a424b3d5791fcc593c743429e92817982" title="Get the upper value from the list of values that represents the Position. " alt="" coords="547,663,726,691"/>
+<area shape="rect" id="node21" href="$structPosition.xhtml#a0c70a4890ea8ba9e8b9ed6b4f6030751" title="Limit upper the values of this position. " alt="" coords="536,715,737,743"/>
+<area shape="rect" id="node22" href="$structPosition.xhtml#aae9a6d862e9da174648a84f876f8d78d" title="Limit lower the values of this position. " alt="" coords="536,767,737,795"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="FitnessPolicy&lt; P, pSize, F, fSize, V, vSize &gt;" name="FitnessPolicy&lt; P, pSize, F, fSize, V, vSize &gt;">
+<area shape="rect" id="node2" href="$classFitnessPolicy.xhtml" title="{FitnessPolicy\&lt;\&gt;\n||+ FitnessPolicy()\l+ ~FitnessPolicy()\l+ apply()\l+ firstIsBetter()\l+ firstIsBetter()\l+ setWorstFitness()\l+ setWorstFitness()\l+ setBestFitness()\l+ setBestFitness()\l+ getMinEstimatedFitnessValue()\l}" alt="" coords="5,311,240,536"/>
+<area shape="rect" id="node3" href="$classRosenbrockFitnessPolicy.xhtml" title="Implementation of the Rosenbrock function for TH. " alt="" coords="5,585,240,811"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="BestListUpdatePolicy&lt; P, pSize, F, fSize, V, vSize &gt;" name="BestListUpdatePolicy&lt; P, pSize, F, fSize, V, vSize &gt;">
+<area shape="rect" id="node2" href="$classConvergentBestListUpdatePolicy.xhtml" title="This policy updates the BestList instance by enforcing a behavior that speeds up the convergence..." alt="" coords="5,215,223,392"/>
+<area shape="rect" id="node3" href="$classDivergentBestListUpdatePolicy.xhtml" title="This policy updates the BestList instance by enforcing a behavior that slows down the convergence..." alt="" coords="247,223,490,384"/>
+</map>

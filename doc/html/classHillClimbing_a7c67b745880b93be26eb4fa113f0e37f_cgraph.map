@@ -1,0 +1,9 @@
+<map id="HillClimbing::next" name="HillClimbing::next">
+<area shape="rect" id="node2" href="$classSearch.xhtml#ad2d5be608164b67b1fb055b0162f4e88" title="Search::getSearchSpace" alt="" coords="202,5,385,33"/>
+<area shape="rect" id="node3" href="$classTHUtil.xhtml#ad95b7150adaf4d576de406c8e7b8142c" title="THUtil::randUniformDouble" alt="" coords="195,57,392,85"/>
+<area shape="rect" id="node4" href="$classRegion.xhtml#a300afb04c957e821d362c358253130b8" title="Get the full search space&#39;s Dimension based on its sequential index. " alt="" coords="187,109,400,137"/>
+<area shape="rect" id="node5" href="$classPartition.xhtml#a418e5b08580b3c1d33390a13eeb8eb0f" title="Get the lower bound for this partition. " alt="" coords="210,161,377,189"/>
+<area shape="rect" id="node6" href="$classPartition.xhtml#a0f3cdf44760e24735951b73dfc9dd3ab" title="Get the upper bound for this partition. " alt="" coords="212,213,375,241"/>
+<area shape="rect" id="node7" href="$classFitnessPolicy.xhtml#a069122b137e7a1b9d66e1d026c4e7f1b" title="This method calculates the fitness for the Solution instance provided. " alt="" coords="219,265,367,293"/>
+<area shape="rect" id="node8" href="$classFitnessPolicy.xhtml#acaf9a99792b12c78eaabc0acadd1de9f" title="Check if the first Solution is better than the second Solution. " alt="" coords="200,317,387,345"/>
+</map>

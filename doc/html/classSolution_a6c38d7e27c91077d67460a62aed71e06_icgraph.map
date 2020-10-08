@@ -1,0 +1,7 @@
+<map id="Solution::setFitness" name="Solution::setFitness">
+<area shape="rect" id="node2" href="$classRosenbrockFitnessPolicy.xhtml#af93be349121f72b580d64243d2daf5f2" title="RosenbrockFitnessPolicy\l::apply" alt="" coords="200,5,383,49"/>
+<area shape="rect" id="node4" href="$classRosenbrockFitnessPolicy.xhtml#a99011107bbcaadee1cba44a0c8646bd0" title="RosenbrockFitnessPolicy\l::setWorstFitness" alt="" coords="200,73,383,117"/>
+<area shape="rect" id="node5" href="$classRosenbrockFitnessPolicy.xhtml#a1ed5f0d7c07f508c1db7cf787e8a9ec2" title="RosenbrockFitnessPolicy\l::setBestFitness" alt="" coords="200,141,383,185"/>
+<area shape="rect" id="node6" href="$classTHBuilder_1_1THImpl.xhtml#a943301db5154fd7b672119b5c9917303" title="Starts the Treasure Hunt mechanisms. " alt="" coords="206,209,377,237"/>
+<area shape="rect" id="node3" href="$classRosenbrockFitnessPolicy.xhtml#aaabda48891e8fb971d24d84a8dc5da31" title="RosenbrockFitnessPolicy\l::~RosenbrockFitnessPolicy" alt="" coords="431,73,631,117"/>
+</map>

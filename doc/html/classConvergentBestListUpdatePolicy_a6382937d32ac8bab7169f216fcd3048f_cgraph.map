@@ -1,0 +1,10 @@
+<map id="ConvergentBestListUpdatePolicy::apply" name="ConvergentBestListUpdatePolicy::apply">
+<area shape="rect" id="node2" href="$classBestList.xhtml#ac627a3267d2b7cf8f579cc7e5b77d2e3" title="BestList::getListSize" alt="" coords="266,5,417,33"/>
+<area shape="rect" id="node3" href="$classFitnessPolicy.xhtml#acaf9a99792b12c78eaabc0acadd1de9f" title="Check if the first Solution is better than the second Solution. " alt="" coords="248,57,435,85"/>
+<area shape="rect" id="node4" href="$classBestListUpdatePolicy.xhtml#a6987f90d6d9e5fec813f5aa53fe47ce3" title="Convenience method that calculates the Euclidean distance between two solutions. " alt="" coords="262,109,421,153"/>
+<area shape="rect" id="node9" href="$classBestList.xhtml#a4a5650fb72c71d6027540daa96de0d39" title="Operator to set an element in the list. " alt="" coords="291,177,391,205"/>
+<area shape="rect" id="node5" href="$classSolution.xhtml#ad5b8c8ce272efaada80e93b0e097d1cd" title="Get the number of dimensions of this Solution instance. " alt="" coords="489,65,677,93"/>
+<area shape="rect" id="node6" href="$structPosition.xhtml#a4099812c9395b6dbe03ca8d25f7ae7fc" title="Math method that subtracts the value received from each value in the list that represents the Positio..." alt="" coords="531,117,635,145"/>
+<area shape="rect" id="node7" href="$structPosition.xhtml#a8f9b5812209642cb31de38d3745cfc16" title="Get the sum of values from the list that represents the Position. " alt="" coords="483,169,683,197"/>
+<area shape="rect" id="node8" href="$structPosition.xhtml#a11256d014f2958d21a1198676208df33" title="Math method that sums (individually) each value in the list that represents the Position with the val..." alt="" coords="731,169,839,197"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classBestListUpdatePolicy.xhtml" title="Template for the policy that specifies how the solutions within the BestList are update. " alt="" coords="5,48,164,108"/>
+<area shape="rect" id="node2" href="$classConvergentBestListUpdatePolicy.xhtml" title="This policy updates the BestList instance by enforcing a behavior that speeds up the convergence..." alt="" coords="225,5,419,65"/>
+<area shape="rect" id="node3" href="$classDivergentBestListUpdatePolicy.xhtml" title="This policy updates the BestList instance by enforcing a behavior that slows down the convergence..." alt="" coords="212,89,432,149"/>
+</map>

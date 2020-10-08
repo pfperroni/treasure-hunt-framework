@@ -1,0 +1,4 @@
+<map id="SearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;" name="SearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;">
+<area shape="rect" id="node2" href="$classRoundRobinSearchAlgorithmSelectionPolicy.xhtml" title="This class executes Search instances in round&#45;robin. " alt="" coords="5,247,237,440"/>
+<area shape="rect" id="node3" href="$classSingleSearchAlgorithmSelectionPolicy.xhtml" title="This class executes always the first Search instance available. " alt="" coords="261,247,512,440"/>
+</map>

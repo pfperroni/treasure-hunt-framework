@@ -1,0 +1,9 @@
+<map id="RosenbrockFitnessPolicy::~RosenbrockFitnessPolicy" name="RosenbrockFitnessPolicy::~RosenbrockFitnessPolicy">
+<area shape="rect" id="node2" href="$classRosenbrockFitnessPolicy.xhtml#af93be349121f72b580d64243d2daf5f2" title="RosenbrockFitnessPolicy\l::apply" alt="" coords="253,5,436,49"/>
+<area shape="rect" id="node5" href="$classRosenbrockFitnessPolicy.xhtml#adfbf6f67e41f0a5a90b8e31245d9b2c9" title="RosenbrockFitnessPolicy\l::firstIsBetter" alt="" coords="253,209,436,253"/>
+<area shape="rect" id="node7" href="$classRosenbrockFitnessPolicy.xhtml#a99011107bbcaadee1cba44a0c8646bd0" title="RosenbrockFitnessPolicy\l::setWorstFitness" alt="" coords="253,73,436,117"/>
+<area shape="rect" id="node8" href="$classRosenbrockFitnessPolicy.xhtml#a1ed5f0d7c07f508c1db7cf787e8a9ec2" title="RosenbrockFitnessPolicy\l::setBestFitness" alt="" coords="253,141,436,185"/>
+<area shape="rect" id="node3" href="$classSolution.xhtml#ad5b8c8ce272efaada80e93b0e097d1cd" title="Get the number of dimensions of this Solution instance. " alt="" coords="484,13,672,41"/>
+<area shape="rect" id="node4" href="$classSolution.xhtml#a6c38d7e27c91077d67460a62aed71e06" title="Assigns the values of the buffer received to the current Fitness instance. " alt="" coords="505,81,651,109"/>
+<area shape="rect" id="node6" href="$classSolution.xhtml#ae7720fedccf4ae8ff24170e159fd266f" title="Get a pointer to the actual Fitness instance. " alt="" coords="504,217,652,245"/>
+</map>

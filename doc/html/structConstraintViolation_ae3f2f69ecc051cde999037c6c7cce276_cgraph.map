@@ -1,0 +1,4 @@
+<map id="ConstraintViolation::equals" name="ConstraintViolation::equals">
+<area shape="rect" id="node2" href="$structConstraintViolation.xhtml#a82ebcbfe61ca8adcf6f7b613c4c69f8d" title="ConstraintViolation\l::checkCompatibility" alt="" coords="196,5,345,49"/>
+<area shape="rect" id="node3" href="$structConstraintViolation.xhtml#a163197175eff749bf4b026c076961120" title="Compares the current list of constraint violations with the buffer received. " alt="" coords="199,73,342,117"/>
+</map>

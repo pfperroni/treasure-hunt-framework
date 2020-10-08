@@ -1,0 +1,4 @@
+<map id="RegionSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;" name="RegionSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;">
+<area shape="rect" id="node2" href="$classGroupRegionSelectionPolicy.xhtml" title="This policy implements the sub&#45;region selection criteria by grouping dimensions. " alt="" coords="5,231,243,376"/>
+<area shape="rect" id="node3" href="$classRegionSelectionPolicy.xhtml" title="{RegionSelectionPolicy\&lt; P \&gt;\n||+ RegionSelectionPolicy()\l+ ~RegionSelectionPolicy()\l+ apply()\l+ recalculate()\l}" alt="" coords="267,239,469,368"/>
+</map>

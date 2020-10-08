@@ -1,0 +1,4 @@
+<map id="ConstraintViolation::checkCompatibility" name="ConstraintViolation::checkCompatibility">
+<area shape="rect" id="node2" href="$structConstraintViolation.xhtml#aab52761d8cbde42604d5539d90990876" title="Operator that overrides the contents of this list of constraint violations with the contents of the C..." alt="" coords="203,5,345,49"/>
+<area shape="rect" id="node3" href="$structConstraintViolation.xhtml#ae3f2f69ecc051cde999037c6c7cce276" title="Compares the current list of constraint violations with the ConstraintViolation instance received..." alt="" coords="203,73,345,117"/>
+</map>

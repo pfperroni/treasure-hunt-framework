@@ -1,0 +1,4 @@
+<map id="HillClimbing::getBestFitness" name="HillClimbing::getBestFitness">
+<area shape="rect" id="node2" href="$classHillClimbing.xhtml#a13d4097b5483b2aaaff381af6b4ccf79" title="Get the best Solution found since the last time the method startup() was called. " alt="" coords="255,5,469,33"/>
+<area shape="rect" id="node3" href="$classSearch.xhtml#a5997e43c8ba27480819f3e6358f984f4" title="Search::getPopulation" alt="" coords="517,5,681,33"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FitnessPolicy::apply" name="FitnessPolicy::apply">
+<area shape="rect" id="node2" href="$classHillClimbing.xhtml#a7c67b745880b93be26eb4fa113f0e37f" title="Perform the actual optimization only until the next improvement. " alt="" coords="228,5,361,33"/>
+<area shape="rect" id="node3" href="$classPSO.xhtml#a25e15ab34186e7c52a4789108ae24ece" title="Perform the actual optimization only until the next improvement. " alt="" coords="251,57,339,85"/>
+<area shape="rect" id="node4" href="$classFitnessPolicy.xhtml#adfac4092c631ea82aa5cd0ea03526d1e" title="FitnessPolicy\&lt;\&gt;::~Fitness\lPolicy" alt="" coords="201,109,388,153"/>
+<area shape="rect" id="node5" href="$classTHBuilder_1_1SearchGroup.xhtml#a794cf5448380674b51022b5d65a240e2" title="Constructor to create the internal Search Group. " alt="" coords="204,177,385,221"/>
+<area shape="rect" id="node7" href="$classTHBuilder_1_1SearchGroup.xhtml#aafebb836a1ec681213319a024a254ca8" title="Reset the location of the population individuals and calculate the fitness. " alt="" coords="204,245,385,289"/>
+<area shape="rect" id="node8" href="$classTHBuilder_1_1THImpl.xhtml#a943301db5154fd7b672119b5c9917303" title="Starts the Treasure Hunt mechanisms. " alt="" coords="209,313,380,341"/>
+<area shape="rect" id="node6" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="436,212,587,256"/>
+</map>

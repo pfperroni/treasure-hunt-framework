@@ -1,0 +1,8 @@
+<map id="Solution::getFitness" name="Solution::getFitness">
+<area shape="rect" id="node2" href="$classRosenbrockFitnessPolicy.xhtml#adfbf6f67e41f0a5a90b8e31245d9b2c9" title="RosenbrockFitnessPolicy\l::firstIsBetter" alt="" coords="215,5,398,49"/>
+<area shape="rect" id="node4" href="$classTHBuilder_1_1SearchGroup.xhtml#a794cf5448380674b51022b5d65a240e2" title="Constructor to create the internal Search Group. " alt="" coords="216,73,397,117"/>
+<area shape="rect" id="node6" href="$classTHBuilder_1_1SearchGroup.xhtml#ac8c33d89ddd52e38fb23d7102d9086e0" title="Perform a complete execution of the search group. " alt="" coords="201,141,412,169"/>
+<area shape="rect" id="node7" href="$classTHBuilder_1_1THImpl.xhtml#a943301db5154fd7b672119b5c9917303" title="Starts the Treasure Hunt mechanisms. " alt="" coords="475,167,645,195"/>
+<area shape="rect" id="node3" href="$classRosenbrockFitnessPolicy.xhtml#aaabda48891e8fb971d24d84a8dc5da31" title="RosenbrockFitnessPolicy\l::~RosenbrockFitnessPolicy" alt="" coords="460,5,660,49"/>
+<area shape="rect" id="node5" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="485,73,635,117"/>
+</map>

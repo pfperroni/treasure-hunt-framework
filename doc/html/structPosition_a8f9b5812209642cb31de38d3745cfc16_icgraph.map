@@ -1,0 +1,5 @@
+<map id="Position::sumInternalValues" name="Position::sumInternalValues">
+<area shape="rect" id="node2" href="$classBestListUpdatePolicy.xhtml#a6987f90d6d9e5fec813f5aa53fe47ce3" title="Convenience method that calculates the Euclidean distance between two solutions. " alt="" coords="253,40,412,84"/>
+<area shape="rect" id="node3" href="$classConvergentBestListUpdatePolicy.xhtml#a6382937d32ac8bab7169f216fcd3048f" title="This method implements a behavior that focus on convergence speed when updating the solutions from th..." alt="" coords="473,5,667,49"/>
+<area shape="rect" id="node4" href="$classDivergentBestListUpdatePolicy.xhtml#a793d47a0c458eef94b27fbee73e5df0e" title="This method implements a behavior that promotes diversity when updating the solutions from the BestLi..." alt="" coords="460,73,680,117"/>
+</map>

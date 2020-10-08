@@ -1,0 +1,4 @@
+<map id="SearchAlgorithmSelectionPolicy::~SearchAlgorithmSelectionPolicy" name="SearchAlgorithmSelectionPolicy::~SearchAlgorithmSelectionPolicy">
+<area shape="rect" id="node2" href="$classSearchAlgorithmSelectionPolicy.xhtml#a0f316179ba1d9590efa74cac86eac777" title="Choose the next optimization algorithm to be executed. " alt="" coords="296,5,484,49"/>
+<area shape="rect" id="node3" href="$classSearchAlgorithmSelectionPolicy.xhtml#a6b590e565ce6d9f64a1351f2d233b679" title="Rank the performance of the Search instance previously executed. " alt="" coords="296,73,484,117"/>
+</map>

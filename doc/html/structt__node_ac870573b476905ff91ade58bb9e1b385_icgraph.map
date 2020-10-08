@@ -1,0 +1,6 @@
+<map id="t_node::getParent" name="t_node::getParent">
+<area shape="rect" id="node2" href="$classGroupRegionSelectionPolicy.xhtml#a28a39331dafaa273d30bef8f0da9e4fb" title="Method responsible for choosing one &quot;anchor&quot; sub&#45;region according to the TH instance&#39;s ID..." alt="" coords="191,5,396,49"/>
+<area shape="rect" id="node3" href="$classTHTree.xhtml#a55e0aa391cbe6e293ed811b26fd4f380" title="THTree::getParent" alt="" coords="222,73,365,101"/>
+<area shape="rect" id="node4" href="$classTHTree.xhtml#a6c74633149823f9a6a7ecec871e046d0" title="THTree::getParentID" alt="" coords="214,125,373,153"/>
+<area shape="rect" id="node5" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="444,117,595,161"/>
+</map>

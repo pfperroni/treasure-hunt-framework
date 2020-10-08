@@ -1,0 +1,7 @@
+<map id="Region::getOriginalDimensions" name="Region::getOriginalDimensions">
+<area shape="rect" id="node2" href="$classBetaRelocationStrategyPolicy.xhtml#aeadaa254d012725ab1a67419d9cb37ef" title="This method implements the policy to relocate TH instance&#39;s population at every TH instance&#39;s iterati..." alt="" coords="436,5,648,49"/>
+<area shape="rect" id="node3" href="$classSolution.xhtml#a84c713b707a570add53e85a28196bb3e" title="Reset the position of the current Solution in the search space. " alt="" coords="273,77,388,105"/>
+<area shape="rect" id="node4" href="$classTHBuilder_1_1SearchGroup.xhtml#aafebb836a1ec681213319a024a254ca8" title="Reset the location of the population individuals and calculate the fitness. " alt="" coords="451,73,633,117"/>
+<area shape="rect" id="node6" href="$classTHBuilder_1_1THImpl.xhtml#a943301db5154fd7b672119b5c9917303" title="Starts the Treasure Hunt mechanisms. " alt="" coords="457,141,627,169"/>
+<area shape="rect" id="node5" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="696,73,847,117"/>
+</map>

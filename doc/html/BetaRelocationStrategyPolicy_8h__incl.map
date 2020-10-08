@@ -1,0 +1,15 @@
+<map id="src/TH/BetaRelocationStrategyPolicy.h" name="src/TH/BetaRelocationStrategyPolicy.h">
+<area shape="rect" id="node3" href="$RelocationStrategyPolicy_8h.xhtml" title="RelocationStrategyPolicy.h" alt="" coords="332,97,527,125"/>
+<area shape="rect" id="node4" href="$RelocationStrategyData_8h.xhtml" title="RelocationStrategyData.h" alt="" coords="336,173,523,201"/>
+<area shape="rect" id="node5" href="$IterationData_8h.xhtml" title="IterationData.h" alt="" coords="371,249,488,277"/>
+<area shape="rect" id="node6" href="$Solution_8h.xhtml" title="Solution.h" alt="" coords="386,325,473,353"/>
+<area shape="rect" id="node7" href="$ConstraintViolation_8h.xhtml" title="ConstraintViolation.h" alt="" coords="24,401,179,429"/>
+<area shape="rect" id="node9" href="$Position_8h.xhtml" title="Position.h" alt="" coords="307,401,392,429"/>
+<area shape="rect" id="node11" href="$Fitness_8h.xhtml" title="Fitness.h" alt="" coords="203,401,283,429"/>
+<area shape="rect" id="node12" href="$Region_8h.xhtml" title="Region.h" alt="" coords="467,401,547,429"/>
+<area shape="rect" id="node19" href="$THUtil_8h.xhtml" title="THUtil.h" alt="" coords="1014,401,1088,429"/>
+<area shape="rect" id="node13" href="$Dimension_8h.xhtml" title="Dimension.h" alt="" coords="477,477,580,505"/>
+<area shape="rect" id="node14" href="$Partition_8h.xhtml" title="Partition.h" alt="" coords="481,553,568,581"/>
+<area shape="rect" id="node26" href="$macros_8h.xhtml" title="macros.h" alt="" coords="766,477,848,505"/>
+<area shape="rect" id="node29" href="$config_8h.xhtml" title="config.h" alt="" coords="968,477,1040,505"/>
+</map>

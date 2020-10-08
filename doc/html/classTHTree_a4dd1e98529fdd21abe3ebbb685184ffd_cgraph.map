@@ -1,0 +1,7 @@
+<map id="THTree::addNode" name="THTree::addNode">
+<area shape="rect" id="node2" href="$structt__node.xhtml#ab9d6536aceb5dbb33eb76f6d8ab2082b" title="t_node::setParent" alt="" coords="200,5,336,33"/>
+<area shape="rect" id="node3" href="$structt__node.xhtml#ae62cd63088f17a9741dfbbfe0b564690" title="t_node::setID" alt="" coords="214,57,322,85"/>
+<area shape="rect" id="node4" href="$structt__node.xhtml#a4fe63274d162dcffb5ff14c848d19883" title="t_node::setLevel" alt="" coords="205,109,331,137"/>
+<area shape="rect" id="node5" href="$structt__node.xhtml#a37f4377e664f4b4a8b541df91e35d27b" title="t_node::getLevel" alt="" coords="204,161,332,189"/>
+<area shape="rect" id="node6" href="$structt__node.xhtml#af5fb14150f95112e1e525e09f924f507" title="t_node::addChildren" alt="" coords="192,213,344,241"/>
+</map>

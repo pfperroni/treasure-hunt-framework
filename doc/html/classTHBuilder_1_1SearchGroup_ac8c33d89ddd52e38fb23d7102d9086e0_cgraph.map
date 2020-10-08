@@ -1,0 +1,12 @@
+<map id="THBuilder::SearchGroup::run" name="THBuilder::SearchGroup::run">
+<area shape="rect" id="node2" href="$classTHBuilder.xhtml#a097e1501549341f26e5316aca8108b5c" title="Get the SearchAlgorithmSelectionPolicy configured. " alt="" coords="264,5,487,49"/>
+<area shape="rect" id="node3" href="$classSearch.xhtml#a06246066740a703454189564dc5c326e" title="Set the population. " alt="" coords="294,73,457,101"/>
+<area shape="rect" id="node4" href="$classTHBuilder_1_1SearchGroup.xhtml#a3f8d98c07db48420c49bee854c00ae8b" title="THBuilder::SearchGroup\l::getPopulationSize" alt="" coords="285,125,466,169"/>
+<area shape="rect" id="node5" href="$classConvergenceControlPolicy.xhtml#ad72beb5807e87c3fa0602bd0bf4679ac" title="Virtual method that will run, monitor and control one TH iteration. " alt="" coords="264,193,487,221"/>
+<area shape="rect" id="node6" href="$classSearch.xhtml#a134eb5da3918998d5a3d1e049f7b585e" title="Get the number of FitnessPolicy evaluations performed since the last time the method startup() was ca..." alt="" coords="280,245,471,273"/>
+<area shape="rect" id="node7" href="$classSearch.xhtml#a6b275ce5596bb50216cc9fc827f44912" title="Get the best Solution found since the last time the method startup() was called. " alt="" coords="283,297,468,325"/>
+<area shape="rect" id="node8" href="$classTHBuilder.xhtml#aca895af8d67060f0f66176aa18f00f98" title="Get the BestListUpdatePolicy configured. " alt="" coords="269,349,482,393"/>
+<area shape="rect" id="node9" href="$classFitnessPolicy.xhtml#acaf9a99792b12c78eaabc0acadd1de9f" title="Check if the first Solution is better than the second Solution. " alt="" coords="282,417,469,445"/>
+<area shape="rect" id="node10" href="$classSolution.xhtml#ae7720fedccf4ae8ff24170e159fd266f" title="Get a pointer to the actual Fitness instance. " alt="" coords="301,469,449,497"/>
+<area shape="rect" id="node11" href="$classTHBuilder.xhtml#a35de691f57f40cb8719190e8a2ca6ccf" title="Get the global number of fitness function evaluations performed by this TH instance. " alt="" coords="295,521,456,549"/>
+</map>

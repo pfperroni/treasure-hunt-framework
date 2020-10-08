@@ -1,0 +1,52 @@
+<map id="THBuilder::THImpl::run" name="THBuilder::THImpl::run">
+<area shape="rect" id="node2" href="$classTHBuilder.xhtml#a4ebc7b6974e1d91c6873c4e573db8121" title="Get the BestListSelectionPolicy configured. " alt="" coords="245,5,471,49"/>
+<area shape="rect" id="node3" href="$classTHBuilder.xhtml#ae1d2cf8a2379569533ba1dd4bdf4fbed" title="THBuilder::getMaxIterations" alt="" coords="257,73,459,101"/>
+<area shape="rect" id="node4" href="$classTHBuilder.xhtml#a4b9fc144f6c5090f23514fff87a10f78" title="THBuilder::getMaxNumberEvaluations" alt="" coords="224,125,492,153"/>
+<area shape="rect" id="node5" href="$classTHBuilder.xhtml#a701deae1181c4da26aa949bf8415de38" title="THBuilder::getMaxTimeSeconds" alt="" coords="243,177,473,205"/>
+<area shape="rect" id="node6" href="$classTHBuilder_1_1SearchGroup.xhtml#ac8c33d89ddd52e38fb23d7102d9086e0" title="Perform a complete execution of the search group. " alt="" coords="253,332,463,360"/>
+<area shape="rect" id="node8" href="$classSearch.xhtml#a06246066740a703454189564dc5c326e" title="Set the population. " alt="" coords="570,83,733,111"/>
+<area shape="rect" id="node11" href="$classSearch.xhtml#a134eb5da3918998d5a3d1e049f7b585e" title="Get the number of FitnessPolicy evaluations performed since the last time the method startup() was ca..." alt="" coords="556,135,747,163"/>
+<area shape="rect" id="node12" href="$classSearch.xhtml#a6b275ce5596bb50216cc9fc827f44912" title="Get the best Solution found since the last time the method startup() was called. " alt="" coords="559,375,744,403"/>
+<area shape="rect" id="node13" href="$classTHBuilder.xhtml#aca895af8d67060f0f66176aa18f00f98" title="Get the BestListUpdatePolicy configured. " alt="" coords="545,427,758,471"/>
+<area shape="rect" id="node14" href="$classFitnessPolicy.xhtml#acaf9a99792b12c78eaabc0acadd1de9f" title="Check if the first Solution is better than the second Solution. " alt="" coords="558,495,745,523"/>
+<area shape="rect" id="node15" href="$classSolution.xhtml#ae7720fedccf4ae8ff24170e159fd266f" title="Get a pointer to the actual Fitness instance. " alt="" coords="577,547,725,575"/>
+<area shape="rect" id="node16" href="$classTHBuilder.xhtml#a35de691f57f40cb8719190e8a2ca6ccf" title="Get the global number of fitness function evaluations performed by this TH instance. " alt="" coords="571,599,732,627"/>
+<area shape="rect" id="node17" href="$structt__node.xhtml#a92a900c7452cca30f4974b4b15326c2c" title="t_node::hasParent" alt="" coords="288,639,428,667"/>
+<area shape="rect" id="node18" href="$classTHBuilder_1_1SearchGroup.xhtml#ad3dec76f9fa002b5318a46807eb2ce1f" title="Inform if the last execution of the run() method has improved the general best Solution. " alt="" coords="261,691,455,735"/>
+<area shape="rect" id="node19" href="$classSolution.xhtml#acaffcea4a5bfc0ad8ef8d655f56533b6" title="This method copies the contents of current Position to the buffer received. " alt="" coords="278,759,438,787"/>
+<area shape="rect" id="node21" href="$classTHBuilder_1_1SearchGroup.xhtml#ad2916b5c8e07aa0db76c48300440dd5e" title="Get the best Solution of the TH iteration. " alt="" coords="267,811,449,855"/>
+<area shape="rect" id="node22" href="$structt__node.xhtml#a97b3fded9e34ad0bf2873695e5813e3d" title="t_node::hasChildren" alt="" coords="576,905,727,933"/>
+<area shape="rect" id="node23" href="$classSolution.xhtml#a6c38d7e27c91077d67460a62aed71e06" title="Assigns the values of the buffer received to the current Fitness instance. " alt="" coords="285,983,431,1011"/>
+<area shape="rect" id="node24" href="$classSearch.xhtml#afe8c2a6dd96ad12f77de7c8226a76028" title="Method responsible for setting up all the optimization algorithm for the next optimization. " alt="" coords="298,1035,418,1063"/>
+<area shape="rect" id="node25" href="$classSearch.xhtml#ae2ea32c6a6ab958e714f19dc71fae9db" title="Method responsible for executing the actual optimization to obtain the next best result. " alt="" coords="307,1087,409,1115"/>
+<area shape="rect" id="node26" href="$classConvergenceControlPolicy.xhtml#a445c537935922b1bcb67d3732abbfe0f" title="Get the maximum number of fitness function evaluations allowed. " alt="" coords="261,1139,455,1183"/>
+<area shape="rect" id="node27" href="$classSolution.xhtml#a84c713b707a570add53e85a28196bb3e" title="Reset the position of the current Solution in the search space. " alt="" coords="301,1207,415,1235"/>
+<area shape="rect" id="node38" href="$structIterationData.xhtml#ae3ce80ee3e14d5f99c978821930b33ee" title="Set the current number of TH iterations for current TH instance. " alt="" coords="251,1259,465,1287"/>
+<area shape="rect" id="node39" href="$structIterationData.xhtml#acfdb8e5cfb19fb7357ac7ac9850057fe" title="Set the current number of fitness evaluations for current TH instance. " alt="" coords="251,1311,465,1355"/>
+<area shape="rect" id="node40" href="$structIterationData.xhtml#ad20713d8a25433c257174f44febda153" title="Set the current running time of the current TH instance. " alt="" coords="261,1379,455,1407"/>
+<area shape="rect" id="node41" href="$structIterationData.xhtml#a891c2a7e6d8f1134dece070ecab16afd" title="Copy the contents of the all population individuals to their internal clones. " alt="" coords="258,1431,458,1459"/>
+<area shape="rect" id="node42" href="$structIterationData.xhtml#a88c3571863098a65b89cbb22817607f3" title="Copy the contents of the general best solution to an internal clone. " alt="" coords="252,1483,464,1511"/>
+<area shape="rect" id="node43" href="$structIterationData.xhtml#a9351be56294d61182190c223975032bb" title="Copy the contents of the parent best solution to an internal clone. " alt="" coords="256,1535,460,1563"/>
+<area shape="rect" id="node44" href="$structIterationData.xhtml#a61d9eaec319ef239ae3fe9d5c1a12920" title="Copy the contents of the iteration&#39;s best solution to an internal clone. " alt="" coords="251,1587,465,1615"/>
+<area shape="rect" id="node45" href="$classTHBuilder.xhtml#a196903e0bccbc650cd8a965987756d28" title="Get the RegionSelectionPolicy configured. " alt="" coords="248,1639,468,1683"/>
+<area shape="rect" id="node46" href="$classTHBuilder.xhtml#a611f5596ed334d38c1d77d57845676ed" title="Get the SearchSpace configured. " alt="" coords="257,1707,459,1735"/>
+<area shape="rect" id="node47" href="$classTHBuilder.xhtml#a080cdf2aea549d1074186156aa449b62" title="Get the RelocationStrategyPolicy configured. " alt="" coords="267,1759,449,1803"/>
+<area shape="rect" id="node48" href="$classFitnessPolicy.xhtml#a069122b137e7a1b9d66e1d026c4e7f1b" title="This method calculates the fitness for the Solution instance provided. " alt="" coords="284,1827,432,1855"/>
+<area shape="rect" id="node49" href="$classTHBuilder_1_1SearchGroup.xhtml#a0dcdc7254955afc39899a52f9b997fc3" title="Get the Search instance of the last optimization algorithm executed. " alt="" coords="236,1879,480,1923"/>
+<area shape="rect" id="node50" href="$classTHTree.xhtml#a13af8833607e6a6968d77c2a142e7c6f" title="Get the tree topology size. " alt="" coords="269,1947,447,1975"/>
+<area shape="rect" id="node51" href="$structt__node.xhtml#ad39388169d7963221a70c4a4af864ac4" title="t_node::isLeaf" alt="" coords="302,931,414,959"/>
+<area shape="rect" id="node7" href="$classTHBuilder.xhtml#a097e1501549341f26e5316aca8108b5c" title="Get the SearchAlgorithmSelectionPolicy configured. " alt="" coords="540,187,763,231"/>
+<area shape="rect" id="node9" href="$classTHBuilder_1_1SearchGroup.xhtml#a3f8d98c07db48420c49bee854c00ae8b" title="THBuilder::SearchGroup\l::getPopulationSize" alt="" coords="561,255,742,299"/>
+<area shape="rect" id="node10" href="$classConvergenceControlPolicy.xhtml#ad72beb5807e87c3fa0602bd0bf4679ac" title="Virtual method that will run, monitor and control one TH iteration. " alt="" coords="540,323,763,351"/>
+<area shape="rect" id="node20" href="$structPosition.xhtml#af5e0d1ae77f5840a090325a7ba9fd8b5" title="Get a partial position based on its index in the list of values that represents the actual Position..." alt="" coords="551,759,751,787"/>
+<area shape="rect" id="node28" href="$classRegion.xhtml#aed7a4120591db745b5b424fb94588294" title="Obtains a pointer to the map containing the dimensions that compose the entire search space..." alt="" coords="541,1291,761,1319"/>
+<area shape="rect" id="node29" href="$classRegion.xhtml#a07c792e7ab2768254d71a0b688ccd935" title="Get the map of Partitions that compose the current &quot;anchor&quot; sub&#45;region. " alt="" coords="573,1343,729,1371"/>
+<area shape="rect" id="node30" href="$classTHUtil.xhtml#ad95b7150adaf4d576de406c8e7b8142c" title="THUtil::randUniformDouble" alt="" coords="553,1395,750,1423"/>
+<area shape="rect" id="node31" href="$classTHUtil.xhtml#a1961a690dfec7f0dab0be849d31828ea" title="THUtil::randNormalDouble" alt="" coords="555,1447,748,1475"/>
+<area shape="rect" id="node32" href="$structPosition.xhtml#a56d15266cecdd63cc07d6ec89f90fb4f" title="Get the lower value from the list of values that represents the Position. " alt="" coords="562,979,741,1007"/>
+<area shape="rect" id="node33" href="$structPosition.xhtml#a424b3d5791fcc593c743429e92817982" title="Get the upper value from the list of values that represents the Position. " alt="" coords="562,1031,741,1059"/>
+<area shape="rect" id="node34" href="$classPartition.xhtml#a418e5b08580b3c1d33390a13eeb8eb0f" title="Get the lower bound for this partition. " alt="" coords="568,1083,735,1111"/>
+<area shape="rect" id="node35" href="$classPartition.xhtml#a0f3cdf44760e24735951b73dfc9dd3ab" title="Get the upper bound for this partition. " alt="" coords="570,1135,733,1163"/>
+<area shape="rect" id="node36" href="$structPosition.xhtml#a0c70a4890ea8ba9e8b9ed6b4f6030751" title="Limit upper the values of this position. " alt="" coords="551,1187,752,1215"/>
+<area shape="rect" id="node37" href="$structPosition.xhtml#aae9a6d862e9da174648a84f876f8d78d" title="Limit lower the values of this position. " alt="" coords="551,1239,752,1267"/>
+</map>

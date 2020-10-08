@@ -1,0 +1,6 @@
+<map id="CSMOn::run" name="CSMOn::run">
+<area shape="rect" id="node2" href="$classSearch.xhtml#afe8c2a6dd96ad12f77de7c8226a76028" title="Method responsible for setting up all the optimization algorithm for the next optimization. " alt="" coords="191,5,311,33"/>
+<area shape="rect" id="node3" href="$classSearch.xhtml#a134eb5da3918998d5a3d1e049f7b585e" title="Get the number of FitnessPolicy evaluations performed since the last time the method startup() was ca..." alt="" coords="156,57,347,85"/>
+<area shape="rect" id="node4" href="$classSearch.xhtml#aa64dbfe1bd713c36cc8785178a81325e" title="Inform the ConvergenceControlPolicy that no next improvement could be found in reasonable time..." alt="" coords="190,109,313,137"/>
+<area shape="rect" id="node5" href="$classSearch.xhtml#afa7022c6b9be775211d8a9be85b880f3" title="Method responsible for all post&#45;processing after the optimization has completed. " alt="" coords="191,161,311,189"/>
+</map>

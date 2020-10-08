@@ -1,0 +1,6 @@
+<map id="Solution::reset" name="Solution::reset">
+<area shape="rect" id="node2" href="$classBetaRelocationStrategyPolicy.xhtml#aeadaa254d012725ab1a67419d9cb37ef" title="This method implements the policy to relocate TH instance&#39;s population at every TH instance&#39;s iterati..." alt="" coords="168,5,380,49"/>
+<area shape="rect" id="node3" href="$classTHBuilder_1_1SearchGroup.xhtml#aafebb836a1ec681213319a024a254ca8" title="Reset the location of the population individuals and calculate the fitness. " alt="" coords="183,73,365,117"/>
+<area shape="rect" id="node5" href="$classTHBuilder_1_1THImpl.xhtml#a943301db5154fd7b672119b5c9917303" title="Starts the Treasure Hunt mechanisms. " alt="" coords="189,141,359,169"/>
+<area shape="rect" id="node4" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="428,73,579,117"/>
+</map>

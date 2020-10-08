@@ -1,0 +1,4 @@
+<map id="BestListUpdatePolicy::euclideanDistance" name="BestListUpdatePolicy::euclideanDistance">
+<area shape="rect" id="node2" href="$classConvergentBestListUpdatePolicy.xhtml#a6382937d32ac8bab7169f216fcd3048f" title="This method implements a behavior that focus on convergence speed when updating the solutions from th..." alt="" coords="225,5,419,49"/>
+<area shape="rect" id="node3" href="$classDivergentBestListUpdatePolicy.xhtml#a793d47a0c458eef94b27fbee73e5df0e" title="This method implements a behavior that promotes diversity when updating the solutions from the BestLi..." alt="" coords="212,73,432,117"/>
+</map>
