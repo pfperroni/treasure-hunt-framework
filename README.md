@@ -1,12 +1,30 @@
 # <img align="left" height="30" src="media/TH-logo-2.png">&nbsp;&nbsp;Treasure Hunt Framework
 
 Treasure Hunt (TH) is a multilevel framework capable of distributing independent search algorithms to a large number of processing nodes.
-TH ensures quick propagation of information and explores a driving mechanism that results in a joint convergences between the working nodes.
+TH is not tied to any specific search algorithm because, instead of a distributed optimization mechanism, TH is a mechanism to distribute optimizers.
 
 Treasure Hunt boosts the inherent characteristics of these search algorithms, making poor performer algorithms to become comparable to good ones, and good performer algorithms to extend their limits to larger problems.
 TH's robust scaling also reduces the importance of using complex search algorithms on complex problems by just distributing additional TH instances.
 
-The sampling mechanism provided by Treasure Hunt reduces the need for large population sizes, increasing cooperation between multiple evolving populations, what is specially important on problems with time-consuming fitness functions, due to superior quality of optimization obtained per time frame.
+TH ensures quick propagation of information and explores a driving mechanism that results in a joint convergences between the working nodes.
+The sampling mechanism provided by Treasure Hunt also reduces the need for large population sizes, increasing cooperation between multiple evolving populations, what is specially important on problems with time-consuming fitness functions, due to superior quality of optimization obtained per time frame.
+
+
+Treasure Hunt Framework can be summarized by the following advantages:
+- Independence of the optimization method.
+- Hierarchical search space matching a fast tree topology. 
+- Decentralized and asynchronous communication. 
+- Simple growth to a massive number of nodes. 
+- Fast propagation of information. 
+- Very low network usage. 
+- Simultaneous exploration/intensification on several levels of granularity. 
+- Good scalability. 
+- Controlled work overlap. 
+- Search stagnation management. 
+- Decentralized joint optimization. 
+- Large sampling of the search space. 
+
+
 
 
 # ![TH logo](media/TH-logo-favicon-1.png) Examples
