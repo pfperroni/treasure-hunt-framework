@@ -39,4 +39,4 @@ Major Deploy History:
 DATE	DESCRIPTION
 2018	Relocated some pieces of code to allow finer control through Policies.
 2017	Large scaling using MPI.
-2016	First full version of Treasure Hunt (TH) using shared memory.
+2016	First full functional version of Treasure Hunt (TH) using shared memory.
