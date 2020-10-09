@@ -9,8 +9,8 @@ the Creative Commons CC-BY-SA 4.0 license.
 
 When using this software, or any work derived from this software,
 to generate scientific outcomes, either in executable, source code
-or output data formats, you shall also reference the respective 
-paper according to the subject:
+or output data formats, you shall reference the respective publication
+according to the subject:
 
   - For Treasure Hunt Framework:
 
