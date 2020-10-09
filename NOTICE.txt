@@ -1,22 +1,37 @@
-                    Treasure Hunt Framework (c)
-              Copyright 2016-2018 Peter Frank Perroni
+                  Treasure Hunt Framework (c)
+            Copyright 2016-2018 Peter Frank Perroni
 
 
 The software is licensed under the Apache 2.0 license (see the file
-APACHE-LICENSE-2.0.txt), and all arts (not limited to logos, icons
-and videos) are licensed under the Creative Commons CC BY-NC-SA 4.0
-license (see the file ).
+APACHE-LICENSE-2.0.txt), and all arts (media files) are licensed under
+the Creative Commons CC-BY-SA 4.0 license.
 
 
 When using this software, or any work derived from this software,
 to generate scientific outcomes, either in executable, source code
-or output data formats, you shall also reference the original paper
-that presented Treasure Hunt Framework to scientific community:
+or output data formats, you shall also reference the respective 
+paper according to the subject:
+
+  - For Treasure Hunt Framework:
 
       PERRONI, Peter Frank (2019). Treasure hunt: a framework
       for cooperative, distributed parallel optimization
       (Doctoral thesis, UFPR). Institutional repository at UFPR:
       https://acervodigital.ufpr.br/handle/1884/62517
+
+  - For the CSMOn (formerly C'MOn) :
+
+     PERRONI, Peter Frank; WEINGAERTNER, Daniel; DELGADO, Myriam Regattieri.
+     Estimating stop conditions of swarm based stochastic metaheuristic
+     algorithms. In: Proceedings of the Genetic and Evolutionary Computation
+     Conference. 2017.
+
+  - For the Iterative Partitioning method used by TH:
+
+     PERRONI, Peter Frank; WEINGAERTNER, Daniel; DELGADO, Myriam Regattieri.
+     Automated iterative partitioning for cooperatively coevolving particle
+     swarms in large scale optimization. In: 2015 Brazilian Conference on
+     Intelligent Systems (BRACIS). IEEE, 2015. p. 19-24.
 
 
 Major Deploy History:
