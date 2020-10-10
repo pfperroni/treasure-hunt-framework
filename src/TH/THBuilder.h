@@ -1556,12 +1556,13 @@ public:
 					// Apply the relocation strategy.
 					if(popSeq < populationSize) {
 						// Perform dynamic region selection.
-						subRegion = config->getRegionSelectionPolicy()->recalculate(
-											iterationData, config->getSearchSpace(),
-											subRegion, thTree, ID
+						config->getRegionSelectionPolicy()->recalculate(
+							iterationData, config->getSearchSpace(),
+							subRegion, thTree, ID
 						);
 
-						config->getRelocationStrategyPolicy()->apply(relocationStrategyData, subRegion, &population[popSeq], populationSize-popSeq);
+						config->getRelocationStrategyPolicy()->apply(relocationStrategyData,
+								subRegion, &population[popSeq], populationSize-popSeq);
 
 						// Calculate the fitness for the new solutions.
 						for(; popSeq < populationSize; popSeq++){
