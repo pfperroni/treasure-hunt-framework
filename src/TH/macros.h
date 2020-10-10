@@ -19,7 +19,6 @@
  *
  *
  * @file macros.h
- * @class macros
  * @author Peter Frank Perroni
  * @brief Macros and constants must defined in this file.
  */

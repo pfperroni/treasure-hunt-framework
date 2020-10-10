@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structRelocationStrategyData.xhtml" title="Repository class that stores useful data required for the population&#39;s relocation strategy..." alt="" coords="5,5,180,65"/>
-<area shape="rect" id="node2" href="$structBetaRelocationStrategyData.xhtml" title="This class is a repository containing useful data to perform the Beta&#45;relocation strategy. " alt="" coords="228,5,433,65"/>
+<area shape="rect" id="node1" href="$classRelocationStrategyPolicy.xhtml" title="Template for the policy that relocates the population at every TH instance&#39;s iteration. " alt="" coords="5,5,188,65"/>
+<area shape="rect" id="node2" href="$classBetaRelocationStrategyPolicy.xhtml" title="This policy relocates the population based on the Beta&#45;distribution strategy. " alt="" coords="236,5,448,65"/>
 </map>

@@ -1,6 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSearchAlgorithmSelectionPolicy.xhtml" title="Template to select the next optimization method to be executed and rank it after execution. " alt="" coords="5,105,193,165"/>
-<area shape="rect" id="node2" href="$classReinforcementLearningSearchAlgorithmSelectionPolicy.xhtml" title="This class implements the algorithm selection policy through reinforcement learning. " alt="" coords="246,5,465,81"/>
-<area shape="rect" id="node3" href="$classRoundRobinSearchAlgorithmSelectionPolicy.xhtml" title="This class executes Search instances in round&#45;robin. " alt="" coords="250,105,461,165"/>
-<area shape="rect" id="node4" href="$classSingleSearchAlgorithmSelectionPolicy.xhtml" title="This class executes always the first Search instance available. " alt="" coords="241,189,469,249"/>
+<area shape="rect" id="node1" href="$classSearchScore.xhtml" title="This class stores a Search instance and its score. " alt="" coords="5,5,183,49"/>
 </map>

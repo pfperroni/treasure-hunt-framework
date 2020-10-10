@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structt__point.xhtml" title="t_point\&lt; F \&gt;" alt="" coords="5,5,105,33"/>
+<area shape="rect" id="node1" href="$classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller..." alt="" coords="5,13,176,57"/>
+<area shape="rect" id="node2" href="$classTHBuilder_1_1THImpl.xhtml" title="Actual implementation of Treasure Hunt. " alt="" coords="224,5,383,65"/>
 </map>

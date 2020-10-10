@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['macros',['macros',['../classmacros.xhtml',1,'']]],
   ['mpitypetraits',['MpiTypeTraits',['../structMpiTypeTraits.xhtml',1,'']]],
   ['mpitypetraits_3c_20char_20_3e',['MpiTypeTraits&lt; char &gt;',['../structMpiTypeTraits_3_01char_01_4.xhtml',1,'']]],
   ['mpitypetraits_3c_20double_20_3e',['MpiTypeTraits&lt; double &gt;',['../structMpiTypeTraits_3_01double_01_4.xhtml',1,'']]],

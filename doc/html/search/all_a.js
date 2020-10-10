@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['macros',['macros',['../classmacros.xhtml',1,'']]],
   ['macros_2eh',['macros.h',['../macros_8h.xhtml',1,'']]],
   ['max_5fk',['MAX_K',['../BetaRelocationStrategyPolicy_8h.xhtml#a3176231944b79d3ffe19639282eaffff',1,'BetaRelocationStrategyPolicy.h']]],
   ['maxiterations',['maxIterations',['../structIterationData.xhtml#a9baa0b37d2e5b38e5e82d3c6fc8dcacf',1,'IterationData']]],
