@@ -68,15 +68,12 @@ public:
 	 *
 	 * @param iterationData The IterationData instance.
 	 * @param S The full search space.
-	 * @param R The current "anchor" sub-region.
+	 * @param R The current "anchor" sub-region to be updated.
 	 * @param tree The tree topology that will guide the partitioning.
 	 * @param ID The TH instance's global ID.
-	 * @return The new "anchor" sub-region generated dynamically for current TH instance.
 	 */
-	Region<P>* recalculate(IterationData<P, pSize, F, fSize, V, vSize> *iterationData,
-			SearchSpace<P> *S, Region<P> *R, THTree *tree, int ID){
-		return R;
-	}
+	void recalculate(IterationData<P, pSize, F, fSize, V, vSize> *iterationData,
+			SearchSpace<P> *S, Region<P> *R, THTree *tree, int ID) { }
 };
 
 #endif /* REGIONSELECTIONPOLICY_H_ */
