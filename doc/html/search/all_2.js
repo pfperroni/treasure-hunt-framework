@@ -2,7 +2,6 @@ var searchData=
 [
   ['checkcompatibility',['checkCompatibility',['../structConstraintViolation.xhtml#a82ebcbfe61ca8adcf6f7b613c4c69f8d',1,'ConstraintViolation::checkCompatibility()'],['../structFitness.xhtml#a73ef98fc5780e1e15bbfac6177bd5c5a',1,'Fitness::checkCompatibility()'],['../structPosition.xhtml#ac9d8d79414e34bd4486b8fc047cdb5bd',1,'Position::checkCompatibility()']]],
   ['children',['children',['../structt__node.xhtml#a1fa40826359a9299ee462688e5754378',1,'t_node']]],
-  ['config',['config',['../classconfig.xhtml',1,'']]],
   ['config_2eh',['config.h',['../config_8h.xhtml',1,'']]],
   ['constraintviolation',['ConstraintViolation',['../structConstraintViolation.xhtml',1,'']]],
   ['constraintviolation_2eh',['ConstraintViolation.h',['../ConstraintViolation_8h.xhtml',1,'']]],

@@ -1,0 +1,325 @@
+\hypertarget{classPartition}{}\section{Partition$<$ P $>$ Class Template Reference}
+\label{classPartition}\index{Partition$<$ P $>$@{Partition$<$ P $>$}}
+
+
+This class represents an interval within dimension\textquotesingle{}s boundaries.  
+
+
+
+
+{\ttfamily \#include $<$Partition.\+h$>$}
+
+
+
+Inheritance diagram for Partition$<$ P $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPartition__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Partition$<$ P $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPartition__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPartition_abfef02ae361bd24d9648270f0de5790f}{Partition} (int ID, P start\+Point, P end\+Point)
+\begin{DoxyCompactList}\small\item\em This constructor creates a \hyperlink{classPartition}{Partition}. \end{DoxyCompactList}\item 
+\hyperlink{classPartition_a45b2a3119be4fe1b735547044df96f74}{Partition} (\hyperlink{classPartition}{Partition} $\ast$partition)
+\begin{DoxyCompactList}\small\item\em This constructor creates a \hyperlink{classPartition}{Partition} as a copy from another \hyperlink{classPartition}{Partition}. \end{DoxyCompactList}\item 
+\hyperlink{classPartition_a2bf066d3121bf800e82cebd4cb2f4ab7}{$\sim$\+Partition} ()
+\item 
+bool \hyperlink{classPartition_ab216a6422a087c09f621051d07d517dd}{operator$<$} (\hyperlink{classPartition}{Partition} p)
+\begin{DoxyCompactList}\small\item\em This operator checks only the partition I\+Ds. \end{DoxyCompactList}\item 
+bool \hyperlink{classPartition_aa241e87f540bd76b2c4733f40fdb7f2f}{operator$>$} (\hyperlink{classPartition}{Partition} p)
+\begin{DoxyCompactList}\small\item\em This operator checks only the partition I\+Ds. \end{DoxyCompactList}\item 
+int \hyperlink{classPartition_a3d9ce01ee6fbc781a9fa7c02adeda3e6}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Get the partition ID. \end{DoxyCompactList}\item 
+P \hyperlink{classPartition_a418e5b08580b3c1d33390a13eeb8eb0f}{get\+Start\+Point} ()
+\begin{DoxyCompactList}\small\item\em Get the lower bound for this partition. \end{DoxyCompactList}\item 
+void \hyperlink{classPartition_a88f76318db3351915f34e9beab3b7383}{set\+Start\+Point} (P start\+Point)
+\begin{DoxyCompactList}\small\item\em Set the lower bound for this partition. \end{DoxyCompactList}\item 
+P \hyperlink{classPartition_a0f3cdf44760e24735951b73dfc9dd3ab}{get\+End\+Point} ()
+\begin{DoxyCompactList}\small\item\em Get the upper bound for this partition. \end{DoxyCompactList}\item 
+void \hyperlink{classPartition_a2d9ab63b4bb5cf93911bba41b5e17b58}{set\+End\+Point} (P end\+Point)
+\begin{DoxyCompactList}\small\item\em Set the upper bound for this partition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double$>$\\*
+class Partition$<$ P $>$}
+
+This class represents an interval within dimension\textquotesingle{}s boundaries. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 33 of file Partition.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Partition@{Partition}!Partition@{Partition}}
+\index{Partition@{Partition}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{Partition(int I\+D, P start\+Point, P end\+Point)}{Partition(int ID, P startPoint, P endPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Partition}$<$ P $>$\+::{\bf Partition} (
+\begin{DoxyParamCaption}
+\item[{int}]{ID, }
+\item[{P}]{start\+Point, }
+\item[{P}]{end\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_abfef02ae361bd24d9648270f0de5790f}{}\label{classPartition_abfef02ae361bd24d9648270f0de5790f}
+
+
+This constructor creates a \hyperlink{classPartition}{Partition}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The unique identifier for this partition. \\
+\hline
+{\em start\+Point} & The lower bound of the interval. \\
+\hline
+{\em end\+Point} & The upper bound of the interval. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file Partition.\+h.
+
+\index{Partition@{Partition}!Partition@{Partition}}
+\index{Partition@{Partition}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{Partition(\+Partition $\ast$partition)}{Partition(Partition *partition)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Partition}$<$ P $>$\+::{\bf Partition} (
+\begin{DoxyParamCaption}
+\item[{{\bf Partition}$<$ P $>$ $\ast$}]{partition}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a45b2a3119be4fe1b735547044df96f74}{}\label{classPartition_a45b2a3119be4fe1b735547044df96f74}
+
+
+This constructor creates a \hyperlink{classPartition}{Partition} as a copy from another \hyperlink{classPartition}{Partition}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em partition} & The source \hyperlink{classPartition}{Partition} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Partition.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classPartition_a45b2a3119be4fe1b735547044df96f74_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Partition@{Partition}!````~Partition@{$\sim$\+Partition}}
+\index{````~Partition@{$\sim$\+Partition}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{$\sim$\+Partition()}{~Partition()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Partition}$<$ P $>$\+::$\sim${\bf Partition} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a2bf066d3121bf800e82cebd4cb2f4ab7}{}\label{classPartition_a2bf066d3121bf800e82cebd4cb2f4ab7}
+
+
+Definition at line 65 of file Partition.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Partition@{Partition}!get\+End\+Point@{get\+End\+Point}}
+\index{get\+End\+Point@{get\+End\+Point}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{get\+End\+Point()}{getEndPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ P {\bf Partition}$<$ P $>$\+::get\+End\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a0f3cdf44760e24735951b73dfc9dd3ab}{}\label{classPartition_a0f3cdf44760e24735951b73dfc9dd3ab}
+
+
+Get the upper bound for this partition. 
+
+\begin{DoxyReturn}{Returns}
+The upper bound for this partition. 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file Partition.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPartition_a0f3cdf44760e24735951b73dfc9dd3ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Partition@{Partition}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{get\+I\+D()}{getID()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ int {\bf Partition}$<$ P $>$\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a3d9ce01ee6fbc781a9fa7c02adeda3e6}{}\label{classPartition_a3d9ce01ee6fbc781a9fa7c02adeda3e6}
+
+
+Get the partition ID. 
+
+\begin{DoxyReturn}{Returns}
+The partition ID. 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Partition.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classPartition_a3d9ce01ee6fbc781a9fa7c02adeda3e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Partition@{Partition}!get\+Start\+Point@{get\+Start\+Point}}
+\index{get\+Start\+Point@{get\+Start\+Point}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{get\+Start\+Point()}{getStartPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ P {\bf Partition}$<$ P $>$\+::get\+Start\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a418e5b08580b3c1d33390a13eeb8eb0f}{}\label{classPartition_a418e5b08580b3c1d33390a13eeb8eb0f}
+
+
+Get the lower bound for this partition. 
+
+\begin{DoxyReturn}{Returns}
+The lower bound for this partition. 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Partition.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPartition_a418e5b08580b3c1d33390a13eeb8eb0f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Partition@{Partition}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{operator$<$(\+Partition p)}{operator<(Partition p)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ bool {\bf Partition}$<$ P $>$\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Partition}$<$ P $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_ab216a6422a087c09f621051d07d517dd}{}\label{classPartition_ab216a6422a087c09f621051d07d517dd}
+
+
+This operator checks only the partition I\+Ds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The \hyperlink{classPartition}{Partition} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current partition\textquotesingle{}s ID is smaller than the parameter. False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Partition.\+h.
+
+\index{Partition@{Partition}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{operator$>$(\+Partition p)}{operator>(Partition p)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ bool {\bf Partition}$<$ P $>$\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Partition}$<$ P $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_aa241e87f540bd76b2c4733f40fdb7f2f}{}\label{classPartition_aa241e87f540bd76b2c4733f40fdb7f2f}
+
+
+This operator checks only the partition I\+Ds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The \hyperlink{classPartition}{Partition} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current partition\textquotesingle{}s ID is larger than the parameter. False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Partition.\+h.
+
+\index{Partition@{Partition}!set\+End\+Point@{set\+End\+Point}}
+\index{set\+End\+Point@{set\+End\+Point}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{set\+End\+Point(\+P end\+Point)}{setEndPoint(P endPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ void {\bf Partition}$<$ P $>$\+::set\+End\+Point (
+\begin{DoxyParamCaption}
+\item[{P}]{end\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a2d9ab63b4bb5cf93911bba41b5e17b58}{}\label{classPartition_a2d9ab63b4bb5cf93911bba41b5e17b58}
+
+
+Set the upper bound for this partition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+Point} & The upper bound for this partition. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file Partition.\+h.
+
+\index{Partition@{Partition}!set\+Start\+Point@{set\+Start\+Point}}
+\index{set\+Start\+Point@{set\+Start\+Point}!Partition@{Partition}}
+\subsubsection[{\texorpdfstring{set\+Start\+Point(\+P start\+Point)}{setStartPoint(P startPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ void {\bf Partition}$<$ P $>$\+::set\+Start\+Point (
+\begin{DoxyParamCaption}
+\item[{P}]{start\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPartition_a88f76318db3351915f34e9beab3b7383}{}\label{classPartition_a88f76318db3351915f34e9beab3b7383}
+
+
+Set the lower bound for this partition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Point} & The lower bound for this partition. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file Partition.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{Partition_8h}{Partition.\+h}\end{DoxyCompactItemize}

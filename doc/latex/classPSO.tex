@@ -1,0 +1,399 @@
+\hypertarget{classPSO}{}\section{P\+SO$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classPSO}\index{P\+S\+O$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{P\+S\+O$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Implementation of the classic Particle Swarm Optimization algorithm for \hyperlink{classTH}{TH}.  
+
+
+
+
+{\ttfamily \#include $<$P\+S\+O.\+h$>$}
+
+
+
+Inheritance diagram for P\+SO$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classPSO__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+SO$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classPSO__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPSO_ae56169385c687cb201e5f3d61f93b916}{P\+SO} (double w, double c1, double c2, int population\+Size)
+\item 
+\hyperlink{classPSO_a4d5d1e8b1cc91bac2f17e4559973e0c6}{$\sim$\+P\+SO} ()
+\item 
+void \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup} ()
+\begin{DoxyCompactList}\small\item\em Initialize the algorithm for a new optimization. \end{DoxyCompactList}\item 
+void \hyperlink{classPSO_a4f30684c5cecc2c37f5ce822f146ffab}{finalize} ()
+\begin{DoxyCompactList}\small\item\em Perform the post-\/optimization process, if required. \end{DoxyCompactList}\item 
+void \hyperlink{classPSO_a25e15ab34186e7c52a4789108ae24ece}{next} (int M)
+\begin{DoxyCompactList}\small\item\em Perform the actual optimization only until the next improvement. \end{DoxyCompactList}\item 
+bool \hyperlink{classPSO_a5959db16a45b9a0ddc9289967936c306}{is\+Stuck} ()
+\begin{DoxyCompactList}\small\item\em Inform the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} that no next improvement could be found in reasonable time. \end{DoxyCompactList}\item 
+int \hyperlink{classPSO_af47232c3034a05a2ab24e28f77196e45}{get\+Best\+Pos} ()
+\item 
+int \hyperlink{classPSO_a337161f54e6bb3cc3012f3f5d11f3716}{get\+Current\+N\+Evals} ()
+\begin{DoxyCompactList}\small\item\em Get the number of \hyperlink{classFitnessPolicy}{Fitness\+Policy} evaluations performed since the last time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} was called. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classPSO_ab40ad5efb6079e427abb6e0b699fa018}{get\+Best\+Individual} ()
+\begin{DoxyCompactList}\small\item\em Get the best \hyperlink{classSolution}{Solution} found since the last time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} was called. \end{DoxyCompactList}\item 
+\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$ \hyperlink{classPSO_a1ecbe78cffa328555e3e7428602a67ac}{get\+Best\+Fitness} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{structFitness}{Fitness} for the current best \hyperlink{classSolution}{Solution}. \end{DoxyCompactList}\item 
+void \hyperlink{classPSO_a4065a7f2fce1397c85fc9dded16c36da}{get\+Best\+Fitness} (F $\ast$fitness)
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{structFitness}{Fitness} for the current best \hyperlink{classSolution}{Solution}. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classPSO_a62626f6c321722a0b4dcc6c19be102d2}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the optimization method implemented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class P\+S\+O$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Implementation of the classic Particle Swarm Optimization algorithm for \hyperlink{classTH}{TH}. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+Any implementation of the \hyperlink{classSearch}{Search} template must split the optimization logic in 3 sections\+:
+\begin{DoxyItemize}
+\item \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()}\+: initialize the algorithm for a new optimization.
+\item \hyperlink{classPSO_a25e15ab34186e7c52a4789108ae24ece}{next()}\+: perform the actual optimization only until the next improvement.
+\item \hyperlink{classPSO_a4f30684c5cecc2c37f5ce822f146ffab}{finalize()}\+: perform the post-\/optimization process, if required. 
+\end{DoxyItemize}
+
+Definition at line 37 of file P\+S\+O.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+SO@{P\+SO}!P\+SO@{P\+SO}}
+\index{P\+SO@{P\+SO}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{P\+S\+O(double w, double c1, double c2, int population\+Size)}{PSO(double w, double c1, double c2, int populationSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf P\+SO} (
+\begin{DoxyParamCaption}
+\item[{double}]{w, }
+\item[{double}]{c1, }
+\item[{double}]{c2, }
+\item[{int}]{population\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPSO_ae56169385c687cb201e5f3d61f93b916}{}\label{classPSO_ae56169385c687cb201e5f3d61f93b916}
+
+
+Definition at line 49 of file P\+S\+O.\+h.
+
+\index{P\+SO@{P\+SO}!````~P\+SO@{$\sim$\+P\+SO}}
+\index{````~P\+SO@{$\sim$\+P\+SO}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{$\sim$\+P\+S\+O()}{~PSO()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf P\+SO} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPSO_a4d5d1e8b1cc91bac2f17e4559973e0c6}{}\label{classPSO_a4d5d1e8b1cc91bac2f17e4559973e0c6}
+
+
+Definition at line 66 of file P\+S\+O.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{P\+SO@{P\+SO}!finalize@{finalize}}
+\index{finalize@{finalize}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{finalize()}{finalize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ void {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::finalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a4f30684c5cecc2c37f5ce822f146ffab}{}\label{classPSO_a4f30684c5cecc2c37f5ce822f146ffab}
+
+
+Perform the post-\/optimization process, if required. 
+
+
+
+Implements \hyperlink{classSearch_afa7022c6b9be775211d8a9be85b880f3}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 123 of file P\+S\+O.\+h.
+
+\index{P\+SO@{P\+SO}!get\+Best\+Fitness@{get\+Best\+Fitness}}
+\index{get\+Best\+Fitness@{get\+Best\+Fitness}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{get\+Best\+Fitness()}{getBestFitness()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Fitness}$<$F, f\+Size$>$$\ast$ {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+Fitness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a1ecbe78cffa328555e3e7428602a67ac}{}\label{classPSO_a1ecbe78cffa328555e3e7428602a67ac}
+
+
+Get the \hyperlink{structFitness}{Fitness} for the current best \hyperlink{classSolution}{Solution}. 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{structFitness}{Fitness} for the current best \hyperlink{classSolution}{Solution}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearch_a6f167beec8fc582b2d993a4bd76e241c}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 194 of file P\+S\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPSO_a1ecbe78cffa328555e3e7428602a67ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+SO@{P\+SO}!get\+Best\+Fitness@{get\+Best\+Fitness}}
+\index{get\+Best\+Fitness@{get\+Best\+Fitness}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{get\+Best\+Fitness(\+F $\ast$fitness)}{getBestFitness(F *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ void {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+Fitness (
+\begin{DoxyParamCaption}
+\item[{F $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a4065a7f2fce1397c85fc9dded16c36da}{}\label{classPSO_a4065a7f2fce1397c85fc9dded16c36da}
+
+
+Get the \hyperlink{structFitness}{Fitness} for the current best \hyperlink{classSolution}{Solution}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The destination buffer where the fitness values will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classSearch_abb8ba158044a3aaaf7a2a2a0875a1c34}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 198 of file P\+S\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPSO_a4065a7f2fce1397c85fc9dded16c36da_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+SO@{P\+SO}!get\+Best\+Individual@{get\+Best\+Individual}}
+\index{get\+Best\+Individual@{get\+Best\+Individual}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{get\+Best\+Individual()}{getBestIndividual()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+Individual (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_ab40ad5efb6079e427abb6e0b699fa018}{}\label{classPSO_ab40ad5efb6079e427abb6e0b699fa018}
+
+
+Get the best \hyperlink{classSolution}{Solution} found since the last time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} was called. 
+
+Notice that this best individual should be reset every time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} is called, preferably using the initial population.
+
+\begin{DoxyReturn}{Returns}
+The best \hyperlink{classSolution}{Solution} found since the last time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} was called. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearch_a6b275ce5596bb50216cc9fc827f44912}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 190 of file P\+S\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPSO_ab40ad5efb6079e427abb6e0b699fa018_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPSO_ab40ad5efb6079e427abb6e0b699fa018_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+SO@{P\+SO}!get\+Best\+Pos@{get\+Best\+Pos}}
+\index{get\+Best\+Pos@{get\+Best\+Pos}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{get\+Best\+Pos()}{getBestPos()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ int {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPSO_af47232c3034a05a2ab24e28f77196e45}{}\label{classPSO_af47232c3034a05a2ab24e28f77196e45}
+
+
+Definition at line 186 of file P\+S\+O.\+h.
+
+\index{P\+SO@{P\+SO}!get\+Current\+N\+Evals@{get\+Current\+N\+Evals}}
+\index{get\+Current\+N\+Evals@{get\+Current\+N\+Evals}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{get\+Current\+N\+Evals()}{getCurrentNEvals()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ int {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Current\+N\+Evals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a337161f54e6bb3cc3012f3f5d11f3716}{}\label{classPSO_a337161f54e6bb3cc3012f3f5d11f3716}
+
+
+Get the number of \hyperlink{classFitnessPolicy}{Fitness\+Policy} evaluations performed since the last time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} was called. 
+
+Notice that this count should be reset every time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} is called, preferably considering the number of evaluations required to pre-\/evaluate the initial population.
+
+\begin{DoxyReturn}{Returns}
+The number of fitness evaluations performed since the last time the method \hyperlink{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{startup()} was called. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearch_a134eb5da3918998d5a3d1e049f7b585e}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 188 of file P\+S\+O.\+h.
+
+\index{P\+SO@{P\+SO}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ const char$\ast$ {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a62626f6c321722a0b4dcc6c19be102d2}{}\label{classPSO_a62626f6c321722a0b4dcc6c19be102d2}
+
+
+Get the name of the optimization method implemented. 
+
+This method is used for tracking purpose and it is recommended to set it accordingly in every optimization method that implements this template.
+
+\begin{DoxyReturn}{Returns}
+The name of the optimization method implemented. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearch_afbc425366989c9fc8aa7c88b70812b97}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 202 of file P\+S\+O.\+h.
+
+\index{P\+SO@{P\+SO}!is\+Stuck@{is\+Stuck}}
+\index{is\+Stuck@{is\+Stuck}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{is\+Stuck()}{isStuck()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ bool {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::is\+Stuck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a5959db16a45b9a0ddc9289967936c306}{}\label{classPSO_a5959db16a45b9a0ddc9289967936c306}
+
+
+Inform the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} that no next improvement could be found in reasonable time. 
+
+If the optimization algorithm has its own efficient mechanism to detect stagnation quickly, it could use this method to inform the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} about such stagnation.
+
+Slow or complex stagnation management mechanisms are not recommended on \hyperlink{classTH}{TH} because it would slow down the search space sampling and communication between \hyperlink{classTH}{TH} instances.
+
+\begin{DoxyReturn}{Returns}
+True if the optimization algorithm has detected a strong stagnation. False otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearch_aa64dbfe1bd713c36cc8785178a81325e}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 184 of file P\+S\+O.\+h.
+
+\index{P\+SO@{P\+SO}!next@{next}}
+\index{next@{next}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{next(int M)}{next(int M)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ void {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::next (
+\begin{DoxyParamCaption}
+\item[{int}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a25e15ab34186e7c52a4789108ae24ece}{}\label{classPSO_a25e15ab34186e7c52a4789108ae24ece}
+
+
+Perform the actual optimization only until the next improvement. 
+
+
+
+Implements \hyperlink{classSearch_ae2ea32c6a6ab958e714f19dc71fae9db}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 133 of file P\+S\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classPSO_a25e15ab34186e7c52a4789108ae24ece_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+SO@{P\+SO}!startup@{startup}}
+\index{startup@{startup}!P\+SO@{P\+SO}}
+\subsubsection[{\texorpdfstring{startup()}{startup()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ void {\bf P\+SO}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::startup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}{}\label{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5}
+
+
+Initialize the algorithm for a new optimization. 
+
+
+
+Implements \hyperlink{classSearch_afe8c2a6dd96ad12f77de7c8226a76028}{Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 83 of file P\+S\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classPSO_a8fb3e9a46396074cbbdc2d04a83783a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{PSO_8h}{P\+S\+O.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,756 @@
+\hypertarget{classSolution}{}\section{Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classSolution}\index{Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This class represents a population individual.  
+
+
+
+
+{\ttfamily \#include $<$Solution.\+h$>$}
+
+
+
+Collaboration diagram for Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classSolution__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSolution_aed3a2146c95b8f8f06cecf9980e77c20}{Solution} (int n\+Dimensions)
+\begin{DoxyCompactList}\small\item\em This constructor creates an empty \hyperlink{classSolution}{Solution} instance. \end{DoxyCompactList}\item 
+\hyperlink{classSolution_a763a8e70b722bb0679046d8c8b8223e5}{Solution} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)
+\begin{DoxyCompactList}\small\item\em This constructor creates a \hyperlink{classSolution}{Solution} instance by copying all contents of another \hyperlink{classSolution}{Solution} instance. \end{DoxyCompactList}\item 
+\hyperlink{classSolution_afd40b1d7d953e0dde4a02d22f19079ad}{$\sim$\+Solution} ()
+\item 
+void \hyperlink{classSolution_a8943fc57439d7e23ffb4cc4c49ae106e}{operator=} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This operator overrides the solution\textquotesingle{}s \hyperlink{structPosition}{Position} with the contents of the buffer received. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a1eb06ad9c9e36af504d84c9d3c611f21}{operator=} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the solution\textquotesingle{}s \hyperlink{structPosition}{Position}, \hyperlink{structFitness}{Fitness} and Violation with the contents of the \hyperlink{classSolution}{Solution} received. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_af6f35f821332bc9414773fd659a6a29b}{operator=} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&solution)
+\item 
+bool \hyperlink{classSolution_a38c4ef92e86f28e3dbbc2a77afd356d4}{equals} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)
+\begin{DoxyCompactList}\small\item\em Compares the current solution with the solution received. \end{DoxyCompactList}\item 
+bool \hyperlink{classSolution_a7681f8c7d0c20381203276c7b9a26374}{operator==} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)
+\item 
+bool \hyperlink{classSolution_a861971bd3294c0389871abd13d2a9427}{operator==} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&solution)
+\item 
+bool \hyperlink{classSolution_a4f0ac3c5f908538e65e4498d1061d156}{operator!=} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)
+\item 
+bool \hyperlink{classSolution_a225d6e8e5470be0f3f8bb6abc1a16782}{operator!=} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&solution)
+\item 
+\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$ \hyperlink{classSolution_ad783c91ad12c21e861a4639e72c4fd50}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Operator that selects a \hyperlink{structPosition}{Position} based on its index in the list of positions. \end{DoxyCompactList}\item 
+\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$ \hyperlink{classSolution_acddbe4cdda346908a7b46cde53af32b6}{get\+Position} (int i)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{structPosition}{Position} based on its index in the list of positions. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_acaffcea4a5bfc0ad8ef8d655f56533b6}{get\+Positions} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This method copies the contents of current \hyperlink{structPosition}{Position} to the buffer received. \end{DoxyCompactList}\item 
+\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$ \hyperlink{classSolution_ae7720fedccf4ae8ff24170e159fd266f}{get\+Fitness} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the actual \hyperlink{structFitness}{Fitness} instance. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a559e603f729926a7be428906227b4dec}{get\+Fitness} (F $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This method copies the contents of current \hyperlink{structFitness}{Fitness} to the buffer received. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a6c38d7e27c91077d67460a62aed71e06}{set\+Fitness} (F $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Assigns the values of the buffer received to the current \hyperlink{structFitness}{Fitness} instance. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a06a103b71be515e1835c65abdf3dcb35}{set\+Fitness} (F value)
+\begin{DoxyCompactList}\small\item\em Assigns the same value to all elements of the \hyperlink{structFitness}{Fitness} instance. \end{DoxyCompactList}\item 
+\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$ \hyperlink{classSolution_a38a1110b2b585a6e7f2dc4210df0d536}{get\+Violation} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the actual \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a6f8e92e6e412b9f2056c18c37c04da2d}{get\+Violation} (V $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This method copies the contents of current \hyperlink{structConstraintViolation}{Constraint\+Violation} to the buffer received. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_aad908f750b12ec590878684f042c23ce}{set\+Violation} (V $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Assigns the values of the buffer received to the current \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a8f2b530ec087ff9e62ef00300f6cb17e}{set\+Violation} (F value)
+\begin{DoxyCompactList}\small\item\em Assigns the same value to all elements of the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \end{DoxyCompactList}\item 
+void \hyperlink{classSolution_a84c713b707a570add53e85a28196bb3e}{reset} (\hyperlink{classRegion}{Region}$<$ P $>$ $\ast$r, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$bias=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Reset the position of the current \hyperlink{classSolution}{Solution} in the search space. \end{DoxyCompactList}\item 
+int \hyperlink{classSolution_ad5b8c8ce272efaada80e93b0e097d1cd}{get\+N\+Dimensions} ()
+\begin{DoxyCompactList}\small\item\em Get the number of dimensions of this \hyperlink{classSolution}{Solution} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This class represents a population individual. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+In \hyperlink{classTH}{TH}, a \hyperlink{classSolution}{Solution} is comprised of a candidate solution (represented by a list of Positions), its fitness and all constraints it has violated (if any). 
+
+Definition at line 44 of file Solution.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Solution@{Solution}!Solution@{Solution}}
+\index{Solution@{Solution}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{Solution(int n\+Dimensions)}{Solution(int nDimensions)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Solution} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\+Dimensions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_aed3a2146c95b8f8f06cecf9980e77c20}{}\label{classSolution_aed3a2146c95b8f8f06cecf9980e77c20}
+
+
+This constructor creates an empty \hyperlink{classSolution}{Solution} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Dimensions} & The number of dimensions this solution will contain. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Solution.\+h.
+
+\index{Solution@{Solution}!Solution@{Solution}}
+\index{Solution@{Solution}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{Solution(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)}{Solution(Solution< P, pSize, F, fSize, V, vSize > *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Solution} (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a763a8e70b722bb0679046d8c8b8223e5}{}\label{classSolution_a763a8e70b722bb0679046d8c8b8223e5}
+
+
+This constructor creates a \hyperlink{classSolution}{Solution} instance by copying all contents of another \hyperlink{classSolution}{Solution} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The source \hyperlink{classSolution}{Solution} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_a763a8e70b722bb0679046d8c8b8223e5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!````~Solution@{$\sim$\+Solution}}
+\index{````~Solution@{$\sim$\+Solution}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{$\sim$\+Solution()}{~Solution()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Solution} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_afd40b1d7d953e0dde4a02d22f19079ad}{}\label{classSolution_afd40b1d7d953e0dde4a02d22f19079ad}
+
+
+Definition at line 87 of file Solution.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Solution@{Solution}!equals@{equals}}
+\index{equals@{equals}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{equals(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)}{equals(Solution< P, pSize, F, fSize, V, vSize > *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ bool {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a38c4ef92e86f28e3dbbc2a77afd356d4}{}\label{classSolution_a38c4ef92e86f28e3dbbc2a77afd356d4}
+
+
+Compares the current solution with the solution received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The \hyperlink{classSolution}{Solution} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{classSolution}{Solution} instance has the same contents as the solution received. False otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the \hyperlink{classSolution}{Solution} instance received is not compatible with current solution. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 134 of file Solution.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classSolution_a38c4ef92e86f28e3dbbc2a77afd356d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!get\+Fitness@{get\+Fitness}}
+\index{get\+Fitness@{get\+Fitness}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+Fitness()}{getFitness()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Fitness}$<$F, f\+Size$>$$\ast$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Fitness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_ae7720fedccf4ae8ff24170e159fd266f}{}\label{classSolution_ae7720fedccf4ae8ff24170e159fd266f}
+
+
+Get a pointer to the actual \hyperlink{structFitness}{Fitness} instance. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the \hyperlink{structFitness}{Fitness} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 204 of file Solution.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_ae7720fedccf4ae8ff24170e159fd266f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!get\+Fitness@{get\+Fitness}}
+\index{get\+Fitness@{get\+Fitness}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+Fitness(\+F $\ast$buffer)}{getFitness(F *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Fitness (
+\begin{DoxyParamCaption}
+\item[{F $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a559e603f729926a7be428906227b4dec}{}\label{classSolution_a559e603f729926a7be428906227b4dec}
+
+
+This method copies the contents of current \hyperlink{structFitness}{Fitness} to the buffer received. 
+
+The buffer size must be compatible with this solution\textquotesingle{}s \hyperlink{structFitness}{Fitness}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The destination buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_a559e603f729926a7be428906227b4dec_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!get\+N\+Dimensions@{get\+N\+Dimensions}}
+\index{get\+N\+Dimensions@{get\+N\+Dimensions}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+N\+Dimensions()}{getNDimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+N\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_ad5b8c8ce272efaada80e93b0e097d1cd}{}\label{classSolution_ad5b8c8ce272efaada80e93b0e097d1cd}
+
+
+Get the number of dimensions of this \hyperlink{classSolution}{Solution} instance. 
+
+\begin{DoxyReturn}{Returns}
+the number of dimensions of this solution. 
+\end{DoxyReturn}
+
+
+Definition at line 329 of file Solution.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_ad5b8c8ce272efaada80e93b0e097d1cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+Position(int i)}{getPosition(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Position}$<$P, p\+Size$>$$\ast$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Position (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_acddbe4cdda346908a7b46cde53af32b6}{}\label{classSolution_acddbe4cdda346908a7b46cde53af32b6}
+
+
+Get a \hyperlink{structPosition}{Position} based on its index in the list of positions. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the \hyperlink{structPosition}{Position} in the list (index list starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{structPosition}{Position} selected. 
+\end{DoxyReturn}
+
+
+Definition at line 177 of file Solution.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classSolution_acddbe4cdda346908a7b46cde53af32b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!get\+Positions@{get\+Positions}}
+\index{get\+Positions@{get\+Positions}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+Positions(\+P $\ast$buffer)}{getPositions(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Positions (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_acaffcea4a5bfc0ad8ef8d655f56533b6}{}\label{classSolution_acaffcea4a5bfc0ad8ef8d655f56533b6}
+
+
+This method copies the contents of current \hyperlink{structPosition}{Position} to the buffer received. 
+
+The buffer size must be compatible with this solution\textquotesingle{}s \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The destination buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_acaffcea4a5bfc0ad8ef8d655f56533b6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_acaffcea4a5bfc0ad8ef8d655f56533b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!get\+Violation@{get\+Violation}}
+\index{get\+Violation@{get\+Violation}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+Violation()}{getViolation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Constraint\+Violation}$<$V, v\+Size$>$$\ast$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Violation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a38a1110b2b585a6e7f2dc4210df0d536}{}\label{classSolution_a38a1110b2b585a6e7f2dc4210df0d536}
+
+
+Get a pointer to the actual \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 245 of file Solution.\+h.
+
+\index{Solution@{Solution}!get\+Violation@{get\+Violation}}
+\index{get\+Violation@{get\+Violation}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{get\+Violation(\+V $\ast$buffer)}{getViolation(V *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Violation (
+\begin{DoxyParamCaption}
+\item[{V $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a6f8e92e6e412b9f2056c18c37c04da2d}{}\label{classSolution_a6f8e92e6e412b9f2056c18c37c04da2d}
+
+
+This method copies the contents of current \hyperlink{structConstraintViolation}{Constraint\+Violation} to the buffer received. 
+
+The buffer size must be compatible with this solution\textquotesingle{}s \hyperlink{structConstraintViolation}{Constraint\+Violation} instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The destination buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 257 of file Solution.\+h.
+
+\index{Solution@{Solution}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)}{operator!=(Solution< P, pSize, F, fSize, V, vSize > *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ bool {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a4f0ac3c5f908538e65e4498d1061d156}{}\label{classSolution_a4f0ac3c5f908538e65e4498d1061d156}
+
+
+Definition at line 150 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classSolution_a4f0ac3c5f908538e65e4498d1061d156_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&solution)}{operator!=(Solution< P, pSize, F, fSize, V, vSize > &solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ bool {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a225d6e8e5470be0f3f8bb6abc1a16782}{}\label{classSolution_a225d6e8e5470be0f3f8bb6abc1a16782}
+
+
+Definition at line 153 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classSolution_a225d6e8e5470be0f3f8bb6abc1a16782_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!operator=@{operator=}}
+\index{operator=@{operator=}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator=(\+P $\ast$buffer)}{operator=(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a8943fc57439d7e23ffb4cc4c49ae106e}{}\label{classSolution_a8943fc57439d7e23ffb4cc4c49ae106e}
+
+
+This operator overrides the solution\textquotesingle{}s \hyperlink{structPosition}{Position} with the contents of the buffer received. 
+
+The buffer size must be compatible with this solution\textquotesingle{}s \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The source buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file Solution.\+h.
+
+\index{Solution@{Solution}!operator=@{operator=}}
+\index{operator=@{operator=}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator=(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)}{operator=(Solution< P, pSize, F, fSize, V, vSize > *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a1eb06ad9c9e36af504d84c9d3c611f21}{}\label{classSolution_a1eb06ad9c9e36af504d84c9d3c611f21}
+
+
+Operator that overrides the solution\textquotesingle{}s \hyperlink{structPosition}{Position}, \hyperlink{structFitness}{Fitness} and Violation with the contents of the \hyperlink{classSolution}{Solution} received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The source \hyperlink{classSolution}{Solution} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{classSolution}{Solution} instance is not compatible with current solution. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 113 of file Solution.\+h.
+
+\index{Solution@{Solution}!operator=@{operator=}}
+\index{operator=@{operator=}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator=(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&solution)}{operator=(Solution< P, pSize, F, fSize, V, vSize > &solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_af6f35f821332bc9414773fd659a6a29b}{}\label{classSolution_af6f35f821332bc9414773fd659a6a29b}
+
+
+Definition at line 123 of file Solution.\+h.
+
+\index{Solution@{Solution}!operator==@{operator==}}
+\index{operator==@{operator==}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator==(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)}{operator==(Solution< P, pSize, F, fSize, V, vSize > *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ bool {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a7681f8c7d0c20381203276c7b9a26374}{}\label{classSolution_a7681f8c7d0c20381203276c7b9a26374}
+
+
+Definition at line 144 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classSolution_a7681f8c7d0c20381203276c7b9a26374_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!operator==@{operator==}}
+\index{operator==@{operator==}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator==(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&solution)}{operator==(Solution< P, pSize, F, fSize, V, vSize > &solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ bool {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ \&}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a861971bd3294c0389871abd13d2a9427}{}\label{classSolution_a861971bd3294c0389871abd13d2a9427}
+
+
+Definition at line 147 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classSolution_a861971bd3294c0389871abd13d2a9427_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{operator[](int i)}{operator[](int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Position}$<$P, p\+Size$>$$\ast$ {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_ad783c91ad12c21e861a4639e72c4fd50}{}\label{classSolution_ad783c91ad12c21e861a4639e72c4fd50}
+
+
+Operator that selects a \hyperlink{structPosition}{Position} based on its index in the list of positions. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the \hyperlink{structPosition}{Position} in the list (index list starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{structPosition}{Position} selected. 
+\end{DoxyReturn}
+
+
+Definition at line 165 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classSolution_ad783c91ad12c21e861a4639e72c4fd50_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!reset@{reset}}
+\index{reset@{reset}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{reset(\+Region$<$ P $>$ $\ast$r, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$bias=\+N\+U\+L\+L)}{reset(Region< P > *r, Solution< P, pSize, F, fSize, V, vSize > *bias=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::reset (
+\begin{DoxyParamCaption}
+\item[{{\bf Region}$<$ P $>$ $\ast$}]{r, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{bias = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a84c713b707a570add53e85a28196bb3e}{}\label{classSolution_a84c713b707a570add53e85a28196bb3e}
+
+
+Reset the position of the current \hyperlink{classSolution}{Solution} in the search space. 
+
+If a bias is provided, every the \hyperlink{structPosition}{Position} instance is reset as follows (with 50\% of chance)\+:
+\begin{DoxyItemize}
+\item Close to the bias;
+\item At same \hyperlink{structPosition}{Position} as the bias.
+\end{DoxyItemize}
+
+If the new \hyperlink{structPosition}{Position} violates the boundaries constraints, it will be set to the boundary \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The \char`\"{}anchor\char`\"{} \hyperlink{classRegion}{Region} for the current \hyperlink{classSolution}{Solution}. \\
+\hline
+{\em bias} & The bias to guide the reset. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 294 of file Solution.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_a84c713b707a570add53e85a28196bb3e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_a84c713b707a570add53e85a28196bb3e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!set\+Fitness@{set\+Fitness}}
+\index{set\+Fitness@{set\+Fitness}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{set\+Fitness(\+F $\ast$buffer)}{setFitness(F *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Fitness (
+\begin{DoxyParamCaption}
+\item[{F $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a6c38d7e27c91077d67460a62aed71e06}{}\label{classSolution_a6c38d7e27c91077d67460a62aed71e06}
+
+
+Assigns the values of the buffer received to the current \hyperlink{structFitness}{Fitness} instance. 
+
+The buffer size must be compatible with this solution\textquotesingle{}s \hyperlink{structFitness}{Fitness}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The source buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 229 of file Solution.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolution_a6c38d7e27c91077d67460a62aed71e06_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Solution@{Solution}!set\+Fitness@{set\+Fitness}}
+\index{set\+Fitness@{set\+Fitness}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{set\+Fitness(\+F value)}{setFitness(F value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Fitness (
+\begin{DoxyParamCaption}
+\item[{F}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a06a103b71be515e1835c65abdf3dcb35}{}\label{classSolution_a06a103b71be515e1835c65abdf3dcb35}
+
+
+Assigns the same value to all elements of the \hyperlink{structFitness}{Fitness} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to assign to the \hyperlink{structFitness}{Fitness} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 237 of file Solution.\+h.
+
+\index{Solution@{Solution}!set\+Violation@{set\+Violation}}
+\index{set\+Violation@{set\+Violation}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{set\+Violation(\+V $\ast$buffer)}{setViolation(V *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Violation (
+\begin{DoxyParamCaption}
+\item[{V $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_aad908f750b12ec590878684f042c23ce}{}\label{classSolution_aad908f750b12ec590878684f042c23ce}
+
+
+Assigns the values of the buffer received to the current \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. 
+
+The buffer size must be compatible with this solution\textquotesingle{}s \hyperlink{structConstraintViolation}{Constraint\+Violation} instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The source buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 270 of file Solution.\+h.
+
+\index{Solution@{Solution}!set\+Violation@{set\+Violation}}
+\index{set\+Violation@{set\+Violation}!Solution@{Solution}}
+\subsubsection[{\texorpdfstring{set\+Violation(\+F value)}{setViolation(F value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Violation (
+\begin{DoxyParamCaption}
+\item[{F}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSolution_a8f2b530ec087ff9e62ef00300f6cb17e}{}\label{classSolution_a8f2b530ec087ff9e62ef00300f6cb17e}
+
+
+Assigns the same value to all elements of the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to assign to the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 278 of file Solution.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{Solution_8h}{Solution.\+h}\end{DoxyCompactItemize}

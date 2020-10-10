@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classRelocationStrategyPolicy.xhtml" title="Template for the policy that relocates the population at every TH instance&#39;s iteration. " alt="" coords="5,5,188,65"/>
-<area shape="rect" id="node2" href="$classBetaRelocationStrategyPolicy.xhtml" title="This policy relocates the population based on the Beta&#45;distribution strategy. " alt="" coords="236,5,448,65"/>
+<area shape="rect" id="node1" href="$classSearch.xhtml" title="Template for optimization methods. " alt="" coords="5,40,161,84"/>
+<area shape="rect" id="node2" href="$classHillClimbing.xhtml" title="Implementation of the classic Hill Climbing optimization algorithm for TH. " alt="" coords="215,5,385,49"/>
+<area shape="rect" id="node3" href="$classPSO.xhtml" title="Implementation of the classic Particle Swarm Optimization algorithm for TH. " alt="" coords="209,73,391,117"/>
 </map>

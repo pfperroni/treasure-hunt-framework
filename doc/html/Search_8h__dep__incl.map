@@ -2,10 +2,11 @@
 <area shape="rect" id="node2" href="$ConvergenceControlPolicy_8h.xhtml" title="src/TH/ConvergenceControl\lPolicy.h" alt="" coords="5,157,208,201"/>
 <area shape="rect" id="node4" href="$THBuilder_8h.xhtml" title="src/TH/THBuilder.h" alt="" coords="223,341,369,369"/>
 <area shape="rect" id="node5" href="$SearchScore_8h.xhtml" title="src/TH/SearchScore.h" alt="" coords="283,81,448,109"/>
-<area shape="rect" id="node9" href="$PSO_8h.xhtml" title="src/PSO.h" alt="" coords="472,81,560,109"/>
-<area shape="rect" id="node10" href="$HillClimbing_8h.xhtml" title="src/HillClimbing.h" alt="" coords="737,165,871,193"/>
+<area shape="rect" id="node10" href="$PSO_8h.xhtml" title="src/PSO.h" alt="" coords="472,81,560,109"/>
+<area shape="rect" id="node11" href="$HillClimbing_8h.xhtml" title="src/HillClimbing.h" alt="" coords="880,165,1013,193"/>
 <area shape="rect" id="node3" href="$CSMOn_8h.xhtml" title="src/TH/CSMOn.h" alt="" coords="24,257,157,285"/>
-<area shape="rect" id="node6" href="$SearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SearchAlgorithmSelection\lPolicy.h" alt="" coords="364,157,599,201"/>
-<area shape="rect" id="node7" href="$RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h" alt="" coords="385,249,642,293"/>
-<area shape="rect" id="node8" href="$SingleSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h" alt="" coords="667,249,883,293"/>
+<area shape="rect" id="node6" href="$SearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SearchAlgorithmSelection\lPolicy.h" alt="" coords="387,157,621,201"/>
+<area shape="rect" id="node7" href="$ReinforcementLearningSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/ReinforcementLearning\lSearchAlgorithmSelectionPolicy.h" alt="" coords="385,249,623,293"/>
+<area shape="rect" id="node8" href="$RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h" alt="" coords="647,249,905,293"/>
+<area shape="rect" id="node9" href="$SingleSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h" alt="" coords="929,249,1145,293"/>
 </map>

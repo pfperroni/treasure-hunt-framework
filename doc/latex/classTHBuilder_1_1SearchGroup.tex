@@ -1,0 +1,355 @@
+\hypertarget{classTHBuilder_1_1SearchGroup}{}\section{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:\+:Search\+Group Class Reference}
+\label{classTHBuilder_1_1SearchGroup}\index{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::\+Search\+Group@{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::\+Search\+Group}}
+
+
+Treasure Hunt\textquotesingle{}s \hyperlink{classSearch}{Search} Group.  
+
+
+
+
+{\ttfamily \#include $<$T\+H\+Builder.\+h$>$}
+
+
+
+Collaboration diagram for T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:\+:Search\+Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classTHBuilder_1_1SearchGroup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTHBuilder_1_1SearchGroup_a794cf5448380674b51022b5d65a240e2}{Search\+Group} (\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$config)
+\begin{DoxyCompactList}\small\item\em Constructor to create the internal \hyperlink{classSearch}{Search} Group. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder_1_1SearchGroup_abae61242c9f9ec5a031b9be2505aedd0}{$\sim$\+Search\+Group} ()
+\item 
+void \hyperlink{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0}{run} ()
+\begin{DoxyCompactList}\small\item\em Perform a complete execution of the search group. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$ \hyperlink{classTHBuilder_1_1SearchGroup_ab65d8aba4bd99bb65d31a01fd649415e}{get\+Population} ()
+\item 
+int \hyperlink{classTHBuilder_1_1SearchGroup_a3f8d98c07db48420c49bee854c00ae8b}{get\+Population\+Size} ()
+\item 
+void \hyperlink{classTHBuilder_1_1SearchGroup_aafebb836a1ec681213319a024a254ca8}{reset\+Population} (\hyperlink{classRegion}{Region}$<$ P $>$ $\ast$region)
+\begin{DoxyCompactList}\small\item\em Reset the location of the population individuals and calculate the fitness. \end{DoxyCompactList}\item 
+\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_1_1SearchGroup_a0dcdc7254955afc39899a52f9b997fc3}{get\+Search\+Algorithm\+Last\+Executed} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classSearch}{Search} instance of the last optimization algorithm executed. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_1_1SearchGroup_ad2916b5c8e07aa0db76c48300440dd5e}{get\+Iteration\+Best} ()
+\begin{DoxyCompactList}\small\item\em Get the best \hyperlink{classSolution}{Solution} of the \hyperlink{classTH}{TH} iteration. \end{DoxyCompactList}\item 
+bool \hyperlink{classTHBuilder_1_1SearchGroup_ad3dec76f9fa002b5318a46807eb2ce1f}{has\+Improved\+General\+Best} ()
+\begin{DoxyCompactList}\small\item\em Inform if the last execution of the \hyperlink{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0}{run()} method has improved the general best \hyperlink{classSolution}{Solution}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::\+Search\+Group}
+
+Treasure Hunt\textquotesingle{}s \hyperlink{classSearch}{Search} Group. 
+
+Definition at line 830 of file T\+H\+Builder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!Search\+Group@{Search\+Group}}
+\index{Search\+Group@{Search\+Group}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{Search\+Group(\+T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$config)}{SearchGroup(THBuilder< P, pSize, F, fSize, V, vSize > *config)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::\+Search\+Group (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_a794cf5448380674b51022b5d65a240e2}{}\label{classTHBuilder_1_1SearchGroup_a794cf5448380674b51022b5d65a240e2}
+
+
+Constructor to create the internal \hyperlink{classSearch}{Search} Group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The \hyperlink{classTHBuilder}{T\+H\+Builder} configuration. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 857 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_a794cf5448380674b51022b5d65a240e2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_a794cf5448380674b51022b5d65a240e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!````~Search\+Group@{$\sim$\+Search\+Group}}
+\index{````~Search\+Group@{$\sim$\+Search\+Group}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{$\sim$\+Search\+Group()}{~SearchGroup()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::$\sim$\+Search\+Group (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_abae61242c9f9ec5a031b9be2505aedd0}{}\label{classTHBuilder_1_1SearchGroup_abae61242c9f9ec5a031b9be2505aedd0}
+
+
+Definition at line 908 of file T\+H\+Builder.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!get\+Iteration\+Best@{get\+Iteration\+Best}}
+\index{get\+Iteration\+Best@{get\+Iteration\+Best}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{get\+Iteration\+Best()}{getIterationBest()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::get\+Iteration\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_ad2916b5c8e07aa0db76c48300440dd5e}{}\label{classTHBuilder_1_1SearchGroup_ad2916b5c8e07aa0db76c48300440dd5e}
+
+
+Get the best \hyperlink{classSolution}{Solution} of the \hyperlink{classTH}{TH} iteration. 
+
+\begin{DoxyReturn}{Returns}
+The best \hyperlink{classSolution}{Solution} of the \hyperlink{classTH}{TH} iteration. 
+\end{DoxyReturn}
+
+
+Definition at line 1025 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_ad2916b5c8e07aa0db76c48300440dd5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!get\+Population@{get\+Population}}
+\index{get\+Population@{get\+Population}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{get\+Population()}{getPopulation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::get\+Population (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_ab65d8aba4bd99bb65d31a01fd649415e}{}\label{classTHBuilder_1_1SearchGroup_ab65d8aba4bd99bb65d31a01fd649415e}
+
+
+Definition at line 952 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_ab65d8aba4bd99bb65d31a01fd649415e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!get\+Population\+Size@{get\+Population\+Size}}
+\index{get\+Population\+Size@{get\+Population\+Size}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{get\+Population\+Size()}{getPopulationSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::get\+Population\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_a3f8d98c07db48420c49bee854c00ae8b}{}\label{classTHBuilder_1_1SearchGroup_a3f8d98c07db48420c49bee854c00ae8b}
+
+
+Definition at line 956 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_a3f8d98c07db48420c49bee854c00ae8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!get\+Search\+Algorithm\+Last\+Executed@{get\+Search\+Algorithm\+Last\+Executed}}
+\index{get\+Search\+Algorithm\+Last\+Executed@{get\+Search\+Algorithm\+Last\+Executed}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{get\+Search\+Algorithm\+Last\+Executed()}{getSearchAlgorithmLastExecuted()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::get\+Search\+Algorithm\+Last\+Executed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_a0dcdc7254955afc39899a52f9b997fc3}{}\label{classTHBuilder_1_1SearchGroup_a0dcdc7254955afc39899a52f9b997fc3}
+
+
+Get the \hyperlink{classSearch}{Search} instance of the last optimization algorithm executed. 
+
+\begin{DoxyReturn}{Returns}
+The last optimization algorithm executed. 
+\end{DoxyReturn}
+
+
+Definition at line 1017 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_a0dcdc7254955afc39899a52f9b997fc3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!has\+Improved\+General\+Best@{has\+Improved\+General\+Best}}
+\index{has\+Improved\+General\+Best@{has\+Improved\+General\+Best}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{has\+Improved\+General\+Best()}{hasImprovedGeneralBest()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ bool {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::has\+Improved\+General\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_ad3dec76f9fa002b5318a46807eb2ce1f}{}\label{classTHBuilder_1_1SearchGroup_ad3dec76f9fa002b5318a46807eb2ce1f}
+
+
+Inform if the last execution of the \hyperlink{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0}{run()} method has improved the general best \hyperlink{classSolution}{Solution}. 
+
+\begin{DoxyReturn}{Returns}
+If the general best \hyperlink{classSolution}{Solution} has improved on last \hyperlink{classTH}{TH} iteration. 
+\end{DoxyReturn}
+
+
+Definition at line 1034 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_ad3dec76f9fa002b5318a46807eb2ce1f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!reset\+Population@{reset\+Population}}
+\index{reset\+Population@{reset\+Population}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{reset\+Population(\+Region$<$ P $>$ $\ast$region)}{resetPopulation(Region< P > *region)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::reset\+Population (
+\begin{DoxyParamCaption}
+\item[{{\bf Region}$<$ P $>$ $\ast$}]{region}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_aafebb836a1ec681213319a024a254ca8}{}\label{classTHBuilder_1_1SearchGroup_aafebb836a1ec681213319a024a254ca8}
+
+
+Reset the location of the population individuals and calculate the fitness. 
+
+The reset is performed as follows\+:
+\begin{DoxyItemize}
+\item For the root node\+:
+\begin{DoxyItemize}
+\item If startup Solutions are provided, population individuals will be assigned to these locations;
+\end{DoxyItemize}
+\item For remaining individuals on root node and all other nodes\+:
+\begin{DoxyItemize}
+\item If a bias is provided\+:
+\begin{DoxyItemize}
+\item One single population individuals will be assigned to the bias location (root node only).
+\item Half of the remaining individuals will be assigned close to bias location;
+\item The other half will be reset within the \char`\"{}anchor\char`\"{} sub-\/region.
+\end{DoxyItemize}
+\item If no bias is provided, population individuals will be reset within the \char`\"{}anchor\char`\"{} sub-\/region.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em region} & The \char`\"{}anchor\char`\"{} sub-\/region where the population will be reset. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 975 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_aafebb836a1ec681213319a024a254ca8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_aafebb836a1ec681213319a024a254ca8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}!run@{run}}
+\index{run@{run}!T\+H\+Builder\+::\+Search\+Group@{T\+H\+Builder\+::\+Search\+Group}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::Search\+Group\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0}{}\label{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0}
+
+
+Perform a complete execution of the search group. 
+
+
+
+Definition at line 919 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_1_1SearchGroup_ac8c33d89ddd52e38fb23d7102d9086e0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{THBuilder_8h}{T\+H\+Builder.\+h}\end{DoxyCompactItemize}

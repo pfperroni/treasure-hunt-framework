@@ -1,0 +1,99 @@
+\hypertarget{THBuilder_8h}{}\section{src/\+T\+H/\+T\+H\+Builder.h File Reference}
+\label{THBuilder_8h}\index{src/\+T\+H/\+T\+H\+Builder.\+h@{src/\+T\+H/\+T\+H\+Builder.\+h}}
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}macros.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+S\+M\+On.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Beta\+Relocation\+Strategy\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hill\+Climbing.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Random\+Best\+List\+Selection\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+H\+Tree.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Solution.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Best\+List.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Best\+List\+Selection\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Best\+List\+Update\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Convergent\+Best\+List\+Update\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Iteration\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Fitness\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Region.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Region\+Selection\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Group\+Region\+Selection\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Relocation\+Strategy\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Search.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Search\+Algorithm\+Selection\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Search\+Score.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Search\+Space.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Round\+Robin\+Search\+Algorithm\+Selection\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Beta\+Relocation\+Strategy\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Convergence\+Control\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Relocation\+Strategy\+Policy.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+H\+Util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Mpi\+Type\+Traits.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$execinfo.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+Include dependency graph for T\+H\+Builder.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{THBuilder_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classTHBuilder}{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+\begin{DoxyCompactList}\small\item\em Treasure Hunt Framework Builder. \end{DoxyCompactList}\item 
+class \hyperlink{classTHBuilder_1_1SearchGroup}{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::\+Search\+Group}
+\begin{DoxyCompactList}\small\item\em Treasure Hunt\textquotesingle{}s \hyperlink{classSearch}{Search} Group. \end{DoxyCompactList}\item 
+class \hyperlink{classTHBuilder_1_1THImpl}{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::\+T\+H\+Impl}
+\begin{DoxyCompactList}\small\item\em Actual implementation of Treasure Hunt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{THBuilder_8h_aedbe799ebcb9a19bf98500587fe14879}{signal\+Action\+Handler} (int signal, siginfo\+\_\+t $\ast$info, void $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Treasure Hunt Framework (c)
+
+Copyright 2016-\/2020 Peter Frank Perroni
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+For additional notifications, please check the file N\+O\+T\+I\+C\+E.\+txt. 
+
+\subsection{Function Documentation}
+\index{T\+H\+Builder.\+h@{T\+H\+Builder.\+h}!signal\+Action\+Handler@{signal\+Action\+Handler}}
+\index{signal\+Action\+Handler@{signal\+Action\+Handler}!T\+H\+Builder.\+h@{T\+H\+Builder.\+h}}
+\subsubsection[{\texorpdfstring{signal\+Action\+Handler(int signal, siginfo\+\_\+t $\ast$info, void $\ast$ptr)}{signalActionHandler(int signal, siginfo_t *info, void *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void signal\+Action\+Handler (
+\begin{DoxyParamCaption}
+\item[{int}]{signal, }
+\item[{siginfo\+\_\+t $\ast$}]{info, }
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{THBuilder_8h_aedbe799ebcb9a19bf98500587fe14879}{}\label{THBuilder_8h_aedbe799ebcb9a19bf98500587fe14879}
+A handler to receive the exceptions during running time. 
+
+Definition at line 81 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{THBuilder_8h_aedbe799ebcb9a19bf98500587fe14879_icgraph}
+\end{center}
+\end{figure}
+
+

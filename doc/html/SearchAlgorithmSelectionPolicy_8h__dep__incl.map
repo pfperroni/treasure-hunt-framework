@@ -1,5 +1,6 @@
 <map id="src/TH/SearchAlgorithmSelectionPolicy.h" name="src/TH/SearchAlgorithmSelectionPolicy.h">
-<area shape="rect" id="node2" href="$RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h" alt="" coords="5,97,263,141"/>
-<area shape="rect" id="node3" href="$THBuilder_8h.xhtml" title="src/TH/THBuilder.h" alt="" coords="143,189,290,217"/>
-<area shape="rect" id="node4" href="$SingleSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h" alt="" coords="338,97,554,141"/>
+<area shape="rect" id="node2" href="$ReinforcementLearningSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/ReinforcementLearning\lSearchAlgorithmSelectionPolicy.h" alt="" coords="5,97,244,141"/>
+<area shape="rect" id="node3" href="$RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h" alt="" coords="268,97,525,141"/>
+<area shape="rect" id="node4" href="$THBuilder_8h.xhtml" title="src/TH/THBuilder.h" alt="" coords="406,189,553,217"/>
+<area shape="rect" id="node5" href="$SingleSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h" alt="" coords="601,97,817,141"/>
 </map>

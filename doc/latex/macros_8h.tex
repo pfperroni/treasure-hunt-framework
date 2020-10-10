@@ -1,0 +1,525 @@
+\hypertarget{macros_8h}{}\section{src/\+T\+H/macros.h File Reference}
+\label{macros_8h}\index{src/\+T\+H/macros.\+h@{src/\+T\+H/macros.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+Include dependency graph for macros.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{macros_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{macros_8h_a6b65d3db31c7ad30ca90546884b6f723}{D\+E\+B\+U\+G\+\_\+\+N\+O\+NE}~0
+\item 
+\#define \hyperlink{macros_8h_acaa08d3e51e176e82b6ffff3f1baca3f}{D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC}~1
+\item 
+\#define \hyperlink{macros_8h_a18eba4947c7f6667baf0ca75dfa1f2a5}{D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED}~2
+\item 
+\#define \hyperlink{macros_8h_a2c70153045f9380c46a93f7308721c36}{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM}~0
+\item 
+\#define \hyperlink{macros_8h_a1c1be6ad19f0e8a35577a9972d2de103}{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC}~1
+\item 
+\#define \hyperlink{macros_8h_a7f9cc3771cbd8b8cbd48fc35fb4bab04}{C\+O\+P\+Y\+\_\+\+A\+RR}(orig,  dest,  sz)~for(int \+\_\+i\+\_\+=0; \+\_\+i\+\_\+ $<$ sz; (dest)\mbox{[}\+\_\+i\+\_\+\mbox{]} = (orig)\mbox{[}\+\_\+i\+\_\+\mbox{]}, \+\_\+i\+\_\+++);
+\item 
+\#define \hyperlink{macros_8h_a5cec16a1df9b2b27142f17b36a019dba}{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}(...)
+\item 
+\#define \hyperlink{macros_8h_aee11439afcd246da73e632f5e4659c11}{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}(cond, ...)
+\item 
+\#define \hyperlink{macros_8h_a5c5ad0e409574bcaae54438be8fb46d8}{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF}(cond,  id,  label,  table,  size)
+\item 
+\#define \hyperlink{macros_8h_a8b3dc68c33c390762efe042eddd4622a}{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT}(id,  label,  table,  size)
+\item 
+\#define \hyperlink{macros_8h_ad88e51682795ea8e029f7c2ad7ac5c50}{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}(cond,  id,  label,  table,  size)
+\item 
+\#define \hyperlink{macros_8h_a73d2fbed3424b32253f83cbc10425fd5}{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE}(id,  label,  table,  size)
+\item 
+\#define \hyperlink{macros_8h_aba574dbd1aed3731623c65861bd305ef}{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF}(cond,  id,  label,  table,  rows,  cols)
+\item 
+\#define \hyperlink{macros_8h_acb5b5cf85de19ba144c481f7d4382f34}{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT}(id,  label,  table,  rows,  cols)
+\item 
+\#define \hyperlink{macros_8h_a0db6c988c0f890b2b441953e66e8a68c}{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}(cond,  id,  label,  table,  rows,  cols)
+\item 
+\#define \hyperlink{macros_8h_a57f7f95b490ce3f036bd2a7f02eaa042}{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE}(id,  label,  table,  rows,  cols)
+\item 
+\#define \hyperlink{macros_8h_abd6490faafa13ecc8416333b00efda73}{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE}(id,  label,  solution,  rows,  cols)
+\item 
+\#define \hyperlink{macros_8h_a477b91cf2a3441643dc92e18ee527e8c}{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT}(id,  label,  solution,  rows,  cols)
+\item 
+\#define \hyperlink{macros_8h_a9cbf70f1c2a296f96cf9298c233e02f3}{D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON}(label,  region)
+\item 
+\#define \hyperlink{macros_8h_afbcac31e6968010f576c56e9cb0e97e9}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON}(ID,  label,  region)
+\item 
+\#define \hyperlink{macros_8h_a5ae1e0fff9509791ce6d5806774c1f77}{D\+E\+B\+U\+G\+\_\+\+I\+NT}(label,  value)
+\item 
+\#define \hyperlink{macros_8h_a24ca66695ac380246ea409a44ecad757}{D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE}(label,  value)
+\item 
+\#define \hyperlink{macros_8h_ad53ec6a8df4dade6795b1fe32aa9b2e4}{D\+E\+B\+U\+G\+\_\+\+I\+N\+FO}(...)
+\item 
+\#define \hyperlink{macros_8h_a8b737550b811f7ded595f3d300ed53a7}{D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF}(cond, ...)
+\item 
+\#define \hyperlink{macros_8h_a5b68cfbfcde3ed0d0c0fbde234c118ab}{D\+E\+B\+U\+G\+\_\+\+T\+E\+XT}(...)
+\item 
+\#define \hyperlink{macros_8h_a6e16dc99cb02a3d9a4ce770077139f81}{D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF}(cond, ...)
+\item 
+\#define \hyperlink{macros_8h_a3229af18ce3801801e491c8da7f231b7}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}(ID, ...)
+\item 
+\#define \hyperlink{macros_8h_a6b824d86e7edba861e175e949545ac4c}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}(ID,  cond, ...)
+\item 
+\#define \hyperlink{macros_8h_ab0bf2466429a60e89597feeedb5dd6e1}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO}(ID, ...)
+\item 
+\#define \hyperlink{macros_8h_a4ad395bb9dd7b116111820f81619e2ca}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF}(ID,  cond, ...)
+\item 
+\#define \hyperlink{macros_8h_ac0cfcf261adf037e45c799fb5b07d5aa}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT}(ID, ...)
+\item 
+\#define \hyperlink{macros_8h_a4496cfaa57f57c2cecb0be1ce585567a}{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF}(ID,  cond, ...)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba5f5204fb5d3db46f57614337197eadc8}{M\+S\+G\+\_\+\+S\+T\+A\+R\+T\+UP}, 
+\hyperlink{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c117ef439d802ec1770deef57ae9209}{M\+S\+G\+\_\+\+C\+H\+I\+L\+D2\+P\+A\+R\+E\+NT}, 
+\hyperlink{macros_8h_a06fc87d81c62e9abb8790b6e5713c55bafa187a138f89092130ad7061274e5464}{M\+S\+G\+\_\+\+P\+A\+R\+E\+N\+T2\+C\+H\+I\+LD}, 
+\hyperlink{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba9f1418c0f203f4d6960364bf033e5997}{M\+S\+G\+\_\+\+F\+I\+N\+A\+L\+I\+ZE}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Treasure Hunt Framework (c)
+
+Copyright 2016-\/2020 Peter Frank Perroni
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+For additional notifications, please check the file N\+O\+T\+I\+C\+E.\+txt. 
+
+\subsection{Macro Definition Documentation}
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+\+A\+RR@{C\+O\+P\+Y\+\_\+\+A\+RR}}
+\index{C\+O\+P\+Y\+\_\+\+A\+RR@{C\+O\+P\+Y\+\_\+\+A\+RR}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+P\+Y\+\_\+\+A\+RR}{COPY_ARR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+P\+Y\+\_\+\+A\+RR(
+\begin{DoxyParamCaption}
+\item[{}]{orig, }
+\item[{}]{dest, }
+\item[{}]{sz}
+\end{DoxyParamCaption}
+)~for(int \+\_\+i\+\_\+=0; \+\_\+i\+\_\+ $<$ sz; (dest)\mbox{[}\+\_\+i\+\_\+\mbox{]} = (orig)\mbox{[}\+\_\+i\+\_\+\mbox{]}, \+\_\+i\+\_\+++);}\hypertarget{macros_8h_a7f9cc3771cbd8b8cbd48fc35fb4bab04}{}\label{macros_8h_a7f9cc3771cbd8b8cbd48fc35fb4bab04}
+
+
+Definition at line 44 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO}{DEBUG2FILE_INFO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+FO(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_ab0bf2466429a60e89597feeedb5dd6e1}{}\label{macros_8h_ab0bf2466429a60e89597feeedb5dd6e1}
+
+
+Definition at line 211 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF}{DEBUG2FILE_INFO_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{cond, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a4ad395bb9dd7b116111820f81619e2ca}{}\label{macros_8h_a4ad395bb9dd7b116111820f81619e2ca}
+
+
+Definition at line 212 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}{DEBUG2FILE_MANDATORY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a3229af18ce3801801e491c8da7f231b7}{}\label{macros_8h_a3229af18ce3801801e491c8da7f231b7}
+
+
+Definition at line 209 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}{DEBUG2FILE_MANDATORY_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{cond, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a6b824d86e7edba861e175e949545ac4c}{}\label{macros_8h_a6b824d86e7edba861e175e949545ac4c}
+
+
+Definition at line 210 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON}{DEBUG2FILE_REGION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+R\+E\+G\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{label, }
+\item[{}]{region}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_afbcac31e6968010f576c56e9cb0e97e9}{}\label{macros_8h_afbcac31e6968010f576c56e9cb0e97e9}
+
+
+Definition at line 202 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT}{DEBUG2FILE_TEXT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+XT(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_ac0cfcf261adf037e45c799fb5b07d5aa}{}\label{macros_8h_ac0cfcf261adf037e45c799fb5b07d5aa}
+
+
+Definition at line 213 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF@{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF}{DEBUG2FILE_TEXT_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G2\+F\+I\+L\+E\+\_\+\+T\+E\+X\+T\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{ID, }
+\item[{}]{cond, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a4496cfaa57f57c2cecb0be1ce585567a}{}\label{macros_8h_a4496cfaa57f57c2cecb0be1ce585567a}
+
+
+Definition at line 214 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC@{D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC}}
+\index{D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC@{D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC}{DEBUG_BASIC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+B\+A\+S\+IC~1}\hypertarget{macros_8h_acaa08d3e51e176e82b6ffff3f1baca3f}{}\label{macros_8h_acaa08d3e51e176e82b6ffff3f1baca3f}
+
+
+Definition at line 37 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED@{D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED}}
+\index{D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED@{D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED}{DEBUG_DETAILED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+D\+E\+T\+A\+I\+L\+ED~2}\hypertarget{macros_8h_a18eba4947c7f6667baf0ca75dfa1f2a5}{}\label{macros_8h_a18eba4947c7f6667baf0ca75dfa1f2a5}
+
+
+Definition at line 38 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE}}
+\index{D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE}{DEBUG_DOUBLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+D\+O\+U\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{label, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a24ca66695ac380246ea409a44ecad757}{}\label{macros_8h_a24ca66695ac380246ea409a44ecad757}
+
+
+Definition at line 204 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+I\+N\+FO@{D\+E\+B\+U\+G\+\_\+\+I\+N\+FO}}
+\index{D\+E\+B\+U\+G\+\_\+\+I\+N\+FO@{D\+E\+B\+U\+G\+\_\+\+I\+N\+FO}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+I\+N\+FO}{DEBUG_INFO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+I\+N\+FO(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_ad53ec6a8df4dade6795b1fe32aa9b2e4}{}\label{macros_8h_ad53ec6a8df4dade6795b1fe32aa9b2e4}
+
+
+Definition at line 205 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF}{DEBUG_INFO_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+I\+N\+F\+O\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a8b737550b811f7ded595f3d300ed53a7}{}\label{macros_8h_a8b737550b811f7ded595f3d300ed53a7}
+
+
+Definition at line 206 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+I\+NT}}
+\index{D\+E\+B\+U\+G\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+I\+NT}{DEBUG_INT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+I\+NT(
+\begin{DoxyParamCaption}
+\item[{}]{label, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a5ae1e0fff9509791ce6d5806774c1f77}{}\label{macros_8h_a5ae1e0fff9509791ce6d5806774c1f77}
+
+
+Definition at line 203 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY@{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}}
+\index{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY@{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY}{DEBUG_MANDATORY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+RY(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a5cec16a1df9b2b27142f17b36a019dba}{}\label{macros_8h_a5cec16a1df9b2b27142f17b36a019dba}
+
+
+Definition at line 189 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF}{DEBUG_MANDATORY_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+M\+A\+N\+D\+A\+T\+O\+R\+Y\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_aee11439afcd246da73e632f5e4659c11}{}\label{macros_8h_aee11439afcd246da73e632f5e4659c11}
+
+
+Definition at line 190 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+N\+O\+NE@{D\+E\+B\+U\+G\+\_\+\+N\+O\+NE}}
+\index{D\+E\+B\+U\+G\+\_\+\+N\+O\+NE@{D\+E\+B\+U\+G\+\_\+\+N\+O\+NE}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+N\+O\+NE}{DEBUG_NONE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+N\+O\+NE~0}\hypertarget{macros_8h_a6b65d3db31c7ad30ca90546884b6f723}{}\label{macros_8h_a6b65d3db31c7ad30ca90546884b6f723}
+
+
+Definition at line 36 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON@{D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON}}
+\index{D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON@{D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON}{DEBUG_REGION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+R\+E\+G\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{label, }
+\item[{}]{region}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a9cbf70f1c2a296f96cf9298c233e02f3}{}\label{macros_8h_a9cbf70f1c2a296f96cf9298c233e02f3}
+
+
+Definition at line 201 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE}}
+\index{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE}{DEBUG_SOLUTION_DOUBLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+O\+U\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{solution, }
+\item[{}]{rows, }
+\item[{}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_abd6490faafa13ecc8416333b00efda73}{}\label{macros_8h_abd6490faafa13ecc8416333b00efda73}
+
+
+Definition at line 199 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT}}
+\index{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT}{DEBUG_SOLUTION_INT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+NT(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{solution, }
+\item[{}]{rows, }
+\item[{}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a477b91cf2a3441643dc92e18ee527e8c}{}\label{macros_8h_a477b91cf2a3441643dc92e18ee527e8c}
+
+
+Definition at line 200 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE}{DEBUG_TABLE_DOUBLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{rows, }
+\item[{}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a57f7f95b490ce3f036bd2a7f02eaa042}{}\label{macros_8h_a57f7f95b490ce3f036bd2a7f02eaa042}
+
+
+Definition at line 198 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}{DEBUG_TABLE_DOUBLE_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{rows, }
+\item[{}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a0db6c988c0f890b2b441953e66e8a68c}{}\label{macros_8h_a0db6c988c0f890b2b441953e66e8a68c}
+
+
+Definition at line 197 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT}{DEBUG_TABLE_INT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+NT(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{rows, }
+\item[{}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_acb5b5cf85de19ba144c481f7d4382f34}{}\label{macros_8h_acb5b5cf85de19ba144c481f7d4382f34}
+
+
+Definition at line 196 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF}{DEBUG_TABLE_INT_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+N\+T\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{rows, }
+\item[{}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_aba574dbd1aed3731623c65861bd305ef}{}\label{macros_8h_aba574dbd1aed3731623c65861bd305ef}
+
+
+Definition at line 195 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+E\+XT@{D\+E\+B\+U\+G\+\_\+\+T\+E\+XT}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+E\+XT@{D\+E\+B\+U\+G\+\_\+\+T\+E\+XT}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+E\+XT}{DEBUG_TEXT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+T\+E\+XT(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a5b68cfbfcde3ed0d0c0fbde234c118ab}{}\label{macros_8h_a5b68cfbfcde3ed0d0c0fbde234c118ab}
+
+
+Definition at line 207 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF}{DEBUG_TEXT_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+T\+E\+X\+T\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a6e16dc99cb02a3d9a4ce770077139f81}{}\label{macros_8h_a6e16dc99cb02a3d9a4ce770077139f81}
+
+
+Definition at line 208 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE}}
+\index{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE}{DEBUG_VECTOR_DOUBLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a73d2fbed3424b32253f83cbc10425fd5}{}\label{macros_8h_a73d2fbed3424b32253f83cbc10425fd5}
+
+
+Definition at line 194 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF}{DEBUG_VECTOR_DOUBLE_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_ad88e51682795ea8e029f7c2ad7ac5c50}{}\label{macros_8h_ad88e51682795ea8e029f7c2ad7ac5c50}
+
+
+Definition at line 193 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT}}
+\index{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT}{DEBUG_VECTOR_INT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+NT(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a8b3dc68c33c390762efe042eddd4622a}{}\label{macros_8h_a8b3dc68c33c390762efe042eddd4622a}
+
+
+Definition at line 192 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF}}
+\index{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF@{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF}{DEBUG_VECTOR_INT_IF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+T\+\_\+\+IF(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{id, }
+\item[{}]{label, }
+\item[{}]{table, }
+\item[{}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{macros_8h_a5c5ad0e409574bcaae54438be8fb46d8}{}\label{macros_8h_a5c5ad0e409574bcaae54438be8fb46d8}
+
+
+Definition at line 191 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC@{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC}}
+\index{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC@{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC}{RANDBEHAVIOR_DETERMINISTIC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC~1}\hypertarget{macros_8h_a1c1be6ad19f0e8a35577a9972d2de103}{}\label{macros_8h_a1c1be6ad19f0e8a35577a9972d2de103}
+
+
+Definition at line 41 of file macros.\+h.
+
+\index{macros.\+h@{macros.\+h}!R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM@{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM}}
+\index{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM@{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM}!macros.\+h@{macros.\+h}}
+\subsubsection[{\texorpdfstring{R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM}{RANDBEHAVIOR_RANDOM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+N\+D\+B\+E\+H\+A\+V\+I\+O\+R\+\_\+\+R\+A\+N\+D\+OM~0}\hypertarget{macros_8h_a2c70153045f9380c46a93f7308721c36}{}\label{macros_8h_a2c70153045f9380c46a93f7308721c36}
+
+
+Definition at line 40 of file macros.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{macros_8h_a06fc87d81c62e9abb8790b6e5713c55b}{}\label{macros_8h_a06fc87d81c62e9abb8790b6e5713c55b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+S\+G\+\_\+\+S\+T\+A\+R\+T\+UP@{M\+S\+G\+\_\+\+S\+T\+A\+R\+T\+UP}!macros.\+h@{macros.\+h}}\index{macros.\+h@{macros.\+h}!M\+S\+G\+\_\+\+S\+T\+A\+R\+T\+UP@{M\+S\+G\+\_\+\+S\+T\+A\+R\+T\+UP}}\item[{\em 
+M\+S\+G\+\_\+\+S\+T\+A\+R\+T\+UP\hypertarget{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba5f5204fb5d3db46f57614337197eadc8}{}\label{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba5f5204fb5d3db46f57614337197eadc8}
+}]\index{M\+S\+G\+\_\+\+C\+H\+I\+L\+D2\+P\+A\+R\+E\+NT@{M\+S\+G\+\_\+\+C\+H\+I\+L\+D2\+P\+A\+R\+E\+NT}!macros.\+h@{macros.\+h}}\index{macros.\+h@{macros.\+h}!M\+S\+G\+\_\+\+C\+H\+I\+L\+D2\+P\+A\+R\+E\+NT@{M\+S\+G\+\_\+\+C\+H\+I\+L\+D2\+P\+A\+R\+E\+NT}}\item[{\em 
+M\+S\+G\+\_\+\+C\+H\+I\+L\+D2\+P\+A\+R\+E\+NT\hypertarget{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c117ef439d802ec1770deef57ae9209}{}\label{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c117ef439d802ec1770deef57ae9209}
+}]\index{M\+S\+G\+\_\+\+P\+A\+R\+E\+N\+T2\+C\+H\+I\+LD@{M\+S\+G\+\_\+\+P\+A\+R\+E\+N\+T2\+C\+H\+I\+LD}!macros.\+h@{macros.\+h}}\index{macros.\+h@{macros.\+h}!M\+S\+G\+\_\+\+P\+A\+R\+E\+N\+T2\+C\+H\+I\+LD@{M\+S\+G\+\_\+\+P\+A\+R\+E\+N\+T2\+C\+H\+I\+LD}}\item[{\em 
+M\+S\+G\+\_\+\+P\+A\+R\+E\+N\+T2\+C\+H\+I\+LD\hypertarget{macros_8h_a06fc87d81c62e9abb8790b6e5713c55bafa187a138f89092130ad7061274e5464}{}\label{macros_8h_a06fc87d81c62e9abb8790b6e5713c55bafa187a138f89092130ad7061274e5464}
+}]\index{M\+S\+G\+\_\+\+F\+I\+N\+A\+L\+I\+ZE@{M\+S\+G\+\_\+\+F\+I\+N\+A\+L\+I\+ZE}!macros.\+h@{macros.\+h}}\index{macros.\+h@{macros.\+h}!M\+S\+G\+\_\+\+F\+I\+N\+A\+L\+I\+ZE@{M\+S\+G\+\_\+\+F\+I\+N\+A\+L\+I\+ZE}}\item[{\em 
+M\+S\+G\+\_\+\+F\+I\+N\+A\+L\+I\+ZE\hypertarget{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba9f1418c0f203f4d6960364bf033e5997}{}\label{macros_8h_a06fc87d81c62e9abb8790b6e5713c55ba9f1418c0f203f4d6960364bf033e5997}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 34 of file macros.\+h.
+

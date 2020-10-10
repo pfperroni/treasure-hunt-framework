@@ -1,0 +1,1113 @@
+\hypertarget{structPosition}{}\section{Position$<$ P, p\+Size $>$ Class Template Reference}
+\label{structPosition}\index{Position$<$ P, p\+Size $>$@{Position$<$ P, p\+Size $>$}}
+
+
+This structure represents one location within 1-\/dimension of the search space.  
+
+
+
+
+{\ttfamily \#include $<$Position.\+h$>$}
+
+
+
+Collaboration diagram for Position$<$ P, p\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{structPosition__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structPosition_ac9d8d79414e34bd4486b8fc047cdb5bd}{check\+Compatibility} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\item 
+void \hyperlink{structPosition_a83f7d5b691551f2daba6cb46fff57a46}{operator=} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Operator that assigns the values of a buffer to the list that represents the current \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a591cf87fe7b6708caec26383103d8cfd}{operator=} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the contents of this position with the contents of the \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a7b80895e913c9b5d59e8b71ee7205858}{operator=} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the contents of this position with the contents of the \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a4fbd10c84ee75c05fedce1ca556f4f88}{operator=} (P value)
+\begin{DoxyCompactList}\small\item\em Operator that assigns the same value to all elements of the list that represents the current \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+bool \hyperlink{structPosition_af78cd02c57904a56e97393857b8765eb}{equals} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Compares the current position with the buffer received. \end{DoxyCompactList}\item 
+bool \hyperlink{structPosition_ae49c33a4d51e79c37e9b8b33125f4857}{equals} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\begin{DoxyCompactList}\small\item\em Compares the current position with the position received. \end{DoxyCompactList}\item 
+bool \hyperlink{structPosition_a3d032e44c50a27d25753d11218a9c2e2}{operator==} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\item 
+bool \hyperlink{structPosition_a9f64fcb311f390d34d0eb4082bac294b}{operator==} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ \&position)
+\item 
+bool \hyperlink{structPosition_a90aa25928069f18dd99d3110bf1904b4}{operator!=} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\item 
+bool \hyperlink{structPosition_ae40fb34c593cf7b20a06291c6f5b5811}{operator!=} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ \&position)
+\item 
+void \hyperlink{structPosition_a11256d014f2958d21a1198676208df33}{sum} (double value)
+\begin{DoxyCompactList}\small\item\em Math method that sums (individually) each value in the list that represents the \hyperlink{structPosition}{Position} with the value received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_ad93f2806fcb56ca3be1f8b0eda1f6b37}{sum} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Math method that sums the list that represents the \hyperlink{structPosition}{Position} with the values from the buffer received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a530f7539f8e0673e484f029c53b412b8}{sum} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\begin{DoxyCompactList}\small\item\em Math method that sums the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a2aeaf823d70f300b847ce8cb616f192a}{sum} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Math method that sums the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a4099812c9395b6dbe03ca8d25f7ae7fc}{sub} (double value)
+\begin{DoxyCompactList}\small\item\em Math method that subtracts the value received from each value in the list that represents the \hyperlink{structPosition}{Position} (individually). \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a814f63f8a5d25a5b20675928e169f318}{sub} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Math method that subtracts the values of the buffer received from the list that represents the \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a09bbd5c9bbd247ccd0307a5968a40564}{sub} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\begin{DoxyCompactList}\small\item\em Math method that subtracts the list that represents the \hyperlink{structPosition}{Position} from \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a3c83b8c1230dbde60c84301283cf7fdc}{sub} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Math method that subtracts the list that represents the \hyperlink{structPosition}{Position} from \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a161444b6ea70afe4cfc7bdd81678105c}{mult} (double value)
+\begin{DoxyCompactList}\small\item\em Math method that multiplies (individually) each value in the list that represents the \hyperlink{structPosition}{Position} with the value received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a73c9e6e75985f419ab44cc4a60c508b4}{mult} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Math method that multiplies the list that represents the \hyperlink{structPosition}{Position} with the values from the buffer received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a8cff5fed8bf343eec2689374cb076de1}{mult} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ $\ast$position)
+\begin{DoxyCompactList}\small\item\em Math method that multiplies the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_af6b3fb56cbfec3b133fcc5fb78a54ebd}{mult} (\hyperlink{structPosition}{Position}$<$ P, p\+Size $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Math method that multiplies the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a0c70a4890ea8ba9e8b9ed6b4f6030751}{adjust\+Upper\+Bound} (P max\+Pos)
+\begin{DoxyCompactList}\small\item\em Limit upper the values of this position. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_aae9a6d862e9da174648a84f876f8d78d}{adjust\+Lower\+Bound} (P min\+Pos)
+\begin{DoxyCompactList}\small\item\em Limit lower the values of this position. \end{DoxyCompactList}\item 
+P \hyperlink{structPosition_af5e0d1ae77f5840a090325a7ba9fd8b5}{get\+Internal\+Position} (int i)
+\begin{DoxyCompactList}\small\item\em Get a partial position based on its index in the list of values that represents the actual \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+P $\ast$ \hyperlink{structPosition_a807b3e89c1ddc702e0706a159a5c29d7}{get\+Internal\+Position} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the actual list of values that represents the \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+void \hyperlink{structPosition_a9c2340d3b1f5cb963202db0c9c29cdeb}{get\+Internal\+Position} (P $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This method copies the contents of current \hyperlink{structPosition}{Position} to the buffer received. \end{DoxyCompactList}\item 
+P \hyperlink{structPosition_ae2a4b11eb23489170b704f5edc00d334}{get\+First\+Value} ()
+\begin{DoxyCompactList}\small\item\em Get the first value from the list of values that represents the \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+P \hyperlink{structPosition_a56d15266cecdd63cc07d6ec89f90fb4f}{get\+Lower\+Value} ()
+\begin{DoxyCompactList}\small\item\em Get the lower value from the list of values that represents the \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+P \hyperlink{structPosition_a424b3d5791fcc593c743429e92817982}{get\+Upper\+Value} ()
+\begin{DoxyCompactList}\small\item\em Get the upper value from the list of values that represents the \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+P \hyperlink{structPosition_a8f9b5812209642cb31de38d3745cfc16}{sum\+Internal\+Values} ()
+\begin{DoxyCompactList}\small\item\em Get the sum of values from the list that represents the \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\item 
+int \hyperlink{structPosition_a535edee7c99f47e1ace160beceaf1256}{get\+Position\+Size} ()
+\begin{DoxyCompactList}\small\item\em Get the number of values that represents a \hyperlink{structPosition}{Position}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+P \hyperlink{structPosition_a16cc1f2b7a03ca527033e3215577f374}{internal\+Position} \mbox{[}p\+Size\mbox{]}
+\item 
+int \hyperlink{structPosition_afe6a7e5b5ba96b43714fa94c5eb8f7d5}{size} = p\+Size
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1$>$\\*
+class Position$<$ P, p\+Size $>$}
+
+This structure represents one location within 1-\/dimension of the search space. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+A \hyperlink{structPosition}{Position} on \hyperlink{classTH}{TH} (i.\+e. one location within one actual dimension in the search space) can be represented by multiple values, instead of the traditional 1-\/value dimension (eg., Fourier-\/based search space and interval-\/based search space). The position is an ordered list with any number of elements, whose type must be of same basic data type for all elements (eg., double or int). Therefore, to represent the entire search space, one \hyperlink{structPosition}{Position} object for every dimension is required. 
+
+Definition at line 41 of file Position.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Position@{Position}!adjust\+Lower\+Bound@{adjust\+Lower\+Bound}}
+\index{adjust\+Lower\+Bound@{adjust\+Lower\+Bound}!Position@{Position}}
+\subsubsection[{\texorpdfstring{adjust\+Lower\+Bound(\+P min\+Pos)}{adjustLowerBound(P minPos)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::adjust\+Lower\+Bound (
+\begin{DoxyParamCaption}
+\item[{P}]{min\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_aae9a6d862e9da174648a84f876f8d78d}{}\label{structPosition_aae9a6d862e9da174648a84f876f8d78d}
+
+
+Limit lower the values of this position. 
+
+Any value that is smaller than max\+Pos will be set to max\+Pos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Pos} & The lower limit. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 314 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_aae9a6d862e9da174648a84f876f8d78d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!adjust\+Upper\+Bound@{adjust\+Upper\+Bound}}
+\index{adjust\+Upper\+Bound@{adjust\+Upper\+Bound}!Position@{Position}}
+\subsubsection[{\texorpdfstring{adjust\+Upper\+Bound(\+P max\+Pos)}{adjustUpperBound(P maxPos)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::adjust\+Upper\+Bound (
+\begin{DoxyParamCaption}
+\item[{P}]{max\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a0c70a4890ea8ba9e8b9ed6b4f6030751}{}\label{structPosition_a0c70a4890ea8ba9e8b9ed6b4f6030751}
+
+
+Limit upper the values of this position. 
+
+Any value that is larger than max\+Pos will be set to max\+Pos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Pos} & The upper limit. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 301 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a0c70a4890ea8ba9e8b9ed6b4f6030751_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!check\+Compatibility@{check\+Compatibility}}
+\index{check\+Compatibility@{check\+Compatibility}!Position@{Position}}
+\subsubsection[{\texorpdfstring{check\+Compatibility(\+Position$<$ P, p\+Size $>$ $\ast$position)}{checkCompatibility(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::check\+Compatibility (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_ac9d8d79414e34bd4486b8fc047cdb5bd}{}\label{structPosition_ac9d8d79414e34bd4486b8fc047cdb5bd}
+
+
+Definition at line 45 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_ac9d8d79414e34bd4486b8fc047cdb5bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!equals@{equals}}
+\index{equals@{equals}!Position@{Position}}
+\subsubsection[{\texorpdfstring{equals(\+P $\ast$buffer)}{equals(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ bool {\bf Position}$<$ P, p\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_af78cd02c57904a56e97393857b8765eb}{}\label{structPosition_af78cd02c57904a56e97393857b8765eb}
+
+
+Compares the current position with the buffer received. 
+
+The buffer size must be compatible with this \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{structPosition}{Position} instance has the same contents as the buffer received. False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{structPosition_af78cd02c57904a56e97393857b8765eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!equals@{equals}}
+\index{equals@{equals}!Position@{Position}}
+\subsubsection[{\texorpdfstring{equals(\+Position$<$ P, p\+Size $>$ $\ast$position)}{equals(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ bool {\bf Position}$<$ P, p\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_ae49c33a4d51e79c37e9b8b33125f4857}{}\label{structPosition_ae49c33a4d51e79c37e9b8b33125f4857}
+
+
+Compares the current position with the position received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The \hyperlink{structPosition}{Position} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{structPosition}{Position} instance has the same contents as the position received. False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_ae49c33a4d51e79c37e9b8b33125f4857_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!get\+First\+Value@{get\+First\+Value}}
+\index{get\+First\+Value@{get\+First\+Value}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+First\+Value()}{getFirstValue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P {\bf Position}$<$ P, p\+Size $>$\+::get\+First\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_ae2a4b11eb23489170b704f5edc00d334}{}\label{structPosition_ae2a4b11eb23489170b704f5edc00d334}
+
+
+Get the first value from the list of values that represents the \hyperlink{structPosition}{Position}. 
+
+Useful when the dimensions are represented by 1 single value.
+
+\begin{DoxyReturn}{Returns}
+The first value from the list of values that represents the position. 
+\end{DoxyReturn}
+
+
+Definition at line 363 of file Position.\+h.
+
+\index{Position@{Position}!get\+Internal\+Position@{get\+Internal\+Position}}
+\index{get\+Internal\+Position@{get\+Internal\+Position}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Position(int i)}{getInternalPosition(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P {\bf Position}$<$ P, p\+Size $>$\+::get\+Internal\+Position (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_af5e0d1ae77f5840a090325a7ba9fd8b5}{}\label{structPosition_af5e0d1ae77f5840a090325a7ba9fd8b5}
+
+
+Get a partial position based on its index in the list of values that represents the actual \hyperlink{structPosition}{Position}. 
+
+Given that a \hyperlink{structPosition}{Position} can be represented by multiple values, a \char`\"{}partial position\char`\"{} here actually means one of the values that represents a single dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the partial position in the list (index list starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The partial position selected. 
+\end{DoxyReturn}
+
+
+Definition at line 330 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_af5e0d1ae77f5840a090325a7ba9fd8b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!get\+Internal\+Position@{get\+Internal\+Position}}
+\index{get\+Internal\+Position@{get\+Internal\+Position}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Position()}{getInternalPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P$\ast$ {\bf Position}$<$ P, p\+Size $>$\+::get\+Internal\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a807b3e89c1ddc702e0706a159a5c29d7}{}\label{structPosition_a807b3e89c1ddc702e0706a159a5c29d7}
+
+
+Get a pointer to the actual list of values that represents the \hyperlink{structPosition}{Position}. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the position\textquotesingle{}s values. 
+\end{DoxyReturn}
+
+
+Definition at line 339 of file Position.\+h.
+
+\index{Position@{Position}!get\+Internal\+Position@{get\+Internal\+Position}}
+\index{get\+Internal\+Position@{get\+Internal\+Position}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Position(\+P $\ast$buffer)}{getInternalPosition(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::get\+Internal\+Position (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a9c2340d3b1f5cb963202db0c9c29cdeb}{}\label{structPosition_a9c2340d3b1f5cb963202db0c9c29cdeb}
+
+
+This method copies the contents of current \hyperlink{structPosition}{Position} to the buffer received. 
+
+The buffer size must be compatible with this \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The destination buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 349 of file Position.\+h.
+
+\index{Position@{Position}!get\+Lower\+Value@{get\+Lower\+Value}}
+\index{get\+Lower\+Value@{get\+Lower\+Value}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+Lower\+Value()}{getLowerValue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P {\bf Position}$<$ P, p\+Size $>$\+::get\+Lower\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a56d15266cecdd63cc07d6ec89f90fb4f}{}\label{structPosition_a56d15266cecdd63cc07d6ec89f90fb4f}
+
+
+Get the lower value from the list of values that represents the \hyperlink{structPosition}{Position}. 
+
+\begin{DoxyReturn}{Returns}
+The lower value from the list of values that represents the position. 
+\end{DoxyReturn}
+
+
+Definition at line 369 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a56d15266cecdd63cc07d6ec89f90fb4f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!get\+Position\+Size@{get\+Position\+Size}}
+\index{get\+Position\+Size@{get\+Position\+Size}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+Position\+Size()}{getPositionSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ int {\bf Position}$<$ P, p\+Size $>$\+::get\+Position\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a535edee7c99f47e1ace160beceaf1256}{}\label{structPosition_a535edee7c99f47e1ace160beceaf1256}
+
+
+Get the number of values that represents a \hyperlink{structPosition}{Position}. 
+
+\begin{DoxyReturn}{Returns}
+The number of values that represents a \hyperlink{structPosition}{Position}. 
+\end{DoxyReturn}
+
+
+Definition at line 413 of file Position.\+h.
+
+\index{Position@{Position}!get\+Upper\+Value@{get\+Upper\+Value}}
+\index{get\+Upper\+Value@{get\+Upper\+Value}!Position@{Position}}
+\subsubsection[{\texorpdfstring{get\+Upper\+Value()}{getUpperValue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P {\bf Position}$<$ P, p\+Size $>$\+::get\+Upper\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a424b3d5791fcc593c743429e92817982}{}\label{structPosition_a424b3d5791fcc593c743429e92817982}
+
+
+Get the upper value from the list of values that represents the \hyperlink{structPosition}{Position}. 
+
+\begin{DoxyReturn}{Returns}
+The upper value from the list of values that represents the position. 
+\end{DoxyReturn}
+
+
+Definition at line 383 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a424b3d5791fcc593c743429e92817982_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!mult@{mult}}
+\index{mult@{mult}!Position@{Position}}
+\subsubsection[{\texorpdfstring{mult(double value)}{mult(double value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::mult (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a161444b6ea70afe4cfc7bdd81678105c}{}\label{structPosition_a161444b6ea70afe4cfc7bdd81678105c}
+
+
+Math method that multiplies (individually) each value in the list that represents the \hyperlink{structPosition}{Position} with the value received. 
+
+Notice that any division can be obtained by multiplying by (1/value).
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to multiply every element in the list that represents the \hyperlink{structPosition}{Position}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 251 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{structPosition_a161444b6ea70afe4cfc7bdd81678105c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!mult@{mult}}
+\index{mult@{mult}!Position@{Position}}
+\subsubsection[{\texorpdfstring{mult(\+P $\ast$buffer)}{mult(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::mult (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a73c9e6e75985f419ab44cc4a60c508b4}{}\label{structPosition_a73c9e6e75985f419ab44cc4a60c508b4}
+
+
+Math method that multiplies the list that represents the \hyperlink{structPosition}{Position} with the values from the buffer received. 
+
+The buffer size must be compatible with this \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The values to multiply the elements in the list that represents the \hyperlink{structPosition}{Position}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 266 of file Position.\+h.
+
+\index{Position@{Position}!mult@{mult}}
+\index{mult@{mult}!Position@{Position}}
+\subsubsection[{\texorpdfstring{mult(\+Position$<$ P, p\+Size $>$ $\ast$position)}{mult(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a8cff5fed8bf343eec2689374cb076de1}{}\label{structPosition_a8cff5fed8bf343eec2689374cb076de1}
+
+
+Math method that multiplies the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 279 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{structPosition_a8cff5fed8bf343eec2689374cb076de1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!mult@{mult}}
+\index{mult@{mult}!Position@{Position}}
+\subsubsection[{\texorpdfstring{mult(\+Position$<$ P, p\+Size $>$ \&position)}{mult(Position< P, pSize > &position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_af6b3fb56cbfec3b133fcc5fb78a54ebd}{}\label{structPosition_af6b3fb56cbfec3b133fcc5fb78a54ebd}
+
+
+Math method that multiplies the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 290 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{structPosition_af6b3fb56cbfec3b133fcc5fb78a54ebd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Position$<$ P, p\+Size $>$ $\ast$position)}{operator!=(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ bool {\bf Position}$<$ P, p\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a90aa25928069f18dd99d3110bf1904b4}{}\label{structPosition_a90aa25928069f18dd99d3110bf1904b4}
+
+
+Definition at line 137 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{structPosition_a90aa25928069f18dd99d3110bf1904b4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Position$<$ P, p\+Size $>$ \&position)}{operator!=(Position< P, pSize > &position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ bool {\bf Position}$<$ P, p\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_ae40fb34c593cf7b20a06291c6f5b5811}{}\label{structPosition_ae40fb34c593cf7b20a06291c6f5b5811}
+
+
+Definition at line 140 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{structPosition_ae40fb34c593cf7b20a06291c6f5b5811_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!operator=@{operator=}}
+\index{operator=@{operator=}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator=(\+P $\ast$buffer)}{operator=(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a83f7d5b691551f2daba6cb46fff57a46}{}\label{structPosition_a83f7d5b691551f2daba6cb46fff57a46}
+
+
+Operator that assigns the values of a buffer to the list that represents the current \hyperlink{structPosition}{Position}. 
+
+The buffer size must be compatible with this \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The source buffer to assign to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Position.\+h.
+
+\index{Position@{Position}!operator=@{operator=}}
+\index{operator=@{operator=}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator=(\+Position$<$ P, p\+Size $>$ $\ast$position)}{operator=(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a591cf87fe7b6708caec26383103d8cfd}{}\label{structPosition_a591cf87fe7b6708caec26383103d8cfd}
+
+
+Operator that overrides the contents of this position with the contents of the \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 77 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a591cf87fe7b6708caec26383103d8cfd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!operator=@{operator=}}
+\index{operator=@{operator=}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator=(\+Position$<$ P, p\+Size $>$ \&position)}{operator=(Position< P, pSize > &position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a7b80895e913c9b5d59e8b71ee7205858}{}\label{structPosition_a7b80895e913c9b5d59e8b71ee7205858}
+
+
+Operator that overrides the contents of this position with the contents of the \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 88 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a7b80895e913c9b5d59e8b71ee7205858_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!operator=@{operator=}}
+\index{operator=@{operator=}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator=(\+P value)}{operator=(P value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{P}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a4fbd10c84ee75c05fedce1ca556f4f88}{}\label{structPosition_a4fbd10c84ee75c05fedce1ca556f4f88}
+
+
+Operator that assigns the same value to all elements of the list that represents the current \hyperlink{structPosition}{Position}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to assign to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file Position.\+h.
+
+\index{Position@{Position}!operator==@{operator==}}
+\index{operator==@{operator==}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator==(\+Position$<$ P, p\+Size $>$ $\ast$position)}{operator==(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ bool {\bf Position}$<$ P, p\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a3d032e44c50a27d25753d11218a9c2e2}{}\label{structPosition_a3d032e44c50a27d25753d11218a9c2e2}
+
+
+Definition at line 131 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{structPosition_a3d032e44c50a27d25753d11218a9c2e2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!operator==@{operator==}}
+\index{operator==@{operator==}!Position@{Position}}
+\subsubsection[{\texorpdfstring{operator==(\+Position$<$ P, p\+Size $>$ \&position)}{operator==(Position< P, pSize > &position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ bool {\bf Position}$<$ P, p\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a9f64fcb311f390d34d0eb4082bac294b}{}\label{structPosition_a9f64fcb311f390d34d0eb4082bac294b}
+
+
+Definition at line 134 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{structPosition_a9f64fcb311f390d34d0eb4082bac294b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sub@{sub}}
+\index{sub@{sub}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sub(double value)}{sub(double value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sub (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a4099812c9395b6dbe03ca8d25f7ae7fc}{}\label{structPosition_a4099812c9395b6dbe03ca8d25f7ae7fc}
+
+
+Math method that subtracts the value received from each value in the list that represents the \hyperlink{structPosition}{Position} (individually). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be subtracted from every element in the list that represents the \hyperlink{structPosition}{Position}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 199 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a4099812c9395b6dbe03ca8d25f7ae7fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sub@{sub}}
+\index{sub@{sub}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sub(\+P $\ast$buffer)}{sub(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sub (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a814f63f8a5d25a5b20675928e169f318}{}\label{structPosition_a814f63f8a5d25a5b20675928e169f318}
+
+
+Math method that subtracts the values of the buffer received from the list that represents the \hyperlink{structPosition}{Position}. 
+
+The buffer size must be compatible with this \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to be subtracted from the elements in the list that represents the \hyperlink{structPosition}{Position}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 214 of file Position.\+h.
+
+\index{Position@{Position}!sub@{sub}}
+\index{sub@{sub}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sub(\+Position$<$ P, p\+Size $>$ $\ast$position)}{sub(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a09bbd5c9bbd247ccd0307a5968a40564}{}\label{structPosition_a09bbd5c9bbd247ccd0307a5968a40564}
+
+
+Math method that subtracts the list that represents the \hyperlink{structPosition}{Position} from \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 227 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structPosition_a09bbd5c9bbd247ccd0307a5968a40564_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sub@{sub}}
+\index{sub@{sub}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sub(\+Position$<$ P, p\+Size $>$ \&position)}{sub(Position< P, pSize > &position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a3c83b8c1230dbde60c84301283cf7fdc}{}\label{structPosition_a3c83b8c1230dbde60c84301283cf7fdc}
+
+
+Math method that subtracts the list that represents the \hyperlink{structPosition}{Position} from \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 238 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{structPosition_a3c83b8c1230dbde60c84301283cf7fdc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sum@{sum}}
+\index{sum@{sum}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sum(double value)}{sum(double value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sum (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a11256d014f2958d21a1198676208df33}{}\label{structPosition_a11256d014f2958d21a1198676208df33}
+
+
+Math method that sums (individually) each value in the list that represents the \hyperlink{structPosition}{Position} with the value received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be added to every element in the list that represents the \hyperlink{structPosition}{Position}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file Position.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a11256d014f2958d21a1198676208df33_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sum@{sum}}
+\index{sum@{sum}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sum(\+P $\ast$buffer)}{sum(P *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sum (
+\begin{DoxyParamCaption}
+\item[{P $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_ad93f2806fcb56ca3be1f8b0eda1f6b37}{}\label{structPosition_ad93f2806fcb56ca3be1f8b0eda1f6b37}
+
+
+Math method that sums the list that represents the \hyperlink{structPosition}{Position} with the values from the buffer received. 
+
+The buffer size must be compatible with this \hyperlink{structPosition}{Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The values to be added to the elements in the list that represents the \hyperlink{structPosition}{Position}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 165 of file Position.\+h.
+
+\index{Position@{Position}!sum@{sum}}
+\index{sum@{sum}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sum(\+Position$<$ P, p\+Size $>$ $\ast$position)}{sum(Position< P, pSize > *position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sum (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a530f7539f8e0673e484f029c53b412b8}{}\label{structPosition_a530f7539f8e0673e484f029c53b412b8}
+
+
+Math method that sums the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 178 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{structPosition_a530f7539f8e0673e484f029c53b412b8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sum@{sum}}
+\index{sum@{sum}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sum(\+Position$<$ P, p\+Size $>$ \&position)}{sum(Position< P, pSize > &position)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ void {\bf Position}$<$ P, p\+Size $>$\+::sum (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}$<$ P, p\+Size $>$ \&}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a2aeaf823d70f300b847ce8cb616f192a}{}\label{structPosition_a2aeaf823d70f300b847ce8cb616f192a}
+
+
+Math method that sums the list that represents the \hyperlink{structPosition}{Position} with \hyperlink{structPosition}{Position} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The source \hyperlink{structPosition}{Position} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structPosition}{Position} instance is not compatible with current position. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 189 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{structPosition_a2aeaf823d70f300b847ce8cb616f192a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Position@{Position}!sum\+Internal\+Values@{sum\+Internal\+Values}}
+\index{sum\+Internal\+Values@{sum\+Internal\+Values}!Position@{Position}}
+\subsubsection[{\texorpdfstring{sum\+Internal\+Values()}{sumInternalValues()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P {\bf Position}$<$ P, p\+Size $>$\+::sum\+Internal\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPosition_a8f9b5812209642cb31de38d3745cfc16}{}\label{structPosition_a8f9b5812209642cb31de38d3745cfc16}
+
+
+Get the sum of values from the list that represents the \hyperlink{structPosition}{Position}. 
+
+Useful when the dimension is represented by a composite value.
+
+\begin{DoxyReturn}{Returns}
+The sum of values from the list that represents the position. 
+\end{DoxyReturn}
+
+
+Definition at line 401 of file Position.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{structPosition_a8f9b5812209642cb31de38d3745cfc16_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structPosition_a8f9b5812209642cb31de38d3745cfc16_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Field Documentation}
+\index{Position@{Position}!internal\+Position@{internal\+Position}}
+\index{internal\+Position@{internal\+Position}!Position@{Position}}
+\subsubsection[{\texorpdfstring{internal\+Position}{internalPosition}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ P {\bf Position}$<$ P, p\+Size $>$\+::internal\+Position\mbox{[}p\+Size\mbox{]}}\hypertarget{structPosition_a16cc1f2b7a03ca527033e3215577f374}{}\label{structPosition_a16cc1f2b7a03ca527033e3215577f374}
+
+
+Definition at line 42 of file Position.\+h.
+
+\index{Position@{Position}!size@{size}}
+\index{size@{size}!Position@{Position}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1$>$ int {\bf Position}$<$ P, p\+Size $>$\+::size = p\+Size}\hypertarget{structPosition_afe6a7e5b5ba96b43714fa94c5eb8f7d5}{}\label{structPosition_afe6a7e5b5ba96b43714fa94c5eb8f7d5}
+
+
+Definition at line 43 of file Position.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{Position_8h}{Position.\+h}\end{DoxyCompactItemize}

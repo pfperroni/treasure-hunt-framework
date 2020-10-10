@@ -1,0 +1,295 @@
+\hypertarget{classTHUtil}{}\section{T\+H\+Util Class Reference}
+\label{classTHUtil}\index{T\+H\+Util@{T\+H\+Util}}
+
+
+Static utility methods.  
+
+
+
+
+{\ttfamily \#include $<$T\+H\+Util.\+h$>$}
+
+
+
+Collaboration diagram for T\+H\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classTHUtil__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classTHUtil_ac405438e0d0867945b98b32226c2a5eb}{is\+Folder} (const char $\ast$path)
+\item 
+char $\ast$ \hyperlink{classTHUtil_a5d4a93f3529c11ee522743dba7ac4bca}{get\+Path} (const char $\ast$path)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \hyperlink{classTHUtil_ac88c9d3a82da43e5afc2cb063d2579ec}{get\+Random\+Seed} ()
+\begin{DoxyCompactList}\small\item\em Get a random seed. \end{DoxyCompactList}\item 
+static void \hyperlink{classTHUtil_a819e347db961b91164ba17bcd4e95679}{truncate\+File} (const char $\ast$file\+Name)
+\item 
+static void \hyperlink{classTHUtil_ae3e86de83ed0d32c8057b90ee32c0a1f}{write\+To\+File} (const char $\ast$file\+Name, const char $\ast$content)
+\item 
+static void \hyperlink{classTHUtil_a8ef13a02c176f8b3950f2acd4239c49c}{write\+To\+File} (const char $\ast$file\+Name, vector$<$ string $>$ \&content)
+\item 
+static void \hyperlink{classTHUtil_a37104e857dc60914617e0bc79cb08737}{read\+File} (const char $\ast$file\+Name, vector$<$ string $>$ \&data)
+\item 
+static bool \hyperlink{classTHUtil_a576da7df177362b2c10e6d0704974c85}{exists\+File} (const char $\ast$file\+Name)
+\item 
+static double \hyperlink{classTHUtil_ad95b7150adaf4d576de406c8e7b8142c}{rand\+Uniform\+Double} (unsigned int \&seed, double a, double b)
+\item 
+static int \hyperlink{classTHUtil_a5318218946e65adbdb431a2664d04016}{rand\+Uniform\+Int} (unsigned int \&seed, int a, int b)
+\item 
+static double \hyperlink{classTHUtil_a1961a690dfec7f0dab0be849d31828ea}{rand\+Normal\+Double} (unsigned int \&seed, double a, double b)
+\item 
+static int \hyperlink{classTHUtil_a3b5857a6e815f895ffab6a769ed484c8}{rand\+Normal\+Int} (unsigned int \&seed, int a, int b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static utility methods. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 40 of file T\+H\+Util.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\+H\+Util@{T\+H\+Util}!exists\+File@{exists\+File}}
+\index{exists\+File@{exists\+File}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{exists\+File(const char $\ast$file\+Name)}{existsFile(const char *fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool T\+H\+Util\+::exists\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a576da7df177362b2c10e6d0704974c85}{}\label{classTHUtil_a576da7df177362b2c10e6d0704974c85}
+
+
+Definition at line 117 of file T\+H\+Util.\+h.
+
+\index{T\+H\+Util@{T\+H\+Util}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{get\+Path(const char $\ast$path)}{getPath(const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ T\+H\+Util\+::get\+Path (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHUtil_a5d4a93f3529c11ee522743dba7ac4bca}{}\label{classTHUtil_a5d4a93f3529c11ee522743dba7ac4bca}
+Return the directory path portion of a full path. The char pointer must be freed up through the free() function. 
+
+Definition at line 138 of file T\+H\+Util.\+h.
+
+\index{T\+H\+Util@{T\+H\+Util}!get\+Random\+Seed@{get\+Random\+Seed}}
+\index{get\+Random\+Seed@{get\+Random\+Seed}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{get\+Random\+Seed()}{getRandomSeed()}}]{\setlength{\rightskip}{0pt plus 5cm}static unsigned int T\+H\+Util\+::get\+Random\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_ac88c9d3a82da43e5afc2cb063d2579ec}{}\label{classTHUtil_ac88c9d3a82da43e5afc2cb063d2579ec}
+
+
+Get a random seed. 
+
+For non unix-\/like environments, a sequential seed will be returned.
+
+\begin{DoxyReturn}{Returns}
+A random seed. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file T\+H\+Util.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHUtil_ac88c9d3a82da43e5afc2cb063d2579ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Util@{T\+H\+Util}!is\+Folder@{is\+Folder}}
+\index{is\+Folder@{is\+Folder}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{is\+Folder(const char $\ast$path)}{isFolder(const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool T\+H\+Util\+::is\+Folder (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHUtil_ac405438e0d0867945b98b32226c2a5eb}{}\label{classTHUtil_ac405438e0d0867945b98b32226c2a5eb}
+
+
+Definition at line 126 of file T\+H\+Util.\+h.
+
+\index{T\+H\+Util@{T\+H\+Util}!rand\+Normal\+Double@{rand\+Normal\+Double}}
+\index{rand\+Normal\+Double@{rand\+Normal\+Double}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{rand\+Normal\+Double(unsigned int \&seed, double a, double b)}{randNormalDouble(unsigned int &seed, double a, double b)}}]{\setlength{\rightskip}{0pt plus 5cm}static double T\+H\+Util\+::rand\+Normal\+Double (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{seed, }
+\item[{double}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a1961a690dfec7f0dab0be849d31828ea}{}\label{classTHUtil_a1961a690dfec7f0dab0be849d31828ea}
+
+
+Definition at line 151 of file T\+H\+Util.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHUtil_a1961a690dfec7f0dab0be849d31828ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Util@{T\+H\+Util}!rand\+Normal\+Int@{rand\+Normal\+Int}}
+\index{rand\+Normal\+Int@{rand\+Normal\+Int}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{rand\+Normal\+Int(unsigned int \&seed, int a, int b)}{randNormalInt(unsigned int &seed, int a, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}static int T\+H\+Util\+::rand\+Normal\+Int (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{seed, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a3b5857a6e815f895ffab6a769ed484c8}{}\label{classTHUtil_a3b5857a6e815f895ffab6a769ed484c8}
+
+
+Definition at line 156 of file T\+H\+Util.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHUtil_a3b5857a6e815f895ffab6a769ed484c8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Util@{T\+H\+Util}!rand\+Uniform\+Double@{rand\+Uniform\+Double}}
+\index{rand\+Uniform\+Double@{rand\+Uniform\+Double}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{rand\+Uniform\+Double(unsigned int \&seed, double a, double b)}{randUniformDouble(unsigned int &seed, double a, double b)}}]{\setlength{\rightskip}{0pt plus 5cm}static double T\+H\+Util\+::rand\+Uniform\+Double (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{seed, }
+\item[{double}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_ad95b7150adaf4d576de406c8e7b8142c}{}\label{classTHUtil_ad95b7150adaf4d576de406c8e7b8142c}
+
+
+Definition at line 148 of file T\+H\+Util.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHUtil_ad95b7150adaf4d576de406c8e7b8142c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Util@{T\+H\+Util}!rand\+Uniform\+Int@{rand\+Uniform\+Int}}
+\index{rand\+Uniform\+Int@{rand\+Uniform\+Int}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{rand\+Uniform\+Int(unsigned int \&seed, int a, int b)}{randUniformInt(unsigned int &seed, int a, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}static int T\+H\+Util\+::rand\+Uniform\+Int (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{seed, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a5318218946e65adbdb431a2664d04016}{}\label{classTHUtil_a5318218946e65adbdb431a2664d04016}
+
+
+Definition at line 149 of file T\+H\+Util.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHUtil_a5318218946e65adbdb431a2664d04016_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHUtil_a5318218946e65adbdb431a2664d04016_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Util@{T\+H\+Util}!read\+File@{read\+File}}
+\index{read\+File@{read\+File}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{read\+File(const char $\ast$file\+Name, vector$<$ string $>$ \&data)}{readFile(const char *fileName, vector< string > &data)}}]{\setlength{\rightskip}{0pt plus 5cm}static void T\+H\+Util\+::read\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+Name, }
+\item[{vector$<$ string $>$ \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a37104e857dc60914617e0bc79cb08737}{}\label{classTHUtil_a37104e857dc60914617e0bc79cb08737}
+
+
+Definition at line 103 of file T\+H\+Util.\+h.
+
+\index{T\+H\+Util@{T\+H\+Util}!truncate\+File@{truncate\+File}}
+\index{truncate\+File@{truncate\+File}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{truncate\+File(const char $\ast$file\+Name)}{truncateFile(const char *fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}static void T\+H\+Util\+::truncate\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a819e347db961b91164ba17bcd4e95679}{}\label{classTHUtil_a819e347db961b91164ba17bcd4e95679}
+
+
+Definition at line 75 of file T\+H\+Util.\+h.
+
+\index{T\+H\+Util@{T\+H\+Util}!write\+To\+File@{write\+To\+File}}
+\index{write\+To\+File@{write\+To\+File}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{write\+To\+File(const char $\ast$file\+Name, const char $\ast$content)}{writeToFile(const char *fileName, const char *content)}}]{\setlength{\rightskip}{0pt plus 5cm}static void T\+H\+Util\+::write\+To\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+Name, }
+\item[{const char $\ast$}]{content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_ae3e86de83ed0d32c8057b90ee32c0a1f}{}\label{classTHUtil_ae3e86de83ed0d32c8057b90ee32c0a1f}
+
+
+Definition at line 83 of file T\+H\+Util.\+h.
+
+\index{T\+H\+Util@{T\+H\+Util}!write\+To\+File@{write\+To\+File}}
+\index{write\+To\+File@{write\+To\+File}!T\+H\+Util@{T\+H\+Util}}
+\subsubsection[{\texorpdfstring{write\+To\+File(const char $\ast$file\+Name, vector$<$ string $>$ \&content)}{writeToFile(const char *fileName, vector< string > &content)}}]{\setlength{\rightskip}{0pt plus 5cm}static void T\+H\+Util\+::write\+To\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+Name, }
+\item[{vector$<$ string $>$ \&}]{content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classTHUtil_a8ef13a02c176f8b3950f2acd4239c49c}{}\label{classTHUtil_a8ef13a02c176f8b3950f2acd4239c49c}
+
+
+Definition at line 92 of file T\+H\+Util.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{THUtil_8h}{T\+H\+Util.\+h}\end{DoxyCompactItemize}

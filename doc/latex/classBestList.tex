@@ -1,0 +1,242 @@
+\hypertarget{classBestList}{}\section{Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classBestList}\index{Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+An instance of this class holds the best-\/list for its respective \hyperlink{classTH}{TH} instance.  
+
+
+
+
+{\ttfamily \#include $<$Best\+List.\+h$>$}
+
+
+
+Collaboration diagram for Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classBestList__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBestList_a4bd603848a6e66f1242323f945fedbe9}{Best\+List} (int list\+Size, int n)
+\begin{DoxyCompactList}\small\item\em Constructor that generates an empty best-\/list instance. \end{DoxyCompactList}\item 
+\hyperlink{classBestList_ae664f030cfdd2440bc05ef4873915d32}{Best\+List} (\hyperlink{classBestList}{Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List)
+\begin{DoxyCompactList}\small\item\em Constructor that generates a new best-\/list initialized as a full copy of another \hyperlink{classBestList}{Best\+List} instance. \end{DoxyCompactList}\item 
+\hyperlink{classBestList_a7d0ac19666923c1c94a130a16b176125}{$\sim$\+Best\+List} ()
+\begin{DoxyCompactList}\small\item\em This destructor deletes all Solutions stored in the best-\/list (i.\+e. releases their memories). \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classBestList_a47b06e0c8d982f3d89769ce6b66adf0c}{operator\mbox{[}$\,$\mbox{]}} (int idx)
+\begin{DoxyCompactList}\small\item\em Operator that selects a \hyperlink{classSolution}{Solution} based on its index in the list of solutions. \end{DoxyCompactList}\item 
+void \hyperlink{classBestList_a4a5650fb72c71d6027540daa96de0d39}{set} (int idx, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)
+\begin{DoxyCompactList}\small\item\em Operator to set an element in the list. \end{DoxyCompactList}\item 
+int \hyperlink{classBestList_ac627a3267d2b7cf8f579cc7e5b77d2e3}{get\+List\+Size} ()
+\item 
+int \hyperlink{classBestList_adaf365728d0834a5f2b7f3c47dd76788}{get\+N\+Dimensions} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+An instance of this class holds the best-\/list for its respective \hyperlink{classTH}{TH} instance. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 33 of file Best\+List.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Best\+List@{Best\+List}!Best\+List@{Best\+List}}
+\index{Best\+List@{Best\+List}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{Best\+List(int list\+Size, int n)}{BestList(int listSize, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Best\+List} (
+\begin{DoxyParamCaption}
+\item[{int}]{list\+Size, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_a4bd603848a6e66f1242323f945fedbe9}{}\label{classBestList_a4bd603848a6e66f1242323f945fedbe9}
+
+
+Constructor that generates an empty best-\/list instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Size} & List size. \\
+\hline
+{\em n} & Maximum number of dimensions to be optimized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Best\+List.\+h.
+
+\index{Best\+List@{Best\+List}!Best\+List@{Best\+List}}
+\index{Best\+List@{Best\+List}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{Best\+List(\+Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List)}{BestList(BestList< P, pSize, F, fSize, V, vSize > *bestList)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Best\+List} (
+\begin{DoxyParamCaption}
+\item[{{\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{best\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_ae664f030cfdd2440bc05ef4873915d32}{}\label{classBestList_ae664f030cfdd2440bc05ef4873915d32}
+
+
+Constructor that generates a new best-\/list initialized as a full copy of another \hyperlink{classBestList}{Best\+List} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List} & The source \hyperlink{classBestList}{Best\+List} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Best\+List.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestList_ae664f030cfdd2440bc05ef4873915d32_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Best\+List@{Best\+List}!````~Best\+List@{$\sim$\+Best\+List}}
+\index{````~Best\+List@{$\sim$\+Best\+List}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{$\sim$\+Best\+List()}{~BestList()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Best\+List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_a7d0ac19666923c1c94a130a16b176125}{}\label{classBestList_a7d0ac19666923c1c94a130a16b176125}
+
+
+This destructor deletes all Solutions stored in the best-\/list (i.\+e. releases their memories). 
+
+
+
+Definition at line 72 of file Best\+List.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Best\+List@{Best\+List}!get\+List\+Size@{get\+List\+Size}}
+\index{get\+List\+Size@{get\+List\+Size}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{get\+List\+Size()}{getListSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+List\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_ac627a3267d2b7cf8f579cc7e5b77d2e3}{}\label{classBestList_ac627a3267d2b7cf8f579cc7e5b77d2e3}
+
+
+Definition at line 108 of file Best\+List.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestList_ac627a3267d2b7cf8f579cc7e5b77d2e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Best\+List@{Best\+List}!get\+N\+Dimensions@{get\+N\+Dimensions}}
+\index{get\+N\+Dimensions@{get\+N\+Dimensions}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{get\+N\+Dimensions()}{getNDimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+N\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_adaf365728d0834a5f2b7f3c47dd76788}{}\label{classBestList_adaf365728d0834a5f2b7f3c47dd76788}
+
+
+Definition at line 112 of file Best\+List.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestList_adaf365728d0834a5f2b7f3c47dd76788_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Best\+List@{Best\+List}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{operator[](int idx)}{operator[](int idx)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_a47b06e0c8d982f3d89769ce6b66adf0c}{}\label{classBestList_a47b06e0c8d982f3d89769ce6b66adf0c}
+
+
+Operator that selects a \hyperlink{classSolution}{Solution} based on its index in the list of solutions. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The position of the \hyperlink{classSolution}{Solution} in the list (index list starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{classSolution}{Solution} selected. 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Best\+List.\+h.
+
+\index{Best\+List@{Best\+List}!set@{set}}
+\index{set@{set}!Best\+List@{Best\+List}}
+\subsubsection[{\texorpdfstring{set(int idx, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)}{set(int idx, Solution< P, pSize, F, fSize, V, vSize > *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{idx, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestList_a4a5650fb72c71d6027540daa96de0d39}{}\label{classBestList_a4a5650fb72c71d6027540daa96de0d39}
+
+
+Operator to set an element in the list. 
+
+The old element (if any) is deleted (i.\+e. its memory is released) and the respective index position will point to the solution received as parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index in the list to set the new \hyperlink{classSolution}{Solution} (list starts in zero). \\
+\hline
+{\em solution} & The new \hyperlink{classSolution}{Solution} instance to add to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file Best\+List.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestList_a4a5650fb72c71d6027540daa96de0d39_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{BestList_8h}{Best\+List.\+h}\end{DoxyCompactItemize}

@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62f08e7286d9bc86ca2f66f07372a513 inherit pub_methods_classRegionSelectionPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a6db1114b3994f1d766f808a1d8616c inherit pub_methods_classRegionSelectionPolicy"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegionSelectionPolicy.xhtml#a1a6db1114b3994f1d766f808a1d8616c">~RegionSelectionPolicy</a> ()</td></tr>
 <tr class="separator:a1a6db1114b3994f1d766f808a1d8616c inherit pub_methods_classRegionSelectionPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa942108fc219d24ca0e98837f5e504ba inherit pub_methods_classRegionSelectionPolicy"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegionSelectionPolicy.xhtml#aa942108fc219d24ca0e98837f5e504ba">recalculate</a> (<a class="el" href="structIterationData.xhtml">IterationData</a>&lt; P, pSize, F, fSize, V, vSize &gt; *iterationData, <a class="el" href="classSearchSpace.xhtml">SearchSpace</a>&lt; P &gt; *S, <a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *R, <a class="el" href="classTHTree.xhtml">THTree</a> *tree, int ID)</td></tr>
-<tr class="memdesc:aa942108fc219d24ca0e98837f5e504ba inherit pub_methods_classRegionSelectionPolicy"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method can be used by sub-classes to obtain a dynamic region at every <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> iteration.  <a href="#aa942108fc219d24ca0e98837f5e504ba">More...</a><br /></td></tr>
-<tr class="separator:aa942108fc219d24ca0e98837f5e504ba inherit pub_methods_classRegionSelectionPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6a0b2d2dee3eceae9cd3b16e5f01ca inherit pub_methods_classRegionSelectionPolicy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegionSelectionPolicy.xhtml#a7e6a0b2d2dee3eceae9cd3b16e5f01ca">recalculate</a> (<a class="el" href="structIterationData.xhtml">IterationData</a>&lt; P, pSize, F, fSize, V, vSize &gt; *iterationData, <a class="el" href="classSearchSpace.xhtml">SearchSpace</a>&lt; P &gt; *S, <a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *R, <a class="el" href="classTHTree.xhtml">THTree</a> *tree, int ID)</td></tr>
+<tr class="memdesc:a7e6a0b2d2dee3eceae9cd3b16e5f01ca inherit pub_methods_classRegionSelectionPolicy"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method can be used by sub-classes to obtain a dynamic region at every <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> iteration.  <a href="#a7e6a0b2d2dee3eceae9cd3b16e5f01ca">More...</a><br /></td></tr>
+<tr class="separator:a7e6a0b2d2dee3eceae9cd3b16e5f01ca inherit pub_methods_classRegionSelectionPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, class V = double, int vSize = 1&gt;<br />
@@ -133,7 +133,7 @@ class GroupRegionSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</h3>
 <dl class="section author"><dt>Author</dt><dd>Peter Frank Perroni</dd></dl>
 <p>All dimensions inside the same group will be partitioned proportionally at same positions, and then an "anchor" sub-region is selected based on <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> instance's position on <a class="el" href="classTHTree.xhtml" title="Treasure Hunt Tree Topology. ">THTree</a> topology. </p>
 
-<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00023">23</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00038">38</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa4b4b59ce5231206f49b320e2aeb1cd6"></a>
 <div class="memitem">
@@ -178,7 +178,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00076">76</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00091">91</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00080">80</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00095">95</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 
 <p>Implements <a class="el" href="classRegionSelectionPolicy.xhtml#add02b5dae00356db700d37e10c025d26">RegionSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00092">92</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml#l00107">107</a> of file <a class="el" href="GroupRegionSelectionPolicy_8h_source.xhtml">GroupRegionSelectionPolicy.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -281,7 +281,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 7 2020 13:08:20 for Treasure Hunt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 10 2020 18:30:49 for Treasure Hunt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,0 +1,1454 @@
+\hypertarget{classTHBuilder}{}\section{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classTHBuilder}\index{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Treasure Hunt Framework Builder.  
+
+
+
+
+{\ttfamily \#include $<$T\+H\+Builder.\+h$>$}
+
+
+
+Collaboration diagram for T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classTHBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classTHBuilder_1_1SearchGroup}{Search\+Group}
+\begin{DoxyCompactList}\small\item\em Treasure Hunt\textquotesingle{}s \hyperlink{classSearch}{Search} Group. \end{DoxyCompactList}\item 
+class \hyperlink{classTHBuilder_1_1THImpl}{T\+H\+Impl}
+\begin{DoxyCompactList}\small\item\em Actual implementation of Treasure Hunt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTHBuilder_a2d967b012c3f11d9cb91967a54cf08ac}{T\+H\+Builder} ()
+\begin{DoxyCompactList}\small\item\em Constructor to create a \hyperlink{classTHBuilder}{T\+H\+Builder} instance. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder_a856d494431279af63670799fe3917cc3}{$\sim$\+T\+H\+Builder} ()
+\item 
+\hyperlink{classTH}{TH}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_afbfe480878be27deb1b9386046c67376}{build} ()
+\begin{DoxyCompactList}\small\item\em Build the \hyperlink{classTH}{TH} implementation based on the configuration. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a35119e0e5d0f1c1dd61dfe0adbcdce05}{set\+Mpi\+Comm} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Start the M\+PI environment. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a44f1ca2b80b90f9481d2e8e6b7062289}{set\+Mpi\+Comm} (M\+P\+I\+\_\+\+Comm mpi\+Comm)
+\begin{DoxyCompactList}\small\item\em Start the M\+PI environment. \end{DoxyCompactList}\item 
+\hyperlink{classTH}{TH}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_ae812723b4b9a95f62db532c203018080}{get\+TH} ()
+\item 
+\hyperlink{classTHTree}{T\+H\+Tree} $\ast$ \hyperlink{classTHBuilder_a6ad815c9e35b81b9b8f6507b6bdac5bf}{get\+T\+H\+Tree} ()
+\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a60f69568fb3ec70319c371b88d595b22}{set\+T\+H\+Tree} (\hyperlink{classTHTree}{T\+H\+Tree} $\ast$th\+Tree)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classTHTree}{T\+H\+Tree} topology. \end{DoxyCompactList}\item 
+\hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a4ebc7b6974e1d91c6873c4e573db8121}{get\+Best\+List\+Selection\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_ab51929bf444ba8ba95407234b6b03aae}{set\+Best\+List\+Selection\+Policy} (\hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List\+Selection\+Policy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_aca895af8d67060f0f66176aa18f00f98}{get\+Best\+List\+Update\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a6417e7c24c6b96ed051e9ea9707faa95}{set\+Best\+List\+Update\+Policy} (\hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List\+Update\+Policy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a2039c208430cd418c4d452ef300fe086}{get\+Bias} ()
+\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a5f47578905fa8cf904dd02b83aa49927}{set\+Bias} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$bias)
+\begin{DoxyCompactList}\small\item\em Define a bias for the search. \end{DoxyCompactList}\item 
+\hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_af3eb76a92cb3c0caf8452cdd9e26bac7}{get\+Convergence\+Control\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a34fc0f328c6cdbe46f04bcb0e4cebde3}{set\+Convergence\+Control\+Policy} (\hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$convergence\+Control)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a0a60bb8ec5f86ccef3ef4a12de34e24b}{get\+Relocation\+Strategy\+Data} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a5edb000d129c799fd75541d71fd89a2b}{set\+Relocation\+Strategy\+Data} (\hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$relocation\+Strategy\+Data)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data}. \end{DoxyCompactList}\item 
+\hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a080cdf2aea549d1074186156aa449b62}{get\+Relocation\+Strategy\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_ab5e07bd198dd27f690145323bc6c06b3}{set\+Relocation\+Strategy\+Policy} (\hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$relocation\+Strategy\+Update\+Policy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a6e0fe39ec073e41f1ff16f0a842787a7}{get\+Local\+Search\+Algorithm} ()
+\begin{DoxyCompactList}\small\item\em Get the local search algorithm configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a4827ba95c2880340d8460db7779157d1}{set\+Local\+Search\+Algorithm} (\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$local\+Search\+Algorithm)
+\begin{DoxyCompactList}\small\item\em Set the local search algorithm. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classSearchScore}{Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$ \hyperlink{classTHBuilder_a965c2231b9dd21a606a5de11d4682a33}{get\+Search\+Algorithms} ()
+\begin{DoxyCompactList}\small\item\em Get the search algorithms configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a53f501609ac8f791e02668406cbf81a3}{add\+Search\+Algorithm} (\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search\+Algorithm, double weight=1)
+\begin{DoxyCompactList}\small\item\em Add a search algorithm to the \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+int \hyperlink{classTHBuilder_a876380ef9e0647b90bd80bcc04cbcd58}{get\+Max\+Population\+Size} ()
+\begin{DoxyCompactList}\small\item\em The largest \textquotesingle{}preferred population size\textquotesingle{} from all search algorithms configured. \end{DoxyCompactList}\item 
+\hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a097e1501549341f26e5316aca8108b5c}{get\+Search\+Algorithm\+Selection\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_ac69c37de4054ba5357697671f2c744e9}{set\+Search\+Algorithm\+Selection\+Policy} (\hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search\+Algorithm\+Selection\+Policy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{classFitnessPolicy}{Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a17045426d43ae6798b10b552e6743f6d}{get\+Fitness\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classFitnessPolicy}{Fitness\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a3db1fc6f43af80aac1ec2e6457477e48}{set\+Fitness\+Policy} (\hyperlink{classFitnessPolicy}{Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classFitnessPolicy}{Fitness\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a196903e0bccbc650cd8a965987756d28}{get\+Region\+Selection\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a802ae68e9ac5c333beefdd4c51d5ff26}{set\+Region\+Selection\+Policy} (\hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$region\+Selection\+Policy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy}. \end{DoxyCompactList}\item 
+\hyperlink{classSearchSpace}{Search\+Space}$<$ P $>$ $\ast$ \hyperlink{classTHBuilder_a611f5596ed334d38c1d77d57845676ed}{get\+Search\+Space} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classSearchSpace}{Search\+Space} configured. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_ae0a7c1fca77f87c9d9e6bbad4c8f20be}{set\+Search\+Space} (\hyperlink{classSearchSpace}{Search\+Space}$<$ P $>$ $\ast$search\+Space)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classSearchSpace}{Search\+Space}. \end{DoxyCompactList}\item 
+int \hyperlink{classTHBuilder_a2635dd5906c5a0884eadd4357b57f622}{get\+N\+Startup\+Solutions} ()
+\begin{DoxyCompactList}\small\item\em Get the number of startup solutions to be used. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$ \hyperlink{classTHBuilder_a4ee5b9c2c19c8e0adb0991593a4d19e5}{get\+Startup\+Solutions} ()
+\begin{DoxyCompactList}\small\item\em Get the startup solutions to be used. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a15fc2e240479724b68237c5beee89a17}{set\+Startup\+Solution} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$startup\+Solution)
+\begin{DoxyCompactList}\small\item\em Set a single startup solution. \end{DoxyCompactList}\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a694516b770c24584f0473b4091af623e}{set\+Startup\+Solutions} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$startup\+Solutions, int n\+Startup\+Solutions)
+\begin{DoxyCompactList}\small\item\em Set multiple startup solutions. \end{DoxyCompactList}\item 
+long long \hyperlink{classTHBuilder_a4b9fc144f6c5090f23514fff87a10f78}{get\+Max\+Number\+Evaluations} ()
+\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a290771e2a41317ba51aa6df7d44f8f78}{set\+Max\+Number\+Evaluations} (long long max\+Number\+Evaluations)
+\begin{DoxyCompactList}\small\item\em Set the maximum number of fitness evaluations allowed for this \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+long \hyperlink{classTHBuilder_a701deae1181c4da26aa949bf8415de38}{get\+Max\+Time\+Seconds} ()
+\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a7771801a41fe5952fad566471f28fbfe}{set\+Max\+Time\+Seconds} (long max\+Time\+Seconds)
+\begin{DoxyCompactList}\small\item\em Set the maximum execution time (in seconds) allowed for this \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+long long \hyperlink{classTHBuilder_a35de691f57f40cb8719190e8a2ca6ccf}{get\+N\+Evals} ()
+\begin{DoxyCompactList}\small\item\em Get the global number of fitness function evaluations performed by this \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+int \hyperlink{classTHBuilder_a25aa4f49bfb82628b5add5aaa83d3802}{get\+Id} ()
+\item 
+M\+P\+I\+\_\+\+Comm \hyperlink{classTHBuilder_a600284527c76f199d241cf942f194526}{get\+Cart\+Grid} ()
+\item 
+long long \hyperlink{classTHBuilder_ae1d2cf8a2379569533ba1dd4bdf4fbed}{get\+Max\+Iterations} ()
+\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_a78b5b68147deb9cb98520b37694365e4}{set\+Max\+Iterations} (long long max\+Iterations)
+\begin{DoxyCompactList}\small\item\em Set the maximum number of \hyperlink{classTH}{TH} iterations allowed for this \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+int \hyperlink{classTHBuilder_ac9bd9176a2d5a1ce2d181a984a3c656f}{get\+Best\+List\+Size} ()
+\item 
+\hyperlink{classTHBuilder}{T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classTHBuilder_af1d236ad738df5feee0512eca696b2cd}{set\+Best\+List\+Size} (int best\+List\+Size)
+\begin{DoxyCompactList}\small\item\em Set the best-\/list size for this \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class T\+H\+Builder$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Treasure Hunt Framework Builder. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+Before a \hyperlink{classTH}{TH} can be instanced, its configurations must be build by this convenience builder. \begin{DoxyNote}{Note}
+For Treasure Hunt Framework, please refer (and cite) to the following\+:~\newline
+ {\itshape P\+E\+R\+R\+O\+NI, Peter Frank (2019). Treasure hunt\+: a framework for cooperative, distributed parallel optimization (Doctoral thesis, U\+F\+PR). Institutional repository at U\+F\+PR\+: \href{https://acervodigital.ufpr.br/handle/1884/62517}{\tt https\+://acervodigital.\+ufpr.\+br/handle/1884/62517}} 
+\end{DoxyNote}
+
+
+Definition at line 90 of file T\+H\+Builder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{T\+H\+Builder@{T\+H\+Builder}!T\+H\+Builder@{T\+H\+Builder}}
+\index{T\+H\+Builder@{T\+H\+Builder}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{T\+H\+Builder()}{THBuilder()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf T\+H\+Builder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a2d967b012c3f11d9cb91967a54cf08ac}{}\label{classTHBuilder_a2d967b012c3f11d9cb91967a54cf08ac}
+
+
+Constructor to create a \hyperlink{classTHBuilder}{T\+H\+Builder} instance. 
+
+A\+T\+T\+E\+N\+T\+I\+ON\+: this builder can be deleted as long as it has not been built yet. Once the method \hyperlink{classTHBuilder_afbfe480878be27deb1b9386046c67376}{build()} has been called, do Not delete the \hyperlink{classTH}{TH} builder because it will be deleted by the \hyperlink{classTH}{TH} instance! 
+
+Definition at line 169 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classTHBuilder_a2d967b012c3f11d9cb91967a54cf08ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!````~T\+H\+Builder@{$\sim$\+T\+H\+Builder}}
+\index{````~T\+H\+Builder@{$\sim$\+T\+H\+Builder}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{$\sim$\+T\+H\+Builder()}{~THBuilder()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf T\+H\+Builder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a856d494431279af63670799fe3917cc3}{}\label{classTHBuilder_a856d494431279af63670799fe3917cc3}
+
+
+Definition at line 204 of file T\+H\+Builder.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\+H\+Builder@{T\+H\+Builder}!add\+Search\+Algorithm@{add\+Search\+Algorithm}}
+\index{add\+Search\+Algorithm@{add\+Search\+Algorithm}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{add\+Search\+Algorithm(\+Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search\+Algorithm, double weight=1)}{addSearchAlgorithm(Search< P, pSize, F, fSize, V, vSize > *searchAlgorithm, double weight=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::add\+Search\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{search\+Algorithm, }
+\item[{double}]{weight = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a53f501609ac8f791e02668406cbf81a3}{}\label{classTHBuilder_a53f501609ac8f791e02668406cbf81a3}
+
+
+Add a search algorithm to the \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Algorithm} & The search algorithm to add. \\
+\hline
+{\em weight} & The weight of this search algorithm for the scoring metrics. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 548 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!build@{build}}
+\index{build@{build}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{build()}{build()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf TH}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::build (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_afbfe480878be27deb1b9386046c67376}{}\label{classTHBuilder_afbfe480878be27deb1b9386046c67376}
+
+
+Build the \hyperlink{classTH}{TH} implementation based on the configuration. 
+
+A\+T\+T\+E\+N\+T\+I\+ON\+: do Not delete the \hyperlink{classTH}{TH} builder because it will be deleted by the \hyperlink{classTH}{TH} instance!
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classTH}{TH} implementation ready to run. 
+\end{DoxyReturn}
+
+
+Definition at line 235 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Best\+List\+Selection\+Policy@{get\+Best\+List\+Selection\+Policy}}
+\index{get\+Best\+List\+Selection\+Policy@{get\+Best\+List\+Selection\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Best\+List\+Selection\+Policy()}{getBestListSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Best\+List\+Selection\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+List\+Selection\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a4ebc7b6974e1d91c6873c4e573db8121}{}\label{classTHBuilder_a4ebc7b6974e1d91c6873c4e573db8121}
+
+
+Get the \hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy} configured. 
+
+If no best-\/list selection policy is configured, the \hyperlink{classRandomBestListSelectionPolicy}{Random\+Best\+List\+Selection\+Policy} will be set automatically.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 316 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a4ebc7b6974e1d91c6873c4e573db8121_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Best\+List\+Size@{get\+Best\+List\+Size}}
+\index{get\+Best\+List\+Size@{get\+Best\+List\+Size}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Best\+List\+Size()}{getBestListSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+List\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ac9bd9176a2d5a1ce2d181a984a3c656f}{}\label{classTHBuilder_ac9bd9176a2d5a1ce2d181a984a3c656f}
+
+
+Definition at line 813 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_ac9bd9176a2d5a1ce2d181a984a3c656f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Best\+List\+Update\+Policy@{get\+Best\+List\+Update\+Policy}}
+\index{get\+Best\+List\+Update\+Policy@{get\+Best\+List\+Update\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Best\+List\+Update\+Policy()}{getBestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Best\+List\+Update\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Best\+List\+Update\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_aca895af8d67060f0f66176aa18f00f98}{}\label{classTHBuilder_aca895af8d67060f0f66176aa18f00f98}
+
+
+Get the \hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy} configured. 
+
+If no best-\/list update policy is configured, the \hyperlink{classConvergentBestListUpdatePolicy}{Convergent\+Best\+List\+Update\+Policy} will be set automatically.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 349 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_aca895af8d67060f0f66176aa18f00f98_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Bias@{get\+Bias}}
+\index{get\+Bias@{get\+Bias}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Bias()}{getBias()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Bias (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a2039c208430cd418c4d452ef300fe086}{}\label{classTHBuilder_a2039c208430cd418c4d452ef300fe086}
+
+
+Definition at line 374 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a2039c208430cd418c4d452ef300fe086_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Cart\+Grid@{get\+Cart\+Grid}}
+\index{get\+Cart\+Grid@{get\+Cart\+Grid}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Cart\+Grid()}{getCartGrid()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ M\+P\+I\+\_\+\+Comm {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Cart\+Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a600284527c76f199d241cf942f194526}{}\label{classTHBuilder_a600284527c76f199d241cf942f194526}
+
+
+Definition at line 795 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a600284527c76f199d241cf942f194526_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Convergence\+Control\+Policy@{get\+Convergence\+Control\+Policy}}
+\index{get\+Convergence\+Control\+Policy@{get\+Convergence\+Control\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Convergence\+Control\+Policy()}{getConvergenceControlPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Convergence\+Control\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Convergence\+Control\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_af3eb76a92cb3c0caf8452cdd9e26bac7}{}\label{classTHBuilder_af3eb76a92cb3c0caf8452cdd9e26bac7}
+
+
+Get the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} configured. 
+
+If no convergence control policy is configured, the \hyperlink{classCSMOn}{C\+S\+M\+On} will be set automatically.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 403 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_af3eb76a92cb3c0caf8452cdd9e26bac7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_af3eb76a92cb3c0caf8452cdd9e26bac7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Fitness\+Policy@{get\+Fitness\+Policy}}
+\index{get\+Fitness\+Policy@{get\+Fitness\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Fitness\+Policy()}{getFitnessPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Fitness\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Fitness\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a17045426d43ae6798b10b552e6743f6d}{}\label{classTHBuilder_a17045426d43ae6798b10b552e6743f6d}
+
+
+Get the \hyperlink{classFitnessPolicy}{Fitness\+Policy} configured. 
+
+No fitness policy is configured automatically.
+
+\begin{DoxyReturn}{Returns}
+The fitness policy configured. 
+\end{DoxyReturn}
+
+
+Definition at line 615 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a17045426d43ae6798b10b552e6743f6d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Id()}{getId()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a25aa4f49bfb82628b5add5aaa83d3802}{}\label{classTHBuilder_a25aa4f49bfb82628b5add5aaa83d3802}
+
+
+Definition at line 791 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a25aa4f49bfb82628b5add5aaa83d3802_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Local\+Search\+Algorithm@{get\+Local\+Search\+Algorithm}}
+\index{get\+Local\+Search\+Algorithm@{get\+Local\+Search\+Algorithm}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Local\+Search\+Algorithm()}{getLocalSearchAlgorithm()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Local\+Search\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a6e0fe39ec073e41f1ff16f0a842787a7}{}\label{classTHBuilder_a6e0fe39ec073e41f1ff16f0a842787a7}
+
+
+Get the local search algorithm configured. 
+
+If no local search algorithm is configured, the \hyperlink{classHillClimbing}{Hill\+Climbing} will be set automatically.
+
+A local search algorithm is used on \hyperlink{classTH}{TH} to refine results received from children \hyperlink{classTH}{TH} instances.
+
+\begin{DoxyReturn}{Returns}
+The local search algorithm configured. 
+\end{DoxyReturn}
+
+
+Definition at line 506 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a6e0fe39ec073e41f1ff16f0a842787a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Max\+Iterations@{get\+Max\+Iterations}}
+\index{get\+Max\+Iterations@{get\+Max\+Iterations}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Max\+Iterations()}{getMaxIterations()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long long {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Iterations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ae1d2cf8a2379569533ba1dd4bdf4fbed}{}\label{classTHBuilder_ae1d2cf8a2379569533ba1dd4bdf4fbed}
+
+
+Definition at line 799 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_ae1d2cf8a2379569533ba1dd4bdf4fbed_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Max\+Number\+Evaluations@{get\+Max\+Number\+Evaluations}}
+\index{get\+Max\+Number\+Evaluations@{get\+Max\+Number\+Evaluations}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Max\+Number\+Evaluations()}{getMaxNumberEvaluations()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long long {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Number\+Evaluations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a4b9fc144f6c5090f23514fff87a10f78}{}\label{classTHBuilder_a4b9fc144f6c5090f23514fff87a10f78}
+
+
+Definition at line 754 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a4b9fc144f6c5090f23514fff87a10f78_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Max\+Population\+Size@{get\+Max\+Population\+Size}}
+\index{get\+Max\+Population\+Size@{get\+Max\+Population\+Size}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Max\+Population\+Size()}{getMaxPopulationSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Population\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a876380ef9e0647b90bd80bcc04cbcd58}{}\label{classTHBuilder_a876380ef9e0647b90bd80bcc04cbcd58}
+
+
+The largest \textquotesingle{}preferred population size\textquotesingle{} from all search algorithms configured. 
+
+\hyperlink{classTH}{TH} instance\textquotesingle{}s population will be created with this number of individuals, so that all search algorithms can run without further adaptation.
+
+\begin{DoxyReturn}{Returns}
+The largest \textquotesingle{}preferred population size\textquotesingle{}. 
+\end{DoxyReturn}
+
+
+Definition at line 564 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a876380ef9e0647b90bd80bcc04cbcd58_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a876380ef9e0647b90bd80bcc04cbcd58_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Max\+Time\+Seconds@{get\+Max\+Time\+Seconds}}
+\index{get\+Max\+Time\+Seconds@{get\+Max\+Time\+Seconds}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Max\+Time\+Seconds()}{getMaxTimeSeconds()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Time\+Seconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a701deae1181c4da26aa949bf8415de38}{}\label{classTHBuilder_a701deae1181c4da26aa949bf8415de38}
+
+
+Definition at line 768 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a701deae1181c4da26aa949bf8415de38_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+N\+Evals@{get\+N\+Evals}}
+\index{get\+N\+Evals@{get\+N\+Evals}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+N\+Evals()}{getNEvals()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long long {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+N\+Evals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a35de691f57f40cb8719190e8a2ca6ccf}{}\label{classTHBuilder_a35de691f57f40cb8719190e8a2ca6ccf}
+
+
+Get the global number of fitness function evaluations performed by this \hyperlink{classTH}{TH} instance. 
+
+\begin{DoxyReturn}{Returns}
+The number of fitness function evaluations performed by this \hyperlink{classTH}{TH} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 787 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a35de691f57f40cb8719190e8a2ca6ccf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+N\+Startup\+Solutions@{get\+N\+Startup\+Solutions}}
+\index{get\+N\+Startup\+Solutions@{get\+N\+Startup\+Solutions}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+N\+Startup\+Solutions()}{getNStartupSolutions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+N\+Startup\+Solutions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a2635dd5906c5a0884eadd4357b57f622}{}\label{classTHBuilder_a2635dd5906c5a0884eadd4357b57f622}
+
+
+Get the number of startup solutions to be used. 
+
+\begin{DoxyReturn}{Returns}
+The number of startup solutions to be used. 
+\end{DoxyReturn}
+
+
+Definition at line 703 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a2635dd5906c5a0884eadd4357b57f622_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Region\+Selection\+Policy@{get\+Region\+Selection\+Policy}}
+\index{get\+Region\+Selection\+Policy@{get\+Region\+Selection\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Region\+Selection\+Policy()}{getRegionSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Region\+Selection\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Region\+Selection\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a196903e0bccbc650cd8a965987756d28}{}\label{classTHBuilder_a196903e0bccbc650cd8a965987756d28}
+
+
+Get the \hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy} configured. 
+
+If no region selection policy is configured, the \hyperlink{classGroupRegionSelectionPolicy}{Group\+Region\+Selection\+Policy} will be set automatically without any search space partitioning.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 646 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a196903e0bccbc650cd8a965987756d28_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Relocation\+Strategy\+Data@{get\+Relocation\+Strategy\+Data}}
+\index{get\+Relocation\+Strategy\+Data@{get\+Relocation\+Strategy\+Data}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Relocation\+Strategy\+Data()}{getRelocationStrategyData()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Relocation\+Strategy\+Data}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Relocation\+Strategy\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a0a60bb8ec5f86ccef3ef4a12de34e24b}{}\label{classTHBuilder_a0a60bb8ec5f86ccef3ef4a12de34e24b}
+
+
+Get the \hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data} configured. 
+
+If no relocation strategy storage is configured, the \hyperlink{structBetaRelocationStrategyData}{Beta\+Relocation\+Strategy\+Data} will be set automatically (given that \hyperlink{classBetaRelocationStrategyPolicy}{Beta\+Relocation\+Strategy\+Policy} is the default).
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 437 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a0a60bb8ec5f86ccef3ef4a12de34e24b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Relocation\+Strategy\+Policy@{get\+Relocation\+Strategy\+Policy}}
+\index{get\+Relocation\+Strategy\+Policy@{get\+Relocation\+Strategy\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Relocation\+Strategy\+Policy()}{getRelocationStrategyPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Relocation\+Strategy\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Relocation\+Strategy\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a080cdf2aea549d1074186156aa449b62}{}\label{classTHBuilder_a080cdf2aea549d1074186156aa449b62}
+
+
+Get the \hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy} configured. 
+
+If no relocation strategy policy is configured, the \hyperlink{classBetaRelocationStrategyPolicy}{Beta\+Relocation\+Strategy\+Policy} will be set automatically.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 470 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a080cdf2aea549d1074186156aa449b62_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Search\+Algorithms@{get\+Search\+Algorithms}}
+\index{get\+Search\+Algorithms@{get\+Search\+Algorithms}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Search\+Algorithms()}{getSearchAlgorithms()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ vector$<${\bf Search\+Score}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Search\+Algorithms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a965c2231b9dd21a606a5de11d4682a33}{}\label{classTHBuilder_a965c2231b9dd21a606a5de11d4682a33}
+
+
+Get the search algorithms configured. 
+
+No search algorithm is configured automatically.
+
+\begin{DoxyReturn}{Returns}
+The search algorithms configured. 
+\end{DoxyReturn}
+
+
+Definition at line 538 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a965c2231b9dd21a606a5de11d4682a33_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Search\+Algorithm\+Selection\+Policy@{get\+Search\+Algorithm\+Selection\+Policy}}
+\index{get\+Search\+Algorithm\+Selection\+Policy@{get\+Search\+Algorithm\+Selection\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Search\+Algorithm\+Selection\+Policy()}{getSearchAlgorithmSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search\+Algorithm\+Selection\+Policy}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Search\+Algorithm\+Selection\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a097e1501549341f26e5316aca8108b5c}{}\label{classTHBuilder_a097e1501549341f26e5316aca8108b5c}
+
+
+Get the \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} configured. 
+
+If no search algorithm selection policy is configured, the \hyperlink{classRoundRobinSearchAlgorithmSelectionPolicy}{Round\+Robin\+Search\+Algorithm\+Selection\+Policy} will be set automatically.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 583 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a097e1501549341f26e5316aca8108b5c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Search\+Space@{get\+Search\+Space}}
+\index{get\+Search\+Space@{get\+Search\+Space}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Search\+Space()}{getSearchSpace()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search\+Space}$<$P$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Search\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a611f5596ed334d38c1d77d57845676ed}{}\label{classTHBuilder_a611f5596ed334d38c1d77d57845676ed}
+
+
+Get the \hyperlink{classSearchSpace}{Search\+Space} configured. 
+
+No search space is configured automatically.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classSearchSpace}{Search\+Space} configured. 
+\end{DoxyReturn}
+
+
+Definition at line 678 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a611f5596ed334d38c1d77d57845676ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+Startup\+Solutions@{get\+Startup\+Solutions}}
+\index{get\+Startup\+Solutions@{get\+Startup\+Solutions}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+Startup\+Solutions()}{getStartupSolutions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Startup\+Solutions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a4ee5b9c2c19c8e0adb0991593a4d19e5}{}\label{classTHBuilder_a4ee5b9c2c19c8e0adb0991593a4d19e5}
+
+
+Get the startup solutions to be used. 
+
+\begin{DoxyReturn}{Returns}
+The startup solutions to be used. 
+\end{DoxyReturn}
+
+
+Definition at line 711 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a4ee5b9c2c19c8e0adb0991593a4d19e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+TH@{get\+TH}}
+\index{get\+TH@{get\+TH}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+T\+H()}{getTH()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf TH}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+TH (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ae812723b4b9a95f62db532c203018080}{}\label{classTHBuilder_ae812723b4b9a95f62db532c203018080}
+
+
+Definition at line 283 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!get\+T\+H\+Tree@{get\+T\+H\+Tree}}
+\index{get\+T\+H\+Tree@{get\+T\+H\+Tree}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{get\+T\+H\+Tree()}{getTHTree()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Tree}$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+T\+H\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a6ad815c9e35b81b9b8f6507b6bdac5bf}{}\label{classTHBuilder_a6ad815c9e35b81b9b8f6507b6bdac5bf}
+
+
+Definition at line 287 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a6ad815c9e35b81b9b8f6507b6bdac5bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Best\+List\+Selection\+Policy@{set\+Best\+List\+Selection\+Policy}}
+\index{set\+Best\+List\+Selection\+Policy@{set\+Best\+List\+Selection\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Best\+List\+Selection\+Policy(\+Best\+List\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List\+Selection\+Policy)}{setBestListSelectionPolicy(BestListSelectionPolicy< P, pSize, F, fSize, V, vSize > *bestListSelectionPolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Best\+List\+Selection\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Best\+List\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{best\+List\+Selection\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ab51929bf444ba8ba95407234b6b03aae}{}\label{classTHBuilder_ab51929bf444ba8ba95407234b6b03aae}
+
+
+Set the \hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy}. 
+
+If a \hyperlink{classBestListSelectionPolicy}{Best\+List\+Selection\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List\+Selection\+Policy} & The best-\/list selection policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 332 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Best\+List\+Size@{set\+Best\+List\+Size}}
+\index{set\+Best\+List\+Size@{set\+Best\+List\+Size}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Best\+List\+Size(int best\+List\+Size)}{setBestListSize(int bestListSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Best\+List\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{best\+List\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_af1d236ad738df5feee0512eca696b2cd}{}\label{classTHBuilder_af1d236ad738df5feee0512eca696b2cd}
+
+
+Set the best-\/list size for this \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List\+Size} & The best-\/list size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 822 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Best\+List\+Update\+Policy@{set\+Best\+List\+Update\+Policy}}
+\index{set\+Best\+List\+Update\+Policy@{set\+Best\+List\+Update\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Best\+List\+Update\+Policy(\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List\+Update\+Policy)}{setBestListUpdatePolicy(BestListUpdatePolicy< P, pSize, F, fSize, V, vSize > *bestListUpdatePolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Best\+List\+Update\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{best\+List\+Update\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a6417e7c24c6b96ed051e9ea9707faa95}{}\label{classTHBuilder_a6417e7c24c6b96ed051e9ea9707faa95}
+
+
+Set the \hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy}. 
+
+If a \hyperlink{classBestListUpdatePolicy}{Best\+List\+Update\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List\+Update\+Policy} & The best-\/list update policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 365 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Bias@{set\+Bias}}
+\index{set\+Bias@{set\+Bias}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Bias(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$bias)}{setBias(Solution< P, pSize, F, fSize, V, vSize > *bias)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Bias (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{bias}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a5f47578905fa8cf904dd02b83aa49927}{}\label{classTHBuilder_a5f47578905fa8cf904dd02b83aa49927}
+
+
+Define a bias for the search. 
+
+Despite the fact that academic optimization problems usually do not involve bias, a bias can be really useful on real-\/world problems.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bias} & A bias for the search. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 387 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Convergence\+Control\+Policy@{set\+Convergence\+Control\+Policy}}
+\index{set\+Convergence\+Control\+Policy@{set\+Convergence\+Control\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Convergence\+Control\+Policy(\+Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$convergence\+Control)}{setConvergenceControlPolicy(ConvergenceControlPolicy< P, pSize, F, fSize, V, vSize > *convergenceControl)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Convergence\+Control\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{convergence\+Control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a34fc0f328c6cdbe46f04bcb0e4cebde3}{}\label{classTHBuilder_a34fc0f328c6cdbe46f04bcb0e4cebde3}
+
+
+Set the \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy}. 
+
+If a \hyperlink{classConvergenceControlPolicy}{Convergence\+Control\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em convergence\+Control} & The convergence control policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 419 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Fitness\+Policy@{set\+Fitness\+Policy}}
+\index{set\+Fitness\+Policy@{set\+Fitness\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Fitness\+Policy(\+Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)}{setFitnessPolicy(FitnessPolicy< P, pSize, F, fSize, V, vSize > *fitnessPolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Fitness\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{fitness\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a3db1fc6f43af80aac1ec2e6457477e48}{}\label{classTHBuilder_a3db1fc6f43af80aac1ec2e6457477e48}
+
+
+Set the \hyperlink{classFitnessPolicy}{Fitness\+Policy}. 
+
+If a \hyperlink{classFitnessPolicy}{Fitness\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness\+Policy} & The fitness policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 628 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Local\+Search\+Algorithm@{set\+Local\+Search\+Algorithm}}
+\index{set\+Local\+Search\+Algorithm@{set\+Local\+Search\+Algorithm}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Local\+Search\+Algorithm(\+Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$local\+Search\+Algorithm)}{setLocalSearchAlgorithm(Search< P, pSize, F, fSize, V, vSize > *localSearchAlgorithm)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Local\+Search\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{local\+Search\+Algorithm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a4827ba95c2880340d8460db7779157d1}{}\label{classTHBuilder_a4827ba95c2880340d8460db7779157d1}
+
+
+Set the local search algorithm. 
+
+If a local search algorithm has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+Search\+Algorithm} & The local search algorithm to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 522 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Max\+Iterations@{set\+Max\+Iterations}}
+\index{set\+Max\+Iterations@{set\+Max\+Iterations}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Max\+Iterations(long long max\+Iterations)}{setMaxIterations(long long maxIterations)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Max\+Iterations (
+\begin{DoxyParamCaption}
+\item[{long long}]{max\+Iterations}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a78b5b68147deb9cb98520b37694365e4}{}\label{classTHBuilder_a78b5b68147deb9cb98520b37694365e4}
+
+
+Set the maximum number of \hyperlink{classTH}{TH} iterations allowed for this \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Iterations} & The maximum number of \hyperlink{classTH}{TH} iterations allowed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 808 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Max\+Number\+Evaluations@{set\+Max\+Number\+Evaluations}}
+\index{set\+Max\+Number\+Evaluations@{set\+Max\+Number\+Evaluations}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Max\+Number\+Evaluations(long long max\+Number\+Evaluations)}{setMaxNumberEvaluations(long long maxNumberEvaluations)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Max\+Number\+Evaluations (
+\begin{DoxyParamCaption}
+\item[{long long}]{max\+Number\+Evaluations}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a290771e2a41317ba51aa6df7d44f8f78}{}\label{classTHBuilder_a290771e2a41317ba51aa6df7d44f8f78}
+
+
+Set the maximum number of fitness evaluations allowed for this \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Number\+Evaluations} & The maximum number of fitness evaluations allowed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 763 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Max\+Time\+Seconds@{set\+Max\+Time\+Seconds}}
+\index{set\+Max\+Time\+Seconds@{set\+Max\+Time\+Seconds}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Max\+Time\+Seconds(long max\+Time\+Seconds)}{setMaxTimeSeconds(long maxTimeSeconds)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Max\+Time\+Seconds (
+\begin{DoxyParamCaption}
+\item[{long}]{max\+Time\+Seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a7771801a41fe5952fad566471f28fbfe}{}\label{classTHBuilder_a7771801a41fe5952fad566471f28fbfe}
+
+
+Set the maximum execution time (in seconds) allowed for this \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Time\+Seconds} & The maximum execution time (in seconds) allowed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 777 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Mpi\+Comm@{set\+Mpi\+Comm}}
+\index{set\+Mpi\+Comm@{set\+Mpi\+Comm}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Mpi\+Comm(int argc, char $\ast$argv[])}{setMpiComm(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Mpi\+Comm (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a35119e0e5d0f1c1dd61dfe0adbcdce05}{}\label{classTHBuilder_a35119e0e5d0f1c1dd61dfe0adbcdce05}
+
+
+Start the M\+PI environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The operating system argc. \\
+\hline
+{\em argv} & The operating system argv. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 255 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Mpi\+Comm@{set\+Mpi\+Comm}}
+\index{set\+Mpi\+Comm@{set\+Mpi\+Comm}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Mpi\+Comm(\+M\+P\+I\+\_\+\+Comm mpi\+Comm)}{setMpiComm(MPI_Comm mpiComm)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Mpi\+Comm (
+\begin{DoxyParamCaption}
+\item[{M\+P\+I\+\_\+\+Comm}]{mpi\+Comm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a44f1ca2b80b90f9481d2e8e6b7062289}{}\label{classTHBuilder_a44f1ca2b80b90f9481d2e8e6b7062289}
+
+
+Start the M\+PI environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mpi\+Comm} & The M\+PI communicator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 266 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Region\+Selection\+Policy@{set\+Region\+Selection\+Policy}}
+\index{set\+Region\+Selection\+Policy@{set\+Region\+Selection\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Region\+Selection\+Policy(\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$region\+Selection\+Policy)}{setRegionSelectionPolicy(RegionSelectionPolicy< P, pSize, F, fSize, V, vSize > *regionSelectionPolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Region\+Selection\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{region\+Selection\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a802ae68e9ac5c333beefdd4c51d5ff26}{}\label{classTHBuilder_a802ae68e9ac5c333beefdd4c51d5ff26}
+
+
+Set the \hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy}. 
+
+If a \hyperlink{classRegionSelectionPolicy}{Region\+Selection\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em region\+Selection\+Policy} & The region selection policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 662 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Relocation\+Strategy\+Data@{set\+Relocation\+Strategy\+Data}}
+\index{set\+Relocation\+Strategy\+Data@{set\+Relocation\+Strategy\+Data}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Relocation\+Strategy\+Data(\+Relocation\+Strategy\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$relocation\+Strategy\+Data)}{setRelocationStrategyData(RelocationStrategyData< P, pSize, F, fSize, V, vSize > *relocationStrategyData)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Relocation\+Strategy\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Relocation\+Strategy\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{relocation\+Strategy\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a5edb000d129c799fd75541d71fd89a2b}{}\label{classTHBuilder_a5edb000d129c799fd75541d71fd89a2b}
+
+
+Set the \hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data}. 
+
+If a \hyperlink{structRelocationStrategyData}{Relocation\+Strategy\+Data} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em relocation\+Strategy\+Data} & The relocation strategy storage to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 453 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Relocation\+Strategy\+Policy@{set\+Relocation\+Strategy\+Policy}}
+\index{set\+Relocation\+Strategy\+Policy@{set\+Relocation\+Strategy\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Relocation\+Strategy\+Policy(\+Relocation\+Strategy\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$relocation\+Strategy\+Update\+Policy)}{setRelocationStrategyPolicy(RelocationStrategyPolicy< P, pSize, F, fSize, V, vSize > *relocationStrategyUpdatePolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Relocation\+Strategy\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Relocation\+Strategy\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{relocation\+Strategy\+Update\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ab5e07bd198dd27f690145323bc6c06b3}{}\label{classTHBuilder_ab5e07bd198dd27f690145323bc6c06b3}
+
+
+Set the \hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy}. 
+
+If a \hyperlink{classRelocationStrategyPolicy}{Relocation\+Strategy\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em relocation\+Strategy\+Update\+Policy} & The relocation strategy policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Search\+Algorithm\+Selection\+Policy@{set\+Search\+Algorithm\+Selection\+Policy}}
+\index{set\+Search\+Algorithm\+Selection\+Policy@{set\+Search\+Algorithm\+Selection\+Policy}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Search\+Algorithm\+Selection\+Policy(\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search\+Algorithm\+Selection\+Policy)}{setSearchAlgorithmSelectionPolicy(SearchAlgorithmSelectionPolicy< P, pSize, F, fSize, V, vSize > *searchAlgorithmSelectionPolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Search\+Algorithm\+Selection\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{search\+Algorithm\+Selection\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ac69c37de4054ba5357697671f2c744e9}{}\label{classTHBuilder_ac69c37de4054ba5357697671f2c744e9}
+
+
+Set the \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy}. 
+
+If a \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Algorithm\+Selection\+Policy} & The search algorithm selection policy to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 599 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Search\+Space@{set\+Search\+Space}}
+\index{set\+Search\+Space@{set\+Search\+Space}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Search\+Space(\+Search\+Space$<$ P $>$ $\ast$search\+Space)}{setSearchSpace(SearchSpace< P > *searchSpace)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Search\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf Search\+Space}$<$ P $>$ $\ast$}]{search\+Space}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_ae0a7c1fca77f87c9d9e6bbad4c8f20be}{}\label{classTHBuilder_ae0a7c1fca77f87c9d9e6bbad4c8f20be}
+
+
+Set the \hyperlink{classSearchSpace}{Search\+Space}. 
+
+If a \hyperlink{classSearchSpace}{Search\+Space} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Space} & The search space to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 691 of file T\+H\+Builder.\+h.
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Startup\+Solution@{set\+Startup\+Solution}}
+\index{set\+Startup\+Solution@{set\+Startup\+Solution}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Startup\+Solution(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$startup\+Solution)}{setStartupSolution(Solution< P, pSize, F, fSize, V, vSize > *startupSolution)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Startup\+Solution (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{startup\+Solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a15fc2e240479724b68237c5beee89a17}{}\label{classTHBuilder_a15fc2e240479724b68237c5beee89a17}
+
+
+Set a single startup solution. 
+
+If set, the root \hyperlink{classTH}{TH} instance will use this solution as starting position for part one population individual.
+
+
+\begin{DoxyParams}{Parameters}
+{\em startup\+Solution} & The startup solution to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 724 of file T\+H\+Builder.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a15fc2e240479724b68237c5beee89a17_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+Startup\+Solutions@{set\+Startup\+Solutions}}
+\index{set\+Startup\+Solutions@{set\+Startup\+Solutions}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+Startup\+Solutions(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$startup\+Solutions, int n\+Startup\+Solutions)}{setStartupSolutions(Solution< P, pSize, F, fSize, V, vSize > **startupSolutions, int nStartupSolutions)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Startup\+Solutions (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$}]{startup\+Solutions, }
+\item[{int}]{n\+Startup\+Solutions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a694516b770c24584f0473b4091af623e}{}\label{classTHBuilder_a694516b770c24584f0473b4091af623e}
+
+
+Set multiple startup solutions. 
+
+If set, the root \hyperlink{classTH}{TH} instance will use these solutions as starting positions for part of its population (depending on \hyperlink{classTHBuilder_a876380ef9e0647b90bd80bcc04cbcd58}{get\+Max\+Population\+Size()}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em startup\+Solutions} & The startup solutions to be used. \\
+\hline
+{\em n\+Startup\+Solutions} & The number of startup solutions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 740 of file T\+H\+Builder.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTHBuilder_a694516b770c24584f0473b4091af623e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\+H\+Builder@{T\+H\+Builder}!set\+T\+H\+Tree@{set\+T\+H\+Tree}}
+\index{set\+T\+H\+Tree@{set\+T\+H\+Tree}!T\+H\+Builder@{T\+H\+Builder}}
+\subsubsection[{\texorpdfstring{set\+T\+H\+Tree(\+T\+H\+Tree $\ast$th\+Tree)}{setTHTree(THTree *thTree)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf T\+H\+Builder}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf T\+H\+Builder}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+T\+H\+Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+H\+Tree} $\ast$}]{th\+Tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTHBuilder_a60f69568fb3ec70319c371b88d595b22}{}\label{classTHBuilder_a60f69568fb3ec70319c371b88d595b22}
+
+
+Set the \hyperlink{classTHTree}{T\+H\+Tree} topology. 
+
+If a \hyperlink{classTHTree}{T\+H\+Tree} has already been set, it will be deleted before setting the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em th\+Tree} & The \hyperlink{classTH}{TH} tree topology. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to this builder. 
+\end{DoxyReturn}
+
+
+Definition at line 300 of file T\+H\+Builder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{THBuilder_8h}{T\+H\+Builder.\+h}\end{DoxyCompactItemize}

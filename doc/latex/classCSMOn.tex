@@ -1,0 +1,143 @@
+\hypertarget{classCSMOn}{}\section{C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classCSMOn}\index{C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This policy runs, monitors and controls the convergence limits for the current \hyperlink{classTH}{TH} iteration.  
+
+
+
+
+{\ttfamily \#include $<$C\+S\+M\+On.\+h$>$}
+
+
+
+Inheritance diagram for C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classCSMOn__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classCSMOn__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSMOn_aacd95cee8b48fc2d51120fbf7d2fd546}{C\+S\+M\+On} (int M, double R, F min\+Estimated\+Fit)
+\begin{DoxyCompactList}\small\item\em This constructor creates an instance of \hyperlink{classCSMOn}{C\+S\+M\+On}. \end{DoxyCompactList}\item 
+\hyperlink{classCSMOn_af77e878e14c14200a4e95457e611162b}{$\sim$\+C\+S\+M\+On} ()
+\item 
+void \hyperlink{classCSMOn_a430398bc3e096631f8cd180ee1877616}{run} (\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search)
+\begin{DoxyCompactList}\small\item\em This method runs, monitors and limits the convergence of the optimization method during the current \hyperlink{classTH}{TH} iteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This policy runs, monitors and controls the convergence limits for the current \hyperlink{classTH}{TH} iteration. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+For the \hyperlink{classCSMOn}{C\+S\+M\+On} (formerly C\textquotesingle{}M\+On) method, please refer (and cite) to the following paper\+:~\newline
+ {\itshape P\+E\+R\+R\+O\+NI, Peter Frank; W\+E\+I\+N\+G\+A\+E\+R\+T\+N\+ER, Daniel; D\+E\+L\+G\+A\+DO, Myriam Regattieri. Estimating stop conditions of swarm based stochastic metaheuristic algorithms. In\+: Proceedings of the Genetic and Evolutionary Computation Conference. 2017. p. 43-\/50.} 
+\end{DoxyNote}
+
+
+Definition at line 50 of file C\+S\+M\+On.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+S\+M\+On@{C\+S\+M\+On}!C\+S\+M\+On@{C\+S\+M\+On}}
+\index{C\+S\+M\+On@{C\+S\+M\+On}!C\+S\+M\+On@{C\+S\+M\+On}}
+\subsubsection[{\texorpdfstring{C\+S\+M\+On(int M, double R, F min\+Estimated\+Fit)}{CSMOn(int M, double R, F minEstimatedFit)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf C\+S\+M\+On}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf C\+S\+M\+On} (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{double}]{R, }
+\item[{F}]{min\+Estimated\+Fit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCSMOn_aacd95cee8b48fc2d51120fbf7d2fd546}{}\label{classCSMOn_aacd95cee8b48fc2d51120fbf7d2fd546}
+
+
+This constructor creates an instance of \hyperlink{classCSMOn}{C\+S\+M\+On}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & The maximum number of fitness function evaluations allowed. \\
+\hline
+{\em R} & The relaxation factor between \mbox{]}0, 1\mbox{[} that will regulate the acceptance of the convergence stabilization. Larger factors will stop the optimization sooner. \\
+\hline
+{\em min\+Estimated\+Fit} & The minimum estimated fitness for the problem being optimized (fitness function dependent). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 157 of file C\+S\+M\+On.\+h.
+
+\index{C\+S\+M\+On@{C\+S\+M\+On}!````~C\+S\+M\+On@{$\sim$\+C\+S\+M\+On}}
+\index{````~C\+S\+M\+On@{$\sim$\+C\+S\+M\+On}!C\+S\+M\+On@{C\+S\+M\+On}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+S\+M\+On()}{~CSMOn()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf C\+S\+M\+On}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf C\+S\+M\+On} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCSMOn_af77e878e14c14200a4e95457e611162b}{}\label{classCSMOn_af77e878e14c14200a4e95457e611162b}
+
+
+Definition at line 164 of file C\+S\+M\+On.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\+S\+M\+On@{C\+S\+M\+On}!run@{run}}
+\index{run@{run}!C\+S\+M\+On@{C\+S\+M\+On}}
+\subsubsection[{\texorpdfstring{run(\+Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search)}{run(Search< P, pSize, F, fSize, V, vSize > *search)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf C\+S\+M\+On}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{search}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCSMOn_a430398bc3e096631f8cd180ee1877616}{}\label{classCSMOn_a430398bc3e096631f8cd180ee1877616}
+
+
+This method runs, monitors and limits the convergence of the optimization method during the current \hyperlink{classTH}{TH} iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search} & The optimization method to run. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classConvergenceControlPolicy_ad72beb5807e87c3fa0602bd0bf4679ac}{Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 174 of file C\+S\+M\+On.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classCSMOn_a430398bc3e096631f8cd180ee1877616_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{CSMOn_8h}{C\+S\+M\+On.\+h}\end{DoxyCompactItemize}

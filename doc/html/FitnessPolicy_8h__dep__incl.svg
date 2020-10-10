@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1064;
+var viewWidth = 1263;
 var viewHeight = 338;
 var sectionId = 'dynsection-1';
 </script>
@@ -81,7 +81,7 @@ var sectionId = 'dynsection-1';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge22" class="edge"><title>Node1&#45;&gt;Node4</title>
+<g id="edge23" class="edge"><title>Node1&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M420.438,-302.413C399.402,-282.293 368,-245.695 368,-206.5 368,-206.5 368,-206.5 368,-141.5 368,-83.3435 433.363,-38.9874 465.534,-20.678"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="418.179,-305.09 427.906,-309.288 422.92,-299.94 418.179,-305.09"/>
 </g>
@@ -98,16 +98,16 @@ var sectionId = 'dynsection-1';
 <path fill="none" stroke="midnightblue" d="M467.354,-305.056C488.623,-294.972 517.168,-281.438 535.817,-272.596"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="465.691,-301.971 458.155,-309.418 468.69,-308.296 465.691,-301.971"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="RosenbrockFitnessPolicy_8h.xhtml" target="_top" xlink:title="src/RosenbrockFitnessPolicy.h">
+<!-- Node16 -->
+<g id="node16" class="node"><title>Node16</title>
+<g id="a_node16"><a xlink:href="RosenbrockFitnessPolicy_8h.xhtml" target="_top" xlink:title="src/RosenbrockFitnessPolicy.h">
 <polygon fill="none" stroke="black" points="737,-252.5 737,-272.5 901,-272.5 901,-252.5 737,-252.5"/>
 <text text-anchor="middle" x="819" y="-259.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/RosenbrockFitnessPolicy.h</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node15 -->
-<g id="edge23" class="edge"><title>Node1&#45;&gt;Node15</title>
+<!-- Node1&#45;&gt;Node16 -->
+<g id="edge24" class="edge"><title>Node1&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M511.522,-308.003C582.473,-297.734 689.399,-282.258 756.642,-272.525"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.719,-304.583 501.324,-309.479 511.722,-311.511 510.719,-304.583"/>
 </g>
@@ -150,7 +150,7 @@ var sectionId = 'dynsection-1';
 <polygon fill="midnightblue" stroke="midnightblue" points="155.365,-54.2011 146.069,-59.2833 156.505,-61.1077 155.365,-54.2011"/>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
-<g id="edge18" class="edge"><title>Node6&#45;&gt;Node4</title>
+<g id="edge19" class="edge"><title>Node6&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M524.947,-247.876C493.417,-231.727 445.629,-201.536 425,-159 400.385,-108.246 452.385,-44.1931 474.081,-20.6865"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="523.647,-251.138 534.162,-252.435 526.751,-244.864 523.647,-251.138"/>
 </g>
@@ -181,30 +181,30 @@ var sectionId = 'dynsection-1';
 <path fill="none" stroke="midnightblue" d="M568.961,-244.437C576.696,-234.982 586.013,-223.596 592.408,-215.779"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="566.054,-242.462 562.431,-252.418 571.472,-246.895 566.054,-242.462"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="PSO_8h.xhtml" target="_top" xlink:title="src/PSO.h">
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="PSO_8h.xhtml" target="_top" xlink:title="src/PSO.h">
 <polygon fill="none" stroke="black" points="680,-195.5 680,-215.5 746,-215.5 746,-195.5 680,-195.5"/>
 <text text-anchor="middle" x="713" y="-202.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/PSO.h</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node13 -->
-<g id="edge19" class="edge"><title>Node6&#45;&gt;Node13</title>
+<!-- Node6&#45;&gt;Node14 -->
+<g id="edge20" class="edge"><title>Node6&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M590.557,-249.122C619.896,-238.91 660.836,-224.658 687.133,-215.504"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="589.384,-245.825 581.09,-252.418 591.685,-252.436 589.384,-245.825"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="HillClimbing_8h.xhtml" target="_top" xlink:title="src/HillClimbing.h">
-<polygon fill="none" stroke="black" points="935,-132.5 935,-152.5 1035,-152.5 1035,-132.5 935,-132.5"/>
-<text text-anchor="middle" x="985" y="-139.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/HillClimbing.h</text>
+<!-- Node15 -->
+<g id="node15" class="node"><title>Node15</title>
+<g id="a_node15"><a xlink:href="HillClimbing_8h.xhtml" target="_top" xlink:title="src/HillClimbing.h">
+<polygon fill="none" stroke="black" points="1038,-132.5 1038,-152.5 1138,-152.5 1138,-132.5 1038,-132.5"/>
+<text text-anchor="middle" x="1088" y="-139.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/HillClimbing.h</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node14 -->
-<g id="edge20" class="edge"><title>Node6&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M612.579,-252.829C653.237,-245.647 708.53,-233.719 755,-216 773.03,-209.125 775.105,-202.219 793,-195 841.328,-175.503 899.444,-161.089 938.987,-152.544"/>
+<!-- Node6&#45;&gt;Node15 -->
+<g id="edge21" class="edge"><title>Node6&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M612.579,-252.829C653.237,-245.647 708.53,-233.719 755,-216 773.03,-209.125 774.801,-201.414 793,-195 875.989,-165.751 978.188,-152.667 1037.92,-147.157"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="611.832,-249.406 602.572,-254.553 613.021,-256.304 611.832,-249.406"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
@@ -231,77 +231,91 @@ var sectionId = 'dynsection-1';
 <polygon fill="midnightblue" stroke="midnightblue" points="507.91,-56.9593 516.245,-63.4992 513.808,-53.1887 507.91,-56.9593"/>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
-<g id="edge17" class="edge"><title>Node9&#45;&gt;Node4</title>
+<g id="edge18" class="edge"><title>Node9&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M603.292,-185.129C607.357,-154.46 610.503,-94.3804 581,-57 566.473,-38.5943 542.768,-27.3148 522.311,-20.5907"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="599.784,-184.924 601.756,-195.334 606.706,-185.967 599.784,-184.924"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
 <g id="a_node10"><a xlink:href="SearchAlgorithmSelectionPolicy_8h.xhtml" target="_top" xlink:title="src/TH/SearchAlgorithmSelection\lPolicy.h">
-<polygon fill="none" stroke="black" points="658,-126.5 658,-158.5 834,-158.5 834,-126.5 658,-126.5"/>
-<text text-anchor="start" x="666" y="-145.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/SearchAlgorithmSelection</text>
-<text text-anchor="middle" x="746" y="-133.7" font-family="Helvetica,sans-Serif" font-size="11.00">Policy.h</text>
+<polygon fill="none" stroke="black" points="668,-126.5 668,-158.5 844,-158.5 844,-126.5 668,-126.5"/>
+<text text-anchor="start" x="676" y="-145.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/SearchAlgorithmSelection</text>
+<text text-anchor="middle" x="756" y="-133.7" font-family="Helvetica,sans-Serif" font-size="11.00">Policy.h</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge12" class="edge"><title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M630.875,-191.6C653.983,-181.946 685.651,-168.714 709.925,-158.573"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="629.421,-188.415 621.543,-195.499 632.119,-194.874 629.421,-188.415"/>
+<path fill="none" stroke="midnightblue" d="M632.66,-191.729C657.378,-182.064 691.401,-168.76 717.454,-158.573"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="631.057,-188.598 623.018,-195.499 633.606,-195.117 631.057,-188.598"/>
 </g>
 <!-- Node10&#45;&gt;Node4 -->
-<g id="edge16" class="edge"><title>Node10&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M708.617,-121.298C692.451,-112.199 673.497,-101.035 657,-90 636.977,-76.6056 635.205,-68.4316 614,-57 583.483,-40.5484 545.848,-28.2083 518.759,-20.5598"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="707.334,-124.59 717.773,-126.401 710.742,-118.475 707.334,-124.59"/>
+<g id="edge17" class="edge"><title>Node10&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M714.424,-121.904C696.37,-112.881 675.229,-101.61 657,-90 636.681,-77.0584 635.205,-68.4316 614,-57 583.483,-40.5484 545.848,-28.2083 518.759,-20.5598"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="713.035,-125.121 723.551,-126.407 716.132,-118.844 713.035,-125.121"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" target="_top" xlink:title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h">
-<polygon fill="none" stroke="black" points="666.5,-57.5 666.5,-89.5 859.5,-89.5 859.5,-57.5 666.5,-57.5"/>
-<text text-anchor="start" x="674.5" y="-76.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/RoundRobinSearchAlgorithm</text>
-<text text-anchor="middle" x="763" y="-64.7" font-family="Helvetica,sans-Serif" font-size="11.00">SelectionPolicy.h</text>
+<g id="a_node11"><a xlink:href="ReinforcementLearningSearchAlgorithmSelectionPolicy_8h.xhtml" target="_top" xlink:title="src/TH/ReinforcementLearning\lSearchAlgorithmSelectionPolicy.h">
+<polygon fill="none" stroke="black" points="666.5,-57.5 666.5,-89.5 845.5,-89.5 845.5,-57.5 666.5,-57.5"/>
+<text text-anchor="start" x="674.5" y="-76.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/ReinforcementLearning</text>
+<text text-anchor="middle" x="756" y="-64.7" font-family="Helvetica,sans-Serif" font-size="11.00">SearchAlgorithmSelectionPolicy.h</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge13" class="edge"><title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M752.389,-116.318C754.667,-107.341 757.161,-97.5143 759.158,-89.6432"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="748.925,-115.743 749.858,-126.297 755.71,-117.465 748.925,-115.743"/>
+<path fill="none" stroke="midnightblue" d="M756,-116.025C756,-107.128 756,-97.4287 756,-89.6432"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="752.5,-116.297 756,-126.297 759.5,-116.297 752.5,-116.297"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="SingleSearchAlgorithmSelectionPolicy_8h.xhtml" target="_top" xlink:title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h">
-<polygon fill="none" stroke="black" points="878,-57.5 878,-89.5 1040,-89.5 1040,-57.5 878,-57.5"/>
-<text text-anchor="start" x="886" y="-76.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/SingleSearchAlgorithm</text>
-<text text-anchor="middle" x="959" y="-64.7" font-family="Helvetica,sans-Serif" font-size="11.00">SelectionPolicy.h</text>
+<g id="a_node12"><a xlink:href="RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" target="_top" xlink:title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h">
+<polygon fill="none" stroke="black" points="863.5,-57.5 863.5,-89.5 1056.5,-89.5 1056.5,-57.5 863.5,-57.5"/>
+<text text-anchor="start" x="871.5" y="-76.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/RoundRobinSearchAlgorithm</text>
+<text text-anchor="middle" x="960" y="-64.7" font-family="Helvetica,sans-Serif" font-size="11.00">SelectionPolicy.h</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node12 -->
-<g id="edge15" class="edge"><title>Node10&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M803.503,-123.412C837.145,-112.83 879.13,-99.6235 910.99,-89.6017"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="802.29,-120.125 793.801,-126.464 804.391,-126.802 802.29,-120.125"/>
+<g id="edge14" class="edge"><title>Node10&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M811.488,-123.276C843.639,-112.717 883.636,-99.5805 914.019,-89.6017"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="810.19,-120.018 801.782,-126.464 812.374,-126.669 810.19,-120.018"/>
 </g>
-<!-- Node11&#45;&gt;Node4 -->
-<g id="edge14" class="edge"><title>Node11&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M684.304,-55.3555C632.449,-44.0585 566.612,-29.7155 524.631,-20.5695"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="683.63,-58.7907 694.146,-57.4996 685.12,-51.9511 683.63,-58.7907"/>
+<!-- Node13 -->
+<g id="node13" class="node"><title>Node13</title>
+<g id="a_node13"><a xlink:href="SingleSearchAlgorithmSelectionPolicy_8h.xhtml" target="_top" xlink:title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h">
+<polygon fill="none" stroke="black" points="1075,-57.5 1075,-89.5 1237,-89.5 1237,-57.5 1075,-57.5"/>
+<text text-anchor="start" x="1083" y="-76.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/TH/SingleSearchAlgorithm</text>
+<text text-anchor="middle" x="1156" y="-64.7" font-family="Helvetica,sans-Serif" font-size="11.00">SelectionPolicy.h</text>
+</a>
 </g>
-<!-- Node14&#45;&gt;Node4 -->
-<g id="edge21" class="edge"><title>Node14&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M1009.43,-126.795C1035.42,-109.384 1070.1,-79.8649 1049,-57 1014.82,-19.9619 674.068,-13.0632 538.352,-11.7865"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1007.21,-124.059 1000.7,-132.418 1011.01,-129.943 1007.21,-124.059"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node"><title>Node16</title>
-<g id="a_node16"><a xlink:href="RosenbrockFitnessPolicy_8cpp.xhtml" target="_top" xlink:title="src/RosenbrockFitnessPolicy.cpp">
+<!-- Node10&#45;&gt;Node13 -->
+<g id="edge16" class="edge"><title>Node10&#45;&gt;Node13</title>
+<path fill="none" stroke="midnightblue" d="M854.218,-125.222C914.954,-115.133 994.513,-101.877 1065,-90 1068.16,-89.4674 1071.38,-88.9235 1074.64,-88.3732"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="853.546,-121.786 844.254,-126.877 854.693,-128.691 853.546,-121.786"/>
+</g>
+<!-- Node12&#45;&gt;Node4 -->
+<g id="edge15" class="edge"><title>Node12&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M853.277,-56.9211C734.792,-41.0866 608.558,-26.0679 538.052,-17.8479"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="852.874,-60.3982 863.25,-58.2583 853.804,-53.4603 852.874,-60.3982"/>
+</g>
+<!-- Node15&#45;&gt;Node4 -->
+<g id="edge22" class="edge"><title>Node15&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M1148.09,-130.994C1206.29,-118.371 1280.99,-94.1343 1246,-57 1221.77,-31.284 709.654,-16.8625 538.298,-12.7433"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1147.25,-127.593 1138.18,-133.068 1148.69,-134.445 1147.25,-127.593"/>
+</g>
+<!-- Node17 -->
+<g id="node17" class="node"><title>Node17</title>
+<g id="a_node17"><a xlink:href="RosenbrockFitnessPolicy_8cpp.xhtml" target="_top" xlink:title="src/RosenbrockFitnessPolicy.cpp">
 <polygon fill="none" stroke="black" points="802.5,-195.5 802.5,-215.5 977.5,-215.5 977.5,-195.5 802.5,-195.5"/>
 <text text-anchor="middle" x="890" y="-202.7" font-family="Helvetica,sans-Serif" font-size="11.00">src/RosenbrockFitnessPolicy.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node16 -->
-<g id="edge24" class="edge"><title>Node15&#45;&gt;Node16</title>
+<!-- Node16&#45;&gt;Node17 -->
+<g id="edge25" class="edge"><title>Node16&#45;&gt;Node17</title>
 <path fill="none" stroke="midnightblue" d="M838.815,-246.15C851.415,-236.39 867.313,-224.074 878.021,-215.779"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="836.486,-243.527 830.724,-252.418 840.773,-249.061 836.486,-243.527"/>
 </g>

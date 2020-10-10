@@ -115,9 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add02b5dae00356db700d37e10c025d26"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegionSelectionPolicy.xhtml#add02b5dae00356db700d37e10c025d26">apply</a> (<a class="el" href="classSearchSpace.xhtml">SearchSpace</a>&lt; P &gt; *S, <a class="el" href="classTHTree.xhtml">THTree</a> *tree, int ID)=0</td></tr>
 <tr class="memdesc:add02b5dae00356db700d37e10c025d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to apply the policy that will choose one "anchor" sub-region according to the <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> instance's ID.  <a href="#add02b5dae00356db700d37e10c025d26">More...</a><br /></td></tr>
 <tr class="separator:add02b5dae00356db700d37e10c025d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa942108fc219d24ca0e98837f5e504ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegionSelectionPolicy.xhtml#aa942108fc219d24ca0e98837f5e504ba">recalculate</a> (<a class="el" href="structIterationData.xhtml">IterationData</a>&lt; P, pSize, F, fSize, V, vSize &gt; *iterationData, <a class="el" href="classSearchSpace.xhtml">SearchSpace</a>&lt; P &gt; *S, <a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *R, <a class="el" href="classTHTree.xhtml">THTree</a> *tree, int ID)</td></tr>
-<tr class="memdesc:aa942108fc219d24ca0e98837f5e504ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method can be used by sub-classes to obtain a dynamic region at every <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> iteration.  <a href="#aa942108fc219d24ca0e98837f5e504ba">More...</a><br /></td></tr>
-<tr class="separator:aa942108fc219d24ca0e98837f5e504ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6a0b2d2dee3eceae9cd3b16e5f01ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegionSelectionPolicy.xhtml#a7e6a0b2d2dee3eceae9cd3b16e5f01ca">recalculate</a> (<a class="el" href="structIterationData.xhtml">IterationData</a>&lt; P, pSize, F, fSize, V, vSize &gt; *iterationData, <a class="el" href="classSearchSpace.xhtml">SearchSpace</a>&lt; P &gt; *S, <a class="el" href="classRegion.xhtml">Region</a>&lt; P &gt; *R, <a class="el" href="classTHTree.xhtml">THTree</a> *tree, int ID)</td></tr>
+<tr class="memdesc:a7e6a0b2d2dee3eceae9cd3b16e5f01ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method can be used by sub-classes to obtain a dynamic region at every <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> iteration.  <a href="#a7e6a0b2d2dee3eceae9cd3b16e5f01ca">More...</a><br /></td></tr>
+<tr class="separator:a7e6a0b2d2dee3eceae9cd3b16e5f01ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, class V = double, int vSize = 1&gt;<br />
@@ -127,7 +127,7 @@ class RegionSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</h3>
 <dl class="section author"><dt>Author</dt><dd>Peter Frank Perroni</dd></dl>
 <p>The class that implements this template must partition the search space matching the tree topology, and then choose one "anchor" sub-region according to the <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> instance's ID. </p>
 
-<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00025">25</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00040">40</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a62f08e7286d9bc86ca2f66f07372a513"></a>
 <div class="memitem">
@@ -152,7 +152,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00027">27</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00042">42</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
 
 </div>
 </div>
@@ -179,7 +179,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00028">28</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00043">43</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 
 </div>
 </div>
-<a class="anchor" id="aa942108fc219d24ca0e98837f5e504ba"></a>
+<a class="anchor" id="a7e6a0b2d2dee3eceae9cd3b16e5f01ca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -250,7 +250,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classRegion.xhtml">Region</a>&lt;P&gt;* <a class="el" href="classRegionSelectionPolicy.xhtml">RegionSelectionPolicy</a>&lt; P, pSize, F, fSize, V, vSize &gt;::recalculate </td>
+          <td class="memname">void <a class="el" href="classRegionSelectionPolicy.xhtml">RegionSelectionPolicy</a>&lt; P, pSize, F, fSize, V, vSize &gt;::recalculate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structIterationData.xhtml">IterationData</a>&lt; P, pSize, F, fSize, V, vSize &gt; *&#160;</td>
           <td class="paramname"><em>iterationData</em>, </td>
@@ -299,15 +299,14 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
   <table class="params">
     <tr><td class="paramname">iterationData</td><td>The <a class="el" href="structIterationData.xhtml" title="Repository class that stores useful data about the TH iterations. ">IterationData</a> instance. </td></tr>
     <tr><td class="paramname">S</td><td>The full search space. </td></tr>
-    <tr><td class="paramname">R</td><td>The current "anchor" sub-region. </td></tr>
+    <tr><td class="paramname">R</td><td>The current "anchor" sub-region to be updated. </td></tr>
     <tr><td class="paramname">tree</td><td>The tree topology that will guide the partitioning. </td></tr>
     <tr><td class="paramname">ID</td><td>The <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> instance's global ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new "anchor" sub-region generated dynamically for current <a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00061">61</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="RegionSelectionPolicy_8h_source.xhtml#l00075">75</a> of file <a class="el" href="RegionSelectionPolicy_8h_source.xhtml">RegionSelectionPolicy.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +316,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 7 2020 13:08:20 for Treasure Hunt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 10 2020 18:30:49 for Treasure Hunt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

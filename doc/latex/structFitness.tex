@@ -1,0 +1,538 @@
+\hypertarget{structFitness}{}\section{Fitness$<$ F, f\+Size $>$ Class Template Reference}
+\label{structFitness}\index{Fitness$<$ F, f\+Size $>$@{Fitness$<$ F, f\+Size $>$}}
+
+
+This structure represents the fitness (or cost) of one \hyperlink{classSolution}{Solution}.  
+
+
+
+
+{\ttfamily \#include $<$Fitness.\+h$>$}
+
+
+
+Collaboration diagram for Fitness$<$ F, f\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{structFitness__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structFitness_a73ef98fc5780e1e15bbfac6177bd5c5a}{check\+Compatibility} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)
+\item 
+void \hyperlink{structFitness_a557b47961eb4a4589c53ee54f975e65e}{operator=} (F $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Operator that assigns the values of a buffer to the list that represents the current \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\item 
+void \hyperlink{structFitness_a19e4c2cc608e17611deacc194d83dc89}{operator=} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the contents of this fitness with the contents of the \hyperlink{structFitness}{Fitness} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structFitness_afd45c5c802ca9d0086685e85730f13da}{operator=} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ \&fitness)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the contents of this fitness with the contents of the \hyperlink{structFitness}{Fitness} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structFitness_a875d901a35662cf786bcc17b9e1a6983}{operator=} (F value)
+\begin{DoxyCompactList}\small\item\em Operator that assigns the same value to all elements of the list that represents the current \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\item 
+bool \hyperlink{structFitness_abd044181ac7240fa59c7a25fbcca5150}{equals} (F $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Compares the current fitness with the buffer received. \end{DoxyCompactList}\item 
+bool \hyperlink{structFitness_acfc0528bc5ec716f1c06a58086c59b50}{equals} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)
+\begin{DoxyCompactList}\small\item\em Compares the current fitness with the fitness received. \end{DoxyCompactList}\item 
+bool \hyperlink{structFitness_a87880c3a43c0bf6068c687d71e96bbfc}{operator==} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)
+\item 
+bool \hyperlink{structFitness_a525bb798a0016fada60e60a601c46510}{operator==} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ \&fitness)
+\item 
+bool \hyperlink{structFitness_a4cab5f7960366b61b34213efc89a4288}{operator!=} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)
+\item 
+bool \hyperlink{structFitness_a01be3acc37c269b11b2697d135759f20}{operator!=} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ \&fitness)
+\item 
+F \hyperlink{structFitness_a50bf7f366d9e182293184ebee7297df1}{get\+Internal\+Fitness} (int i)
+\begin{DoxyCompactList}\small\item\em Get a partial fitness based on its index in the list of values that represents the actual \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\item 
+F $\ast$ \hyperlink{structFitness_ab25220be9e68b4737a91a7b307c5e4d5}{get\+Internal\+Fitness} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the actual list of values that represents the \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\item 
+void \hyperlink{structFitness_aeb0b0935f54a9798faf30ddb4216d10a}{get\+Internal\+Fitness} (F $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This method copies the contents of current \hyperlink{structFitness}{Fitness} to the buffer received. \end{DoxyCompactList}\item 
+F \hyperlink{structFitness_ac6513eb1ca76f5618cbc0a2f4e25139c}{get\+First\+Value} ()
+\begin{DoxyCompactList}\small\item\em Get the first value from the list of values that represents the \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\item 
+int \hyperlink{structFitness_acebcc12ee16b4c1a95f9a16c0ba82191}{get\+Fitness\+Size} ()
+\begin{DoxyCompactList}\small\item\em Get the number of values that represents a \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+F \hyperlink{structFitness_abffc9af3988e39e82dc81fc006e6ef4a}{internal\+Fitness} \mbox{[}f\+Size\mbox{]}
+\item 
+int \hyperlink{structFitness_ab487af790e21882d9308356e9b8fbf0d}{size} = f\+Size
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class F = double, int f\+Size = 1$>$\\*
+class Fitness$<$ F, f\+Size $>$}
+
+This structure represents the fitness (or cost) of one \hyperlink{classSolution}{Solution}. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+A \hyperlink{structFitness}{Fitness} on \hyperlink{classTH}{TH} can be represented by multiple values, instead of the traditional 1-\/value fitness (eg. multi-\/objective optimization, fitness history, score list, etc). The fitness is an ordered list with any number of elements, whose type must be of same basic data type for all elements (eg., double or int). 
+
+Definition at line 37 of file Fitness.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Fitness@{Fitness}!check\+Compatibility@{check\+Compatibility}}
+\index{check\+Compatibility@{check\+Compatibility}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{check\+Compatibility(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)}{checkCompatibility(Fitness< F, fSize > *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ void {\bf Fitness}$<$ F, f\+Size $>$\+::check\+Compatibility (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a73ef98fc5780e1e15bbfac6177bd5c5a}{}\label{structFitness_a73ef98fc5780e1e15bbfac6177bd5c5a}
+
+
+Definition at line 41 of file Fitness.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFitness_a73ef98fc5780e1e15bbfac6177bd5c5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!equals@{equals}}
+\index{equals@{equals}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{equals(\+F $\ast$buffer)}{equals(F *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ bool {\bf Fitness}$<$ F, f\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{F $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_abd044181ac7240fa59c7a25fbcca5150}{}\label{structFitness_abd044181ac7240fa59c7a25fbcca5150}
+
+
+Compares the current fitness with the buffer received. 
+
+The buffer size must be compatible with this \hyperlink{structFitness}{Fitness}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{structFitness}{Fitness} instance has the same contents as the buffer received. False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Fitness.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{structFitness_abd044181ac7240fa59c7a25fbcca5150_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!equals@{equals}}
+\index{equals@{equals}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{equals(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)}{equals(Fitness< F, fSize > *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ bool {\bf Fitness}$<$ F, f\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_acfc0528bc5ec716f1c06a58086c59b50}{}\label{structFitness_acfc0528bc5ec716f1c06a58086c59b50}
+
+
+Compares the current fitness with the fitness received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The \hyperlink{structFitness}{Fitness} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{structFitness}{Fitness} instance has the same contents as the fitness received. False otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the fitness received is not compatible with current fitness. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 123 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFitness_acfc0528bc5ec716f1c06a58086c59b50_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!get\+First\+Value@{get\+First\+Value}}
+\index{get\+First\+Value@{get\+First\+Value}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{get\+First\+Value()}{getFirstValue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ F {\bf Fitness}$<$ F, f\+Size $>$\+::get\+First\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_ac6513eb1ca76f5618cbc0a2f4e25139c}{}\label{structFitness_ac6513eb1ca76f5618cbc0a2f4e25139c}
+
+
+Get the first value from the list of values that represents the \hyperlink{structFitness}{Fitness}. 
+
+Useful when the fitness is represented by 1 single value.
+
+\begin{DoxyReturn}{Returns}
+The first value from the list of values that represents the fitness (or cost). 
+\end{DoxyReturn}
+
+
+Definition at line 183 of file Fitness.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFitness_ac6513eb1ca76f5618cbc0a2f4e25139c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!get\+Fitness\+Size@{get\+Fitness\+Size}}
+\index{get\+Fitness\+Size@{get\+Fitness\+Size}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{get\+Fitness\+Size()}{getFitnessSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ int {\bf Fitness}$<$ F, f\+Size $>$\+::get\+Fitness\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_acebcc12ee16b4c1a95f9a16c0ba82191}{}\label{structFitness_acebcc12ee16b4c1a95f9a16c0ba82191}
+
+
+Get the number of values that represents a \hyperlink{structFitness}{Fitness}. 
+
+\begin{DoxyReturn}{Returns}
+The number of values that represents a \hyperlink{structFitness}{Fitness}. 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file Fitness.\+h.
+
+\index{Fitness@{Fitness}!get\+Internal\+Fitness@{get\+Internal\+Fitness}}
+\index{get\+Internal\+Fitness@{get\+Internal\+Fitness}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Fitness(int i)}{getInternalFitness(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ F {\bf Fitness}$<$ F, f\+Size $>$\+::get\+Internal\+Fitness (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a50bf7f366d9e182293184ebee7297df1}{}\label{structFitness_a50bf7f366d9e182293184ebee7297df1}
+
+
+Get a partial fitness based on its index in the list of values that represents the actual \hyperlink{structFitness}{Fitness}. 
+
+Given that a \hyperlink{structFitness}{Fitness} can be represented by multiple values, a \char`\"{}partial fitness\char`\"{} here actually means one of the values that represents a single fitness (or cost).
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the partial fitness in the list (index list starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The partial fitness selected. 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file Fitness.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFitness_a50bf7f366d9e182293184ebee7297df1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!get\+Internal\+Fitness@{get\+Internal\+Fitness}}
+\index{get\+Internal\+Fitness@{get\+Internal\+Fitness}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Fitness()}{getInternalFitness()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ F$\ast$ {\bf Fitness}$<$ F, f\+Size $>$\+::get\+Internal\+Fitness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_ab25220be9e68b4737a91a7b307c5e4d5}{}\label{structFitness_ab25220be9e68b4737a91a7b307c5e4d5}
+
+
+Get a pointer to the actual list of values that represents the \hyperlink{structFitness}{Fitness}. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the fitness\textquotesingle{}s values. 
+\end{DoxyReturn}
+
+
+Definition at line 159 of file Fitness.\+h.
+
+\index{Fitness@{Fitness}!get\+Internal\+Fitness@{get\+Internal\+Fitness}}
+\index{get\+Internal\+Fitness@{get\+Internal\+Fitness}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Fitness(\+F $\ast$buffer)}{getInternalFitness(F *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ void {\bf Fitness}$<$ F, f\+Size $>$\+::get\+Internal\+Fitness (
+\begin{DoxyParamCaption}
+\item[{F $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_aeb0b0935f54a9798faf30ddb4216d10a}{}\label{structFitness_aeb0b0935f54a9798faf30ddb4216d10a}
+
+
+This method copies the contents of current \hyperlink{structFitness}{Fitness} to the buffer received. 
+
+The buffer size must be compatible with this \hyperlink{structFitness}{Fitness}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The destination buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Fitness.\+h.
+
+\index{Fitness@{Fitness}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)}{operator!=(Fitness< F, fSize > *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ bool {\bf Fitness}$<$ F, f\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a4cab5f7960366b61b34213efc89a4288}{}\label{structFitness_a4cab5f7960366b61b34213efc89a4288}
+
+
+Definition at line 133 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{structFitness_a4cab5f7960366b61b34213efc89a4288_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Fitness$<$ F, f\+Size $>$ \&fitness)}{operator!=(Fitness< F, fSize > &fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ bool {\bf Fitness}$<$ F, f\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ \&}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a01be3acc37c269b11b2697d135759f20}{}\label{structFitness_a01be3acc37c269b11b2697d135759f20}
+
+
+Definition at line 136 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{structFitness_a01be3acc37c269b11b2697d135759f20_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!operator=@{operator=}}
+\index{operator=@{operator=}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator=(\+F $\ast$buffer)}{operator=(F *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ void {\bf Fitness}$<$ F, f\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{F $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a557b47961eb4a4589c53ee54f975e65e}{}\label{structFitness_a557b47961eb4a4589c53ee54f975e65e}
+
+
+Operator that assigns the values of a buffer to the list that represents the current \hyperlink{structFitness}{Fitness}. 
+
+The buffer size must be compatible with this \hyperlink{structFitness}{Fitness}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The source buffer to assign to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Fitness.\+h.
+
+\index{Fitness@{Fitness}!operator=@{operator=}}
+\index{operator=@{operator=}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator=(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)}{operator=(Fitness< F, fSize > *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ void {\bf Fitness}$<$ F, f\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a19e4c2cc608e17611deacc194d83dc89}{}\label{structFitness_a19e4c2cc608e17611deacc194d83dc89}
+
+
+Operator that overrides the contents of this fitness with the contents of the \hyperlink{structFitness}{Fitness} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The source \hyperlink{structFitness}{Fitness} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structFitness}{Fitness} instance is not compatible with current fitness. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 72 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFitness_a19e4c2cc608e17611deacc194d83dc89_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!operator=@{operator=}}
+\index{operator=@{operator=}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator=(\+Fitness$<$ F, f\+Size $>$ \&fitness)}{operator=(Fitness< F, fSize > &fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ void {\bf Fitness}$<$ F, f\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ \&}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_afd45c5c802ca9d0086685e85730f13da}{}\label{structFitness_afd45c5c802ca9d0086685e85730f13da}
+
+
+Operator that overrides the contents of this fitness with the contents of the \hyperlink{structFitness}{Fitness} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The source \hyperlink{structFitness}{Fitness} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structFitness}{Fitness} instance is not compatible with current fitness. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 83 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFitness_afd45c5c802ca9d0086685e85730f13da_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!operator=@{operator=}}
+\index{operator=@{operator=}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator=(\+F value)}{operator=(F value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ void {\bf Fitness}$<$ F, f\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{F}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a875d901a35662cf786bcc17b9e1a6983}{}\label{structFitness_a875d901a35662cf786bcc17b9e1a6983}
+
+
+Operator that assigns the same value to all elements of the list that represents the current \hyperlink{structFitness}{Fitness}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to assign to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Fitness.\+h.
+
+\index{Fitness@{Fitness}!operator==@{operator==}}
+\index{operator==@{operator==}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator==(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)}{operator==(Fitness< F, fSize > *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ bool {\bf Fitness}$<$ F, f\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a87880c3a43c0bf6068c687d71e96bbfc}{}\label{structFitness_a87880c3a43c0bf6068c687d71e96bbfc}
+
+
+Definition at line 127 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{structFitness_a87880c3a43c0bf6068c687d71e96bbfc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness@{Fitness}!operator==@{operator==}}
+\index{operator==@{operator==}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{operator==(\+Fitness$<$ F, f\+Size $>$ \&fitness)}{operator==(Fitness< F, fSize > &fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ bool {\bf Fitness}$<$ F, f\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ \&}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structFitness_a525bb798a0016fada60e60a601c46510}{}\label{structFitness_a525bb798a0016fada60e60a601c46510}
+
+
+Definition at line 130 of file Fitness.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{structFitness_a525bb798a0016fada60e60a601c46510_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Field Documentation}
+\index{Fitness@{Fitness}!internal\+Fitness@{internal\+Fitness}}
+\index{internal\+Fitness@{internal\+Fitness}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{internal\+Fitness}{internalFitness}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ F {\bf Fitness}$<$ F, f\+Size $>$\+::internal\+Fitness\mbox{[}f\+Size\mbox{]}}\hypertarget{structFitness_abffc9af3988e39e82dc81fc006e6ef4a}{}\label{structFitness_abffc9af3988e39e82dc81fc006e6ef4a}
+
+
+Definition at line 38 of file Fitness.\+h.
+
+\index{Fitness@{Fitness}!size@{size}}
+\index{size@{size}!Fitness@{Fitness}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class F = double, int f\+Size = 1$>$ int {\bf Fitness}$<$ F, f\+Size $>$\+::size = f\+Size}\hypertarget{structFitness_ab487af790e21882d9308356e9b8fbf0d}{}\label{structFitness_ab487af790e21882d9308356e9b8fbf0d}
+
+
+Definition at line 39 of file Fitness.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{Fitness_8h}{Fitness.\+h}\end{DoxyCompactItemize}

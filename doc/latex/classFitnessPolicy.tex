@@ -1,0 +1,314 @@
+\hypertarget{classFitnessPolicy}{}\section{Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classFitnessPolicy}\index{Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Template for the policy that calculates the fitness (or cost) for the problem under optimization.  
+
+
+
+
+{\ttfamily \#include $<$Fitness\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFitnessPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classFitnessPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFitnessPolicy_adaef071884faada05a7c3e6a32627ee6}{Fitness\+Policy} ()
+\item 
+virtual \hyperlink{classFitnessPolicy_adfac4092c631ea82aa5cd0ea03526d1e}{$\sim$\+Fitness\+Policy} ()
+\item 
+virtual void \hyperlink{classFitnessPolicy_a069122b137e7a1b9d66e1d026c4e7f1b}{apply} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)=0
+\begin{DoxyCompactList}\small\item\em This method calculates the fitness for the \hyperlink{classSolution}{Solution} instance provided. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classFitnessPolicy_acaf9a99792b12c78eaabc0acadd1de9f}{first\+Is\+Better} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$first, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$second)=0
+\begin{DoxyCompactList}\small\item\em Check if the first \hyperlink{classSolution}{Solution} is better than the second \hyperlink{classSolution}{Solution}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classFitnessPolicy_a48f875a28b12833e6bccbb0114e82c47}{first\+Is\+Better} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$first, \hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$second)=0
+\begin{DoxyCompactList}\small\item\em Check if the first \hyperlink{structFitness}{Fitness} is better than the second \hyperlink{structFitness}{Fitness}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classFitnessPolicy_a62bdba18c54f1380881f9e45d8aabf0c}{set\+Worst\+Fitness} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classSolution}{Solution} instance\textquotesingle{}s \hyperlink{structFitness}{Fitness} to the worst estimated fitness. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classFitnessPolicy_a3020ac22527975e1bb8b501cabd2c022}{set\+Worst\+Fitness} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{structFitness}{Fitness} instance to the worst estimated fitness. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classFitnessPolicy_aeb26c6138c90f743bdbe35e079589823}{set\+Best\+Fitness} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classSolution}{Solution} instance\textquotesingle{}s \hyperlink{structFitness}{Fitness} to the best estimated fitness. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classFitnessPolicy_acfa533062de747e373c7c818a70aa040}{set\+Best\+Fitness} (\hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$fitness)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{structFitness}{Fitness} instance to the best estimated fitness. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classFitnessPolicy_a338ed3315f4a4c5c41434ca6266efd3b}{get\+Min\+Estimated\+Fitness\+Value} ()=0
+\begin{DoxyCompactList}\small\item\em Get the minimum estimated fitness value for the problem being optimized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Template for the policy that calculates the fitness (or cost) for the problem under optimization. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+In \hyperlink{classTH}{TH}, every problem must have its own implementation of \hyperlink{classFitnessPolicy}{Fitness\+Policy}, since \hyperlink{classTH}{TH} trust in this single class to provide all details about the problem under optimization. 
+
+Definition at line 38 of file Fitness\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Fitness\+Policy@{Fitness\+Policy}!Fitness\+Policy@{Fitness\+Policy}}
+\index{Fitness\+Policy@{Fitness\+Policy}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{Fitness\+Policy()}{FitnessPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Fitness\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFitnessPolicy_adaef071884faada05a7c3e6a32627ee6}{}\label{classFitnessPolicy_adaef071884faada05a7c3e6a32627ee6}
+
+
+Definition at line 40 of file Fitness\+Policy.\+h.
+
+\index{Fitness\+Policy@{Fitness\+Policy}!````~Fitness\+Policy@{$\sim$\+Fitness\+Policy}}
+\index{````~Fitness\+Policy@{$\sim$\+Fitness\+Policy}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Fitness\+Policy()}{~FitnessPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Fitness\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classFitnessPolicy_adfac4092c631ea82aa5cd0ea03526d1e}{}\label{classFitnessPolicy_adfac4092c631ea82aa5cd0ea03526d1e}
+
+
+Definition at line 41 of file Fitness\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Fitness\+Policy@{Fitness\+Policy}!apply@{apply}}
+\index{apply@{apply}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)=0}{apply(Solution< P, pSize, F, fSize, V, vSize > *solution)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_a069122b137e7a1b9d66e1d026c4e7f1b}{}\label{classFitnessPolicy_a069122b137e7a1b9d66e1d026c4e7f1b}
+
+
+This method calculates the fitness for the \hyperlink{classSolution}{Solution} instance provided. 
+
+All processes required to calculate the fitness for a \hyperlink{classSolution}{Solution} instance must be performed in this single method call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The \hyperlink{classSolution}{Solution} instance to be evaluated. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFitnessPolicy_a069122b137e7a1b9d66e1d026c4e7f1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness\+Policy@{Fitness\+Policy}!first\+Is\+Better@{first\+Is\+Better}}
+\index{first\+Is\+Better@{first\+Is\+Better}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{first\+Is\+Better(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$first, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$second)=0}{firstIsBetter(Solution< P, pSize, F, fSize, V, vSize > *first, Solution< P, pSize, F, fSize, V, vSize > *second)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual bool {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::first\+Is\+Better (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{first, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_acaf9a99792b12c78eaabc0acadd1de9f}{}\label{classFitnessPolicy_acaf9a99792b12c78eaabc0acadd1de9f}
+
+
+Check if the first \hyperlink{classSolution}{Solution} is better than the second \hyperlink{classSolution}{Solution}. 
+
+Given that only the \hyperlink{classFitnessPolicy}{Fitness\+Policy} actually knows the problem being optimized, this method should tell \hyperlink{classTH}{TH} framework which from any two Solutions is better.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classSolution}{Solution} instance to compare. \\
+\hline
+{\em second} & The second \hyperlink{classSolution}{Solution} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the first \hyperlink{classSolution}{Solution} is better than the second \hyperlink{classSolution}{Solution}. False otherwise. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFitnessPolicy_acaf9a99792b12c78eaabc0acadd1de9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness\+Policy@{Fitness\+Policy}!first\+Is\+Better@{first\+Is\+Better}}
+\index{first\+Is\+Better@{first\+Is\+Better}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{first\+Is\+Better(\+Fitness$<$ F, f\+Size $>$ $\ast$first, Fitness$<$ F, f\+Size $>$ $\ast$second)=0}{firstIsBetter(Fitness< F, fSize > *first, Fitness< F, fSize > *second)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual bool {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::first\+Is\+Better (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{first, }
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_a48f875a28b12833e6bccbb0114e82c47}{}\label{classFitnessPolicy_a48f875a28b12833e6bccbb0114e82c47}
+
+
+Check if the first \hyperlink{structFitness}{Fitness} is better than the second \hyperlink{structFitness}{Fitness}. 
+
+Given that only the \hyperlink{classFitnessPolicy}{Fitness\+Policy} actually knows the problem being optimized, this method should tell \hyperlink{classTH}{TH} framework which from any two \hyperlink{structFitness}{Fitness} is better.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{structFitness}{Fitness} instance to compare. \\
+\hline
+{\em second} & The second \hyperlink{structFitness}{Fitness} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the first \hyperlink{structFitness}{Fitness} is better than the second \hyperlink{structFitness}{Fitness}. False otherwise. 
+\end{DoxyReturn}
+\index{Fitness\+Policy@{Fitness\+Policy}!get\+Min\+Estimated\+Fitness\+Value@{get\+Min\+Estimated\+Fitness\+Value}}
+\index{get\+Min\+Estimated\+Fitness\+Value@{get\+Min\+Estimated\+Fitness\+Value}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{get\+Min\+Estimated\+Fitness\+Value()=0}{getMinEstimatedFitnessValue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual double {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Min\+Estimated\+Fitness\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_a338ed3315f4a4c5c41434ca6266efd3b}{}\label{classFitnessPolicy_a338ed3315f4a4c5c41434ca6266efd3b}
+
+
+Get the minimum estimated fitness value for the problem being optimized. 
+
+Notice that this method requires a single value as response. Therefore, if the problem has a fitness composed of multiple values, such values must be combined into a single value.
+
+If the minimum single fitness value is unknown, give your best guess (preferred) or use D\+B\+L\+\_\+\+M\+IN (usually not the best choice).
+
+\begin{DoxyReturn}{Returns}
+The minimum estimated fitness value for the problem being optimized. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classRosenbrockFitnessPolicy_af69509049cc555796489d7aecb2afb2f}{Rosenbrock\+Fitness\+Policy}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFitnessPolicy_a338ed3315f4a4c5c41434ca6266efd3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness\+Policy@{Fitness\+Policy}!set\+Best\+Fitness@{set\+Best\+Fitness}}
+\index{set\+Best\+Fitness@{set\+Best\+Fitness}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Best\+Fitness(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)=0}{setBestFitness(Solution< P, pSize, F, fSize, V, vSize > *solution)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Best\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_aeb26c6138c90f743bdbe35e079589823}{}\label{classFitnessPolicy_aeb26c6138c90f743bdbe35e079589823}
+
+
+Set the \hyperlink{classSolution}{Solution} instance\textquotesingle{}s \hyperlink{structFitness}{Fitness} to the best estimated fitness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The \hyperlink{classSolution}{Solution} instance to set the \hyperlink{structFitness}{Fitness}. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFitnessPolicy_aeb26c6138c90f743bdbe35e079589823_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness\+Policy@{Fitness\+Policy}!set\+Best\+Fitness@{set\+Best\+Fitness}}
+\index{set\+Best\+Fitness@{set\+Best\+Fitness}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Best\+Fitness(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)=0}{setBestFitness(Fitness< F, fSize > *fitness)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Best\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_acfa533062de747e373c7c818a70aa040}{}\label{classFitnessPolicy_acfa533062de747e373c7c818a70aa040}
+
+
+Set the \hyperlink{structFitness}{Fitness} instance to the best estimated fitness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The \hyperlink{structFitness}{Fitness} instance to set. \\
+\hline
+\end{DoxyParams}
+\index{Fitness\+Policy@{Fitness\+Policy}!set\+Worst\+Fitness@{set\+Worst\+Fitness}}
+\index{set\+Worst\+Fitness@{set\+Worst\+Fitness}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Worst\+Fitness(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution)=0}{setWorstFitness(Solution< P, pSize, F, fSize, V, vSize > *solution)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Worst\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_a62bdba18c54f1380881f9e45d8aabf0c}{}\label{classFitnessPolicy_a62bdba18c54f1380881f9e45d8aabf0c}
+
+
+Set the \hyperlink{classSolution}{Solution} instance\textquotesingle{}s \hyperlink{structFitness}{Fitness} to the worst estimated fitness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The \hyperlink{classSolution}{Solution} instance to set the \hyperlink{structFitness}{Fitness}. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFitnessPolicy_a62bdba18c54f1380881f9e45d8aabf0c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fitness\+Policy@{Fitness\+Policy}!set\+Worst\+Fitness@{set\+Worst\+Fitness}}
+\index{set\+Worst\+Fitness@{set\+Worst\+Fitness}!Fitness\+Policy@{Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Worst\+Fitness(\+Fitness$<$ F, f\+Size $>$ $\ast$fitness)=0}{setWorstFitness(Fitness< F, fSize > *fitness)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Worst\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFitnessPolicy_a3020ac22527975e1bb8b501cabd2c022}{}\label{classFitnessPolicy_a3020ac22527975e1bb8b501cabd2c022}
+
+
+Set the \hyperlink{structFitness}{Fitness} instance to the worst estimated fitness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The \hyperlink{structFitness}{Fitness} instance to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{FitnessPolicy_8h}{Fitness\+Policy.\+h}\end{DoxyCompactItemize}

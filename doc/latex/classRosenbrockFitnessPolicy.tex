@@ -1,0 +1,325 @@
+\hypertarget{classRosenbrockFitnessPolicy}{}\section{Rosenbrock\+Fitness\+Policy Class Reference}
+\label{classRosenbrockFitnessPolicy}\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+
+
+Implementation of the Rosenbrock function for \hyperlink{classTH}{TH}.  
+
+
+
+
+{\ttfamily \#include $<$Rosenbrock\+Fitness\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Rosenbrock\+Fitness\+Policy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRosenbrockFitnessPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rosenbrock\+Fitness\+Policy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRosenbrockFitnessPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRosenbrockFitnessPolicy_a1991b0019dc80f465c4034c00149fc8d}{Rosenbrock\+Fitness\+Policy} ()
+\item 
+\hyperlink{classRosenbrockFitnessPolicy_aaabda48891e8fb971d24d84a8dc5da31}{$\sim$\+Rosenbrock\+Fitness\+Policy} ()
+\item 
+void \hyperlink{classRosenbrockFitnessPolicy_af93be349121f72b580d64243d2daf5f2}{apply} (\hyperlink{classSolution}{Solution}$<$$>$ $\ast$solution)
+\item 
+bool \hyperlink{classRosenbrockFitnessPolicy_adfbf6f67e41f0a5a90b8e31245d9b2c9}{first\+Is\+Better} (\hyperlink{classSolution}{Solution}$<$$>$ $\ast$first, \hyperlink{classSolution}{Solution}$<$$>$ $\ast$second)
+\item 
+bool \hyperlink{classRosenbrockFitnessPolicy_ab5b19517a7d249ddfbc06f9045341014}{first\+Is\+Better} (\hyperlink{structFitness}{Fitness}$<$$>$ $\ast$first, \hyperlink{structFitness}{Fitness}$<$$>$ $\ast$second)
+\item 
+void \hyperlink{classRosenbrockFitnessPolicy_a99011107bbcaadee1cba44a0c8646bd0}{set\+Worst\+Fitness} (\hyperlink{classSolution}{Solution}$<$$>$ $\ast$solution)
+\item 
+void \hyperlink{classRosenbrockFitnessPolicy_a36d19eaec4c8e2e7bea72c42cf76bd85}{set\+Worst\+Fitness} (\hyperlink{structFitness}{Fitness}$<$$>$ $\ast$fitness)
+\item 
+void \hyperlink{classRosenbrockFitnessPolicy_a1ed5f0d7c07f508c1db7cf787e8a9ec2}{set\+Best\+Fitness} (\hyperlink{classSolution}{Solution}$<$$>$ $\ast$solution)
+\item 
+void \hyperlink{classRosenbrockFitnessPolicy_acb07f61f58234f793fa1323b29203c37}{set\+Best\+Fitness} (\hyperlink{structFitness}{Fitness}$<$$>$ $\ast$fitness)
+\item 
+double \hyperlink{classRosenbrockFitnessPolicy_af69509049cc555796489d7aecb2afb2f}{get\+Min\+Estimated\+Fitness\+Value} ()
+\begin{DoxyCompactList}\small\item\em Get the minimum estimated fitness value for the problem being optimized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the Rosenbrock function for \hyperlink{classTH}{TH}. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 35 of file Rosenbrock\+Fitness\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{Rosenbrock\+Fitness\+Policy()}{RosenbrockFitnessPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}Rosenbrock\+Fitness\+Policy\+::\+Rosenbrock\+Fitness\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRosenbrockFitnessPolicy_a1991b0019dc80f465c4034c00149fc8d}{}\label{classRosenbrockFitnessPolicy_a1991b0019dc80f465c4034c00149fc8d}
+
+
+Definition at line 37 of file Rosenbrock\+Fitness\+Policy.\+h.
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!````~Rosenbrock\+Fitness\+Policy@{$\sim$\+Rosenbrock\+Fitness\+Policy}}
+\index{````~Rosenbrock\+Fitness\+Policy@{$\sim$\+Rosenbrock\+Fitness\+Policy}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Rosenbrock\+Fitness\+Policy()}{~RosenbrockFitnessPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}Rosenbrock\+Fitness\+Policy\+::$\sim$\+Rosenbrock\+Fitness\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRosenbrockFitnessPolicy_aaabda48891e8fb971d24d84a8dc5da31}{}\label{classRosenbrockFitnessPolicy_aaabda48891e8fb971d24d84a8dc5da31}
+
+
+Definition at line 38 of file Rosenbrock\+Fitness\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_aaabda48891e8fb971d24d84a8dc5da31_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!apply@{apply}}
+\index{apply@{apply}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Solution$<$$>$ $\ast$solution)}{apply(Solution<> *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rosenbrock\+Fitness\+Policy\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$$>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_af93be349121f72b580d64243d2daf5f2}{}\label{classRosenbrockFitnessPolicy_af93be349121f72b580d64243d2daf5f2}
+
+
+Definition at line 29 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_af93be349121f72b580d64243d2daf5f2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_af93be349121f72b580d64243d2daf5f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!first\+Is\+Better@{first\+Is\+Better}}
+\index{first\+Is\+Better@{first\+Is\+Better}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{first\+Is\+Better(\+Solution$<$$>$ $\ast$first, Solution$<$$>$ $\ast$second)}{firstIsBetter(Solution<> *first, Solution<> *second)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Rosenbrock\+Fitness\+Policy\+::first\+Is\+Better (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$$>$ $\ast$}]{first, }
+\item[{{\bf Solution}$<$$>$ $\ast$}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_adfbf6f67e41f0a5a90b8e31245d9b2c9}{}\label{classRosenbrockFitnessPolicy_adfbf6f67e41f0a5a90b8e31245d9b2c9}
+
+
+Definition at line 39 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_adfbf6f67e41f0a5a90b8e31245d9b2c9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_adfbf6f67e41f0a5a90b8e31245d9b2c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!first\+Is\+Better@{first\+Is\+Better}}
+\index{first\+Is\+Better@{first\+Is\+Better}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{first\+Is\+Better(\+Fitness$<$$>$ $\ast$first, Fitness$<$$>$ $\ast$second)}{firstIsBetter(Fitness<> *first, Fitness<> *second)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Rosenbrock\+Fitness\+Policy\+::first\+Is\+Better (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$$>$ $\ast$}]{first, }
+\item[{{\bf Fitness}$<$$>$ $\ast$}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_ab5b19517a7d249ddfbc06f9045341014}{}\label{classRosenbrockFitnessPolicy_ab5b19517a7d249ddfbc06f9045341014}
+
+
+Definition at line 46 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_ab5b19517a7d249ddfbc06f9045341014_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!get\+Min\+Estimated\+Fitness\+Value@{get\+Min\+Estimated\+Fitness\+Value}}
+\index{get\+Min\+Estimated\+Fitness\+Value@{get\+Min\+Estimated\+Fitness\+Value}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{get\+Min\+Estimated\+Fitness\+Value()}{getMinEstimatedFitnessValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Rosenbrock\+Fitness\+Policy\+::get\+Min\+Estimated\+Fitness\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classRosenbrockFitnessPolicy_af69509049cc555796489d7aecb2afb2f}{}\label{classRosenbrockFitnessPolicy_af69509049cc555796489d7aecb2afb2f}
+
+
+Get the minimum estimated fitness value for the problem being optimized. 
+
+Notice that this method requires a single value as response. Therefore, if the problem has a fitness composed of multiple values, such values must be combined into a single value.
+
+If the minimum single fitness value is unknown, give your best guess (preferred) or use D\+B\+L\+\_\+\+M\+IN (usually not the best choice).
+
+\begin{DoxyReturn}{Returns}
+The minimum estimated fitness value for the problem being optimized. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFitnessPolicy_a338ed3315f4a4c5c41434ca6266efd3b}{Fitness\+Policy$<$$>$}.
+
+
+
+Definition at line 54 of file Rosenbrock\+Fitness\+Policy.\+h.
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!set\+Best\+Fitness@{set\+Best\+Fitness}}
+\index{set\+Best\+Fitness@{set\+Best\+Fitness}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Best\+Fitness(\+Solution$<$$>$ $\ast$solution)}{setBestFitness(Solution<> *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rosenbrock\+Fitness\+Policy\+::set\+Best\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$$>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_a1ed5f0d7c07f508c1db7cf787e8a9ec2}{}\label{classRosenbrockFitnessPolicy_a1ed5f0d7c07f508c1db7cf787e8a9ec2}
+
+
+Definition at line 61 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_a1ed5f0d7c07f508c1db7cf787e8a9ec2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_a1ed5f0d7c07f508c1db7cf787e8a9ec2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!set\+Best\+Fitness@{set\+Best\+Fitness}}
+\index{set\+Best\+Fitness@{set\+Best\+Fitness}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Best\+Fitness(\+Fitness$<$$>$ $\ast$fitness)}{setBestFitness(Fitness<> *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rosenbrock\+Fitness\+Policy\+::set\+Best\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$$>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_acb07f61f58234f793fa1323b29203c37}{}\label{classRosenbrockFitnessPolicy_acb07f61f58234f793fa1323b29203c37}
+
+
+Definition at line 65 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!set\+Worst\+Fitness@{set\+Worst\+Fitness}}
+\index{set\+Worst\+Fitness@{set\+Worst\+Fitness}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Worst\+Fitness(\+Solution$<$$>$ $\ast$solution)}{setWorstFitness(Solution<> *solution)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rosenbrock\+Fitness\+Policy\+::set\+Worst\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$$>$ $\ast$}]{solution}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_a99011107bbcaadee1cba44a0c8646bd0}{}\label{classRosenbrockFitnessPolicy_a99011107bbcaadee1cba44a0c8646bd0}
+
+
+Definition at line 53 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_a99011107bbcaadee1cba44a0c8646bd0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRosenbrockFitnessPolicy_a99011107bbcaadee1cba44a0c8646bd0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}!set\+Worst\+Fitness@{set\+Worst\+Fitness}}
+\index{set\+Worst\+Fitness@{set\+Worst\+Fitness}!Rosenbrock\+Fitness\+Policy@{Rosenbrock\+Fitness\+Policy}}
+\subsubsection[{\texorpdfstring{set\+Worst\+Fitness(\+Fitness$<$$>$ $\ast$fitness)}{setWorstFitness(Fitness<> *fitness)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rosenbrock\+Fitness\+Policy\+::set\+Worst\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Fitness}$<$$>$ $\ast$}]{fitness}
+\end{DoxyParamCaption}
+)}\hypertarget{classRosenbrockFitnessPolicy_a36d19eaec4c8e2e7bea72c42cf76bd85}{}\label{classRosenbrockFitnessPolicy_a36d19eaec4c8e2e7bea72c42cf76bd85}
+
+
+Definition at line 57 of file Rosenbrock\+Fitness\+Policy.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{RosenbrockFitnessPolicy_8h}{Rosenbrock\+Fitness\+Policy.\+h}\item 
+src/\hyperlink{RosenbrockFitnessPolicy_8cpp}{Rosenbrock\+Fitness\+Policy.\+cpp}\end{DoxyCompactItemize}

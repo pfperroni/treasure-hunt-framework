@@ -1,0 +1,131 @@
+\hypertarget{classConvergentBestListUpdatePolicy}{}\section{Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classConvergentBestListUpdatePolicy}\index{Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This policy updates the \hyperlink{classBestList}{Best\+List} instance by enforcing a behavior that speeds up the convergence, as an attempt to reduce the time required to converge and, consequently, increase communication between \hyperlink{classTH}{TH} instances.  
+
+
+
+
+{\ttfamily \#include $<$Convergent\+Best\+List\+Update\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classConvergentBestListUpdatePolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classConvergentBestListUpdatePolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConvergentBestListUpdatePolicy_a3b4128e26d776ab760e1805beab61747}{Convergent\+Best\+List\+Update\+Policy} ()
+\item 
+\hyperlink{classConvergentBestListUpdatePolicy_ab965cc3715892b3a1be2559476b91791}{$\sim$\+Convergent\+Best\+List\+Update\+Policy} ()
+\item 
+void \hyperlink{classConvergentBestListUpdatePolicy_a6382937d32ac8bab7169f216fcd3048f}{apply} (\hyperlink{classBestList}{Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution, \hyperlink{classFitnessPolicy}{Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)
+\begin{DoxyCompactList}\small\item\em This method implements a behavior that focus on convergence speed when updating the solutions from the \hyperlink{classBestList}{Best\+List} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This policy updates the \hyperlink{classBestList}{Best\+List} instance by enforcing a behavior that speeds up the convergence, as an attempt to reduce the time required to converge and, consequently, increase communication between \hyperlink{classTH}{TH} instances. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 35 of file Convergent\+Best\+List\+Update\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}!Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}}
+\index{Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}!Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{Convergent\+Best\+List\+Update\+Policy()}{ConvergentBestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Convergent\+Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Convergent\+Best\+List\+Update\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConvergentBestListUpdatePolicy_a3b4128e26d776ab760e1805beab61747}{}\label{classConvergentBestListUpdatePolicy_a3b4128e26d776ab760e1805beab61747}
+
+
+Definition at line 37 of file Convergent\+Best\+List\+Update\+Policy.\+h.
+
+\index{Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}!````~Convergent\+Best\+List\+Update\+Policy@{$\sim$\+Convergent\+Best\+List\+Update\+Policy}}
+\index{````~Convergent\+Best\+List\+Update\+Policy@{$\sim$\+Convergent\+Best\+List\+Update\+Policy}!Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Convergent\+Best\+List\+Update\+Policy()}{~ConvergentBestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Convergent\+Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Convergent\+Best\+List\+Update\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConvergentBestListUpdatePolicy_ab965cc3715892b3a1be2559476b91791}{}\label{classConvergentBestListUpdatePolicy_ab965cc3715892b3a1be2559476b91791}
+
+
+Definition at line 38 of file Convergent\+Best\+List\+Update\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}!apply@{apply}}
+\index{apply@{apply}!Convergent\+Best\+List\+Update\+Policy@{Convergent\+Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution, Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)}{apply(BestList< P, pSize, F, fSize, V, vSize > *bestList, Solution< P, pSize, F, fSize, V, vSize > *solution, FitnessPolicy< P, pSize, F, fSize, V, vSize > *fitnessPolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Convergent\+Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{best\+List, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution, }
+\item[{{\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{fitness\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classConvergentBestListUpdatePolicy_a6382937d32ac8bab7169f216fcd3048f}{}\label{classConvergentBestListUpdatePolicy_a6382937d32ac8bab7169f216fcd3048f}
+
+
+This method implements a behavior that focus on convergence speed when updating the solutions from the \hyperlink{classBestList}{Best\+List} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List} & The \hyperlink{classBestList}{Best\+List} instance to be updated. \\
+\hline
+{\em solution} & The new solution to be added to the best-\/list. \\
+\hline
+{\em fitness\+Policy} & The \hyperlink{classFitnessPolicy}{Fitness\+Policy} instance capable of evaluating the solutions. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classBestListUpdatePolicy_a591442e3329323b350971b6a55195916}{Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 48 of file Convergent\+Best\+List\+Update\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConvergentBestListUpdatePolicy_a6382937d32ac8bab7169f216fcd3048f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{ConvergentBestListUpdatePolicy_8h}{Convergent\+Best\+List\+Update\+Policy.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{classReinforcementLearningSearchAlgorithmSelectionPolicy}{}\section{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classReinforcementLearningSearchAlgorithmSelectionPolicy}\index{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This class implements the algorithm selection policy through reinforcement learning.  
+
+
+
+
+{\ttfamily \#include $<$Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classReinforcementLearningSearchAlgorithmSelectionPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classReinforcementLearningSearchAlgorithmSelectionPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReinforcementLearningSearchAlgorithmSelectionPolicy_a2749d93ae5cbefdfc9aedca07bfe51ce}{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy} ()
+\item 
+\hyperlink{classReinforcementLearningSearchAlgorithmSelectionPolicy_a391b7a37c4aa59b58e344d1452dffae1}{$\sim$\+Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy} ()
+\item 
+virtual void \hyperlink{classReinforcementLearningSearchAlgorithmSelectionPolicy_a90a40b83202cab6aee7c547d51f40105}{rank} (int ID, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$tree, vector$<$ \hyperlink{classSearchScore}{Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms, \hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$curr\+Alg, \hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$curr\+Fitness, int current\+N\+Evals, long long n\+Total\+Evals)
+\begin{DoxyCompactList}\small\item\em Rank the performance of the \hyperlink{classSearch}{Search} instance previously executed. \end{DoxyCompactList}\item 
+virtual \hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classReinforcementLearningSearchAlgorithmSelectionPolicy_a4bd477b9e70030b13bc214cec3fa71d1}{apply} (int ID, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$tree, vector$<$ \hyperlink{classSearchScore}{Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms)
+\begin{DoxyCompactList}\small\item\em Choose the next optimization algorithm to be executed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This class implements the algorithm selection policy through reinforcement learning. 
+
+Rank and select the search algorithm.
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni (\href{mailto:pfperroni@gmail.com}{\tt pfperroni@gmail.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 36 of file Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}!Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}}
+\index{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}!Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy()}{ReinforcementLearningSearchAlgorithmSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classReinforcementLearningSearchAlgorithmSelectionPolicy_a2749d93ae5cbefdfc9aedca07bfe51ce}{}\label{classReinforcementLearningSearchAlgorithmSelectionPolicy_a2749d93ae5cbefdfc9aedca07bfe51ce}
+
+
+Definition at line 52 of file Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classReinforcementLearningSearchAlgorithmSelectionPolicy_a2749d93ae5cbefdfc9aedca07bfe51ce_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}!````~Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{$\sim$\+Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}}
+\index{````~Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{$\sim$\+Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}!Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy()}{~ReinforcementLearningSearchAlgorithmSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classReinforcementLearningSearchAlgorithmSelectionPolicy_a391b7a37c4aa59b58e344d1452dffae1}{}\label{classReinforcementLearningSearchAlgorithmSelectionPolicy_a391b7a37c4aa59b58e344d1452dffae1}
+
+
+Definition at line 57 of file Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}!apply@{apply}}
+\index{apply@{apply}!Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{apply(int I\+D, T\+H\+Tree $\ast$tree, vector$<$ Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms)}{apply(int ID, THTree *tree, vector< SearchScore< P, pSize, F, fSize, V, vSize > * > *algorithms)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ virtual {\bf Search}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{int}]{ID, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{tree, }
+\item[{vector$<$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$}]{algorithms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classReinforcementLearningSearchAlgorithmSelectionPolicy_a4bd477b9e70030b13bc214cec3fa71d1}{}\label{classReinforcementLearningSearchAlgorithmSelectionPolicy_a4bd477b9e70030b13bc214cec3fa71d1}
+
+
+Choose the next optimization algorithm to be executed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The \hyperlink{classTH}{TH} instance unique identifier. \\
+\hline
+{\em tree} & The \hyperlink{classTHTree}{T\+H\+Tree} topology where this \hyperlink{classTH}{TH} instance is running. \\
+\hline
+{\em algorithms} & The list of \hyperlink{classSearchScore}{Search\+Score} instances containing all optimization algorithms enabled and their respective scores. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next \hyperlink{classSearch}{Search} instance to be called. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearchAlgorithmSelectionPolicy_a0f316179ba1d9590efa74cac86eac777}{Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 86 of file Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classReinforcementLearningSearchAlgorithmSelectionPolicy_a4bd477b9e70030b13bc214cec3fa71d1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}!rank@{rank}}
+\index{rank@{rank}!Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy@{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{rank(int I\+D, T\+H\+Tree $\ast$tree, vector$<$ Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms, Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$curr\+Alg, Fitness$<$ F, f\+Size $>$ $\ast$curr\+Fitness, int current\+N\+Evals, long long n\+Total\+Evals)}{rank(int ID, THTree *tree, vector< SearchScore< P, pSize, F, fSize, V, vSize > * > *algorithms, Search< P, pSize, F, fSize, V, vSize > *currAlg, Fitness< F, fSize > *currFitness, int currentNEvals, long long nTotalEvals)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ virtual void {\bf Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::rank (
+\begin{DoxyParamCaption}
+\item[{int}]{ID, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{tree, }
+\item[{vector$<$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$}]{algorithms, }
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{curr\+Alg, }
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{curr\+Fitness, }
+\item[{int}]{current\+N\+Evals, }
+\item[{long long}]{n\+Evals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classReinforcementLearningSearchAlgorithmSelectionPolicy_a90a40b83202cab6aee7c547d51f40105}{}\label{classReinforcementLearningSearchAlgorithmSelectionPolicy_a90a40b83202cab6aee7c547d51f40105}
+
+
+Rank the performance of the \hyperlink{classSearch}{Search} instance previously executed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The \hyperlink{classTH}{TH} instance unique identifier. \\
+\hline
+{\em tree} & The \hyperlink{classTHTree}{T\+H\+Tree} topology where this \hyperlink{classTH}{TH} instance is running. \\
+\hline
+{\em algorithms} & The list of \hyperlink{classSearchScore}{Search\+Score} instances containing all optimization algorithms enabled and their respective scores. \\
+\hline
+{\em curr\+Alg} & The \hyperlink{classSearch}{Search} instance under evaluation. \\
+\hline
+{\em curr\+Fitness} & The best \hyperlink{structFitness}{Fitness} obtained by curr\+Alg on current run. \\
+\hline
+{\em current\+N\+Evals} & The number of evaluations performed by curr\+Alg to obtain curr\+Fitness. \\
+\hline
+{\em n\+Evals} & The total number of evaluations since the \hyperlink{classTH}{TH} instance started. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classSearchAlgorithmSelectionPolicy_a6b590e565ce6d9f64a1351f2d233b679}{Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 59 of file Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classReinforcementLearningSearchAlgorithmSelectionPolicy_a90a40b83202cab6aee7c547d51f40105_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{ReinforcementLearningSearchAlgorithmSelectionPolicy_8h}{Reinforcement\+Learning\+Search\+Algorithm\+Selection\+Policy.\+h}\end{DoxyCompactItemize}

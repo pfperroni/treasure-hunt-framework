@@ -1,0 +1,195 @@
+\hypertarget{classBestListUpdatePolicy}{}\section{Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classBestListUpdatePolicy}\index{Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Template for the policy that specifies how the solutions within the \hyperlink{classBestList}{Best\+List} are update.  
+
+
+
+
+{\ttfamily \#include $<$Best\+List\+Update\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestListUpdatePolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classBestListUpdatePolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBestListUpdatePolicy_a0a23a636003eb43d09e16f21133459f5}{Best\+List\+Update\+Policy} ()
+\item 
+virtual \hyperlink{classBestListUpdatePolicy_a6c17a69a8f1c010e7ce3f524f05ec98b}{$\sim$\+Best\+List\+Update\+Policy} ()
+\item 
+virtual void \hyperlink{classBestListUpdatePolicy_a591442e3329323b350971b6a55195916}{apply} (\hyperlink{classBestList}{Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution, \hyperlink{classFitnessPolicy}{Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)=0
+\begin{DoxyCompactList}\small\item\em Virtual method to apply the policy that will update the best-\/list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classBestListUpdatePolicy_a6987f90d6d9e5fec813f5aa53fe47ce3}{euclidean\+Distance} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$first, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$second)
+\begin{DoxyCompactList}\small\item\em Convenience method that calculates the Euclidean distance between two solutions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Template for the policy that specifies how the solutions within the \hyperlink{classBestList}{Best\+List} are update. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 36 of file Best\+List\+Update\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}!Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}}
+\index{Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}!Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{Best\+List\+Update\+Policy()}{BestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Best\+List\+Update\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestListUpdatePolicy_a0a23a636003eb43d09e16f21133459f5}{}\label{classBestListUpdatePolicy_a0a23a636003eb43d09e16f21133459f5}
+
+
+Definition at line 63 of file Best\+List\+Update\+Policy.\+h.
+
+\index{Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}!````~Best\+List\+Update\+Policy@{$\sim$\+Best\+List\+Update\+Policy}}
+\index{````~Best\+List\+Update\+Policy@{$\sim$\+Best\+List\+Update\+Policy}!Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Best\+List\+Update\+Policy()}{~BestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual {\bf Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Best\+List\+Update\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classBestListUpdatePolicy_a6c17a69a8f1c010e7ce3f524f05ec98b}{}\label{classBestListUpdatePolicy_a6c17a69a8f1c010e7ce3f524f05ec98b}
+
+
+Definition at line 64 of file Best\+List\+Update\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestListUpdatePolicy_a6c17a69a8f1c010e7ce3f524f05ec98b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}!apply@{apply}}
+\index{apply@{apply}!Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution, Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)=0}{apply(BestList< P, pSize, F, fSize, V, vSize > *bestList, Solution< P, pSize, F, fSize, V, vSize > *solution, FitnessPolicy< P, pSize, F, fSize, V, vSize > *fitnessPolicy)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{best\+List, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution, }
+\item[{{\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{fitness\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classBestListUpdatePolicy_a591442e3329323b350971b6a55195916}{}\label{classBestListUpdatePolicy_a591442e3329323b350971b6a55195916}
+
+
+Virtual method to apply the policy that will update the best-\/list. 
+
+A method implementing this virtual method is the responsible for actually updating the best-\/list. It should use the \hyperlink{classFitnessPolicy}{Fitness\+Policy} received to compare the new solution with the solutions stored in the best-\/list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List} & The \hyperlink{classBestList}{Best\+List} instance to be updated. \\
+\hline
+{\em solution} & The new solution to be added to the best-\/list. \\
+\hline
+{\em fitness\+Policy} & The \hyperlink{classFitnessPolicy}{Fitness\+Policy} instance capable of evaluating the solutions. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classConvergentBestListUpdatePolicy_a6382937d32ac8bab7169f216fcd3048f}{Convergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}, and \hyperlink{classDivergentBestListUpdatePolicy_a793d47a0c458eef94b27fbee73e5df0e}{Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestListUpdatePolicy_a591442e3329323b350971b6a55195916_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}!euclidean\+Distance@{euclidean\+Distance}}
+\index{euclidean\+Distance@{euclidean\+Distance}!Best\+List\+Update\+Policy@{Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{euclidean\+Distance(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$first, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$second)}{euclideanDistance(Solution< P, pSize, F, fSize, V, vSize > *first, Solution< P, pSize, F, fSize, V, vSize > *second)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ double {\bf Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::euclidean\+Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{first, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classBestListUpdatePolicy_a6987f90d6d9e5fec813f5aa53fe47ce3}{}\label{classBestListUpdatePolicy_a6987f90d6d9e5fec813f5aa53fe47ce3}
+
+
+Convenience method that calculates the Euclidean distance between two solutions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first solution. \\
+\hline
+{\em second} & The second solution. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double number representing the Euclidean distance between the solutions. 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Best\+List\+Update\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestListUpdatePolicy_a6987f90d6d9e5fec813f5aa53fe47ce3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBestListUpdatePolicy_a6987f90d6d9e5fec813f5aa53fe47ce3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{BestListUpdatePolicy_8h}{Best\+List\+Update\+Policy.\+h}\end{DoxyCompactItemize}

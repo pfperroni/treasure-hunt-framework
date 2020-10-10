@@ -1,0 +1,6 @@
+<map id="ReinforcementLearningSearchAlgorithmSelectionPolicy::rank" name="ReinforcementLearningSearchAlgorithmSelectionPolicy::rank">
+<area shape="rect" id="node2" href="$classSearch.xhtml#afbc425366989c9fc8aa7c88b70812b97" title="Get the name of the optimization method implemented. " alt="" coords="291,5,425,33"/>
+<area shape="rect" id="node3" href="$structFitness.xhtml#ac6513eb1ca76f5618cbc0a2f4e25139c" title="Get the first value from the list of values that represents the Fitness. " alt="" coords="277,57,439,85"/>
+<area shape="rect" id="node4" href="$classSearchScore.xhtml#a9157d1aa13189eece5b1321c08316220" title="SearchScore::setScore" alt="" coords="273,109,443,137"/>
+<area shape="rect" id="node5" href="$classSearchScore.xhtml#a909350808e091d0f75d43bbf08f6db29" title="SearchScore::getScore" alt="" coords="272,161,444,189"/>
+</map>

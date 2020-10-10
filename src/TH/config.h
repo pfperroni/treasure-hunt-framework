@@ -19,7 +19,6 @@
  *
  *
  * @file config.h
- * @class config
  * @author Peter Frank Perroni
  * @brief Global configurations must be set in this file.
  */

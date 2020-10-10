@@ -1,0 +1,683 @@
+\hypertarget{structIterationData}{}\section{Iteration\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{structIterationData}\index{Iteration\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Iteration\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Repository class that stores useful data about the \hyperlink{classTH}{TH} iterations.  
+
+
+
+
+{\ttfamily \#include $<$Iteration\+Data.\+h$>$}
+
+
+
+Collaboration diagram for Iteration\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{structIterationData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structIterationData_a7e10e80f912a2b18a17fd176c16bf2f9}{Iteration\+Data} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$\hyperlink{structIterationData_a1f3b9d4dd52556507d2ec1a11c2ce6c4}{population}, int \hyperlink{structIterationData_a8bd76977404cbdfc9ab671c566aed418}{population\+Size}, long \hyperlink{structIterationData_ad10e22f3597e2ac59de07a3d60ed4eb6}{max\+Time\+Seconds}=0, long long \hyperlink{structIterationData_a0c2c484b02710ac2e48221114e027dc6}{max\+Number\+Evaluations}=0, long \hyperlink{structIterationData_a9baa0b37d2e5b38e5e82d3c6fc8dcacf}{max\+Iterations}=0)
+\begin{DoxyCompactList}\small\item\em Constructor that creates an \hyperlink{structIterationData}{Iteration\+Data} instance. \end{DoxyCompactList}\item 
+\hyperlink{structIterationData_a40b76a1d7cdd3c2a9c7e149ad361d51f}{$\sim$\+Iteration\+Data} ()
+\item 
+void \hyperlink{structIterationData_a88c3571863098a65b89cbb22817607f3}{set\+General\+Best} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$\hyperlink{structIterationData_a537b9ef402a8f1f5a0e7f017e698e61b}{general\+Best})
+\begin{DoxyCompactList}\small\item\em Copy the contents of the general best solution to an internal clone. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{structIterationData_a52a85ebea1211c365fce026d083feccb}{get\+General\+Best} ()
+\item 
+void \hyperlink{structIterationData_a891c2a7e6d8f1134dece070ecab16afd}{set\+Population} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$\hyperlink{structIterationData_a1f3b9d4dd52556507d2ec1a11c2ce6c4}{population}, int \hyperlink{structIterationData_a8bd76977404cbdfc9ab671c566aed418}{population\+Size})
+\begin{DoxyCompactList}\small\item\em Copy the contents of the all population individuals to their internal clones. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$ \hyperlink{structIterationData_af658223157e49b85490c12197f00790f}{get\+Population} ()
+\item 
+int \hyperlink{structIterationData_aee5bbdc973e57316905ac5ffb0060933}{get\+Population\+Size} ()
+\item 
+void \hyperlink{structIterationData_ad20713d8a25433c257174f44febda153}{set\+Curr\+Time} (int \hyperlink{structIterationData_ade4c00fea568ba6547b46d39da98ca95}{curr\+Time})
+\begin{DoxyCompactList}\small\item\em Set the current running time of the current \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+int \hyperlink{structIterationData_a4def2a4301f2e4b02d2446b78c8f5d7c}{get\+Curr\+Time} ()
+\item 
+void \hyperlink{structIterationData_ae3ce80ee3e14d5f99c978821930b33ee}{set\+Curr\+Iteration} (int \hyperlink{structIterationData_a4868b1453ea6cb512ca4b3b91aa9aa46}{curr\+Iteration})
+\begin{DoxyCompactList}\small\item\em Set the current number of \hyperlink{classTH}{TH} iterations for current \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+int \hyperlink{structIterationData_a14d6abc5ad58fadb004cfe11dab40d99}{get\+Curr\+Iteration} ()
+\item 
+void \hyperlink{structIterationData_acfdb8e5cfb19fb7357ac7ac9850057fe}{set\+Curr\+Number\+Evaluation} (int \hyperlink{structIterationData_a3ebd4afd41be1657a42d79b053896a43}{curr\+Number\+Evaluation})
+\begin{DoxyCompactList}\small\item\em Set the current number of fitness evaluations for current \hyperlink{classTH}{TH} instance. \end{DoxyCompactList}\item 
+int \hyperlink{structIterationData_ae4b452d760fb10209356cac0de5f695d}{get\+Curr\+Number\+Evaluation} ()
+\item 
+long \hyperlink{structIterationData_a30c0cc0837d369cd177ee0ded42c6758}{get\+Max\+Iterations} ()
+\item 
+long long \hyperlink{structIterationData_a689db2058ccd9a558cf9f943ba42b5cc}{get\+Max\+Number\+Evaluations} ()
+\item 
+long \hyperlink{structIterationData_a15f6796b0ff7ad5db714d6d8a6afa68d}{get\+Max\+Time\+Seconds} ()
+\item 
+double \hyperlink{structIterationData_a43d0a7bbb330e66eec64e1a34e0b4487}{percentage\+Runtime} ()
+\begin{DoxyCompactList}\small\item\em Obtains the percentage of running time that has already been spent, according to the stopping criteria configured. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{structIterationData_a5a7af2b925eb3a2e507988e83383d969}{get\+Parent\+Best} ()
+\item 
+void \hyperlink{structIterationData_a9351be56294d61182190c223975032bb}{set\+Parent\+Best} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$\hyperlink{structIterationData_a390c6765ad4283ec89bba56ba33f27a2}{parent\+Best})
+\begin{DoxyCompactList}\small\item\em Copy the contents of the parent best solution to an internal clone. \end{DoxyCompactList}\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{structIterationData_a53bcf1b84d93a59c3de24c8a7b63500a}{get\+Iteration\+Best} ()
+\item 
+void \hyperlink{structIterationData_a61d9eaec319ef239ae3fe9d5c1a12920}{set\+Iteration\+Best} (\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$\hyperlink{structIterationData_a2fd9659d2ca4c7df24c31bb01c261704}{iteration\+Best})
+\begin{DoxyCompactList}\small\item\em Copy the contents of the iteration\textquotesingle{}s best solution to an internal clone. \end{DoxyCompactList}\item 
+int \hyperlink{structIterationData_a3035344ce63ddd24254341ee1104d8fc}{get\+N\+Dimensions} ()
+\begin{DoxyCompactList}\small\item\em Get the number of dimensions of current optimization problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$ \hyperlink{structIterationData_a1f3b9d4dd52556507d2ec1a11c2ce6c4}{population}
+\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{structIterationData_a537b9ef402a8f1f5a0e7f017e698e61b}{general\+Best}
+\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{structIterationData_a390c6765ad4283ec89bba56ba33f27a2}{parent\+Best}
+\item 
+\hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{structIterationData_a2fd9659d2ca4c7df24c31bb01c261704}{iteration\+Best}
+\item 
+int \hyperlink{structIterationData_a6099161959b928a1b4aeecbb46b9e407}{n}
+\item 
+int \hyperlink{structIterationData_a8bd76977404cbdfc9ab671c566aed418}{population\+Size}
+\item 
+int \hyperlink{structIterationData_ade4c00fea568ba6547b46d39da98ca95}{curr\+Time}
+\item 
+int \hyperlink{structIterationData_a4868b1453ea6cb512ca4b3b91aa9aa46}{curr\+Iteration}
+\item 
+int \hyperlink{structIterationData_a3ebd4afd41be1657a42d79b053896a43}{curr\+Number\+Evaluation}
+\item 
+long \hyperlink{structIterationData_ad10e22f3597e2ac59de07a3d60ed4eb6}{max\+Time\+Seconds}
+\item 
+long long \hyperlink{structIterationData_a0c2c484b02710ac2e48221114e027dc6}{max\+Number\+Evaluations}
+\item 
+long \hyperlink{structIterationData_a9baa0b37d2e5b38e5e82d3c6fc8dcacf}{max\+Iterations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Iteration\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Repository class that stores useful data about the \hyperlink{classTH}{TH} iterations. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 33 of file Iteration\+Data.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Iteration\+Data@{Iteration\+Data}!Iteration\+Data@{Iteration\+Data}}
+\index{Iteration\+Data@{Iteration\+Data}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{Iteration\+Data(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$population, int population\+Size, long max\+Time\+Seconds=0, long long max\+Number\+Evaluations=0, long max\+Iterations=0)}{IterationData(Solution< P, pSize, F, fSize, V, vSize > **population, int populationSize, long maxTimeSeconds=0, long long maxNumberEvaluations=0, long maxIterations=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Iteration\+Data} (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$}]{population, }
+\item[{int}]{population\+Size, }
+\item[{long}]{max\+Time\+Seconds = {\ttfamily 0}, }
+\item[{long long}]{max\+Number\+Evaluations = {\ttfamily 0}, }
+\item[{long}]{max\+Iterations = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a7e10e80f912a2b18a17fd176c16bf2f9}{}\label{structIterationData_a7e10e80f912a2b18a17fd176c16bf2f9}
+
+
+Constructor that creates an \hyperlink{structIterationData}{Iteration\+Data} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & A pointer to the actual population of \hyperlink{classSolution}{Solution} instances. The entire population is cloned and then stored. \\
+\hline
+{\em population\+Size} & The population size. \\
+\hline
+{\em max\+Time\+Seconds} & The maximum time (in seconds) allowed to run. \\
+\hline
+{\em max\+Number\+Evaluations} & The maximum number of \hyperlink{structFitness}{Fitness} evaluations allowed. \\
+\hline
+{\em max\+Iterations} & The maximum number of \hyperlink{classTH}{TH} iterations allowed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Iteration\+Data.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a7e10e80f912a2b18a17fd176c16bf2f9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!````~Iteration\+Data@{$\sim$\+Iteration\+Data}}
+\index{````~Iteration\+Data@{$\sim$\+Iteration\+Data}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{$\sim$\+Iteration\+Data()}{~IterationData()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Iteration\+Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a40b76a1d7cdd3c2a9c7e149ad361d51f}{}\label{structIterationData_a40b76a1d7cdd3c2a9c7e149ad361d51f}
+
+
+Definition at line 85 of file Iteration\+Data.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Iteration\+Data@{Iteration\+Data}!get\+Curr\+Iteration@{get\+Curr\+Iteration}}
+\index{get\+Curr\+Iteration@{get\+Curr\+Iteration}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Curr\+Iteration()}{getCurrIteration()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Curr\+Iteration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a14d6abc5ad58fadb004cfe11dab40d99}{}\label{structIterationData_a14d6abc5ad58fadb004cfe11dab40d99}
+
+
+Definition at line 151 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Curr\+Number\+Evaluation@{get\+Curr\+Number\+Evaluation}}
+\index{get\+Curr\+Number\+Evaluation@{get\+Curr\+Number\+Evaluation}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Curr\+Number\+Evaluation()}{getCurrNumberEvaluation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Curr\+Number\+Evaluation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_ae4b452d760fb10209356cac0de5f695d}{}\label{structIterationData_ae4b452d760fb10209356cac0de5f695d}
+
+
+Definition at line 163 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Curr\+Time@{get\+Curr\+Time}}
+\index{get\+Curr\+Time@{get\+Curr\+Time}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Curr\+Time()}{getCurrTime()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Curr\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a4def2a4301f2e4b02d2446b78c8f5d7c}{}\label{structIterationData_a4def2a4301f2e4b02d2446b78c8f5d7c}
+
+
+Definition at line 139 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+General\+Best@{get\+General\+Best}}
+\index{get\+General\+Best@{get\+General\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+General\+Best()}{getGeneralBest()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+General\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a52a85ebea1211c365fce026d083feccb}{}\label{structIterationData_a52a85ebea1211c365fce026d083feccb}
+
+
+Definition at line 103 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a52a85ebea1211c365fce026d083feccb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Iteration\+Best@{get\+Iteration\+Best}}
+\index{get\+Iteration\+Best@{get\+Iteration\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Iteration\+Best()}{getIterationBest()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Iteration\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a53bcf1b84d93a59c3de24c8a7b63500a}{}\label{structIterationData_a53bcf1b84d93a59c3de24c8a7b63500a}
+
+
+Definition at line 213 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Max\+Iterations@{get\+Max\+Iterations}}
+\index{get\+Max\+Iterations@{get\+Max\+Iterations}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Max\+Iterations()}{getMaxIterations()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Iterations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a30c0cc0837d369cd177ee0ded42c6758}{}\label{structIterationData_a30c0cc0837d369cd177ee0ded42c6758}
+
+
+Definition at line 167 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Max\+Number\+Evaluations@{get\+Max\+Number\+Evaluations}}
+\index{get\+Max\+Number\+Evaluations@{get\+Max\+Number\+Evaluations}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Max\+Number\+Evaluations()}{getMaxNumberEvaluations()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long long {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Number\+Evaluations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a689db2058ccd9a558cf9f943ba42b5cc}{}\label{structIterationData_a689db2058ccd9a558cf9f943ba42b5cc}
+
+
+Definition at line 171 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Max\+Time\+Seconds@{get\+Max\+Time\+Seconds}}
+\index{get\+Max\+Time\+Seconds@{get\+Max\+Time\+Seconds}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Max\+Time\+Seconds()}{getMaxTimeSeconds()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Max\+Time\+Seconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a15f6796b0ff7ad5db714d6d8a6afa68d}{}\label{structIterationData_a15f6796b0ff7ad5db714d6d8a6afa68d}
+
+
+Definition at line 175 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+N\+Dimensions@{get\+N\+Dimensions}}
+\index{get\+N\+Dimensions@{get\+N\+Dimensions}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+N\+Dimensions()}{getNDimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+N\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a3035344ce63ddd24254341ee1104d8fc}{}\label{structIterationData_a3035344ce63ddd24254341ee1104d8fc}
+
+
+Get the number of dimensions of current optimization problem. 
+
+\begin{DoxyReturn}{Returns}
+The number of dimensions of current optimization problem. 
+\end{DoxyReturn}
+
+
+Definition at line 229 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Parent\+Best@{get\+Parent\+Best}}
+\index{get\+Parent\+Best@{get\+Parent\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Parent\+Best()}{getParentBest()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Parent\+Best (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a5a7af2b925eb3a2e507988e83383d969}{}\label{structIterationData_a5a7af2b925eb3a2e507988e83383d969}
+
+
+Definition at line 201 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a5a7af2b925eb3a2e507988e83383d969_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Population@{get\+Population}}
+\index{get\+Population@{get\+Population}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Population()}{getPopulation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Population (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_af658223157e49b85490c12197f00790f}{}\label{structIterationData_af658223157e49b85490c12197f00790f}
+
+
+Definition at line 123 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!get\+Population\+Size@{get\+Population\+Size}}
+\index{get\+Population\+Size@{get\+Population\+Size}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Population\+Size()}{getPopulationSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Population\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_aee5bbdc973e57316905ac5ffb0060933}{}\label{structIterationData_aee5bbdc973e57316905ac5ffb0060933}
+
+
+Definition at line 127 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!percentage\+Runtime@{percentage\+Runtime}}
+\index{percentage\+Runtime@{percentage\+Runtime}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{percentage\+Runtime()}{percentageRuntime()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ double {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::percentage\+Runtime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a43d0a7bbb330e66eec64e1a34e0b4487}{}\label{structIterationData_a43d0a7bbb330e66eec64e1a34e0b4487}
+
+
+Obtains the percentage of running time that has already been spent, according to the stopping criteria configured. 
+
+\begin{DoxyReturn}{Returns}
+The percentage of running time that has already been spent, in the interval \mbox{[}0, 1\mbox{]}. 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a43d0a7bbb330e66eec64e1a34e0b4487_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+Curr\+Iteration@{set\+Curr\+Iteration}}
+\index{set\+Curr\+Iteration@{set\+Curr\+Iteration}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+Curr\+Iteration(int curr\+Iteration)}{setCurrIteration(int currIteration)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Curr\+Iteration (
+\begin{DoxyParamCaption}
+\item[{int}]{curr\+Iteration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_ae3ce80ee3e14d5f99c978821930b33ee}{}\label{structIterationData_ae3ce80ee3e14d5f99c978821930b33ee}
+
+
+Set the current number of \hyperlink{classTH}{TH} iterations for current \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Iteration} & The current number of \hyperlink{classTH}{TH} iterations for current \hyperlink{classTH}{TH} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_ae3ce80ee3e14d5f99c978821930b33ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+Curr\+Number\+Evaluation@{set\+Curr\+Number\+Evaluation}}
+\index{set\+Curr\+Number\+Evaluation@{set\+Curr\+Number\+Evaluation}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+Curr\+Number\+Evaluation(int curr\+Number\+Evaluation)}{setCurrNumberEvaluation(int currNumberEvaluation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Curr\+Number\+Evaluation (
+\begin{DoxyParamCaption}
+\item[{int}]{curr\+Number\+Evaluation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_acfdb8e5cfb19fb7357ac7ac9850057fe}{}\label{structIterationData_acfdb8e5cfb19fb7357ac7ac9850057fe}
+
+
+Set the current number of fitness evaluations for current \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Number\+Evaluation} & The current number of fitness evaluations for current \hyperlink{classTH}{TH} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 159 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_acfdb8e5cfb19fb7357ac7ac9850057fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+Curr\+Time@{set\+Curr\+Time}}
+\index{set\+Curr\+Time@{set\+Curr\+Time}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+Curr\+Time(int curr\+Time)}{setCurrTime(int currTime)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Curr\+Time (
+\begin{DoxyParamCaption}
+\item[{int}]{curr\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_ad20713d8a25433c257174f44febda153}{}\label{structIterationData_ad20713d8a25433c257174f44febda153}
+
+
+Set the current running time of the current \hyperlink{classTH}{TH} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Time} & The current running time of the current \hyperlink{classTH}{TH} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_ad20713d8a25433c257174f44febda153_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+General\+Best@{set\+General\+Best}}
+\index{set\+General\+Best@{set\+General\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+General\+Best(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$general\+Best)}{setGeneralBest(Solution< P, pSize, F, fSize, V, vSize > *generalBest)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+General\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{general\+Best}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a88c3571863098a65b89cbb22817607f3}{}\label{structIterationData_a88c3571863098a65b89cbb22817607f3}
+
+
+Copy the contents of the general best solution to an internal clone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em general\+Best} & The current general best \hyperlink{classSolution}{Solution} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a88c3571863098a65b89cbb22817607f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+Iteration\+Best@{set\+Iteration\+Best}}
+\index{set\+Iteration\+Best@{set\+Iteration\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+Iteration\+Best(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$iteration\+Best)}{setIterationBest(Solution< P, pSize, F, fSize, V, vSize > *iterationBest)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Iteration\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{iteration\+Best}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a61d9eaec319ef239ae3fe9d5c1a12920}{}\label{structIterationData_a61d9eaec319ef239ae3fe9d5c1a12920}
+
+
+Copy the contents of the iteration\textquotesingle{}s best solution to an internal clone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iteration\+Best} & The current iteration\textquotesingle{}s best \hyperlink{classSolution}{Solution} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 221 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a61d9eaec319ef239ae3fe9d5c1a12920_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+Parent\+Best@{set\+Parent\+Best}}
+\index{set\+Parent\+Best@{set\+Parent\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+Parent\+Best(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$parent\+Best)}{setParentBest(Solution< P, pSize, F, fSize, V, vSize > *parentBest)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Parent\+Best (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{parent\+Best}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a9351be56294d61182190c223975032bb}{}\label{structIterationData_a9351be56294d61182190c223975032bb}
+
+
+Copy the contents of the parent best solution to an internal clone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Best} & The current parent best \hyperlink{classSolution}{Solution} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 209 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a9351be56294d61182190c223975032bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Iteration\+Data@{Iteration\+Data}!set\+Population@{set\+Population}}
+\index{set\+Population@{set\+Population}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{set\+Population(\+Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$population, int population\+Size)}{setPopulation(Solution< P, pSize, F, fSize, V, vSize > **population, int populationSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Population (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$$\ast$}]{population, }
+\item[{int}]{population\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structIterationData_a891c2a7e6d8f1134dece070ecab16afd}{}\label{structIterationData_a891c2a7e6d8f1134dece070ecab16afd}
+
+
+Copy the contents of the all population individuals to their internal clones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & The population at current state. \\
+\hline
+{\em population\+Size} & The population size. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file Iteration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structIterationData_a891c2a7e6d8f1134dece070ecab16afd_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Field Documentation}
+\index{Iteration\+Data@{Iteration\+Data}!curr\+Iteration@{curr\+Iteration}}
+\index{curr\+Iteration@{curr\+Iteration}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{curr\+Iteration}{currIteration}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::curr\+Iteration}\hypertarget{structIterationData_a4868b1453ea6cb512ca4b3b91aa9aa46}{}\label{structIterationData_a4868b1453ea6cb512ca4b3b91aa9aa46}
+
+
+Definition at line 41 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!curr\+Number\+Evaluation@{curr\+Number\+Evaluation}}
+\index{curr\+Number\+Evaluation@{curr\+Number\+Evaluation}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{curr\+Number\+Evaluation}{currNumberEvaluation}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::curr\+Number\+Evaluation}\hypertarget{structIterationData_a3ebd4afd41be1657a42d79b053896a43}{}\label{structIterationData_a3ebd4afd41be1657a42d79b053896a43}
+
+
+Definition at line 42 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!curr\+Time@{curr\+Time}}
+\index{curr\+Time@{curr\+Time}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{curr\+Time}{currTime}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::curr\+Time}\hypertarget{structIterationData_ade4c00fea568ba6547b46d39da98ca95}{}\label{structIterationData_ade4c00fea568ba6547b46d39da98ca95}
+
+
+Definition at line 40 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!general\+Best@{general\+Best}}
+\index{general\+Best@{general\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{general\+Best}{generalBest}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::general\+Best}\hypertarget{structIterationData_a537b9ef402a8f1f5a0e7f017e698e61b}{}\label{structIterationData_a537b9ef402a8f1f5a0e7f017e698e61b}
+
+
+Definition at line 35 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!iteration\+Best@{iteration\+Best}}
+\index{iteration\+Best@{iteration\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{iteration\+Best}{iterationBest}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::iteration\+Best}\hypertarget{structIterationData_a2fd9659d2ca4c7df24c31bb01c261704}{}\label{structIterationData_a2fd9659d2ca4c7df24c31bb01c261704}
+
+
+Definition at line 37 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!max\+Iterations@{max\+Iterations}}
+\index{max\+Iterations@{max\+Iterations}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{max\+Iterations}{maxIterations}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::max\+Iterations}\hypertarget{structIterationData_a9baa0b37d2e5b38e5e82d3c6fc8dcacf}{}\label{structIterationData_a9baa0b37d2e5b38e5e82d3c6fc8dcacf}
+
+
+Definition at line 45 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!max\+Number\+Evaluations@{max\+Number\+Evaluations}}
+\index{max\+Number\+Evaluations@{max\+Number\+Evaluations}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{max\+Number\+Evaluations}{maxNumberEvaluations}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long long {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::max\+Number\+Evaluations}\hypertarget{structIterationData_a0c2c484b02710ac2e48221114e027dc6}{}\label{structIterationData_a0c2c484b02710ac2e48221114e027dc6}
+
+
+Definition at line 44 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!max\+Time\+Seconds@{max\+Time\+Seconds}}
+\index{max\+Time\+Seconds@{max\+Time\+Seconds}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{max\+Time\+Seconds}{maxTimeSeconds}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ long {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::max\+Time\+Seconds}\hypertarget{structIterationData_ad10e22f3597e2ac59de07a3d60ed4eb6}{}\label{structIterationData_ad10e22f3597e2ac59de07a3d60ed4eb6}
+
+
+Definition at line 43 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!n@{n}}
+\index{n@{n}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{n}{n}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::n}\hypertarget{structIterationData_a6099161959b928a1b4aeecbb46b9e407}{}\label{structIterationData_a6099161959b928a1b4aeecbb46b9e407}
+
+
+Definition at line 38 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!parent\+Best@{parent\+Best}}
+\index{parent\+Best@{parent\+Best}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{parent\+Best}{parentBest}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::parent\+Best}\hypertarget{structIterationData_a390c6765ad4283ec89bba56ba33f27a2}{}\label{structIterationData_a390c6765ad4283ec89bba56ba33f27a2}
+
+
+Definition at line 36 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!population@{population}}
+\index{population@{population}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{population}{population}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Solution}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$$\ast$ {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::population}\hypertarget{structIterationData_a1f3b9d4dd52556507d2ec1a11c2ce6c4}{}\label{structIterationData_a1f3b9d4dd52556507d2ec1a11c2ce6c4}
+
+
+Definition at line 34 of file Iteration\+Data.\+h.
+
+\index{Iteration\+Data@{Iteration\+Data}!population\+Size@{population\+Size}}
+\index{population\+Size@{population\+Size}!Iteration\+Data@{Iteration\+Data}}
+\subsubsection[{\texorpdfstring{population\+Size}{populationSize}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::population\+Size}\hypertarget{structIterationData_a8bd76977404cbdfc9ab671c566aed418}{}\label{structIterationData_a8bd76977404cbdfc9ab671c566aed418}
+
+
+Definition at line 39 of file Iteration\+Data.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{IterationData_8h}{Iteration\+Data.\+h}\end{DoxyCompactItemize}

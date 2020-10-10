@@ -1,8 +1,9 @@
 <map id="THUtil::getRandomSeed" name="THUtil::getRandomSeed">
-<area shape="rect" id="node2" href="$classHillClimbing.xhtml#a845d2e4cac39582bf1218a90431c2f3c" title="Initialize the algorithm for a new optimization. " alt="" coords="275,5,425,33"/>
-<area shape="rect" id="node3" href="$classPSO.xhtml#a8fb3e9a46396074cbbdc2d04a83783a5" title="Initialize the algorithm for a new optimization. " alt="" coords="297,57,403,85"/>
-<area shape="rect" id="node4" href="$classBetaRelocationStrategyPolicy.xhtml#a3787cd91ed77d150601350420ca218a6" title="BetaRelocationStrategyPolicy\l::BetaRelocationStrategyPolicy" alt="" coords="240,109,460,153"/>
-<area shape="rect" id="node5" href="$classRandomBestListSelectionPolicy.xhtml#abc1f4bb2b43625f4161cf7adc3d9dec8" title="RandomBestListSelectionPolicy\l::RandomBestListSelectionPolicy" alt="" coords="233,177,467,221"/>
-<area shape="rect" id="node6" href="$classTHBuilder_1_1SearchGroup.xhtml#aafebb836a1ec681213319a024a254ca8" title="Reset the location of the population individuals and calculate the fitness. " alt="" coords="259,245,441,289"/>
-<area shape="rect" id="node7" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="515,245,665,289"/>
+<area shape="rect" id="node2" href="$classHillClimbing.xhtml#a845d2e4cac39582bf1218a90431c2f3c" title="Initialize the algorithm for a new optimization. " alt="" coords="301,5,452,33"/>
+<area shape="rect" id="node3" href="$classPSO.xhtml#a8fb3e9a46396074cbbdc2d04a83783a5" title="Initialize the algorithm for a new optimization. " alt="" coords="324,57,429,85"/>
+<area shape="rect" id="node4" href="$classBetaRelocationStrategyPolicy.xhtml#a3787cd91ed77d150601350420ca218a6" title="BetaRelocationStrategyPolicy\l::BetaRelocationStrategyPolicy" alt="" coords="267,109,487,153"/>
+<area shape="rect" id="node5" href="$classRandomBestListSelectionPolicy.xhtml#abc1f4bb2b43625f4161cf7adc3d9dec8" title="RandomBestListSelectionPolicy\l::RandomBestListSelectionPolicy" alt="" coords="260,177,493,221"/>
+<area shape="rect" id="node6" href="$classReinforcementLearningSearchAlgorithmSelectionPolicy.xhtml#a2749d93ae5cbefdfc9aedca07bfe51ce" title="ReinforcementLearningSearch\lAlgorithmSelectionPolicy\l::ReinforcementLearningSearchAlgorithm\lSelectionPolicy" alt="" coords="233,245,520,321"/>
+<area shape="rect" id="node7" href="$classTHBuilder_1_1SearchGroup.xhtml#aafebb836a1ec681213319a024a254ca8" title="Reset the location of the population individuals and calculate the fitness. " alt="" coords="286,345,467,389"/>
+<area shape="rect" id="node8" href="$classTHBuilder_1_1THImpl.xhtml#a0d6e2fd43f50755ff2738e924f66690d" title="THBuilder::THImpl::\lTHImpl" alt="" coords="568,345,719,389"/>
 </map>

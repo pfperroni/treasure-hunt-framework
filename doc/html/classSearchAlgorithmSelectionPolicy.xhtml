@@ -98,7 +98,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for SearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSearchAlgorithmSelectionPolicy__inherit__graph.svg" width="518" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classSearchAlgorithmSelectionPolicy__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for SearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;:</div>
@@ -127,7 +128,7 @@ class SearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</h3>
 <dl class="section author"><dt>Author</dt><dd>Peter Frank Perroni</dd></dl>
 <p><a class="el" href="classTH.xhtml" title="This class interfaces the communication between the TH mechanisms and the external caller...">TH</a>'s search group uses this template to obtain the next <a class="el" href="classSearch.xhtml" title="Template for optimization methods. ">Search</a> instance to be called, allowing optimization by multiple search algorithms (round-robin, random, combinations, hyper-heuristics, etc). Once the <a class="el" href="classSearch.xhtml" title="Template for optimization methods. ">Search</a> instance has completed its optimization, the search group also uses this template to rank the performance of the <a class="el" href="classSearch.xhtml" title="Template for optimization methods. ">Search</a> instance just executed. </p>
 
-<p>Definition at line <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml#l00026">26</a> of file <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml">SearchAlgorithmSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml#l00041">41</a> of file <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml">SearchAlgorithmSelectionPolicy.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aeb650cf636c331f5842eb5acfc963a35"></a>
 <div class="memitem">
@@ -152,7 +153,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml#l00029">29</a> of file <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml">SearchAlgorithmSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml#l00044">44</a> of file <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml">SearchAlgorithmSelectionPolicy.h</a>.</p>
 
 </div>
 </div>
@@ -179,7 +180,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml#l00030">30</a> of file <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml">SearchAlgorithmSelectionPolicy.h</a>.</p>
+<p>Definition at line <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml#l00045">45</a> of file <a class="el" href="SearchAlgorithmSelectionPolicy_8h_source.xhtml">SearchAlgorithmSelectionPolicy.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -242,7 +243,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The next <a class="el" href="classSearch.xhtml" title="Template for optimization methods. ">Search</a> instance to be called. </dd></dl>
 
-<p>Implemented in <a class="el" href="classRoundRobinSearchAlgorithmSelectionPolicy.xhtml#ae9f87e0ce29bb51f1ef5ceca35bde79d">RoundRobinSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>, and <a class="el" href="classSingleSearchAlgorithmSelectionPolicy.xhtml#a19c5ce181953ac7c88ba157da0a346ad">SingleSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classReinforcementLearningSearchAlgorithmSelectionPolicy.xhtml#a4bd477b9e70030b13bc214cec3fa71d1">ReinforcementLearningSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>, <a class="el" href="classRoundRobinSearchAlgorithmSelectionPolicy.xhtml#ae9f87e0ce29bb51f1ef5ceca35bde79d">RoundRobinSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>, and <a class="el" href="classSingleSearchAlgorithmSelectionPolicy.xhtml#a19c5ce181953ac7c88ba157da0a346ad">SingleSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -331,7 +332,7 @@ template&lt;class P = double, int pSize = 1, class F = double, int fSize = 1, cl
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classRoundRobinSearchAlgorithmSelectionPolicy.xhtml#a198c3aab64c2d008074846e39345524e">RoundRobinSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>, and <a class="el" href="classSingleSearchAlgorithmSelectionPolicy.xhtml#a68d2a8caed510f1a058ae29b323b35ae">SingleSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classReinforcementLearningSearchAlgorithmSelectionPolicy.xhtml#a90a40b83202cab6aee7c547d51f40105">ReinforcementLearningSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>, <a class="el" href="classRoundRobinSearchAlgorithmSelectionPolicy.xhtml#a198c3aab64c2d008074846e39345524e">RoundRobinSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>, and <a class="el" href="classSingleSearchAlgorithmSelectionPolicy.xhtml#a68d2a8caed510f1a058ae29b323b35ae">SingleSearchAlgorithmSelectionPolicy&lt; P, pSize, F, fSize, V, vSize &gt;</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -348,7 +349,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 7 2020 13:08:20 for Treasure Hunt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 10 2020 18:30:49 for Treasure Hunt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

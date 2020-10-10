@@ -19,6 +19,7 @@ var searchData=
   ['_7erandombestlistselectionpolicy',['~RandomBestListSelectionPolicy',['../classRandomBestListSelectionPolicy.xhtml#a2c40baedbdd06e339632890367dfd5db',1,'RandomBestListSelectionPolicy']]],
   ['_7eregion',['~Region',['../classRegion.xhtml#aa563037c30f158902493dc8bc531329f',1,'Region']]],
   ['_7eregionselectionpolicy',['~RegionSelectionPolicy',['../classRegionSelectionPolicy.xhtml#a1a6db1114b3994f1d766f808a1d8616c',1,'RegionSelectionPolicy']]],
+  ['_7ereinforcementlearningsearchalgorithmselectionpolicy',['~ReinforcementLearningSearchAlgorithmSelectionPolicy',['../classReinforcementLearningSearchAlgorithmSelectionPolicy.xhtml#a391b7a37c4aa59b58e344d1452dffae1',1,'ReinforcementLearningSearchAlgorithmSelectionPolicy']]],
   ['_7erelocationstrategydata',['~RelocationStrategyData',['../structRelocationStrategyData.xhtml#a59cbaaf8cc4b655bfed790e90d5ededa',1,'RelocationStrategyData']]],
   ['_7erelocationstrategypolicy',['~RelocationStrategyPolicy',['../classRelocationStrategyPolicy.xhtml#ab8c3b00d15e2ab2dd01e52b1a201a068',1,'RelocationStrategyPolicy']]],
   ['_7erosenbrockfitnesspolicy',['~RosenbrockFitnessPolicy',['../classRosenbrockFitnessPolicy.xhtml#aaabda48891e8fb971d24d84a8dc5da31',1,'RosenbrockFitnessPolicy']]],

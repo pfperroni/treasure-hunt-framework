@@ -1,0 +1,165 @@
+\hypertarget{classSingleSearchAlgorithmSelectionPolicy}{}\section{Single\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classSingleSearchAlgorithmSelectionPolicy}\index{Single\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Single\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This class executes always the first \hyperlink{classSearch}{Search} instance available.  
+
+
+
+
+{\ttfamily \#include $<$Single\+Search\+Algorithm\+Selection\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Single\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classSingleSearchAlgorithmSelectionPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Single\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classSingleSearchAlgorithmSelectionPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSingleSearchAlgorithmSelectionPolicy_a6c2a40a289df84789d12b8b753952654}{Single\+Search\+Algorithm\+Selection\+Policy} ()
+\item 
+\hyperlink{classSingleSearchAlgorithmSelectionPolicy_aafb2fbe25987c553cd58b1dc2473529c}{$\sim$\+Single\+Search\+Algorithm\+Selection\+Policy} ()
+\item 
+void \hyperlink{classSingleSearchAlgorithmSelectionPolicy_a68d2a8caed510f1a058ae29b323b35ae}{rank} (int ID, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$tree, vector$<$ \hyperlink{classSearchScore}{Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms, \hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$curr\+Alg, \hyperlink{structFitness}{Fitness}$<$ F, f\+Size $>$ $\ast$curr\+Fitness, int current\+N\+Evals, long long n\+Evals)
+\begin{DoxyCompactList}\small\item\em Rank the performance of the \hyperlink{classSearch}{Search} instance previously executed. \end{DoxyCompactList}\item 
+\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classSingleSearchAlgorithmSelectionPolicy_a19c5ce181953ac7c88ba157da0a346ad}{apply} (int ID, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$tree, vector$<$ \hyperlink{classSearchScore}{Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms)
+\begin{DoxyCompactList}\small\item\em Choose the next optimization algorithm to be executed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Single\+Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This class executes always the first \hyperlink{classSearch}{Search} instance available. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 33 of file Single\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}!Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}}
+\index{Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}!Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{Single\+Search\+Algorithm\+Selection\+Policy()}{SingleSearchAlgorithmSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Single\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Single\+Search\+Algorithm\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSingleSearchAlgorithmSelectionPolicy_a6c2a40a289df84789d12b8b753952654}{}\label{classSingleSearchAlgorithmSelectionPolicy_a6c2a40a289df84789d12b8b753952654}
+
+
+Definition at line 36 of file Single\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+\index{Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}!````~Single\+Search\+Algorithm\+Selection\+Policy@{$\sim$\+Single\+Search\+Algorithm\+Selection\+Policy}}
+\index{````~Single\+Search\+Algorithm\+Selection\+Policy@{$\sim$\+Single\+Search\+Algorithm\+Selection\+Policy}!Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Single\+Search\+Algorithm\+Selection\+Policy()}{~SingleSearchAlgorithmSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Single\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Single\+Search\+Algorithm\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSingleSearchAlgorithmSelectionPolicy_aafb2fbe25987c553cd58b1dc2473529c}{}\label{classSingleSearchAlgorithmSelectionPolicy_aafb2fbe25987c553cd58b1dc2473529c}
+
+
+Definition at line 37 of file Single\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}!apply@{apply}}
+\index{apply@{apply}!Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{apply(int I\+D, T\+H\+Tree $\ast$tree, vector$<$ Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms)}{apply(int ID, THTree *tree, vector< SearchScore< P, pSize, F, fSize, V, vSize > * > *algorithms)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Search}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Single\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{int}]{ID, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{tree, }
+\item[{vector$<$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$}]{algorithms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classSingleSearchAlgorithmSelectionPolicy_a19c5ce181953ac7c88ba157da0a346ad}{}\label{classSingleSearchAlgorithmSelectionPolicy_a19c5ce181953ac7c88ba157da0a346ad}
+
+
+Choose the next optimization algorithm to be executed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The \hyperlink{classTH}{TH} instance unique identifier. \\
+\hline
+{\em tree} & The \hyperlink{classTHTree}{T\+H\+Tree} topology where this \hyperlink{classTH}{TH} instance is running. \\
+\hline
+{\em algorithms} & The list of \hyperlink{classSearchScore}{Search\+Score} instances containing all optimization algorithms enabled and their respective scores. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next \hyperlink{classSearch}{Search} instance to be called. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSearchAlgorithmSelectionPolicy_a0f316179ba1d9590efa74cac86eac777}{Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 49 of file Single\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+\index{Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}!rank@{rank}}
+\index{rank@{rank}!Single\+Search\+Algorithm\+Selection\+Policy@{Single\+Search\+Algorithm\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{rank(int I\+D, T\+H\+Tree $\ast$tree, vector$<$ Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$algorithms, Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$curr\+Alg, Fitness$<$ F, f\+Size $>$ $\ast$curr\+Fitness, int current\+N\+Evals, long long n\+Evals)}{rank(int ID, THTree *tree, vector< SearchScore< P, pSize, F, fSize, V, vSize > * > *algorithms, Search< P, pSize, F, fSize, V, vSize > *currAlg, Fitness< F, fSize > *currFitness, int currentNEvals, long long nEvals)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ void {\bf Single\+Search\+Algorithm\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::rank (
+\begin{DoxyParamCaption}
+\item[{int}]{ID, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{tree, }
+\item[{vector$<$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ $>$ $\ast$}]{algorithms, }
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{curr\+Alg, }
+\item[{{\bf Fitness}$<$ F, f\+Size $>$ $\ast$}]{curr\+Fitness, }
+\item[{int}]{current\+N\+Evals, }
+\item[{long long}]{n\+Evals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classSingleSearchAlgorithmSelectionPolicy_a68d2a8caed510f1a058ae29b323b35ae}{}\label{classSingleSearchAlgorithmSelectionPolicy_a68d2a8caed510f1a058ae29b323b35ae}
+
+
+Rank the performance of the \hyperlink{classSearch}{Search} instance previously executed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The \hyperlink{classTH}{TH} instance unique identifier. \\
+\hline
+{\em tree} & The \hyperlink{classTHTree}{T\+H\+Tree} topology where this \hyperlink{classTH}{TH} instance is running. \\
+\hline
+{\em algorithms} & The list of \hyperlink{classSearchScore}{Search\+Score} instances containing all optimization algorithms enabled and their respective scores. \\
+\hline
+{\em curr\+Alg} & The \hyperlink{classSearch}{Search} instance under evaluation. \\
+\hline
+{\em curr\+Fitness} & The best \hyperlink{structFitness}{Fitness} obtained by curr\+Alg on current run. \\
+\hline
+{\em current\+N\+Evals} & The number of evaluations performed by curr\+Alg to obtain curr\+Fitness. \\
+\hline
+{\em n\+Evals} & The total number of evaluations since the \hyperlink{classTH}{TH} instance started. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classSearchAlgorithmSelectionPolicy_a6b590e565ce6d9f64a1351f2d233b679}{Search\+Algorithm\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 39 of file Single\+Search\+Algorithm\+Selection\+Policy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{SingleSearchAlgorithmSelectionPolicy_8h}{Single\+Search\+Algorithm\+Selection\+Policy.\+h}\end{DoxyCompactItemize}

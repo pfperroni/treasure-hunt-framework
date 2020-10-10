@@ -1,0 +1,300 @@
+\hypertarget{classRegion}{}\section{Region$<$ P $>$ Class Template Reference}
+\label{classRegion}\index{Region$<$ P $>$@{Region$<$ P $>$}}
+
+
+This class represents a region within the search space.  
+
+
+
+
+{\ttfamily \#include $<$Region.\+h$>$}
+
+
+
+Inheritance diagram for Region$<$ P $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classRegion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Region$<$ P $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classRegion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegion_a6c9521953dcff0ff12c0fc8dadd3767c}{Region} (map$<$ \hyperlink{classDimension}{Dimension}$<$ P $>$ $\ast$, \hyperlink{classPartition}{Partition}$<$ P $>$ $\ast$ $>$ $\ast$partitions)
+\begin{DoxyCompactList}\small\item\em This construction creates a \hyperlink{classRegion}{Region} by copying the contents of the map provided. \end{DoxyCompactList}\item 
+\hyperlink{classRegion_afcb2c437cfdafb0aa43a7771260ead63}{Region} (\hyperlink{classRegion}{Region}$<$ P $>$ $\ast$region)
+\begin{DoxyCompactList}\small\item\em This construction creates a \hyperlink{classRegion}{Region} by copying the contents of the \hyperlink{classRegion}{Region} provided. \end{DoxyCompactList}\item 
+\hyperlink{classRegion_aa563037c30f158902493dc8bc531329f}{$\sim$\+Region} ()
+\item 
+\hyperlink{classPartition}{Partition}$<$ P $>$ $\ast$ \hyperlink{classRegion_a2cb409d3900e9bf37970b19eb9d80262}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Operator that selects the dimension\textquotesingle{}s \hyperlink{classPartition}{Partition} based on dimension\textquotesingle{}s sequential index. \end{DoxyCompactList}\item 
+map$<$ int, \hyperlink{classDimension}{Dimension}$<$ P $>$ $\ast$ $>$ $\ast$ \hyperlink{classRegion_aed7a4120591db745b5b424fb94588294}{get\+Original\+Dimensions} ()
+\begin{DoxyCompactList}\small\item\em Obtains a pointer to the map containing the dimensions that compose the entire search space. \end{DoxyCompactList}\item 
+\hyperlink{classDimension}{Dimension}$<$ P $>$ $\ast$ \hyperlink{classRegion_a300afb04c957e821d362c358253130b8}{get\+Original\+Dimension} (int i)
+\begin{DoxyCompactList}\small\item\em Get the full search space\textquotesingle{}s \hyperlink{classDimension}{Dimension} based on its sequential index. \end{DoxyCompactList}\item 
+map$<$ \hyperlink{classDimension}{Dimension}$<$ P $>$ $\ast$, \hyperlink{classPartition}{Partition}$<$ P $>$ $\ast$ $>$ $\ast$ \hyperlink{classRegion_a07c792e7ab2768254d71a0b688ccd935}{get\+Partitions} ()
+\begin{DoxyCompactList}\small\item\em Get the map of Partitions that compose the current \char`\"{}anchor\char`\"{} sub-\/region. \end{DoxyCompactList}\item 
+int \hyperlink{classRegion_aca2bc6ee7453d59523771c4defc7c7d0}{get\+N\+Dimensions} ()
+\begin{DoxyCompactList}\small\item\em Get the number of dimensions of this region. \end{DoxyCompactList}\item 
+void \hyperlink{classRegion_a762d4587205ba6bed49660ae1359a4a6}{print} ()
+\begin{DoxyCompactList}\small\item\em Debug the current \hyperlink{classRegion}{Region} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double$>$\\*
+class Region$<$ P $>$}
+
+This class represents a region within the search space. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+A region in \hyperlink{classTH}{TH} is represented by the set of all Partitions required to compose the \char`\"{}anchor\char`\"{} sub-\/region, besides all dimensions required to compose the entire search space. 
+
+Definition at line 43 of file Region.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Region@{Region}!Region@{Region}}
+\index{Region@{Region}!Region@{Region}}
+\subsubsection[{\texorpdfstring{Region(map$<$ Dimension$<$ P $>$ $\ast$, Partition$<$ P $>$ $\ast$ $>$ $\ast$partitions)}{Region(map< Dimension< P > *, Partition< P > * > *partitions)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Region}$<$ P $>$\+::{\bf Region} (
+\begin{DoxyParamCaption}
+\item[{map$<$ {\bf Dimension}$<$ P $>$ $\ast$, {\bf Partition}$<$ P $>$ $\ast$ $>$ $\ast$}]{partitions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_a6c9521953dcff0ff12c0fc8dadd3767c}{}\label{classRegion_a6c9521953dcff0ff12c0fc8dadd3767c}
+
+
+This construction creates a \hyperlink{classRegion}{Region} by copying the contents of the map provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em partitions} & The source map. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Region.\+h.
+
+\index{Region@{Region}!Region@{Region}}
+\index{Region@{Region}!Region@{Region}}
+\subsubsection[{\texorpdfstring{Region(\+Region$<$ P $>$ $\ast$region)}{Region(Region< P > *region)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Region}$<$ P $>$\+::{\bf Region} (
+\begin{DoxyParamCaption}
+\item[{{\bf Region}$<$ P $>$ $\ast$}]{region}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_afcb2c437cfdafb0aa43a7771260ead63}{}\label{classRegion_afcb2c437cfdafb0aa43a7771260ead63}
+
+
+This construction creates a \hyperlink{classRegion}{Region} by copying the contents of the \hyperlink{classRegion}{Region} provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em partitions} & The source \hyperlink{classRegion}{Region} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file Region.\+h.
+
+\index{Region@{Region}!````~Region@{$\sim$\+Region}}
+\index{````~Region@{$\sim$\+Region}!Region@{Region}}
+\subsubsection[{\texorpdfstring{$\sim$\+Region()}{~Region()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Region}$<$ P $>$\+::$\sim${\bf Region} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_aa563037c30f158902493dc8bc531329f}{}\label{classRegion_aa563037c30f158902493dc8bc531329f}
+
+
+Definition at line 82 of file Region.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Region@{Region}!get\+N\+Dimensions@{get\+N\+Dimensions}}
+\index{get\+N\+Dimensions@{get\+N\+Dimensions}!Region@{Region}}
+\subsubsection[{\texorpdfstring{get\+N\+Dimensions()}{getNDimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ int {\bf Region}$<$ P $>$\+::get\+N\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_aca2bc6ee7453d59523771c4defc7c7d0}{}\label{classRegion_aca2bc6ee7453d59523771c4defc7c7d0}
+
+
+Get the number of dimensions of this region. 
+
+\begin{DoxyReturn}{Returns}
+The number of dimensions of this region. 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file Region.\+h.
+
+\index{Region@{Region}!get\+Original\+Dimension@{get\+Original\+Dimension}}
+\index{get\+Original\+Dimension@{get\+Original\+Dimension}!Region@{Region}}
+\subsubsection[{\texorpdfstring{get\+Original\+Dimension(int i)}{getOriginalDimension(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Dimension}$<$P$>$$\ast$ {\bf Region}$<$ P $>$\+::get\+Original\+Dimension (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_a300afb04c957e821d362c358253130b8}{}\label{classRegion_a300afb04c957e821d362c358253130b8}
+
+
+Get the full search space\textquotesingle{}s \hyperlink{classDimension}{Dimension} based on its sequential index. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the \hyperlink{classDimension}{Dimension} (index starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{classDimension}{Dimension} selected. 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Region.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRegion_a300afb04c957e821d362c358253130b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Region@{Region}!get\+Original\+Dimensions@{get\+Original\+Dimensions}}
+\index{get\+Original\+Dimensions@{get\+Original\+Dimensions}!Region@{Region}}
+\subsubsection[{\texorpdfstring{get\+Original\+Dimensions()}{getOriginalDimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ map$<$int, {\bf Dimension}$<$P$>$$\ast$$>$$\ast$ {\bf Region}$<$ P $>$\+::get\+Original\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_aed7a4120591db745b5b424fb94588294}{}\label{classRegion_aed7a4120591db745b5b424fb94588294}
+
+
+Obtains a pointer to the map containing the dimensions that compose the entire search space. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the map containing the dimensions for entire search space. 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file Region.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRegion_aed7a4120591db745b5b424fb94588294_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Region@{Region}!get\+Partitions@{get\+Partitions}}
+\index{get\+Partitions@{get\+Partitions}!Region@{Region}}
+\subsubsection[{\texorpdfstring{get\+Partitions()}{getPartitions()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ map$<${\bf Dimension} $<$P$>$$\ast$, {\bf Partition} $<$P$>$$\ast$$>$$\ast$ {\bf Region}$<$ P $>$\+::get\+Partitions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_a07c792e7ab2768254d71a0b688ccd935}{}\label{classRegion_a07c792e7ab2768254d71a0b688ccd935}
+
+
+Get the map of Partitions that compose the current \char`\"{}anchor\char`\"{} sub-\/region. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+\begin{DoxyReturn}{Returns}
+The map that compose the current \char`\"{}anchor\char`\"{} sub-\/region. 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Region.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRegion_a07c792e7ab2768254d71a0b688ccd935_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Region@{Region}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Region@{Region}}
+\subsubsection[{\texorpdfstring{operator[](int i)}{operator[](int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ {\bf Partition}$<$P$>$$\ast$ {\bf Region}$<$ P $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_a2cb409d3900e9bf37970b19eb9d80262}{}\label{classRegion_a2cb409d3900e9bf37970b19eb9d80262}
+
+
+Operator that selects the dimension\textquotesingle{}s \hyperlink{classPartition}{Partition} based on dimension\textquotesingle{}s sequential index. 
+
+The pointer to the actual object is returned, instead of a simple copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the \hyperlink{classDimension}{Dimension} (index starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{classPartition}{Partition} selected. 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Region.\+h.
+
+\index{Region@{Region}!print@{print}}
+\index{print@{print}!Region@{Region}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double$>$ void {\bf Region}$<$ P $>$\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegion_a762d4587205ba6bed49660ae1359a4a6}{}\label{classRegion_a762d4587205ba6bed49660ae1359a4a6}
+
+
+Debug the current \hyperlink{classRegion}{Region} instance. 
+
+
+
+Definition at line 158 of file Region.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classRegion_a762d4587205ba6bed49660ae1359a4a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{Region_8h}{Region.\+h}\end{DoxyCompactItemize}

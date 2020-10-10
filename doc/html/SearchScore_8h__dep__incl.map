@@ -1,6 +1,7 @@
 <map id="src/TH/SearchScore.h" name="src/TH/SearchScore.h">
-<area shape="rect" id="node2" href="$SearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SearchAlgorithmSelection\lPolicy.h" alt="" coords="251,81,486,125"/>
-<area shape="rect" id="node4" href="$THBuilder_8h.xhtml" title="src/TH/THBuilder.h" alt="" coords="227,265,374,293"/>
-<area shape="rect" id="node3" href="$RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h" alt="" coords="5,173,263,217"/>
-<area shape="rect" id="node5" href="$SingleSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h" alt="" coords="338,173,554,217"/>
+<area shape="rect" id="node2" href="$SearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SearchAlgorithmSelection\lPolicy.h" alt="" coords="446,81,681,125"/>
+<area shape="rect" id="node5" href="$THBuilder_8h.xhtml" title="src/TH/THBuilder.h" alt="" coords="490,265,637,293"/>
+<area shape="rect" id="node3" href="$ReinforcementLearningSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/ReinforcementLearning\lSearchAlgorithmSelectionPolicy.h" alt="" coords="5,173,244,217"/>
+<area shape="rect" id="node4" href="$RoundRobinSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/RoundRobinSearchAlgorithm\lSelectionPolicy.h" alt="" coords="268,173,525,217"/>
+<area shape="rect" id="node6" href="$SingleSearchAlgorithmSelectionPolicy_8h.xhtml" title="src/TH/SingleSearchAlgorithm\lSelectionPolicy.h" alt="" coords="601,173,817,217"/>
 </map>

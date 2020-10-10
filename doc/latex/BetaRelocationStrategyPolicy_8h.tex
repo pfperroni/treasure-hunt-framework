@@ -1,0 +1,105 @@
+\hypertarget{BetaRelocationStrategyPolicy_8h}{}\section{src/\+T\+H/\+Beta\+Relocation\+Strategy\+Policy.h File Reference}
+\label{BetaRelocationStrategyPolicy_8h}\index{src/\+T\+H/\+Beta\+Relocation\+Strategy\+Policy.\+h@{src/\+T\+H/\+Beta\+Relocation\+Strategy\+Policy.\+h}}
+{\ttfamily \#include $<$boost/math/distributions.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}Relocation\+Strategy\+Policy.\+h\char`\"{}}\\*
+Include dependency graph for Beta\+Relocation\+Strategy\+Policy.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BetaRelocationStrategyPolicy_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{BetaRelocationStrategyPolicy_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBetaRelocationStrategyPolicy}{Beta\+Relocation\+Strategy\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+\begin{DoxyCompactList}\small\item\em This policy relocates the population based on the Beta-\/distribution strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{BetaRelocationStrategyPolicy_8h_a93f964eb314dbb05b56afb735139ad42}{B\+O\+O\+S\+T\+\_\+L}(Br,  step)~(-\/Br $\ast$ step + Br)
+\begin{DoxyCompactList}\small\item\em Iterative Partitioning Boost functions. \end{DoxyCompactList}\item 
+\#define \hyperlink{BetaRelocationStrategyPolicy_8h_a91faed000060fd9701cd9b6f4704a352}{B\+O\+O\+S\+T\+\_\+S}(Br,  step)~(Br / (1.\+0 + exp(12 $\ast$ Br $\ast$ step -\/ 6 $\ast$ Br)))
+\item 
+\#define \hyperlink{BetaRelocationStrategyPolicy_8h_a469272f9432e47da1b7872c26d34b73f}{B\+O\+O\+S\+T\+\_\+E}(Br,  step)~(Br / exp(12 $\ast$ Br $\ast$ step))
+\item 
+\#define \hyperlink{BetaRelocationStrategyPolicy_8h_a3176231944b79d3ffe19639282eaffff}{M\+A\+X\+\_\+K}(step,  Br,  boost\+Func)~min(boost\+Func==\textquotesingle{}L\textquotesingle{} ? \hyperlink{BetaRelocationStrategyPolicy_8h_a93f964eb314dbb05b56afb735139ad42}{B\+O\+O\+S\+T\+\_\+L}(Br, step) \+: (boost\+Func==\textquotesingle{}S\textquotesingle{} ? \hyperlink{BetaRelocationStrategyPolicy_8h_a91faed000060fd9701cd9b6f4704a352}{B\+O\+O\+S\+T\+\_\+S}(Br, step) \+: \hyperlink{BetaRelocationStrategyPolicy_8h_a469272f9432e47da1b7872c26d34b73f}{B\+O\+O\+S\+T\+\_\+E}(Br, step)), 1.\+0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Treasure Hunt Framework (c)
+
+Copyright 2016-\/2020 Peter Frank Perroni
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+For additional notifications, please check the file N\+O\+T\+I\+C\+E.\+txt. 
+
+\subsection{Macro Definition Documentation}
+\index{Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}!B\+O\+O\+S\+T\+\_\+E@{B\+O\+O\+S\+T\+\_\+E}}
+\index{B\+O\+O\+S\+T\+\_\+E@{B\+O\+O\+S\+T\+\_\+E}!Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+E}{BOOST_E}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+S\+T\+\_\+E(
+\begin{DoxyParamCaption}
+\item[{}]{Br, }
+\item[{}]{step}
+\end{DoxyParamCaption}
+)~(Br / exp(12 $\ast$ Br $\ast$ step))}\hypertarget{BetaRelocationStrategyPolicy_8h_a469272f9432e47da1b7872c26d34b73f}{}\label{BetaRelocationStrategyPolicy_8h_a469272f9432e47da1b7872c26d34b73f}
+
+
+Definition at line 45 of file Beta\+Relocation\+Strategy\+Policy.\+h.
+
+\index{Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}!B\+O\+O\+S\+T\+\_\+L@{B\+O\+O\+S\+T\+\_\+L}}
+\index{B\+O\+O\+S\+T\+\_\+L@{B\+O\+O\+S\+T\+\_\+L}!Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+L}{BOOST_L}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+S\+T\+\_\+L(
+\begin{DoxyParamCaption}
+\item[{}]{Br, }
+\item[{}]{step}
+\end{DoxyParamCaption}
+)~(-\/Br $\ast$ step + Br)}\hypertarget{BetaRelocationStrategyPolicy_8h_a93f964eb314dbb05b56afb735139ad42}{}\label{BetaRelocationStrategyPolicy_8h_a93f964eb314dbb05b56afb735139ad42}
+
+
+Iterative Partitioning Boost functions. 
+
+
+
+Definition at line 43 of file Beta\+Relocation\+Strategy\+Policy.\+h.
+
+\index{Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}!B\+O\+O\+S\+T\+\_\+S@{B\+O\+O\+S\+T\+\_\+S}}
+\index{B\+O\+O\+S\+T\+\_\+S@{B\+O\+O\+S\+T\+\_\+S}!Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+S}{BOOST_S}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+S\+T\+\_\+S(
+\begin{DoxyParamCaption}
+\item[{}]{Br, }
+\item[{}]{step}
+\end{DoxyParamCaption}
+)~(Br / (1.\+0 + exp(12 $\ast$ Br $\ast$ step -\/ 6 $\ast$ Br)))}\hypertarget{BetaRelocationStrategyPolicy_8h_a91faed000060fd9701cd9b6f4704a352}{}\label{BetaRelocationStrategyPolicy_8h_a91faed000060fd9701cd9b6f4704a352}
+
+
+Definition at line 44 of file Beta\+Relocation\+Strategy\+Policy.\+h.
+
+\index{Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}!M\+A\+X\+\_\+K@{M\+A\+X\+\_\+K}}
+\index{M\+A\+X\+\_\+K@{M\+A\+X\+\_\+K}!Beta\+Relocation\+Strategy\+Policy.\+h@{Beta\+Relocation\+Strategy\+Policy.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+K}{MAX_K}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+K(
+\begin{DoxyParamCaption}
+\item[{}]{step, }
+\item[{}]{Br, }
+\item[{}]{boost\+Func}
+\end{DoxyParamCaption}
+)~min(boost\+Func==\textquotesingle{}L\textquotesingle{} ? {\bf B\+O\+O\+S\+T\+\_\+L}(Br, step) \+: (boost\+Func==\textquotesingle{}S\textquotesingle{} ? {\bf B\+O\+O\+S\+T\+\_\+S}(Br, step) \+: {\bf B\+O\+O\+S\+T\+\_\+E}(Br, step)), 1.\+0)}\hypertarget{BetaRelocationStrategyPolicy_8h_a3176231944b79d3ffe19639282eaffff}{}\label{BetaRelocationStrategyPolicy_8h_a3176231944b79d3ffe19639282eaffff}
+
+
+Definition at line 46 of file Beta\+Relocation\+Strategy\+Policy.\+h.
+

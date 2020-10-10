@@ -10,6 +10,6 @@
 <area shape="rect" id="node10" href="$Dimension_8h.xhtml" title="Dimension.h" alt="" coords="582,309,685,337"/>
 <area shape="rect" id="node11" href="$Partition_8h.xhtml" title="Partition.h" alt="" coords="590,385,677,413"/>
 <area shape="rect" id="node23" href="$macros_8h.xhtml" title="macros.h" alt="" coords="1193,309,1274,337"/>
-<area shape="rect" id="node26" href="$config_8h.xhtml" title="config.h" alt="" coords="1373,309,1445,337"/>
+<area shape="rect" id="node26" href="$config_8h.xhtml" title="Global configurations must be set in this file. " alt="" coords="1373,309,1445,337"/>
 <area shape="rect" id="node30" href="$THTree_8h.xhtml" title="THTree.h" alt="" coords="1481,233,1565,261"/>
 </map>

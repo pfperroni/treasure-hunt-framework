@@ -1,0 +1,441 @@
+\hypertarget{structt__node}{}\section{t\+\_\+node Struct Reference}
+\label{structt__node}\index{t\+\_\+node@{t\+\_\+node}}
+
+
+{\ttfamily \#include $<$T\+H\+Tree.\+h$>$}
+
+
+
+Collaboration diagram for t\+\_\+node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{structt__node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structt__node_aa0855f08d810effb2c62e0003f9a80dc}{t\+\_\+node} ()
+\item 
+std\+::vector$<$ \hyperlink{structt__node}{t\+\_\+node} $\ast$ $>$ $\ast$ \hyperlink{structt__node_a7221b5dfc9d6710d7ffbaf59acd916de}{get\+Children} ()
+\item 
+int \hyperlink{structt__node_a3253babb783d6c4f5df3dd441581180d}{get\+N\+Children} ()
+\item 
+void \hyperlink{structt__node_af5fb14150f95112e1e525e09f924f507}{add\+Children} (\hyperlink{structt__node}{t\+\_\+node} $\ast$child)
+\item 
+bool \hyperlink{structt__node_a97b3fded9e34ad0bf2873695e5813e3d}{has\+Children} ()
+\item 
+bool \hyperlink{structt__node_a92a900c7452cca30f4974b4b15326c2c}{has\+Parent} ()
+\item 
+bool \hyperlink{structt__node_ad39388169d7963221a70c4a4af864ac4}{is\+Leaf} ()
+\item 
+bool \hyperlink{structt__node_a8f72af855ca7d42a9680aca399524499}{is\+Root} ()
+\item 
+int \hyperlink{structt__node_aebf69f2d7510e0e746d56146d0ec1b94}{get\+ID} ()
+\item 
+void \hyperlink{structt__node_ae62cd63088f17a9741dfbbfe0b564690}{set\+ID} (int \hyperlink{structt__node_ad9c1c64db61864861f59b1c6afb74bc0}{ID})
+\item 
+int \hyperlink{structt__node_a37f4377e664f4b4a8b541df91e35d27b}{get\+Level} ()
+\item 
+void \hyperlink{structt__node_a4fe63274d162dcffb5ff14c848d19883}{set\+Level} (int \hyperlink{structt__node_a969f3a8447460a76d0aaf85648a02150}{L})
+\item 
+\hyperlink{structt__node}{t\+\_\+node} $\ast$ \hyperlink{structt__node_ac870573b476905ff91ade58bb9e1b385}{get\+Parent} ()
+\item 
+void \hyperlink{structt__node_ab9d6536aceb5dbb33eb76f6d8ab2082b}{set\+Parent} (\hyperlink{structt__node}{t\+\_\+node} $\ast$\hyperlink{structt__node_a5a23987dec53ba900f26d5a3b031b2f0}{parent})
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structt__node}{t\+\_\+node} $\ast$ \hyperlink{structt__node_a5a23987dec53ba900f26d5a3b031b2f0}{parent}
+\item 
+int \hyperlink{structt__node_ad9c1c64db61864861f59b1c6afb74bc0}{ID}
+\item 
+int \hyperlink{structt__node_a969f3a8447460a76d0aaf85648a02150}{L}
+\item 
+std\+::vector$<$ \hyperlink{structt__node}{t\+\_\+node} $\ast$ $>$ \hyperlink{structt__node_a1fa40826359a9299ee462688e5754378}{children}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file T\+H\+Tree.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{t\+\_\+node@{t\+\_\+node}!t\+\_\+node@{t\+\_\+node}}
+\index{t\+\_\+node@{t\+\_\+node}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{t\+\_\+node()}{t_node()}}]{\setlength{\rightskip}{0pt plus 5cm}t\+\_\+node\+::t\+\_\+node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_aa0855f08d810effb2c62e0003f9a80dc}{}\label{structt__node_aa0855f08d810effb2c62e0003f9a80dc}
+
+
+Definition at line 50 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{structt__node_aa0855f08d810effb2c62e0003f9a80dc_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{t\+\_\+node@{t\+\_\+node}!add\+Children@{add\+Children}}
+\index{add\+Children@{add\+Children}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{add\+Children(t\+\_\+node $\ast$child)}{addChildren(t_node *child)}}]{\setlength{\rightskip}{0pt plus 5cm}void t\+\_\+node\+::add\+Children (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+node} $\ast$}]{child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_af5fb14150f95112e1e525e09f924f507}{}\label{structt__node_af5fb14150f95112e1e525e09f924f507}
+
+
+Definition at line 62 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{structt__node_af5fb14150f95112e1e525e09f924f507_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!get\+Children@{get\+Children}}
+\index{get\+Children@{get\+Children}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{get\+Children()}{getChildren()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf t\+\_\+node}$\ast$$>$$\ast$ t\+\_\+node\+::get\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a7221b5dfc9d6710d7ffbaf59acd916de}{}\label{structt__node_a7221b5dfc9d6710d7ffbaf59acd916de}
+
+
+Definition at line 54 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_a7221b5dfc9d6710d7ffbaf59acd916de_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{get\+I\+D()}{getID()}}]{\setlength{\rightskip}{0pt plus 5cm}int t\+\_\+node\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_aebf69f2d7510e0e746d56146d0ec1b94}{}\label{structt__node_aebf69f2d7510e0e746d56146d0ec1b94}
+
+
+Definition at line 82 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_aebf69f2d7510e0e746d56146d0ec1b94_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{get\+Level()}{getLevel()}}]{\setlength{\rightskip}{0pt plus 5cm}int t\+\_\+node\+::get\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a37f4377e664f4b4a8b541df91e35d27b}{}\label{structt__node_a37f4377e664f4b4a8b541df91e35d27b}
+
+
+Definition at line 90 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_a37f4377e664f4b4a8b541df91e35d27b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!get\+N\+Children@{get\+N\+Children}}
+\index{get\+N\+Children@{get\+N\+Children}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{get\+N\+Children()}{getNChildren()}}]{\setlength{\rightskip}{0pt plus 5cm}int t\+\_\+node\+::get\+N\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a3253babb783d6c4f5df3dd441581180d}{}\label{structt__node_a3253babb783d6c4f5df3dd441581180d}
+
+
+Definition at line 58 of file T\+H\+Tree.\+h.
+
+\index{t\+\_\+node@{t\+\_\+node}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{get\+Parent()}{getParent()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+node}$\ast$ t\+\_\+node\+::get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_ac870573b476905ff91ade58bb9e1b385}{}\label{structt__node_ac870573b476905ff91ade58bb9e1b385}
+
+
+Definition at line 98 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_ac870573b476905ff91ade58bb9e1b385_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!has\+Children@{has\+Children}}
+\index{has\+Children@{has\+Children}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{has\+Children()}{hasChildren()}}]{\setlength{\rightskip}{0pt plus 5cm}bool t\+\_\+node\+::has\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a97b3fded9e34ad0bf2873695e5813e3d}{}\label{structt__node_a97b3fded9e34ad0bf2873695e5813e3d}
+
+
+Definition at line 66 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_a97b3fded9e34ad0bf2873695e5813e3d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!has\+Parent@{has\+Parent}}
+\index{has\+Parent@{has\+Parent}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{has\+Parent()}{hasParent()}}]{\setlength{\rightskip}{0pt plus 5cm}bool t\+\_\+node\+::has\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a92a900c7452cca30f4974b4b15326c2c}{}\label{structt__node_a92a900c7452cca30f4974b4b15326c2c}
+
+
+Definition at line 70 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_a92a900c7452cca30f4974b4b15326c2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!is\+Leaf@{is\+Leaf}}
+\index{is\+Leaf@{is\+Leaf}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{is\+Leaf()}{isLeaf()}}]{\setlength{\rightskip}{0pt plus 5cm}bool t\+\_\+node\+::is\+Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_ad39388169d7963221a70c4a4af864ac4}{}\label{structt__node_ad39388169d7963221a70c4a4af864ac4}
+
+
+Definition at line 74 of file T\+H\+Tree.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{structt__node_ad39388169d7963221a70c4a4af864ac4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{structt__node_ad39388169d7963221a70c4a4af864ac4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!is\+Root@{is\+Root}}
+\index{is\+Root@{is\+Root}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{is\+Root()}{isRoot()}}]{\setlength{\rightskip}{0pt plus 5cm}bool t\+\_\+node\+::is\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a8f72af855ca7d42a9680aca399524499}{}\label{structt__node_a8f72af855ca7d42a9680aca399524499}
+
+
+Definition at line 78 of file T\+H\+Tree.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{structt__node_a8f72af855ca7d42a9680aca399524499_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structt__node_a8f72af855ca7d42a9680aca399524499_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{set\+I\+D(int I\+D)}{setID(int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void t\+\_\+node\+::set\+ID (
+\begin{DoxyParamCaption}
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_ae62cd63088f17a9741dfbbfe0b564690}{}\label{structt__node_ae62cd63088f17a9741dfbbfe0b564690}
+
+
+Definition at line 86 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{structt__node_ae62cd63088f17a9741dfbbfe0b564690_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{set\+Level(int L)}{setLevel(int L)}}]{\setlength{\rightskip}{0pt plus 5cm}void t\+\_\+node\+::set\+Level (
+\begin{DoxyParamCaption}
+\item[{int}]{L}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_a4fe63274d162dcffb5ff14c848d19883}{}\label{structt__node_a4fe63274d162dcffb5ff14c848d19883}
+
+
+Definition at line 94 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structt__node_a4fe63274d162dcffb5ff14c848d19883_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{t\+\_\+node@{t\+\_\+node}!set\+Parent@{set\+Parent}}
+\index{set\+Parent@{set\+Parent}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{set\+Parent(t\+\_\+node $\ast$parent)}{setParent(t_node *parent)}}]{\setlength{\rightskip}{0pt plus 5cm}void t\+\_\+node\+::set\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+node} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structt__node_ab9d6536aceb5dbb33eb76f6d8ab2082b}{}\label{structt__node_ab9d6536aceb5dbb33eb76f6d8ab2082b}
+
+
+Definition at line 102 of file T\+H\+Tree.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{structt__node_ab9d6536aceb5dbb33eb76f6d8ab2082b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Field Documentation}
+\index{t\+\_\+node@{t\+\_\+node}!children@{children}}
+\index{children@{children}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{children}{children}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf t\+\_\+node}$\ast$$>$ t\+\_\+node\+::children}\hypertarget{structt__node_a1fa40826359a9299ee462688e5754378}{}\label{structt__node_a1fa40826359a9299ee462688e5754378}
+
+
+Definition at line 46 of file T\+H\+Tree.\+h.
+
+\index{t\+\_\+node@{t\+\_\+node}!ID@{ID}}
+\index{ID@{ID}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{ID}{ID}}]{\setlength{\rightskip}{0pt plus 5cm}int t\+\_\+node\+::\+ID}\hypertarget{structt__node_ad9c1c64db61864861f59b1c6afb74bc0}{}\label{structt__node_ad9c1c64db61864861f59b1c6afb74bc0}
+
+
+Definition at line 44 of file T\+H\+Tree.\+h.
+
+\index{t\+\_\+node@{t\+\_\+node}!L@{L}}
+\index{L@{L}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{L}{L}}]{\setlength{\rightskip}{0pt plus 5cm}int t\+\_\+node\+::L}\hypertarget{structt__node_a969f3a8447460a76d0aaf85648a02150}{}\label{structt__node_a969f3a8447460a76d0aaf85648a02150}
+
+
+Definition at line 45 of file T\+H\+Tree.\+h.
+
+\index{t\+\_\+node@{t\+\_\+node}!parent@{parent}}
+\index{parent@{parent}!t\+\_\+node@{t\+\_\+node}}
+\subsubsection[{\texorpdfstring{parent}{parent}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+node}$\ast$ t\+\_\+node\+::parent}\hypertarget{structt__node_a5a23987dec53ba900f26d5a3b031b2f0}{}\label{structt__node_a5a23987dec53ba900f26d5a3b031b2f0}
+
+
+Definition at line 43 of file T\+H\+Tree.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{THTree_8h}{T\+H\+Tree.\+h}\end{DoxyCompactItemize}

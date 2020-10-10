@@ -1,0 +1,147 @@
+\hypertarget{classGroupRegionSelectionPolicy}{}\section{Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classGroupRegionSelectionPolicy}\index{Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This policy implements the sub-\/region selection criteria by grouping dimensions.  
+
+
+
+
+{\ttfamily \#include $<$Group\+Region\+Selection\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classGroupRegionSelectionPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classGroupRegionSelectionPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGroupRegionSelectionPolicy_aa4b4b59ce5231206f49b320e2aeb1cd6}{Group\+Region\+Selection\+Policy} (int n\+Groups, int K)
+\begin{DoxyCompactList}\small\item\em Constructor that creates a \hyperlink{classGroupRegionSelectionPolicy}{Group\+Region\+Selection\+Policy} instance. \end{DoxyCompactList}\item 
+\hyperlink{classGroupRegionSelectionPolicy_a0170690c1c49df4107b800e25e88918e}{$\sim$\+Group\+Region\+Selection\+Policy} ()
+\item 
+\hyperlink{classRegion}{Region}$<$ P $>$ $\ast$ \hyperlink{classGroupRegionSelectionPolicy_a28a39331dafaa273d30bef8f0da9e4fb}{apply} (\hyperlink{classSearchSpace}{Search\+Space}$<$ P $>$ $\ast$S, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$th\+Tree, int ID)
+\begin{DoxyCompactList}\small\item\em Method responsible for choosing one \char`\"{}anchor\char`\"{} sub-\/region according to the \hyperlink{classTH}{TH} instance\textquotesingle{}s ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This policy implements the sub-\/region selection criteria by grouping dimensions. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+All dimensions inside the same group will be partitioned proportionally at same positions, and then an \char`\"{}anchor\char`\"{} sub-\/region is selected based on \hyperlink{classTH}{TH} instance\textquotesingle{}s position on \hyperlink{classTHTree}{T\+H\+Tree} topology. 
+
+Definition at line 38 of file Group\+Region\+Selection\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}!Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}}
+\index{Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}!Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{Group\+Region\+Selection\+Policy(int n\+Groups, int K)}{GroupRegionSelectionPolicy(int nGroups, int K)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Group\+Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Group\+Region\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\+Groups, }
+\item[{int}]{K}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGroupRegionSelectionPolicy_aa4b4b59ce5231206f49b320e2aeb1cd6}{}\label{classGroupRegionSelectionPolicy_aa4b4b59ce5231206f49b320e2aeb1cd6}
+
+
+Constructor that creates a \hyperlink{classGroupRegionSelectionPolicy}{Group\+Region\+Selection\+Policy} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Groups} & The number of groups to organize the dimensions. \\
+\hline
+{\em K} & The number of segments to partition every group. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file Group\+Region\+Selection\+Policy.\+h.
+
+\index{Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}!````~Group\+Region\+Selection\+Policy@{$\sim$\+Group\+Region\+Selection\+Policy}}
+\index{````~Group\+Region\+Selection\+Policy@{$\sim$\+Group\+Region\+Selection\+Policy}!Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Group\+Region\+Selection\+Policy()}{~GroupRegionSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Group\+Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Group\+Region\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGroupRegionSelectionPolicy_a0170690c1c49df4107b800e25e88918e}{}\label{classGroupRegionSelectionPolicy_a0170690c1c49df4107b800e25e88918e}
+
+
+Definition at line 95 of file Group\+Region\+Selection\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}!apply@{apply}}
+\index{apply@{apply}!Group\+Region\+Selection\+Policy@{Group\+Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Search\+Space$<$ P $>$ $\ast$\+S, T\+H\+Tree $\ast$th\+Tree, int I\+D)}{apply(SearchSpace< P > *S, THTree *thTree, int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Region}$<$P$>$$\ast$ {\bf Group\+Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Search\+Space}$<$ P $>$ $\ast$}]{S, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{th\+Tree, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classGroupRegionSelectionPolicy_a28a39331dafaa273d30bef8f0da9e4fb}{}\label{classGroupRegionSelectionPolicy_a28a39331dafaa273d30bef8f0da9e4fb}
+
+
+Method responsible for choosing one \char`\"{}anchor\char`\"{} sub-\/region according to the \hyperlink{classTH}{TH} instance\textquotesingle{}s ID. 
+
+The caller is responsible for deleting (freeing up the memory of) the \hyperlink{classRegion}{Region} instance returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & The search space to be partitioned. \\
+\hline
+{\em tree} & The tree topology that will guide the partitioning. \\
+\hline
+{\em ID} & The \hyperlink{classTH}{TH} instance\textquotesingle{}s global ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \char`\"{}anchor\char`\"{} sub-\/region for current \hyperlink{classTH}{TH} instance. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRegionSelectionPolicy_add02b5dae00356db700d37e10c025d26}{Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 107 of file Group\+Region\+Selection\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGroupRegionSelectionPolicy_a28a39331dafaa273d30bef8f0da9e4fb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{GroupRegionSelectionPolicy_8h}{Group\+Region\+Selection\+Policy.\+h}\end{DoxyCompactItemize}

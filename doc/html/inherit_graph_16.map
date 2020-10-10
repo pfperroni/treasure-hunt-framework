@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structMpiTypeTraits.xhtml" title="Structures for MPI. " alt="" coords="5,5,153,33"/>
+<area shape="rect" id="node1" href="$classPartition.xhtml" title="This class represents an interval within dimension&#39;s boundaries. " alt="" coords="5,5,116,33"/>
+<area shape="rect" id="node2" href="$classDimension.xhtml" title="This class represents the boundaries of a dimension within the search space. " alt="" coords="164,5,291,33"/>
 </map>

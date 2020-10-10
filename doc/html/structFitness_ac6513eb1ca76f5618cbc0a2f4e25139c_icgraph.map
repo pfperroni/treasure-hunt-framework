@@ -1,3 +1,4 @@
 <map id="Fitness::getFirstValue" name="Fitness::getFirstValue">
-<area shape="rect" id="node2" href="$classRosenbrockFitnessPolicy.xhtml#ab5b19517a7d249ddfbc06f9045341014" title="RosenbrockFitnessPolicy\l::firstIsBetter" alt="" coords="215,5,397,49"/>
+<area shape="rect" id="node2" href="$classRosenbrockFitnessPolicy.xhtml#ab5b19517a7d249ddfbc06f9045341014" title="RosenbrockFitnessPolicy\l::firstIsBetter" alt="" coords="233,5,415,49"/>
+<area shape="rect" id="node3" href="$classReinforcementLearningSearchAlgorithmSelectionPolicy.xhtml#a90a40b83202cab6aee7c547d51f40105" title="Rank the performance of the Search instance previously executed. " alt="" coords="215,73,433,117"/>
 </map>

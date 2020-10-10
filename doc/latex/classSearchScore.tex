@@ -1,0 +1,274 @@
+\hypertarget{classSearchScore}{}\section{Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classSearchScore}\index{Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This class stores a \hyperlink{classSearch}{Search} instance and its score.  
+
+
+
+
+{\ttfamily \#include $<$Search\+Score.\+h$>$}
+
+
+
+Collaboration diagram for Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classSearchScore__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSearchScore_a474b8d264518eac06879e0e8fa3668c3}{Search\+Score} (\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search\+Algorithm, double weight=1)
+\begin{DoxyCompactList}\small\item\em Constructor to create a \hyperlink{classSearchScore}{Search\+Score} instance. \end{DoxyCompactList}\item 
+\hyperlink{classSearchScore_ae19670231c559799e69ebc49b7a85ad8}{$\sim$\+Search\+Score} ()
+\item 
+double \hyperlink{classSearchScore_aa8a9d9b4946fc02c2243f38a226ae0e9}{get\+Weight} ()
+\item 
+void \hyperlink{classSearchScore_aaa8a0c4f0a91df62ccc7c8c1a6fc0612}{set\+Weight} (double weight)
+\begin{DoxyCompactList}\small\item\em Set the weight of the search algorithm in the scoring process. \end{DoxyCompactList}\item 
+double \hyperlink{classSearchScore_a909350808e091d0f75d43bbf08f6db29}{get\+Score} ()
+\item 
+void \hyperlink{classSearchScore_a9157d1aa13189eece5b1321c08316220}{set\+Score} (double score)
+\item 
+double \hyperlink{classSearchScore_a13ceb06fc95166e56edf0408f00bc73c}{get\+Frequency} ()
+\item 
+void \hyperlink{classSearchScore_a7dc57a564b84fbdbd18c1ead863659fb}{set\+Frequency} (double frequency)
+\begin{DoxyCompactList}\small\item\em Set the number of times this search algorithm has been chosen. \end{DoxyCompactList}\item 
+double \hyperlink{classSearchScore_ae3e584d54dc96f55f58c7acafbad9e87}{get\+Deprecation} ()
+\item 
+void \hyperlink{classSearchScore_a543ce1e47ae77983b415edb99588aa50}{set\+Deprecation} (double deprecation)
+\begin{DoxyCompactList}\small\item\em Set the number of times this search algorithm has not been chosen. \end{DoxyCompactList}\item 
+\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$ \hyperlink{classSearchScore_a4a3bd7e51e9de5c7ff2ae9cf4b64d13d}{get\+Search\+Algorithm} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Search\+Score$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This class stores a \hyperlink{classSearch}{Search} instance and its score. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+\hyperlink{classTH}{TH}\textquotesingle{}s search group uses the \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} to choose and rank the optimization methods. 
+
+Definition at line 35 of file Search\+Score.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Search\+Score@{Search\+Score}!Search\+Score@{Search\+Score}}
+\index{Search\+Score@{Search\+Score}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{Search\+Score(\+Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search\+Algorithm, double weight=1)}{SearchScore(Search< P, pSize, F, fSize, V, vSize > *searchAlgorithm, double weight=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Search\+Score} (
+\begin{DoxyParamCaption}
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{search\+Algorithm, }
+\item[{double}]{weight = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a474b8d264518eac06879e0e8fa3668c3}{}\label{classSearchScore_a474b8d264518eac06879e0e8fa3668c3}
+
+
+Constructor to create a \hyperlink{classSearchScore}{Search\+Score} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+Algorithm} & The \hyperlink{classSearch}{Search} instance containing the optimization algorithm. \\
+\hline
+{\em weight} & The weight of the search\+Algorithm in the scoring process. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Search\+Score.\+h.
+
+\index{Search\+Score@{Search\+Score}!````~Search\+Score@{$\sim$\+Search\+Score}}
+\index{````~Search\+Score@{$\sim$\+Search\+Score}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{$\sim$\+Search\+Score()}{~SearchScore()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Search\+Score} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_ae19670231c559799e69ebc49b7a85ad8}{}\label{classSearchScore_ae19670231c559799e69ebc49b7a85ad8}
+
+
+Definition at line 55 of file Search\+Score.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Search\+Score@{Search\+Score}!get\+Deprecation@{get\+Deprecation}}
+\index{get\+Deprecation@{get\+Deprecation}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{get\+Deprecation()}{getDeprecation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ double {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Deprecation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_ae3e584d54dc96f55f58c7acafbad9e87}{}\label{classSearchScore_ae3e584d54dc96f55f58c7acafbad9e87}
+
+
+Definition at line 84 of file Search\+Score.\+h.
+
+\index{Search\+Score@{Search\+Score}!get\+Frequency@{get\+Frequency}}
+\index{get\+Frequency@{get\+Frequency}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{get\+Frequency()}{getFrequency()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ double {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a13ceb06fc95166e56edf0408f00bc73c}{}\label{classSearchScore_a13ceb06fc95166e56edf0408f00bc73c}
+
+
+Definition at line 72 of file Search\+Score.\+h.
+
+\index{Search\+Score@{Search\+Score}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{get\+Score()}{getScore()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ double {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a909350808e091d0f75d43bbf08f6db29}{}\label{classSearchScore_a909350808e091d0f75d43bbf08f6db29}
+
+
+Definition at line 68 of file Search\+Score.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchScore_a909350808e091d0f75d43bbf08f6db29_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Search\+Score@{Search\+Score}!get\+Search\+Algorithm@{get\+Search\+Algorithm}}
+\index{get\+Search\+Algorithm@{get\+Search\+Algorithm}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{get\+Search\+Algorithm()}{getSearchAlgorithm()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Search}$<$P, p\+Size, F, f\+Size, V, v\+Size$>$$\ast$ {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Search\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a4a3bd7e51e9de5c7ff2ae9cf4b64d13d}{}\label{classSearchScore_a4a3bd7e51e9de5c7ff2ae9cf4b64d13d}
+
+
+Definition at line 96 of file Search\+Score.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchScore_a4a3bd7e51e9de5c7ff2ae9cf4b64d13d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Search\+Score@{Search\+Score}!get\+Weight@{get\+Weight}}
+\index{get\+Weight@{get\+Weight}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{get\+Weight()}{getWeight()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ double {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_aa8a9d9b4946fc02c2243f38a226ae0e9}{}\label{classSearchScore_aa8a9d9b4946fc02c2243f38a226ae0e9}
+
+
+Definition at line 57 of file Search\+Score.\+h.
+
+\index{Search\+Score@{Search\+Score}!set\+Deprecation@{set\+Deprecation}}
+\index{set\+Deprecation@{set\+Deprecation}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{set\+Deprecation(double deprecation)}{setDeprecation(double deprecation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Deprecation (
+\begin{DoxyParamCaption}
+\item[{double}]{deprecation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a543ce1e47ae77983b415edb99588aa50}{}\label{classSearchScore_a543ce1e47ae77983b415edb99588aa50}
+
+
+Set the number of times this search algorithm has not been chosen. 
+
+The class that implements \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} could use this method to track how long this search algorithm has not been chosen (i.\+e. its \char`\"{}deprecation\char`\"{}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em deprecation} & The number of times this search algorithm has not been chosen. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file Search\+Score.\+h.
+
+\index{Search\+Score@{Search\+Score}!set\+Frequency@{set\+Frequency}}
+\index{set\+Frequency@{set\+Frequency}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{set\+Frequency(double frequency)}{setFrequency(double frequency)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Frequency (
+\begin{DoxyParamCaption}
+\item[{double}]{frequency}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a7dc57a564b84fbdbd18c1ead863659fb}{}\label{classSearchScore_a7dc57a564b84fbdbd18c1ead863659fb}
+
+
+Set the number of times this search algorithm has been chosen. 
+
+The class that implements \hyperlink{classSearchAlgorithmSelectionPolicy}{Search\+Algorithm\+Selection\+Policy} could use this method to track how many times this search algorithm has been chosen (i.\+e. its \char`\"{}frequency\char`\"{}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency} & The number of times this search algorithm has been chosen. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Search\+Score.\+h.
+
+\index{Search\+Score@{Search\+Score}!set\+Score@{set\+Score}}
+\index{set\+Score@{set\+Score}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{set\+Score(double score)}{setScore(double score)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Score (
+\begin{DoxyParamCaption}
+\item[{double}]{score}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_a9157d1aa13189eece5b1321c08316220}{}\label{classSearchScore_a9157d1aa13189eece5b1321c08316220}
+
+
+Definition at line 70 of file Search\+Score.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchScore_a9157d1aa13189eece5b1321c08316220_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Search\+Score@{Search\+Score}!set\+Weight@{set\+Weight}}
+\index{set\+Weight@{set\+Weight}!Search\+Score@{Search\+Score}}
+\subsubsection[{\texorpdfstring{set\+Weight(double weight)}{setWeight(double weight)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Search\+Score}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::set\+Weight (
+\begin{DoxyParamCaption}
+\item[{double}]{weight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSearchScore_aaa8a0c4f0a91df62ccc7c8c1a6fc0612}{}\label{classSearchScore_aaa8a0c4f0a91df62ccc7c8c1a6fc0612}
+
+
+Set the weight of the search algorithm in the scoring process. 
+
+Avoid calling this method, since it could affect the scoring process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & The new weight of the search algorithm in the scoring process. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file Search\+Score.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{SearchScore_8h}{Search\+Score.\+h}\end{DoxyCompactItemize}

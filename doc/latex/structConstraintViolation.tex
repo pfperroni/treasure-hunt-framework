@@ -1,0 +1,506 @@
+\hypertarget{structConstraintViolation}{}\section{Constraint\+Violation$<$ V, v\+Size $>$ Class Template Reference}
+\label{structConstraintViolation}\index{Constraint\+Violation$<$ V, v\+Size $>$@{Constraint\+Violation$<$ V, v\+Size $>$}}
+
+
+This structure represents the constraints violated by one \hyperlink{classSolution}{Solution}.  
+
+
+
+
+{\ttfamily \#include $<$Constraint\+Violation.\+h$>$}
+
+
+
+Collaboration diagram for Constraint\+Violation$<$ V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{structConstraintViolation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structConstraintViolation_a82ebcbfe61ca8adcf6f7b613c4c69f8d}{check\+Compatibility} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$violation)
+\item 
+void \hyperlink{structConstraintViolation_a2bfd655f35c83bb9ef8b01102163f519}{operator=} (V $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Operator that assigns the values of a buffer to the list that represents the current \hyperlink{structConstraintViolation}{Constraint\+Violation}. \end{DoxyCompactList}\item 
+void \hyperlink{structConstraintViolation_aab52761d8cbde42604d5539d90990876}{operator=} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$violation)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the contents of this list of constraint violations with the contents of the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structConstraintViolation_a303559f871c792bbf9611b64e48918b9}{operator=} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ \&violation)
+\begin{DoxyCompactList}\small\item\em Operator that overrides the contents of this list of constraint violations with the contents of the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received. \end{DoxyCompactList}\item 
+void \hyperlink{structConstraintViolation_ade5d301bab412f21e9d1e0483af19412}{operator=} (V value)
+\begin{DoxyCompactList}\small\item\em Operator that assigns the same value to all elements of the list that represents the current \hyperlink{structConstraintViolation}{Constraint\+Violation}. \end{DoxyCompactList}\item 
+bool \hyperlink{structConstraintViolation_a163197175eff749bf4b026c076961120}{equals} (V $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Compares the current list of constraint violations with the buffer received. \end{DoxyCompactList}\item 
+bool \hyperlink{structConstraintViolation_ae3f2f69ecc051cde999037c6c7cce276}{equals} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$violation)
+\begin{DoxyCompactList}\small\item\em Compares the current list of constraint violations with the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received. \end{DoxyCompactList}\item 
+bool \hyperlink{structConstraintViolation_a4924e949e9aee8e84cdafea54f2851b9}{operator==} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$violation)
+\item 
+bool \hyperlink{structConstraintViolation_aa1e045de24917458b5414675d1473d3d}{operator==} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ \&violation)
+\item 
+bool \hyperlink{structConstraintViolation_abd1a4af7bc87614609e83b69e43732ff}{operator!=} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$violation)
+\item 
+bool \hyperlink{structConstraintViolation_a746b126ea8c52c2e8cf479280ba28d56}{operator!=} (\hyperlink{structConstraintViolation}{Constraint\+Violation}$<$ V, v\+Size $>$ \&violation)
+\item 
+V \hyperlink{structConstraintViolation_a28a71d2bb7a090f92824ae6dadcec646}{get\+Internal\+Violation} (int i)
+\begin{DoxyCompactList}\small\item\em Get a constraint violation based on its index in the list of violations. \end{DoxyCompactList}\item 
+V $\ast$ \hyperlink{structConstraintViolation_a2cd06f4514a4ebda42d90b3b9b1a6612}{get\+Internal\+Violation} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the actual list of values that represents the \hyperlink{structConstraintViolation}{Constraint\+Violation}. \end{DoxyCompactList}\item 
+void \hyperlink{structConstraintViolation_a78e2b3eb94fc78b767c689e7376228a9}{get\+Internal\+Violation} (V $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em This method copies the contents of current \hyperlink{structConstraintViolation}{Constraint\+Violation} to the buffer received. \end{DoxyCompactList}\item 
+V \hyperlink{structConstraintViolation_a2d26f6240dd7f4b29f63bd47110fce6b}{get\+First\+Value} ()
+\begin{DoxyCompactList}\small\item\em Get the first value from the list of values that represents the \hyperlink{structConstraintViolation}{Constraint\+Violation}. \end{DoxyCompactList}\item 
+int \hyperlink{structConstraintViolation_a08e4988745e7389af2f276ead22600ee}{get\+Violation\+Size} ()
+\begin{DoxyCompactList}\small\item\em Get the number of values that represents a \hyperlink{structConstraintViolation}{Constraint\+Violation}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+V \hyperlink{structConstraintViolation_ac761fb762b35acd21469b3c088be7774}{internal\+Violations} \mbox{[}v\+Size\mbox{]}
+\item 
+int \hyperlink{structConstraintViolation_a2b1b8e70ce695b7d99cc2b31eb6a0cd9}{size} = v\+Size
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class V = double, int v\+Size = 1$>$\\*
+class Constraint\+Violation$<$ V, v\+Size $>$}
+
+This structure represents the constraints violated by one \hyperlink{classSolution}{Solution}. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+The constraint violations are represented by an ordered list with any number of elements, whose type must be of same basic data type for all elements (eg., double or int). 
+
+Definition at line 36 of file Constraint\+Violation.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Constraint\+Violation@{Constraint\+Violation}!check\+Compatibility@{check\+Compatibility}}
+\index{check\+Compatibility@{check\+Compatibility}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{check\+Compatibility(\+Constraint\+Violation$<$ V, v\+Size $>$ $\ast$violation)}{checkCompatibility(ConstraintViolation< V, vSize > *violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ void {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::check\+Compatibility (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a82ebcbfe61ca8adcf6f7b613c4c69f8d}{}\label{structConstraintViolation_a82ebcbfe61ca8adcf6f7b613c4c69f8d}
+
+
+Definition at line 40 of file Constraint\+Violation.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{structConstraintViolation_a82ebcbfe61ca8adcf6f7b613c4c69f8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!equals@{equals}}
+\index{equals@{equals}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{equals(\+V $\ast$buffer)}{equals(V *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ bool {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{V $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a163197175eff749bf4b026c076961120}{}\label{structConstraintViolation_a163197175eff749bf4b026c076961120}
+
+
+Compares the current list of constraint violations with the buffer received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{structConstraintViolation}{Constraint\+Violation} instance has the same contents as the buffer received. False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Constraint\+Violation.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structConstraintViolation_a163197175eff749bf4b026c076961120_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!equals@{equals}}
+\index{equals@{equals}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{equals(\+Constraint\+Violation$<$ V, v\+Size $>$ $\ast$violation)}{equals(ConstraintViolation< V, vSize > *violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ bool {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_ae3f2f69ecc051cde999037c6c7cce276}{}\label{structConstraintViolation_ae3f2f69ecc051cde999037c6c7cce276}
+
+
+Compares the current list of constraint violations with the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em violation} & The \hyperlink{structConstraintViolation}{Constraint\+Violation} instance to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{structConstraintViolation}{Constraint\+Violation} instance has the same contents as the one received. False otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received is not compatible with current list of constraint violations. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 122 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{structConstraintViolation_ae3f2f69ecc051cde999037c6c7cce276_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!get\+First\+Value@{get\+First\+Value}}
+\index{get\+First\+Value@{get\+First\+Value}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{get\+First\+Value()}{getFirstValue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ V {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::get\+First\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a2d26f6240dd7f4b29f63bd47110fce6b}{}\label{structConstraintViolation_a2d26f6240dd7f4b29f63bd47110fce6b}
+
+
+Get the first value from the list of values that represents the \hyperlink{structConstraintViolation}{Constraint\+Violation}. 
+
+Useful when the problem has only a single constraint.
+
+\begin{DoxyReturn}{Returns}
+The first value from the list of values that represents the constraint violations. 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!get\+Internal\+Violation@{get\+Internal\+Violation}}
+\index{get\+Internal\+Violation@{get\+Internal\+Violation}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Violation(int i)}{getInternalViolation(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ V {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::get\+Internal\+Violation (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a28a71d2bb7a090f92824ae6dadcec646}{}\label{structConstraintViolation_a28a71d2bb7a090f92824ae6dadcec646}
+
+
+Get a constraint violation based on its index in the list of violations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the constraint violation in the list (index list starts in zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constraint violation selected. 
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!get\+Internal\+Violation@{get\+Internal\+Violation}}
+\index{get\+Internal\+Violation@{get\+Internal\+Violation}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Violation()}{getInternalViolation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ V$\ast$ {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::get\+Internal\+Violation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a2cd06f4514a4ebda42d90b3b9b1a6612}{}\label{structConstraintViolation_a2cd06f4514a4ebda42d90b3b9b1a6612}
+
+
+Get a pointer to the actual list of values that represents the \hyperlink{structConstraintViolation}{Constraint\+Violation}. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the constraint violation\textquotesingle{}s values. 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!get\+Internal\+Violation@{get\+Internal\+Violation}}
+\index{get\+Internal\+Violation@{get\+Internal\+Violation}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Violation(\+V $\ast$buffer)}{getInternalViolation(V *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ void {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::get\+Internal\+Violation (
+\begin{DoxyParamCaption}
+\item[{V $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a78e2b3eb94fc78b767c689e7376228a9}{}\label{structConstraintViolation_a78e2b3eb94fc78b767c689e7376228a9}
+
+
+This method copies the contents of current \hyperlink{structConstraintViolation}{Constraint\+Violation} to the buffer received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The destination buffer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 160 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!get\+Violation\+Size@{get\+Violation\+Size}}
+\index{get\+Violation\+Size@{get\+Violation\+Size}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{get\+Violation\+Size()}{getViolationSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ int {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::get\+Violation\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a08e4988745e7389af2f276ead22600ee}{}\label{structConstraintViolation_a08e4988745e7389af2f276ead22600ee}
+
+
+Get the number of values that represents a \hyperlink{structConstraintViolation}{Constraint\+Violation}. 
+
+\begin{DoxyReturn}{Returns}
+The number of values that represents a \hyperlink{structConstraintViolation}{Constraint\+Violation}. 
+\end{DoxyReturn}
+
+
+Definition at line 181 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Constraint\+Violation$<$ V, v\+Size $>$ $\ast$violation)}{operator!=(ConstraintViolation< V, vSize > *violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ bool {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_abd1a4af7bc87614609e83b69e43732ff}{}\label{structConstraintViolation_abd1a4af7bc87614609e83b69e43732ff}
+
+
+Definition at line 132 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structConstraintViolation_abd1a4af7bc87614609e83b69e43732ff_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Constraint\+Violation$<$ V, v\+Size $>$ \&violation)}{operator!=(ConstraintViolation< V, vSize > &violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ bool {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ \&}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a746b126ea8c52c2e8cf479280ba28d56}{}\label{structConstraintViolation_a746b126ea8c52c2e8cf479280ba28d56}
+
+
+Definition at line 135 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structConstraintViolation_a746b126ea8c52c2e8cf479280ba28d56_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator=@{operator=}}
+\index{operator=@{operator=}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator=(\+V $\ast$buffer)}{operator=(V *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ void {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{V $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a2bfd655f35c83bb9ef8b01102163f519}{}\label{structConstraintViolation_a2bfd655f35c83bb9ef8b01102163f519}
+
+
+Operator that assigns the values of a buffer to the list that represents the current \hyperlink{structConstraintViolation}{Constraint\+Violation}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The source buffer to assign to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator=@{operator=}}
+\index{operator=@{operator=}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator=(\+Constraint\+Violation$<$ V, v\+Size $>$ $\ast$violation)}{operator=(ConstraintViolation< V, vSize > *violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ void {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_aab52761d8cbde42604d5539d90990876}{}\label{structConstraintViolation_aab52761d8cbde42604d5539d90990876}
+
+
+Operator that overrides the contents of this list of constraint violations with the contents of the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The source \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structConstraintViolation}{Constraint\+Violation} instance is not compatible with current \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 70 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{structConstraintViolation_aab52761d8cbde42604d5539d90990876_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator=@{operator=}}
+\index{operator=@{operator=}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator=(\+Constraint\+Violation$<$ V, v\+Size $>$ \&violation)}{operator=(ConstraintViolation< V, vSize > &violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ void {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ \&}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a303559f871c792bbf9611b64e48918b9}{}\label{structConstraintViolation_a303559f871c792bbf9611b64e48918b9}
+
+
+Operator that overrides the contents of this list of constraint violations with the contents of the \hyperlink{structConstraintViolation}{Constraint\+Violation} instance received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fitness} & The source \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & if the source \hyperlink{structConstraintViolation}{Constraint\+Violation} instance is not compatible with current \hyperlink{structConstraintViolation}{Constraint\+Violation} instance. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 83 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{structConstraintViolation_a303559f871c792bbf9611b64e48918b9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator=@{operator=}}
+\index{operator=@{operator=}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator=(\+V value)}{operator=(V value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ void {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{V}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_ade5d301bab412f21e9d1e0483af19412}{}\label{structConstraintViolation_ade5d301bab412f21e9d1e0483af19412}
+
+
+Operator that assigns the same value to all elements of the list that represents the current \hyperlink{structConstraintViolation}{Constraint\+Violation}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to assign to the list. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator==@{operator==}}
+\index{operator==@{operator==}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator==(\+Constraint\+Violation$<$ V, v\+Size $>$ $\ast$violation)}{operator==(ConstraintViolation< V, vSize > *violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ bool {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ $\ast$}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_a4924e949e9aee8e84cdafea54f2851b9}{}\label{structConstraintViolation_a4924e949e9aee8e84cdafea54f2851b9}
+
+
+Definition at line 126 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structConstraintViolation_a4924e949e9aee8e84cdafea54f2851b9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Constraint\+Violation@{Constraint\+Violation}!operator==@{operator==}}
+\index{operator==@{operator==}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{operator==(\+Constraint\+Violation$<$ V, v\+Size $>$ \&violation)}{operator==(ConstraintViolation< V, vSize > &violation)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ bool {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Constraint\+Violation}$<$ V, v\+Size $>$ \&}]{violation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structConstraintViolation_aa1e045de24917458b5414675d1473d3d}{}\label{structConstraintViolation_aa1e045de24917458b5414675d1473d3d}
+
+
+Definition at line 129 of file Constraint\+Violation.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structConstraintViolation_aa1e045de24917458b5414675d1473d3d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Field Documentation}
+\index{Constraint\+Violation@{Constraint\+Violation}!internal\+Violations@{internal\+Violations}}
+\index{internal\+Violations@{internal\+Violations}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{internal\+Violations}{internalViolations}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ V {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::internal\+Violations\mbox{[}v\+Size\mbox{]}}\hypertarget{structConstraintViolation_ac761fb762b35acd21469b3c088be7774}{}\label{structConstraintViolation_ac761fb762b35acd21469b3c088be7774}
+
+
+Definition at line 37 of file Constraint\+Violation.\+h.
+
+\index{Constraint\+Violation@{Constraint\+Violation}!size@{size}}
+\index{size@{size}!Constraint\+Violation@{Constraint\+Violation}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class V = double, int v\+Size = 1$>$ int {\bf Constraint\+Violation}$<$ V, v\+Size $>$\+::size = v\+Size}\hypertarget{structConstraintViolation_a2b1b8e70ce695b7d99cc2b31eb6a0cd9}{}\label{structConstraintViolation_a2b1b8e70ce695b7d99cc2b31eb6a0cd9}
+
+
+Definition at line 38 of file Constraint\+Violation.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{ConstraintViolation_8h}{Constraint\+Violation.\+h}\end{DoxyCompactItemize}

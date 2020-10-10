@@ -1,0 +1,172 @@
+\hypertarget{classConvergenceControlPolicy}{}\section{Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classConvergenceControlPolicy}\index{Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Template for the policy that runs, monitors and controls the convergence for the current \hyperlink{classTH}{TH} iteration.  
+
+
+
+
+{\ttfamily \#include $<$Convergence\+Control\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classConvergenceControlPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classConvergenceControlPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConvergenceControlPolicy_a8882660f0bfd404494339aed74d625a2}{Convergence\+Control\+Policy} (int budget\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor to setup the maximum number of fitness function evaluations allowed. \end{DoxyCompactList}\item 
+virtual \hyperlink{classConvergenceControlPolicy_a1827a6722494ff97719a2383976e9c11}{$\sim$\+Convergence\+Control\+Policy} ()
+\item 
+virtual void \hyperlink{classConvergenceControlPolicy_ad72beb5807e87c3fa0602bd0bf4679ac}{run} (\hyperlink{classSearch}{Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search)=0
+\begin{DoxyCompactList}\small\item\em Virtual method that will run, monitor and control one \hyperlink{classTH}{TH} iteration. \end{DoxyCompactList}\item 
+int \hyperlink{classConvergenceControlPolicy_a445c537935922b1bcb67d3732abbfe0f}{get\+Budget\+Size} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum number of fitness function evaluations allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Convergence\+Control\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Template for the policy that runs, monitors and controls the convergence for the current \hyperlink{classTH}{TH} iteration. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 34 of file Convergence\+Control\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Convergence\+Control\+Policy@{Convergence\+Control\+Policy}!Convergence\+Control\+Policy@{Convergence\+Control\+Policy}}
+\index{Convergence\+Control\+Policy@{Convergence\+Control\+Policy}!Convergence\+Control\+Policy@{Convergence\+Control\+Policy}}
+\subsubsection[{\texorpdfstring{Convergence\+Control\+Policy(int budget\+Size)}{ConvergenceControlPolicy(int budgetSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Convergence\+Control\+Policy} (
+\begin{DoxyParamCaption}
+\item[{int}]{budget\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConvergenceControlPolicy_a8882660f0bfd404494339aed74d625a2}{}\label{classConvergenceControlPolicy_a8882660f0bfd404494339aed74d625a2}
+
+
+Constructor to setup the maximum number of fitness function evaluations allowed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em budget\+Size} & The maximum number of fitness function evaluations allowed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Convergence\+Control\+Policy.\+h.
+
+\index{Convergence\+Control\+Policy@{Convergence\+Control\+Policy}!````~Convergence\+Control\+Policy@{$\sim$\+Convergence\+Control\+Policy}}
+\index{````~Convergence\+Control\+Policy@{$\sim$\+Convergence\+Control\+Policy}!Convergence\+Control\+Policy@{Convergence\+Control\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Convergence\+Control\+Policy()}{~ConvergenceControlPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual {\bf Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Convergence\+Control\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classConvergenceControlPolicy_a1827a6722494ff97719a2383976e9c11}{}\label{classConvergenceControlPolicy_a1827a6722494ff97719a2383976e9c11}
+
+
+Definition at line 45 of file Convergence\+Control\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConvergenceControlPolicy_a1827a6722494ff97719a2383976e9c11_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Convergence\+Control\+Policy@{Convergence\+Control\+Policy}!get\+Budget\+Size@{get\+Budget\+Size}}
+\index{get\+Budget\+Size@{get\+Budget\+Size}!Convergence\+Control\+Policy@{Convergence\+Control\+Policy}}
+\subsubsection[{\texorpdfstring{get\+Budget\+Size()}{getBudgetSize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ int {\bf Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::get\+Budget\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConvergenceControlPolicy_a445c537935922b1bcb67d3732abbfe0f}{}\label{classConvergenceControlPolicy_a445c537935922b1bcb67d3732abbfe0f}
+
+
+Get the maximum number of fitness function evaluations allowed. 
+
+
+
+Definition at line 61 of file Convergence\+Control\+Policy.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConvergenceControlPolicy_a445c537935922b1bcb67d3732abbfe0f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Convergence\+Control\+Policy@{Convergence\+Control\+Policy}!run@{run}}
+\index{run@{run}!Convergence\+Control\+Policy@{Convergence\+Control\+Policy}}
+\subsubsection[{\texorpdfstring{run(\+Search$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$search)=0}{run(Search< P, pSize, F, fSize, V, vSize > *search)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual void {\bf Convergence\+Control\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::run (
+\begin{DoxyParamCaption}
+\item[{{\bf Search}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{search}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classConvergenceControlPolicy_ad72beb5807e87c3fa0602bd0bf4679ac}{}\label{classConvergenceControlPolicy_ad72beb5807e87c3fa0602bd0bf4679ac}
+
+
+Virtual method that will run, monitor and control one \hyperlink{classTH}{TH} iteration. 
+
+A method implementing this virtual method is the responsible for calling sequential iterations of the actual optimization method, through the call of \hyperlink{classSearch_ae2ea32c6a6ab958e714f19dc71fae9db}{Search\+::next(int)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search} & The optimization method. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classCSMOn_a430398bc3e096631f8cd180ee1877616}{C\+S\+M\+On$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConvergenceControlPolicy_ad72beb5807e87c3fa0602bd0bf4679ac_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{ConvergenceControlPolicy_8h}{Convergence\+Control\+Policy.\+h}\end{DoxyCompactItemize}

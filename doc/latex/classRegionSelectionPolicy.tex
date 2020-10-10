@@ -1,0 +1,157 @@
+\hypertarget{classRegionSelectionPolicy}{}\section{Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classRegionSelectionPolicy}\index{Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+Template for the policy that implements the sub-\/region selection criteria.  
+
+
+
+
+{\ttfamily \#include $<$Region\+Selection\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRegionSelectionPolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classRegionSelectionPolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegionSelectionPolicy_a62f08e7286d9bc86ca2f66f07372a513}{Region\+Selection\+Policy} ()
+\item 
+virtual \hyperlink{classRegionSelectionPolicy_a1a6db1114b3994f1d766f808a1d8616c}{$\sim$\+Region\+Selection\+Policy} ()
+\item 
+virtual \hyperlink{classRegion}{Region}$<$ P $>$ $\ast$ \hyperlink{classRegionSelectionPolicy_add02b5dae00356db700d37e10c025d26}{apply} (\hyperlink{classSearchSpace}{Search\+Space}$<$ P $>$ $\ast$S, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$tree, int ID)=0
+\begin{DoxyCompactList}\small\item\em Virtual method to apply the policy that will choose one \char`\"{}anchor\char`\"{} sub-\/region according to the \hyperlink{classTH}{TH} instance\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+void \hyperlink{classRegionSelectionPolicy_a7e6a0b2d2dee3eceae9cd3b16e5f01ca}{recalculate} (\hyperlink{structIterationData}{Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$iteration\+Data, \hyperlink{classSearchSpace}{Search\+Space}$<$ P $>$ $\ast$S, \hyperlink{classRegion}{Region}$<$ P $>$ $\ast$R, \hyperlink{classTHTree}{T\+H\+Tree} $\ast$tree, int ID)
+\begin{DoxyCompactList}\small\item\em This method can be used by sub-\/classes to obtain a dynamic region at every \hyperlink{classTH}{TH} iteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+Template for the policy that implements the sub-\/region selection criteria. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni
+\end{DoxyAuthor}
+The class that implements this template must partition the search space matching the tree topology, and then choose one \char`\"{}anchor\char`\"{} sub-\/region according to the \hyperlink{classTH}{TH} instance\textquotesingle{}s ID. 
+
+Definition at line 40 of file Region\+Selection\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Region\+Selection\+Policy@{Region\+Selection\+Policy}!Region\+Selection\+Policy@{Region\+Selection\+Policy}}
+\index{Region\+Selection\+Policy@{Region\+Selection\+Policy}!Region\+Selection\+Policy@{Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{Region\+Selection\+Policy()}{RegionSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ {\bf Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Region\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegionSelectionPolicy_a62f08e7286d9bc86ca2f66f07372a513}{}\label{classRegionSelectionPolicy_a62f08e7286d9bc86ca2f66f07372a513}
+
+
+Definition at line 42 of file Region\+Selection\+Policy.\+h.
+
+\index{Region\+Selection\+Policy@{Region\+Selection\+Policy}!````~Region\+Selection\+Policy@{$\sim$\+Region\+Selection\+Policy}}
+\index{````~Region\+Selection\+Policy@{$\sim$\+Region\+Selection\+Policy}!Region\+Selection\+Policy@{Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Region\+Selection\+Policy()}{~RegionSelectionPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual {\bf Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Region\+Selection\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classRegionSelectionPolicy_a1a6db1114b3994f1d766f808a1d8616c}{}\label{classRegionSelectionPolicy_a1a6db1114b3994f1d766f808a1d8616c}
+
+
+Definition at line 43 of file Region\+Selection\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Region\+Selection\+Policy@{Region\+Selection\+Policy}!apply@{apply}}
+\index{apply@{apply}!Region\+Selection\+Policy@{Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Search\+Space$<$ P $>$ $\ast$\+S, T\+H\+Tree $\ast$tree, int I\+D)=0}{apply(SearchSpace< P > *S, THTree *tree, int ID)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ virtual {\bf Region}$<$P$>$$\ast$ {\bf Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Search\+Space}$<$ P $>$ $\ast$}]{S, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{tree, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classRegionSelectionPolicy_add02b5dae00356db700d37e10c025d26}{}\label{classRegionSelectionPolicy_add02b5dae00356db700d37e10c025d26}
+
+
+Virtual method to apply the policy that will choose one \char`\"{}anchor\char`\"{} sub-\/region according to the \hyperlink{classTH}{TH} instance\textquotesingle{}s ID. 
+
+A method implementing this virtual method is the responsible for partitioning the search space matching the tree topology, so that the \char`\"{}anchor\char`\"{} sub-\/region can be chosen. The caller is responsible for deleting (freeing up the memory of) the \hyperlink{classRegion}{Region} instance returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & The search space to be partitioned. \\
+\hline
+{\em tree} & The tree topology that will guide the partitioning. \\
+\hline
+{\em ID} & The \hyperlink{classTH}{TH} instance\textquotesingle{}s global ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \char`\"{}anchor\char`\"{} sub-\/region for current \hyperlink{classTH}{TH} instance. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classGroupRegionSelectionPolicy_a28a39331dafaa273d30bef8f0da9e4fb}{Group\+Region\+Selection\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+\index{Region\+Selection\+Policy@{Region\+Selection\+Policy}!recalculate@{recalculate}}
+\index{recalculate@{recalculate}!Region\+Selection\+Policy@{Region\+Selection\+Policy}}
+\subsubsection[{\texorpdfstring{recalculate(\+Iteration\+Data$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$iteration\+Data, Search\+Space$<$ P $>$ $\ast$\+S, Region$<$ P $>$ $\ast$\+R, T\+H\+Tree $\ast$tree, int I\+D)}{recalculate(IterationData< P, pSize, F, fSize, V, vSize > *iterationData, SearchSpace< P > *S, Region< P > *R, THTree *tree, int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$ void {\bf Region\+Selection\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::recalculate (
+\begin{DoxyParamCaption}
+\item[{{\bf Iteration\+Data}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{iteration\+Data, }
+\item[{{\bf Search\+Space}$<$ P $>$ $\ast$}]{S, }
+\item[{{\bf Region}$<$ P $>$ $\ast$}]{R, }
+\item[{{\bf T\+H\+Tree} $\ast$}]{tree, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRegionSelectionPolicy_a7e6a0b2d2dee3eceae9cd3b16e5f01ca}{}\label{classRegionSelectionPolicy_a7e6a0b2d2dee3eceae9cd3b16e5f01ca}
+
+
+This method can be used by sub-\/classes to obtain a dynamic region at every \hyperlink{classTH}{TH} iteration. 
+
+By default, it returns the current \char`\"{}anchor\char`\"{} sub-\/region (no dynamic behavior!).
+
+E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+AL\+: Use it with caution !!!
+
+
+\begin{DoxyParams}{Parameters}
+{\em iteration\+Data} & The \hyperlink{structIterationData}{Iteration\+Data} instance. \\
+\hline
+{\em S} & The full search space. \\
+\hline
+{\em R} & The current \char`\"{}anchor\char`\"{} sub-\/region to be updated. \\
+\hline
+{\em tree} & The tree topology that will guide the partitioning. \\
+\hline
+{\em ID} & The \hyperlink{classTH}{TH} instance\textquotesingle{}s global ID. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Region\+Selection\+Policy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{RegionSelectionPolicy_8h}{Region\+Selection\+Policy.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\hypertarget{classDivergentBestListUpdatePolicy}{}\section{Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ Class Template Reference}
+\label{classDivergentBestListUpdatePolicy}\index{Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$@{Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}}
+
+
+This policy updates the \hyperlink{classBestList}{Best\+List} instance by enforcing a behavior that slows down the convergence, as an attempt to increase the exploration and, consequently, the diversity of solutions.  
+
+
+
+
+{\ttfamily \#include $<$Divergent\+Best\+List\+Update\+Policy.\+h$>$}
+
+
+
+Inheritance diagram for Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classDivergentBestListUpdatePolicy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classDivergentBestListUpdatePolicy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDivergentBestListUpdatePolicy_a9f071374e5db075f1ce1e6cba1bfa1a1}{Divergent\+Best\+List\+Update\+Policy} ()
+\item 
+\hyperlink{classDivergentBestListUpdatePolicy_a8c0f47b6ca1693a298c170f73d1f2d21}{$\sim$\+Divergent\+Best\+List\+Update\+Policy} ()
+\item 
+void \hyperlink{classDivergentBestListUpdatePolicy_a793d47a0c458eef94b27fbee73e5df0e}{apply} (\hyperlink{classBestList}{Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List, \hyperlink{classSolution}{Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution, \hyperlink{classFitnessPolicy}{Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)
+\begin{DoxyCompactList}\small\item\em This method implements a behavior that promotes diversity when updating the solutions from the \hyperlink{classBestList}{Best\+List} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P = double, int p\+Size = 1, class F = double, int f\+Size = 1, class V = double, int v\+Size = 1$>$\\*
+class Divergent\+Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}
+
+This policy updates the \hyperlink{classBestList}{Best\+List} instance by enforcing a behavior that slows down the convergence, as an attempt to increase the exploration and, consequently, the diversity of solutions. 
+
+\begin{DoxyAuthor}{Author}
+Peter Frank Perroni 
+\end{DoxyAuthor}
+
+
+Definition at line 35 of file Divergent\+Best\+List\+Update\+Policy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}!Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}}
+\index{Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}!Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{Divergent\+Best\+List\+Update\+Policy()}{DivergentBestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Divergent\+Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::{\bf Divergent\+Best\+List\+Update\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDivergentBestListUpdatePolicy_a9f071374e5db075f1ce1e6cba1bfa1a1}{}\label{classDivergentBestListUpdatePolicy_a9f071374e5db075f1ce1e6cba1bfa1a1}
+
+
+Definition at line 37 of file Divergent\+Best\+List\+Update\+Policy.\+h.
+
+\index{Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}!````~Divergent\+Best\+List\+Update\+Policy@{$\sim$\+Divergent\+Best\+List\+Update\+Policy}}
+\index{````~Divergent\+Best\+List\+Update\+Policy@{$\sim$\+Divergent\+Best\+List\+Update\+Policy}!Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{$\sim$\+Divergent\+Best\+List\+Update\+Policy()}{~DivergentBestListUpdatePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ {\bf Divergent\+Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::$\sim${\bf Divergent\+Best\+List\+Update\+Policy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDivergentBestListUpdatePolicy_a8c0f47b6ca1693a298c170f73d1f2d21}{}\label{classDivergentBestListUpdatePolicy_a8c0f47b6ca1693a298c170f73d1f2d21}
+
+
+Definition at line 38 of file Divergent\+Best\+List\+Update\+Policy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}!apply@{apply}}
+\index{apply@{apply}!Divergent\+Best\+List\+Update\+Policy@{Divergent\+Best\+List\+Update\+Policy}}
+\subsubsection[{\texorpdfstring{apply(\+Best\+List$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$best\+List, Solution$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$solution, Fitness\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$fitness\+Policy)}{apply(BestList< P, pSize, F, fSize, V, vSize > *bestList, Solution< P, pSize, F, fSize, V, vSize > *solution, FitnessPolicy< P, pSize, F, fSize, V, vSize > *fitnessPolicy)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P  = double, int p\+Size = 1, class F  = double, int f\+Size = 1, class V  = double, int v\+Size = 1$>$ void {\bf Divergent\+Best\+List\+Update\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$\+::apply (
+\begin{DoxyParamCaption}
+\item[{{\bf Best\+List}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{best\+List, }
+\item[{{\bf Solution}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{solution, }
+\item[{{\bf Fitness\+Policy}$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$ $\ast$}]{fitness\+Policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classDivergentBestListUpdatePolicy_a793d47a0c458eef94b27fbee73e5df0e}{}\label{classDivergentBestListUpdatePolicy_a793d47a0c458eef94b27fbee73e5df0e}
+
+
+This method implements a behavior that promotes diversity when updating the solutions from the \hyperlink{classBestList}{Best\+List} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em best\+List} & The \hyperlink{classBestList}{Best\+List} instance to be updated. \\
+\hline
+{\em solution} & The new solution to be added to the best-\/list. \\
+\hline
+{\em fitness\+Policy} & The \hyperlink{classFitnessPolicy}{Fitness\+Policy} instance capable of evaluating the solutions. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classBestListUpdatePolicy_a591442e3329323b350971b6a55195916}{Best\+List\+Update\+Policy$<$ P, p\+Size, F, f\+Size, V, v\+Size $>$}.
+
+
+
+Definition at line 48 of file Divergent\+Best\+List\+Update\+Policy.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDivergentBestListUpdatePolicy_a793d47a0c458eef94b27fbee73e5df0e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+T\+H/\hyperlink{DivergentBestListUpdatePolicy_8h}{Divergent\+Best\+List\+Update\+Policy.\+h}\end{DoxyCompactItemize}
