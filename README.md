@@ -25,6 +25,15 @@ Treasure Hunt Framework can be summarized by the following advantages:
 - Large sampling of the search space. 
 
 
+# ![TH logo](media/TH-logo-favicon-1.png) TH API Implementation
+
+This open source project is a highly flexible TH implementation that currently supports 7 types of interfaces to fine control the behavior of each TH instances.
+
+Each type of interface allows tight control over a different aspect of the optimization, such that a large variety of types of problems, optimizers and running environments can be take advantage of TH.
+
+Default implementations are provided for 6 out of the 7 types of interfaces currently supported (except for the fitness/cost function itself), covering most of standard usages for simpler problems.
+
+
 
 
 # ![TH logo](media/TH-logo-favicon-1.png) Examples
