@@ -3,7 +3,7 @@
 
 
 The software is licensed under the Apache 2.0 license (see the file
-APACHE-LICENSE-2.0.txt), and all arts (media files) are licensed under
+LICENSE), and all arts (media files) are licensed under
 the Creative Commons CC-BY-SA 4.0 license.
 
 
