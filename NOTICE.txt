@@ -2,6 +2,8 @@
             Copyright 2016-2018 Peter Frank Perroni
 
 
+This framework is registered under INPI-BR code BR512020002164-6.
+
 The software is licensed under the Apache 2.0 license (see the file
 LICENSE), and all arts (media files) are licensed under
 the Creative Commons CC-BY-SA 4.0 license.
