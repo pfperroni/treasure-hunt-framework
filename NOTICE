@@ -1,5 +1,5 @@
                   Treasure Hunt Framework (c)
-            Copyright 2016-2020 Peter Frank Perroni
+            Copyright 2016-2021 Peter Frank Perroni
 
 
 This framework is registered under INPI-BR code BR512020002164-6.
@@ -16,10 +16,9 @@ according to the subject:
 
   - For Treasure Hunt Framework:
 
-      PERRONI, Peter Frank (2019). Treasure hunt: a framework
-      for cooperative, distributed parallel optimization
-      (Doctoral thesis, UFPR). Institutional repository at UFPR:
-      https://acervodigital.ufpr.br/handle/1884/62517
+      PERRONI, Peter Frank; DELGADO, Myriam Regattieri; WEINGAERTNER, Daniel.
+      Treasure Hunt Framework: Distributing Metaheuristics on High Performance
+      Computing Systems. Swarm and Evolutionary Computation, p. 100906, 2021
 
   - For the CSMOn (formerly C'MOn) :
 
@@ -34,6 +33,16 @@ according to the subject:
      Automated iterative partitioning for cooperatively coevolving particle
      swarms in large scale optimization. In: 2015 Brazilian Conference on
      Intelligent Systems (BRACIS). IEEE, 2015. p. 19-24.
+
+For a more throughout explanation of the method, please refer to the original thesis:
+
+      PERRONI, Peter Frank (2019). Treasure hunt: a framework
+      for cooperative, distributed parallel optimization
+      (Doctoral thesis, UFPR). Institutional repository at UFPR:
+      https://acervodigital.ufpr.br/handle/1884/62517
+
+Additional information might be found in UFPR's TH project page:
+      http://web.inf.ufpr.br/vri/software/TH
 
 
 Major Deploy History:
