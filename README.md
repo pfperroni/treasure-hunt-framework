@@ -59,8 +59,8 @@ For a reasonably deterministic behavior, change the global compilation parameter
 
 For Treasure Hunt Framework, please refer (and cite) to the following:
 
-> _PERRONI, Peter Frank (2019). Treasure hunt: a framework for cooperative, distributed parallel optimization (Doctoral thesis, UFPR). Institutional repository at UFPR: https://acervodigital.ufpr.br/handle/1884/62517_
- 
+> _PERRONI, Peter Frank; DELGADO, Myriam Regattieri; WEINGAERTNER, Daniel. Treasure Hunt Framework: Distributing Metaheuristics on High Performance Computing Systems. Swarm and Evolutionary Computation, p. 100906, 2021_
+
  
 For the CSMOn (formerly C'MOn) method, please refer (and cite) to the following paper:
 > _PERRONI, Peter Frank; WEINGAERTNER, Daniel; DELGADO, Myriam Regattieri. Estimating stop conditions of swarm based stochastic metaheuristic algorithms. In: Proceedings of the Genetic and Evolutionary Computation Conference. 2017._
@@ -68,3 +68,6 @@ For the CSMOn (formerly C'MOn) method, please refer (and cite) to the following 
 For the Iterative Partitioning method used by TH, please refer (and cite) to the following paper:
 
 > _PERRONI, Peter Frank; WEINGAERTNER, Daniel; DELGADO, Myriam Regattieri. Automated iterative partitioning for cooperatively coevolving particle swarms in large scale optimization. In: 2015 Brazilian Conference on Intelligent Systems (BRACIS). IEEE, 2015. p. 19-24._
+
+For a more throughout explanation of the method, please refer to the original thesis:
+> _PERRONI, Peter Frank (2019). Treasure hunt: a framework for cooperative, distributed parallel optimization (Doctoral thesis, UFPR). Institutional repository at UFPR: https://acervodigital.ufpr.br/handle/1884/62517_
