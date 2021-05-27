@@ -71,3 +71,6 @@ For the Iterative Partitioning method used by TH, please refer (and cite) to the
 
 For a more throughout explanation of the method, please refer to the original thesis:
 > _PERRONI, Peter Frank (2019). Treasure hunt: a framework for cooperative, distributed parallel optimization (Doctoral thesis, UFPR). Institutional repository at UFPR: https://acervodigital.ufpr.br/handle/1884/62517_
+
+Additional information might be found in UFPR's TH project page:
+> http://web.inf.ufpr.br/vri/software/TH
