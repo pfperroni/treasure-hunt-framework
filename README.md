@@ -62,7 +62,7 @@ For a reasonably deterministic behavior, change the global compilation parameter
 
 For Treasure Hunt Framework, please refer (and cite) to the following:
 
-> _PERRONI, Peter Frank; DELGADO, Myriam Regattieri; WEINGAERTNER, Daniel. Treasure Hunt Framework: Distributing Metaheuristics on High Performance Computing Systems. Swarm and Evolutionary Computation, p. 100906, 2021. URL: https://doi.org/10.1016/j.swevo.2021.100906_
+> _PERRONI, Peter Frank; DELGADO, Myriam Regattieri; WEINGAERTNER, Daniel. Treasure Hunt Framework: Distributing Metaheuristics on High Performance Computing Systems. Swarm and Evolutionary Computation, ISSN 2210-6502, Volume 65, p. 100906, 2021. URL: https://doi.org/10.1016/j.swevo.2021.100906_
 
  
 For the CSMOn (formerly C'MOn) method, please refer (and cite) to the following paper:
