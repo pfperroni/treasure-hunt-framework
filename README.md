@@ -1,9 +1,9 @@
-# <img align="left" height="30" src="media/TH-logo-2.png">&nbsp;&nbsp;Treasure Hunt Framework
+# <img align="left" height="30" src="media/TH-logo-2.png">&nbsp;&nbsp;<a href="https://github.com/pfperroni/treasure-hunt-framework">Treasure Hunt Framework</a>
 
 
 > <b>For preprint paper, please check <a href="https://www.researchgate.net/publication/351667035_Treasure_Hunt_Framework_Distributing_Metaheuristics_on_High_Performance_Computing_Systems#fullTextFileContent" target="_blank">here</a></b>.
 
-Treasure Hunt (TH) is an open source, multilevel framework capable of distributing independent search algorithms to a large number of processing nodes.
+<a href="https://github.com/pfperroni/treasure-hunt-framework">Treasure Hunt</a> (TH) is an open source, multilevel framework capable of distributing independent search algorithms to a large number of processing nodes.
 TH is not tied to any specific search algorithm because, instead of a distributed optimization mechanism, TH is a mechanism to distribute optimizers.
 
 Treasure Hunt boosts the inherent characteristics of these search algorithms, making poor performer algorithms to become comparable to good ones, and good performer algorithms to extend their limits to larger problems.
